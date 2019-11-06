@@ -1,0 +1,219 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font=small]{caption}
+\usepackage{color}
+\usepackage{fancyhdr}
+%\usepackage{soul} %for striking out text
+%\usepackage{arydshln} % for dotted line on truth table
+\usepackage{tikz} % graphics stuff
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{fancyvrb}
+%\usepackage{subcaption} % used to horizontally tile figures
+%\usepackage{listings}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+%
+% cover page
+%
+
+\vspace*{2 cm}
+
+\begin{center}
+\bf{CMPE-630 Digital IC Design\\
+    Laboratory Exercise 3\\
+\vspace{0.25 cm}
+Mirror Adder
+}
+\end{center}
+
+\vspace{6 cm}
+
+\begin{flushright}
+Brandon Key\\
+Performed: 11 Sept 2019\\
+Submitted: 25 Sept 2019\\
+\vspace{0.5 cm}
+Instructor: Dr. Amlan Ganguly\\
+TAs: Abhishek Vashist\\
+Andrew Fountain\\
+Piers Kwan\\
+\vspace{0.5 cm}
+\end{flushright}
+
+\vspace{3 cm}
+\indent By submitting this report, you attest that you neither have given nor have received any assistance (including writing, collecting data, plotting figures, tables or graphs, or using previous student reports as a reference), and you further acknowledge that giving or receiving such assistance will result in a failing grade for this course.
+
+\vspace{1 cm}
+Your Signature:   \rule{13cm}{.1pt}
+
+
+\tableofcontents
+\newpage
+
+\section{Abstract}
+	In this exercise, a Mirror Adder was designed, sized, and simulated. The focus of the exercise was mainly on the sizing of the transistors that make up the Mirror Adder. The Mirror Adder has a variety of combinations of transistors, which provide an opportunity to size said transistors. Most notably, the parallel combinations do not yield an increase in width, while the series transistors grow in width proportional to the number of transistors in series. An Eldo simulation was used to verify functionality of the circuit, and then timing values were extracted from the circuit running at 1.08V and $125\deg$C. The circuit was found to have a maximum input frequency of 9.6GHz and a throughput frequency of 3.1GHz with no load capacitance. When a 120fF load capacitor was applied, the circuit had a maximum input frequency of 293MHz and a throughput frequency of 523MHz, highlighting the disastrous effects of capacitance to a circuit's performance; adding a load capacitance decreased the input frequency by 97\%, and throughput frequency was decreased 83.6\%. Overall this exercise was successful.
+
+
+
+\section{Design Methodology and Theory}
+	
+	One of the fundamental design challenges of CMOS circuits is having equal pull strength in both directions. An ideal CMOS circuit only draws power when it is switching; having equal pull strength ensures that the pull is even and draws the least amount of power. The pulling power of a branch of a CMOS circuit is related to it's equivalent resistance. Typically, nMOS transistors have less equivalent resistance because the electrons in the substrate are easier to move than the holes in pMOS transistors. To demonstrate the equivalent resistance of multiple configurations of transistors, a Mirror Adder was designed and sized. 
+	
+	\subsection{Functionality}
+		A full adder's functionality is well known and it's truth table is shown in Figure \ref{fig:truth-table}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.4\linewidth]{"Pictures/Truth Table"}
+			\caption{Truth Table for Full Adder}
+			\label{fig:truth-table}
+		\end{figure}
+	
+		A full adder could be implemented from the truth table in Figure \ref{fig:truth-table}, however a Mirror Adder is known to be a simpler and faster circuit. The Mirror Adder schematic can be seen in Figure \ref{fig:mirror-adder-schematic}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{"Pictures/Mirror Adder Schematic"}
+			\caption{Mirror Adder Schematic}
+			\label{fig:mirror-adder-schematic}
+		\end{figure}
+	
+		The Mirror Adder supplies the carry out and the sum in one circuit. It also has a maximum series combination of transistors of 3. A trivial implementation of a full adder would require two circuits and would require 4 transistors in series. Having more transistors in series is detrimental to performance because the drain capacitance of the series transistors stack, thus decreasing the frequency response of the system. 
+	
+	\subsection{Sizing}
+	 
+	 	To properly size a CMOS circuit for balance, the goal is to maintain the same equivalent resistance as the unit inverter. The unit inverter is the smallest inverter than can be made for a process and can be seen in Figure \ref{fig:unit-inverter}.
+	 	
+	 	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.45\linewidth]{"Pictures/Unit Inverter"}
+			\caption{Unit Inverter}
+			\label{fig:unit-inverter}
+		\end{figure}
+	
+		To start off, the length of every transistor is twice the process size. There is no reason to make a length any longer than this since it will only decrease performance of a circuit. The width of NMOS and PMOS vary based upon MOS type and configuration. The NMOS width is four times the process size, since this is as small as possible. Historically, the PMOS has about twice the internal resistance of an NMOS. To combat this, the width of the PMOS is double that of the NMOS. Transistors in parallel should not have modified widths, since in the worst case scenario, only one of the transistors will be active. When transistors are in series, current must flow through all of them. The resistance of each individual transistor should be reduced proportional to the number of transistors connected in series; width of transistors in series should be multiplied by the number of transistors in series. Figure \ref{fig:mirror-adder-schematic-sizing} shows these sizing rules applied to the Mirror Adder.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{"Pictures/Mirror Adder Schematic Sizing"}
+			\caption{Mirror Adder Transistor Sizing}
+			\label{fig:mirror-adder-schematic-sizing}
+		\end{figure}
+	
+		
+
+\section{Results and Analysis}
+
+	An Eldo transient simulation was used to verify functionality and extract timing data from the Mirror Adder. To do this, the inputs A, B, and $C_{in}$ were pulsed in accordance to the truth table in Figure \ref{fig:truth-table}. A was pulsed with a period of 40ns, B was pulsed with a period of 80ns, and $C_{in}$ was pulsed with a period of 160ns. All signals had a 50\% duty cycle.
+
+	\subsection{Functionality}
+	
+		To test functionality, all input signals and $V_{dd}$ had a magnitude of 1.2V, and no load capacitance was applied. The resulting waveform can be seen in Figure \ref{fig:mirror-adder-functional-sim}.
+	
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{"Pictures/Mirror Adder Functional Sim"}
+			\caption{Mirror Adder Transient Simulation for Functionality}
+			\label{fig:mirror-adder-functional-sim}
+		\end{figure}
+	
+		To make the graph easier to interpret, the signals were digitized and captured in Figure \ref{fig:mirror-adder-functionality}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{"Pictures/Mirror Adder Functionality"}
+			\caption{Mirror Adder Transient Simulation with Digitized Inputs}
+			\label{fig:mirror-adder-functionality}
+		\end{figure}
+	
+		The Eldo simulation verified the functionality of the Mirror Adder. It should be noted that at 40ns, when two of the inputs change simultaneously, $C_{out}$ temporarily spikes.
+	
+	\subsection{Timing}
+	
+		The timing of the circuit was analyzed at a worst-case scenario, with all voltages being 1.08V and the temperature was $125\deg$C. Then the rise time, fall time, output delay from low to high, and output delay from high to low was measured. The resulting waveform can be seen in Figure \ref{fig:timing-no-cap}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{"Pictures/Timing No Cap"}
+			\caption{Mirror Adder Transient Simulation for Timing; No Load Capacitance}
+			\label{fig:timing-no-cap}
+		\end{figure}
+	
+		The measured timing values were recorded in Figure \ref{fig:sum-results} and Figure \ref{fig:cout-results}.
+		
+		Next, the load capacitance was increased to 120fF and all measurements were re0evaluated. The resulting waveform can be seen in Figure \ref{fig:timing-cap}.
+	
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.9\linewidth]{"Pictures/Timing Cap"}
+			\caption{Mirror Adder Transient Simulation for Timing; 120fF Load Capacitance}
+			\label{fig:timing-cap}
+		\end{figure}
+	
+		Again, the measured timing values were recorded in Figure \ref{fig:sum-results} and Figure \ref{fig:cout-results}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Sum Results"}
+			\caption{Timing Results for Sum}
+			\label{fig:sum-results}
+		\end{figure}
+		
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Cout Results"}
+			\caption{Timing Results for $C_{out}$}
+			\label{fig:cout-results}
+		\end{figure}
+	
+		The capacitor significantly decreased the performance of the circuit. Trying to reduce the capacitance is key in fast circuit design. 
+		
+		The maximum input and throughput frequencies were calculated from the measured timing values according to Equation \ref{eqn:Finputmax} and Equation \ref{eqn:Fthroughputmax} respectively. 
+	
+		\begin{equation}\label{eqn:Finputmax}
+			F_{input,max} = \frac{1}{t_{rise}+t_{fall}}
+		\end{equation}
+		\begin{center}
+			Equation \ref{eqn:Finputmax}: Max Input Frequency
+		\end{center}
+		
+		\begin{equation}\label{eqn:Fthroughputmax}
+			F_{throughput,max} = \frac{1}{T_{P,HL}+T_{P,LH}}
+		\end{equation}
+		\begin{center}
+			Equation \ref{eqn:Fthroughputmax}: Max Throughput Frequency
+		\end{center}
+
+		The results of the frequency calculations were recorded in Figure \ref{fig:frequency-results}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Frequency Results"}
+			\caption{Frequency Response of Mirror Adder}
+			\label{fig:frequency-results}
+		\end{figure}
+		
+		This circuit has very good frequency response considering the large process that it is utilizing. Adding a load capacitance decreased the input frequency by 97\%, and throughput frequency was decreased 83.6\%.
+
+\clearpage
+\vfill
+\section{Conclusion}
+ 	Balancing transistor sizing is a core technique to integrated circuit design. Ensuring that the pull-up and pull-down network match the resistance of the unit inverter is key to reducing power consumption and speed of a circuit. A Mirror Adder is a simple circuit with a variety of transistor configurations that provides a good practice for transistor sizing. While it is common that PMOS are twice as wide as NMOS, this is not always the case, and this varies from process to process. An important lesson was also learned that schematics must be made larger than first anticipated to allow room for clear wiring, especially for body connections, which tend to be an after though. It was also illustrated that capacitance significantly decreases the performance of a circuit. When the load capacitor was added, the output waveform was drastically altered and adding a load capacitance decreased the input frequency by 97\%, and throughput frequency was decreased 83.6\%.
+
+
+\end{document}

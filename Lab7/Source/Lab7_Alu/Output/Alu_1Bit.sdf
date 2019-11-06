@@ -1,0 +1,80 @@
+(DELAYFILE
+ (SDFVERSION "2.0")
+ (DESIGN "ALU_1Bit")
+ (DATE "Sun Nov  3 13:55:47 2019")
+ (VENDOR "Exemplar Logic, Inc., Alameda")
+ (PROGRAM "LeonardoSpectrum Level 3")
+ (VERSION "2008b.3")
+ (DIVIDER /)
+ (VOLTAGE)
+ (PROCESS)
+ (TEMPERATURE)
+ (TIMESCALE 1 ns)
+(CELL
+ (CELLTYPE "and03")
+ (INSTANCE ix5)
+ (DELAY
+  (ABSOLUTE
+   (PORT A0 (::0.00) (::0.00))
+   (PORT A1 (::0.00) (::0.00))
+   (PORT A2 (::0.00) (::0.00))
+   (IOPATH A0 Y (::0.07) (::0.07))
+   (IOPATH A1 Y (::0.07) (::0.07))
+   (IOPATH A2 Y (::0.08) (::0.07)))))
+(CELL
+ (CELLTYPE "xor2")
+ (INSTANCE ix1)
+ (DELAY
+  (ABSOLUTE
+   (PORT A0 (::0.00) (::0.00))
+   (PORT A1 (::0.00) (::0.00))
+   (IOPATH A0 Y (::0.15) (::0.15))
+   (IOPATH A1 Y (::0.16) (::0.16)))))
+(CELL
+ (CELLTYPE "oai32")
+ (INSTANCE ix21)
+ (DELAY
+  (ABSOLUTE
+   (PORT A0 (::0.00) (::0.00))
+   (PORT A1 (::0.00) (::0.00))
+   (PORT A2 (::0.00) (::0.00))
+   (PORT B0 (::0.00) (::0.00))
+   (PORT B1 (::0.00) (::0.00))
+   (IOPATH A0 Y (::0.09) (::0.10))
+   (IOPATH A1 Y (::0.08) (::0.08))
+   (IOPATH A2 Y (::0.05) (::0.05))
+   (IOPATH B0 Y (::0.09) (::0.08))
+   (IOPATH B1 Y (::0.08) (::0.07)))))
+(CELL
+ (CELLTYPE "inv01")
+ (INSTANCE ix80)
+ (DELAY
+  (ABSOLUTE
+   (PORT A (::0.00) (::0.00))
+   (IOPATH A Y (::0.05) (::0.04)))))
+(CELL
+ (CELLTYPE "inv01")
+ (INSTANCE ix82)
+ (DELAY
+  (ABSOLUTE
+   (PORT A (::0.00) (::0.00))
+   (IOPATH A Y (::0.05) (::0.04)))))
+(CELL
+ (CELLTYPE "xnor2")
+ (INSTANCE ix84)
+ (DELAY
+  (ABSOLUTE
+   (PORT A0 (::0.00) (::0.00))
+   (PORT A1 (::0.00) (::0.00))
+   (IOPATH A0 Y (::0.07) (::0.07))
+   (IOPATH A1 Y (::0.06) (::0.06)))))
+(CELL
+ (CELLTYPE "nor02")
+ (INSTANCE ix86)
+ (DELAY
+  (ABSOLUTE
+   (PORT A0 (::0.00) (::0.00))
+   (PORT A1 (::0.00) (::0.00))
+   (IOPATH A0 Y (::0.08) (::0.06))
+   (IOPATH A1 Y (::0.07) (::0.05)))))
+)

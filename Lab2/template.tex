@@ -1,0 +1,271 @@
+\documentclass[11pt]{article}
+\usepackage[margin=1.0in]{geometry}
+\usepackage{mathtools}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage[font=small]{caption}
+\usepackage{color}
+\usepackage{fancyhdr}
+%\usepackage{soul} %for striking out text
+%\usepackage{arydshln} % for dotted line on truth table
+\usepackage{tikz} % graphics stuff
+\usepackage{caption}
+\usepackage{gensymb}
+\usepackage{booktabs}
+\usepackage{listings}
+\usepackage{fancyvrb}
+%\usepackage{subcaption} % used to horizontally tile figures
+%\usepackage{listings}
+\pagestyle{fancy}
+\fancyhead{}
+\fancyfoot{}
+\fancyfoot[R]{\thepage}
+
+\begin{document}
+
+%
+% cover page
+%
+
+\vspace*{2 cm}
+
+\begin{center}
+\bf{CMPE-630 Digital IC Design\\
+    Laboratory Exercise 2\\
+\vspace{0.25 cm}
+Design of CMOS Logic Gates
+}
+\end{center}
+
+\vspace{6 cm}
+
+\begin{flushright}
+Brandon Key\\
+Performed: 4 Sept 2019\\
+Submitted: 11 Sept 2019\\
+\vspace{0.5 cm}
+Instructor: Dr. Amlan Ganguly\\
+TAs: Abhishek Vashist\\
+Andrew Fountain\\
+Piers Kwan\\
+\vspace{0.5 cm}
+\end{flushright}
+
+\vspace{3 cm}
+\indent By submitting this report, you attest that you neither have given nor have received any assistance (including writing, collecting data, plotting figures, tables or graphs, or using previous student reports as a reference), and you further acknowledge that giving or receiving such assistance will result in a failing grade for this course.
+
+\vspace{1 cm}
+Your Signature:   \rule{13cm}{.1pt}
+
+
+\tableofcontents
+\newpage
+
+\section{Abstract}
+	In this exercise, an NMOS transistor and a CMOS inverter were designed in Pyxis, and then simulated using Eldo. The voltage characteristics of the NMOS transistor were analyzed based upon the simulation. The linear and saturation regions of the NMOS were observed. The inverter had multiple simulations to collected voltage and timing properties of the inverter. Temperature was varied from $25\deg C$ to $125\deg C$. The max voltage of the inverter was varied between 1.2V and 1.08V. A load capacitor of 120fF was added to the output of the inverter. It was found that the inverter had an input frequency of 10kHz with no load capacitor and an input frequency of 302Hz with the load capacitor. It was found that temperature and voltage have a much smaller impact on frequency response than capacitance. 
+
+
+\section{Design Methodology and Theory}
+	
+	A NMOS schematic was designed in Pyxis. The voltage characteristics were the question of the NMOS transistor. A CMOS inverter was created using an NMOS pull-down and a PMOS pull-up transistor. The voltage and timing properties of the inverter were the subject of Eldo simulation. 
+
+
+	\subsection{NMOS}
+	
+		The NMOS schematic was created by using a standard NMOS and setting the width to 0.26$\mu$m and the length to 0.13$\mu$m. The length was chosen as a reasonable length that could be easily created. The width was set to be twice the length, which generally creates a favorable NMOS transistor. The resulting schematic can be seen in Figure \ref{fig:inverter-schematic}.
+				
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.5\linewidth]{"Pictures/Transistor Schematic"}
+			\caption[NMOS Transistor Schematic]{NMOS Transistor Schematic}
+			\label{fig:transistor-schematic}
+		\end{figure}
+	
+		The transistor should have a linear region where current from drain to source increases more-or-less linearly with voltage applied to the gate. Once the channel of the transistor cannot grow anymore, the transistor becomes saturated and the current plateaus and will not increase while the gate voltage increases.  
+
+
+	\subsection{Inverter}
+	
+		A PMOS and an NMOS can be combined to create an inverter. A PMOS can pull the output high and an NMOS can pull the output low. The schematic in Figure \ref{fig:inverter-schematic} illustrates the wiring for an inverter.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Inverter Schematic"}
+			\caption[Inverter Schematic]{Inverter Schematic}
+			\label{fig:inverter-schematic}
+		\end{figure}
+	
+		The same NMOS sizing was used
+	
+		To demonstrate the functionality of the inverter an Eldo simulation was run with $V_{dd}$ being held to 1.2V and the input was swept from 0v to 1.2V with a step of 0.01V. The resulting waveform can be seen in Figure \ref{fig:inverter-waveform}.
+
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Inverter Waveform"}
+			\caption[Inverter Voltage Characteristics]{Inverter Voltage Characteristics}
+			\label{fig:inverter-waveform}
+		\end{figure}
+	
+		If the input is low, the output is high and vice-versa. The transition from low output to high output is relatively quick. The intersection of the input and output was measured to be (528mV, 5.28mV). Since this value is slightly lower than half of $V_{dd}$(1.2V) indicating that there is some loss in the transistors. 
+		
+		To see how the changing parameters effects the output, the PMOS width was reduced to 0.13$\mu$m. The simulation was re-run and recorded in Figure \ref{fig:shorter-pmos-width}.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Shorter PMOS Width"}
+			\caption{Inverter Simulation with Shorted PMOS Width}
+			\label{fig:shorter-pmos-width}
+		\end{figure}
+	
+		The shorter PMOS width shifted the crossover point to a lower voltage, so the inverter stays low longer than it stays high. The crossover point shifts higher if the PMOS width is increased.
+		
+
+\section{Results and Analysis}
+
+	Data tables must be properly presented and label.
+	
+	Simulations results include waveforms showing the values as they were measured. For a given simulation, all of the measurements should appear on a single plot.
+
+
+
+	\subsection{NMOS}
+	
+		The Eldo simulation was setup to sweep $V_{dd}$ from 0v to 1.2V, stepping by 0.01v. The gate voltage was also swept from 0v to 1.2V with a step of 0.3V. The resulting waveform was captured in Figure \ref{fig:inverter-waveform}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Transistor IV Properties"}
+			\caption[]{IV Characteristics of NMOS transistor}
+			\label{fig:transistor-iv-properties}
+		\end{figure}
+	
+		As the simulation illustrates, at low gate voltages, the current increases linearly, then the current stops increasing once the transistor is saturated. As the drain voltage increases, the gate voltage increases, the saturation region shifts rightward. 
+	
+	
+	\subsection{Inverter}
+	
+		The timing characteristics of the inverter were simulated with a transient simulation. $V_{dd}$ was held to 1.2V and the gate voltage was forced to be a pulse with the following properties:
+		\begin{itemize}
+			\item Magnitude: 1.2V
+			\item Width: 5nS
+			\item Rise Time: 0.1nS
+			\item Fall Time: 0.1nS
+			\item Period: 10ns
+		\end{itemize}
+	
+		The simulation had a temperature of $25\deg C$. The resulting output is shown in Figure \ref{fig:transient-sim}. 
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Transient Sim"}
+			\caption[Transient Simulation of Inverter]{Transient Simulation of Inverter}
+			\label{fig:transient-sim}
+		\end{figure}
+		
+		The waveform was enhanced to highlight the rising and falling edges. Figure \ref{fig:transient-sim-nominal-no-cap} shows the falling edge of the output.
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Nominal No Cap"}
+			\caption[]{Transient Simulation of Inverter Fall Time and Propagation Delay High to Low. Temp = $25\deg C$; C1 = 0fF; }
+			\label{fig:transient-sim-nominal-no-cap}
+		\end{figure}
+	
+		The fall time and the propagation delay from low to high was measured and recorded in Figure \ref{fig:measured-inverter-results}. 
+		
+		The rise time and the propagation delay from high to low was  in Figure \ref{fig:transient-sim-nominal-no-cap-fall}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.7\linewidth]{"Pictures/Nominal No Cap Fall"}
+			\caption[]{Transient Simulation of Inverter Rise Time and Propagation Delay Low to High. Temp = $25\deg C$; C1 = 0fF; }
+			\label{fig:transient-sim-nominal-no-cap-fall}
+		\end{figure}
+	
+		The time to rise took much longer than the time to fall. This is due to the PMOS having a larger channel than the NMOS.
+		
+		The simulation was repeated with a load capacitor of 120fF. The rise and fall times were increased by over a magnitude.  
+	
+		The simulation was repeated at $125\deg C$ and a $V_{dd}$ of 1.08V. The higher temperature and lower voltage represent a worse case scenario. The measurements were recorded in Figure \ref{fig:measured-inverter-results}.
+		
+		The Rise Time was increased 10\%. The increased temperature slows the response of the transistors. The fall time was impacted much more with a slow down of 71\%. The propagation delay from high to low was actually lower by 2.7\%. This is likely due to the lower voltages. The propagation delay from low to high was increased by 8\%. The load capacitor impacted times in the same manor as the nominal case.
+		
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{"Pictures/Measured Inverter Results"}
+			\caption[Inverter Results]{Measured Inverter Results}
+			\label{fig:measured-inverter-results}
+		\end{figure}
+	
+		The maximum frequency that a transistor can operate properly at can be estimated with the rise/fall times and propagation delays. The input and the throughput have separate frequencies. The maximum input frequency can be estimated with Equation \ref{eqn:Finputmax}. The throughput frequency can be estimated with Equation \ref{eqn:Fthroughputmax}. 
+	
+		\begin{equation}\label{eqn:Finputmax}
+			F_{input,max} = \frac{1}{t_{rise}+t_{fall}}
+		\end{equation}
+		\begin{center}
+			Equation \ref{eqn:Finputmax}: Max Input Frequency
+		\end{center}
+	
+		\begin{equation}\label{eqn:Fthroughputmax}
+			F_{throughput,max} = \frac{1}{T_{P,HL}+T_{P,LH}}
+		\end{equation}
+		\begin{center}
+			Equation \ref{eqn:Fthroughputmax}: Max Throughput Frequency
+		\end{center}
+	
+		The timing values from Figure \ref{fig:measured-inverter-results} were entered into Equation \ref{eqn:Finputmax} and Equation \ref{eqn:Fthroughputmax} to obtain the frequency values illustrated in Figure \ref{fig:calculated-inverter-results}.
+	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=1\linewidth]{"Pictures/Calculated Inverter Results"}
+			\caption[Inverter Results]{Inverter Frequencies}
+			\label{fig:calculated-inverter-results}
+		\end{figure}
+	
+		The inverter with nominal voltage and temperature is not spectacularly fast with an input frequency of only 10kHz. Modern transistors are much smaller and would have a much faster switching frequency, but this is a very large transistor. Adding a small capacitive load of 120fF dramatically decreased the maximum frequency of the inverter.
+
+\clearpage
+\vfill
+\section{Conclusion}
+	This exercise provided a good tutorial for learning the Pyxis schematic and Eldo simulator. The basic properties of a transistor were already known, but were none-the-less proven. This exercise highlighted the incredible sensitivity to capacitance that IC circuits have. Even a small capacitance of 120fF slowed the inverted by over a magnitude, while high temperature and low voltage slowed the inverter by less than 71\%. The MOSFETs designed in this exercise were fairly large, which made the frequency response of the inverter very low at 10kHz. Overall this exercise provided a good look at IC design tools and highlighted interesting timing properties of transistors. 
+
+
+\section*{Questions}
+
+	\textbf{What are the regions of operation for an inverter? Describe the mode of operation for each transistor for the regions.Use the VTC curve that you created as part the exercise.}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{"Pictures/Inverter Waveform Question"}
+		\caption[]{Inverter Modes of Operation}
+		\label{fig:transient-sim-labeled}
+	\end{figure}
+	
+	\begin{itemize}
+		\item A - NMOS: Off PMOS: Linear
+		\item B - NMOS: Saturation PMOS: Linear
+		\item C - NMOS: Saturated PMOS: Saturated
+		\item D - NMOS: Linear PMOS: Saturated
+		\item E - NMOS: Linear PMOS: Off
+	\end{itemize}
+	
+	\textbf{Draw the waveform that would result from a DC sweep of the input of the following circuit.  Explain the behavior.}
+	
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.7\linewidth]{"Pictures/Bad Inverter"}
+		\caption[]{Broken Inverter}
+		\label{fig:bad-inverter}
+	\end{figure}
+
+	The output of this questionable circuit is a curve that follows the input voltage. Both transistors will be in linear operation. This is effectively a terrible, inefficient buffer. 
+
+	\begin{figure}[H]
+		\centering
+		\includegraphics[width=0.9\linewidth]{"Pictures/Bad Inverter Waveform"}
+		\caption[]{Broken Inverter DC sweep}
+		\label{fig:bad-inverter-sweep}
+	\end{figure}
+
+\end{document}

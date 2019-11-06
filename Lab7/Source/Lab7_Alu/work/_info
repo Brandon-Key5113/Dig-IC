@@ -1,0 +1,675 @@
+m255
+K4
+z2
+13
+cModel Technology
+Z0 d/home/bxk5113/Lab7_Alu
+!s112 0.1
+!i10d 8192
+!i10e 25
+!i10f 100
+Ealu_16bit
+Z1 w1572799995
+Z2 DPx4 work 7 globals 0 22 FiHoDTDW2e1d0R^GTWNUS1
+Z3 DPx4 work 12 controlcodes 0 22 Kb`X8fM^<9BG]TTjG6Wbc0
+Z4 DPx4 ieee 11 numeric_std 0 22 WES[o8HS0jHV[MIXQk2Ha1
+Z5 DPx3 std 6 textio 0 22 Y8d?=bLj9m4jiPLbo;>GT0
+Z6 DPx4 ieee 14 std_logic_1164 0 22 1bm?@Gd;P>[>_lN8Do9gP3
+Z7 d/home/bxk5113/Lab7_Alu
+Z8 8/home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit.vhd
+Z9 F/home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit.vhd
+l0
+L41
+Vc57CN:?UmTR<4a`H<c<jQ2
+Z10 OL;C;10.2c_6;57
+32
+Z11 !s110 1572802150
+Z12 !s108 1572802150.151209
+Z13 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit.vhd|
+Z14 !s107 /home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit.vhd|
+Z15 o-work work -2002 -explicit
+Z16 tExplicit 1 CreateSource 1
+!s100 BCojl2dZOi4ZoCLV?:cK<2
+!i10b 1
+!i111 1
+Astruct
+Z17 DEx4 work 16 controller_16bit 0 22 d3<3C5QnEC3ADPU7jRGl61
+Z18 DEx4 work 13 nbitand_16bit 0 22 d@A6DV?<Q^kXXfYK=TSCE0
+Z19 DEx4 work 12 nbitor_16bit 0 22 1kd>^0[1QBgHca@Nm9VeE2
+Z20 DEx4 work 25 nbitaddersubtractor_16bit 0 22 aGoLig[:VoCh9n6L<:1z82
+R2
+R3
+R4
+R5
+R6
+DEx4 work 9 alu_16bit 0 22 c57CN:?UmTR<4a`H<c<jQ2
+l61
+L50
+VjdR=mfelQKRlE3D_:2A4z1
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 <_d83fdiQ7;:JJWb=G^1c1
+!i10b 1
+!i111 1
+Ealu_16bit_tb
+R1
+R4
+R5
+R6
+R7
+Z21 8/home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd
+Z22 F/home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd
+l0
+L34
+V=;DZ;Y;5KDBFe@8gNnb8z2
+R10
+32
+R11
+Z23 !s108 1572802150.306675
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd|
+Z25 !s107 /home/bxk5113/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd|
+R15
+R16
+!s100 c?[jg@n`cNYf9XW2WI?[G3
+!i10b 1
+!i111 1
+Abehavior
+R4
+R5
+R6
+DEx4 work 12 alu_16bit_tb 0 22 =;DZ;Y;5KDBFe@8gNnb8z2
+l75
+L37
+VZggRaN@7V6GT1dnN;gN3S3
+R10
+32
+R11
+R23
+R24
+R25
+R15
+R16
+!s100 gXlRC_^J9zY]lFD1KhJYk3
+!i10b 1
+!i111 1
+Ealu_1bit
+Z26 w1572800317
+Z27 DPx4 work 12 controlcodes 0 22 G7Hl3VCA50lS:=gAH;8Y`2
+R4
+R5
+R6
+R7
+Z28 8/home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit.vhd
+Z29 F/home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit.vhd
+l0
+L31
+V9TMhTQM?n=3DlXZUE5HMZ2
+!s100 mJJGZ4e`1=3>;`lj2Lkz52
+R10
+32
+Z30 !s110 1572802189
+!i10b 1
+Z31 !s108 1572802189.278046
+Z32 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit.vhd|
+Z33 !s107 /home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit.vhd|
+!i111 1
+R15
+R16
+Abehav
+R27
+R4
+R5
+R6
+Z34 DEx4 work 8 alu_1bit 0 22 9TMhTQM?n=3DlXZUE5HMZ2
+l42
+L40
+Z35 V>K4HV28VRmX7_6Ro@SPR40
+Z36 !s100 gYPN]?M8Z6?CNBDK7c`WH1
+R10
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i111 1
+R15
+R16
+Ealu_1bit_tb
+Z37 w1572800948
+R4
+R5
+R6
+R7
+Z38 8/home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd
+Z39 F/home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd
+l0
+L34
+V>6=;f78@oLag:o;`RDdG<1
+R10
+32
+Z40 !s110 1572802149
+Z41 !s108 1572802149.675636
+Z42 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd|
+Z43 !s107 /home/bxk5113/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd|
+R15
+R16
+!s100 NWECKZ`X3oQ7Bi`iOG0>i0
+!i10b 1
+!i111 1
+Abehavior
+R4
+R5
+R6
+DEx4 work 11 alu_1bit_tb 0 22 >6=;f78@oLag:o;`RDdG<1
+l64
+L37
+VHPX8WQf02NB=iRlW?H:262
+R10
+32
+R40
+R41
+R42
+R43
+R15
+R16
+!s100 `BiPU_c0;c2j_Ya4P;ANm1
+!i10b 1
+!i111 1
+Ealu_4bit
+Z44 w1572801382
+R2
+R3
+R4
+R5
+R6
+R7
+Z45 8/home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit.vhd
+Z46 F/home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit.vhd
+l0
+L41
+VTVnOZO>OIeK]W3BS_LS6d1
+R10
+32
+R40
+Z47 !s108 1572802149.796532
+Z48 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit.vhd|
+Z49 !s107 /home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit.vhd|
+R15
+R16
+!s100 P4QO;lRIZ]gjDBC`@f[Ze2
+!i10b 1
+!i111 1
+Astruct
+Z50 DEx4 work 15 controller_4bit 0 22 EUcBj=1L`^a9:?Q>2hh9i0
+Z51 DEx4 work 12 nbitand_4bit 0 22 GQa`[Z5oCOab3m@1HJk`A1
+Z52 DEx4 work 11 nbitor_4bit 0 22 TbOloFlHZzOOlHCHO4B6:3
+Z53 DEx4 work 24 nbitaddersubtractor_4bit 0 22 O0V=1:AZJ1S49`Qo8LH_g0
+R2
+R3
+R4
+R5
+R6
+DEx4 work 8 alu_4bit 0 22 TVnOZO>OIeK]W3BS_LS6d1
+l61
+L50
+VaGFa9jP^P4n9MO41^42ik0
+R10
+32
+R40
+R47
+R48
+R49
+R15
+R16
+!s100 6:I`5zz3j5QVKH1ic9DL[0
+!i10b 1
+!i111 1
+Ealu_4bit_tb
+R44
+R4
+R5
+R6
+R7
+Z54 8/home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd
+Z55 F/home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd
+l0
+L34
+VUHL4YcQ5VigOV316WizLE0
+R10
+32
+R11
+Z56 !s108 1572802150.012644
+Z57 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd|
+Z58 !s107 /home/bxk5113/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd|
+R15
+R16
+!s100 V>dazY@:nen4LB4]>ZASB0
+!i10b 1
+!i111 1
+Abehavior
+R4
+R5
+R6
+DEx4 work 11 alu_4bit_tb 0 22 UHL4YcQ5VigOV316WizLE0
+l75
+L37
+Vg69WPH4XcjB;:4o5=KMej1
+R10
+32
+R11
+R56
+R57
+R58
+R15
+R16
+!s100 b5^ZeT0Y82P[^<7Wi6e1S3
+!i10b 1
+!i111 1
+Pcontrolcodes
+R5
+R6
+R26
+R7
+R28
+R29
+l0
+L18
+VG7Hl3VCA50lS:=gAH;8Y`2
+!s100 ]>_TS^cchN1SnPXM1d;>n3
+R10
+32
+R30
+!i10b 1
+R31
+R32
+R33
+!i111 1
+R15
+R16
+Econtroller_16bit
+Z59 w1572799810
+R4
+R5
+R6
+R7
+Z60 8/home/bxk5113/Lab7_Alu/SourceCode/Controller_16Bit.vhd
+Z61 F/home/bxk5113/Lab7_Alu/SourceCode/Controller_16Bit.vhd
+l0
+L23
+Vd3<3C5QnEC3ADPU7jRGl61
+R10
+32
+R11
+Z62 !s108 1572802150.554587
+Z63 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/Controller_16Bit.vhd|
+Z64 !s107 /home/bxk5113/Lab7_Alu/SourceCode/Controller_16Bit.vhd|
+R15
+R16
+!s100 88O<WYD9<KUAkIf>iV9fk0
+!i10b 1
+!i111 1
+Abehav
+R4
+R5
+R6
+R17
+l45
+L38
+VnGOPz^G8M:Fh<S`GcJm8U0
+R10
+32
+R11
+R62
+R63
+R64
+R15
+R16
+!s100 eNHgOiM2VD>8GF;ANCe]d3
+!i10b 1
+!i111 1
+Econtroller_4bit
+R44
+R4
+R5
+R6
+R7
+Z65 8/home/bxk5113/Lab7_Alu/SourceCode/Controller_4Bit.vhd
+Z66 F/home/bxk5113/Lab7_Alu/SourceCode/Controller_4Bit.vhd
+l0
+L23
+VEUcBj=1L`^a9:?Q>2hh9i0
+R10
+32
+R11
+Z67 !s108 1572802150.432196
+Z68 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/Controller_4Bit.vhd|
+Z69 !s107 /home/bxk5113/Lab7_Alu/SourceCode/Controller_4Bit.vhd|
+R15
+R16
+!s100 ^ER8;_>?hJ9HP>]GY69^?2
+!i10b 1
+!i111 1
+Abehav
+R4
+R5
+R6
+R50
+l45
+L38
+VNHD<DMfb[PVd_o2Voi7g60
+R10
+32
+R11
+R67
+R68
+R69
+R15
+R16
+!s100 m`zR8Rjj[V4]X30RJM0bG0
+!i10b 1
+!i111 1
+Efull_adder
+Z70 w1572437946
+R5
+R6
+R7
+Z71 8/home/bxk5113/Lab7_Alu/SourceCode/FullAdder.vhd
+Z72 F/home/bxk5113/Lab7_Alu/SourceCode/FullAdder.vhd
+l0
+L20
+V76znnRg6<QazQ]@55QUE>1
+R10
+32
+R11
+Z73 !s108 1572802150.677268
+Z74 !s90 -reportprogress|300|-work|work|-2002|-explicit|-check_synthesis|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/FullAdder.vhd|
+Z75 !s107 /home/bxk5113/Lab7_Alu/SourceCode/FullAdder.vhd|
+Z76 o-work work -2002 -explicit -check_synthesis
+R16
+!s100 63O@3U^@bEO_>kZ]XoRcG1
+!i10b 1
+!i111 1
+Abehav
+R5
+R6
+DEx4 work 10 full_adder 0 22 76znnRg6<QazQ]@55QUE>1
+l27
+L26
+VDH5JLH0W?<MAD<8n^OIl80
+R10
+32
+R11
+R73
+R74
+R75
+R76
+R16
+!s100 6[fEo8hUzBB^AUlz^i82g0
+!i10b 1
+!i111 1
+Pglobals
+R5
+R6
+R1
+R7
+R8
+R9
+l0
+L19
+VFiHoDTDW2e1d0R^GTWNUS1
+R10
+32
+R11
+R12
+R13
+R14
+R15
+R16
+!s100 Xh>];[490B:k]BbonN]Zm1
+!i10b 1
+!i111 1
+Enbitaddersubtractor_16bit
+R59
+R4
+R5
+R6
+R7
+Z77 8/home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd
+Z78 F/home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd
+l0
+L22
+VaGoLig[:VoCh9n6L<:1z82
+R10
+32
+R11
+Z79 !s108 1572802150.914140
+Z80 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd|
+Z81 !s107 /home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd|
+R15
+R16
+!s100 chRM7ma:H@?BEN_hb;D<50
+!i10b 1
+!i111 1
+Astruct
+R4
+R5
+R6
+R20
+l46
+L32
+Vc9D^hKnTbHLB38`Ng[bnb3
+R10
+32
+R11
+R79
+R80
+R81
+R15
+R16
+!s100 Zf2H?6YifSDWC_NjC[35m0
+!i10b 1
+!i111 1
+Enbitaddersubtractor_4bit
+R44
+R4
+R5
+R6
+R7
+Z82 8/home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd
+Z83 F/home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd
+l0
+L22
+VO0V=1:AZJ1S49`Qo8LH_g0
+R10
+32
+R11
+Z84 !s108 1572802150.791075
+Z85 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd|
+Z86 !s107 /home/bxk5113/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd|
+R15
+R16
+!s100 ZClS?MiOSEKK7Qf2F;QH41
+!i10b 1
+!i111 1
+Astruct
+R4
+R5
+R6
+R53
+l46
+L32
+V0bR<HemcbmdNh_09W=nLX0
+R10
+32
+R11
+R84
+R85
+R86
+R15
+R16
+!s100 h>agMTjNcdOn6E=eJCQOI1
+!i10b 1
+!i111 1
+Enbitand_16bit
+R59
+R5
+R6
+R7
+Z87 8/home/bxk5113/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd
+Z88 F/home/bxk5113/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd
+l0
+L19
+Vd@A6DV?<Q^kXXfYK=TSCE0
+R10
+32
+Z89 !s110 1572802151
+Z90 !s108 1572802151.244824
+Z91 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd|
+Z92 !s107 /home/bxk5113/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd|
+R15
+R16
+!s100 ]gh`iH3Bzl62=?D50bVYV2
+!i10b 1
+!i111 1
+Adataflow
+R5
+R6
+R18
+l27
+L26
+VYA1C^[FZTZWdAzZLR<Q:53
+R10
+32
+R89
+R90
+R91
+R92
+R15
+R16
+!s100 <CAChV__gEh;N1efSA7^=2
+!i10b 1
+!i111 1
+Enbitand_4bit
+R44
+R5
+R6
+R7
+Z93 8/home/bxk5113/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd
+Z94 F/home/bxk5113/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd
+l0
+L19
+VGQa`[Z5oCOab3m@1HJk`A1
+R10
+32
+R89
+Z95 !s108 1572802151.115265
+Z96 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd|
+Z97 !s107 /home/bxk5113/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd|
+R15
+R16
+!s100 IIF[QJ<Z513kfNENP7<[_0
+!i10b 1
+!i111 1
+Adataflow
+R5
+R6
+R51
+l27
+L26
+VGoeTkRMA_XF[>;V1g_OG>1
+R10
+32
+R89
+R95
+R96
+R97
+R15
+R16
+!s100 Uc7Do0V8Pm2bDQ1m`QOe63
+!i10b 1
+!i111 1
+Enbitor_16bit
+R59
+R5
+R6
+R7
+Z98 8/home/bxk5113/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd
+Z99 F/home/bxk5113/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd
+l0
+L19
+V1kd>^0[1QBgHca@Nm9VeE2
+R10
+32
+R89
+Z100 !s108 1572802151.466383
+Z101 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd|
+Z102 !s107 /home/bxk5113/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd|
+R15
+R16
+!s100 gFf8kK`L[j0dUPGW_^dao0
+!i10b 1
+!i111 1
+Adataflow
+R5
+R6
+R19
+l27
+L26
+VBQGVKC;oSm;g@OH3gQE:`3
+!s100 ad@bG:WFcA8odb=aIFF@X3
+R10
+32
+R89
+R100
+R101
+R102
+R15
+R16
+!i10b 1
+!i111 1
+Enbitor_4bit
+Z103 w1572801383
+R5
+R6
+R7
+Z104 8/home/bxk5113/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd
+Z105 F/home/bxk5113/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd
+l0
+L19
+VTbOloFlHZzOOlHCHO4B6:3
+R10
+32
+R89
+Z106 !s108 1572802151.356853
+Z107 !s90 -reportprogress|300|-work|work|-2002|-explicit|-novopt|/home/bxk5113/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd|
+Z108 !s107 /home/bxk5113/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd|
+R15
+R16
+!s100 bTUA5=?32ZNC72G4eG6N51
+!i10b 1
+!i111 1
+Adataflow
+R5
+R6
+R52
+l27
+L26
+V=1QOFY`SJJ]n@[NXX`^6=0
+R10
+32
+R89
+R106
+R107
+R108
+R15
+R16
+!s100 lJY@f3GlM39BiF?9[^Fm`1
+!i10b 1
+!i111 1
