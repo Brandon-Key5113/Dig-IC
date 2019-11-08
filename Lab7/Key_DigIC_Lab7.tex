@@ -31,9 +31,9 @@
 
 \begin{center}
 \bf{CMPE-630 Digital IC Design\\
-    Laboratory Exercise 5\\
+    Laboratory Exercise 7\\
 \vspace{0.25 cm}
-Full-Custom Layout Techniques
+Autolayout Design Techniques (HDL-Layout)
 }
 \end{center}
 
@@ -41,8 +41,8 @@ Full-Custom Layout Techniques
 
 \begin{flushright}
 Brandon Key\\
-Performed: 9 Oct 2019\\
-Submitted: 23 Oct 2019\\
+Performed: 6 Nov 2019\\
+Submitted: 13 Nov 2019\\
 \vspace{0.5 cm}
 Instructor: Dr. Amlan Ganguly\\
 TAs: Abhishek Vashist\\
@@ -62,249 +62,100 @@ Your Signature:   \rule{13cm}{.1pt}
 \newpage
 
 \section{Abstract}
-	This exercise explores the design of large layouts by using cells. A 4-bit ripple-carry adder was created from 4 mirror adders. To design the optimal layout for a mirror adder, a Euler path was used to create 2 diffusion regions, the minimum amount. The layout from the mirror adder was copied multiple times into the layout of the ripple-carry adder. Pre and post-layout timing results were extracted and compared. The most significant bit had a slight reduction in performance with manual layout. For the most significant bit of the sum, the input frequency decreased form 311Hz to 303Hz, a reduction of 2.65\%. The throughput frequency decreased form 323Hz to 232Hz, a reduction of 28\%. The carry out had much worse timing with a reduction from 8.6kHz to 290Hz in input frequency and a throughput frequency reduction from 750Hz to 244Hz. The auto-layout was likely able to create more efficient routing to obtain these results.
+	
 
 \section{Design Methodology and Theory}
 
-	A ripple carry adder is a multi-bit adder that can be built from multiple single-bit full adders. A ripple carry adder is created by feeding the carry out of one full adder to the carry in of the next full adder. A 4-bit ripple carry adder can be seen in Figure \ref{fig:rippleadder-design}.
+	\subsection{1-Bit ALU}	
 
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.7\linewidth]{"Pictures/Ripple Carry Adder"}
-		\caption{Ripple Carry Adder Created from 1-bit Full Adders}
-		\label{fig:rippleadder-design}
-	\end{figure}
-	
-	Since ripple carry adders are made up of multiple full adders, it is a great circuit that could be implemented using cell layout. Conveniently, a full adder was created in a previous exercise in the form of a mirror adder. The schematic for the full adder can be seen in Figure \ref{fig:mirror-adder-schematic}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"Pictures/Mirror Adder Schematic"}
-		\caption{Mirror Adder Schematic}
-		\label{fig:mirror-adder-schematic}
-	\end{figure}
+	\subsection{n-Bit ALU}
 
-	The complex schematic was converted into a symbol so that it could be used to make a ripple-carry adder. The generated symbol can be seen in Figure \ref{fig:mirroradder-symbol}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.2\linewidth]{"Pictures/MirrorAdder Symbol"}
-		\caption{Mirror Adder Symbol}
-		\label{fig:mirroradder-symbol}
-	\end{figure}
-
-	\subsection{Mirror Adder Design}
-	
-		A key design technique for maximizing diffusion sharing is forming an Euler path through a circuit. The Euler path is a path through a circuit where every transistor channel is hit once and only once. Additionally, the order of the pull up and pull down networks must match. This matching is so that the poly-silicon gates line up. 
-		
-		
-		Two Euler paths were created for the Mirror Adder. A single path could not be created, so a path for each output (Sum and Carry Out) was created. The Euler path can be seen in Figure \ref{fig:mirror-adder-euler-path}.
-
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\linewidth]{"Pictures/Mirror Adder Euler Path"}
-			\caption{Euler Path for Mirror Adder}
-			\label{fig:mirror-adder-euler-path}
-		\end{figure}
-		
-		To create the Euler path, each transistor was labeled. This was done to reduce confusion as the same input went to multiple transistors. The two Euler paths were as follows:
-		
-		\textbf{Cout}: T1-T2-T3-T4-T5-T6
-		
-		\textbf{Sum}: T9-T10-T11-T12-T13-T14
-		
-		Conveniently, a mirror adder's pull-up network matches its pull-down network so the layout will be mirrored. 
-		
-		
-		From the Euler path, a stick diagram was created and captured in Figure \ref{fig:mirroradder-stick-diagram}.
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\linewidth]{"Pictures/MirrorAdder Stick Diagram"}
-			\caption{Stick Diagram Based Off of Euler Path for Mirror Adder}
-			\label{fig:mirroradder-stick-diagram}
-		\end{figure}
-		
-		A stick diagram shows only the basic details of a layout. To bridge the gap between the layout and the stick diagram, a more detailed diagram was created that included input routing. This diagram can be seen in Figure \ref{fig:mirroradder-stick-diagram-advanced}.
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\linewidth]{"Pictures/MirrorAdder Stick Diagram Advanced"}
-			\caption{Mirror Adder Stick Diagram with Routing}
-			\label{fig:mirroradder-stick-diagram-advanced}
-		\end{figure}
-	
-		It was found that a second layer of metal was required to perform the input routing. The general metal strategy was to lay metal one vertical, and metal two horizontal.
-		
-		
-		To aid in the layout process, sizing was transferred to the stick diagram. The sizing that was determined in a previous exercise was copied from Figure\ref{fig:mirror-adder-schematic-sizing} to Figure \ref{fig:mirroradder-stick-diagram-sizing}.
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\linewidth]{"Pictures/Mirror Adder Schematic Sizing"}
-			\caption{Mirror Adder Schematic with Sizing}
-			\label{fig:mirror-adder-schematic-sizing}
-		\end{figure}
-	
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=1\linewidth]{"Pictures/MirrorAdder Stick Diagram Sizing"}
-			\caption{Mirror Adder Stick Diagram with Sizing}
-			\label{fig:mirroradder-stick-diagram-sizing}
-		\end{figure}
-		
-		In general, adjacent transistors had the same sizing.
-	
 
 \section{Results and Analysis}
 
-	Pyxis Layout was used to create the layout for the mirror adder. In order to reduce resistance, two contacts were used where they would fit. In general, the layout was kept as small as possible. The resulting layout can be seen in Figure \ref{fig:mirroradder-layout}.
+	\subsection{Functional Simulation}
 	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"Pictures/MirrorAdder Layout"}
-		\caption{Mirror Adder Layout}
-		\label{fig:mirroradder-layout}
-	\end{figure}
-
-	A design rule check and layout-versus-schematic check were performed to ensure that the layout could be fabricated and function in accordance with the schematic. 
+		\subsubsection{1 Bit ALU}
 	
-	The mirror adder had a height of $11.83\mu m$, length of $59.02\mu m$ and consisted of 28 transistors (14 nMOS, 14 pMOS).
-	
-	With the mirror adder layout created, it could be combined to make a ripple-carry adder. Following the design of Figure \ref{fig:rippleadder-design}, and using the mirror adder symbol in Figure \ref{fig:mirroradder-symbol} a schematic for a ripple-carry adder was created and recorded in Figure \ref{fig:rippleadder-schematic}.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.7\linewidth]{"Pictures/RippleAdder Schematic"}
-		\caption{Ripple Adder Schematic}
-		\label{fig:rippleadder-schematic}
-	\end{figure}
-	
-	To verify the functionality of the newly created schematic, a simulation was in order. A full test would take too much time, so a subset was used. The bit-patterns used to test the circuit were recorded in Figure \ref{fig:simulation-forces-for-testing-functionality-of-ripple-adder}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.6\linewidth]{"Pictures/Simulation Forces for Testing Functionality of Ripple Adder"}
-		\caption{Simulation Forces for Testing Functionality of Ripple Adder}
-		\label{fig:simulation-forces-for-testing-functionality-of-ripple-adder}
-	\end{figure}
-	
-	Eldo was used to perform the transient simulation and the waveform was viewed using EZwave. The waveform can be seen in Figure \ref{fig:ripple-adder-functional-sim}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"Pictures/Ripple Adder Functional Sim"}
-		\caption{Ripple Adder Functional Simulation}
-		\label{fig:ripple-adder-functional-sim}
-	\end{figure}
-
-	The ripple carry adder's output matched the expected output.
-
-	Next, timing values were extracted from the ripple-carry adder. The worst timing would be present on the most significant bit of the sum and the the carry-out. In order to vary both outputs with the least effort, the forces illustrated in Figure \ref{fig:simulation-forces-for-timing-results} were applied during simulation.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.7\linewidth]{"Pictures/Simulation Forces for Timing Results"}
-		\caption{Simulation Forces for Timing}
-		\label{fig:simulation-forces-for-timing-results}
-	\end{figure}
-
-	The simulation was performed with the parameters defined in Figure \ref{fig:simulation-parameters}.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.3\linewidth]{"Pictures/Simulation Parameters"}
-		\caption{Simulation Parameters}
-		\label{fig:simulation-parameters}
-	\end{figure}
-	
-	The simulation parameters represented the worse case scenario.
-	
-	The resulting waveform can be seen in Figure \ref{fig:prelayout-simulation}.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"Pictures/PreLayout Simulation"}
-		\caption{Pre-Layout Simulation}
-		\label{fig:prelayout-simulation}
-	\end{figure}
-
-	The rise time, fall time, and propagation delay were measured from the simulation and recorded in Figure \ref{fig:measured-timing-results}. 
-	
-	With the functionality of the ripple carry adder verified, the layout could be created. The layout was created by adding multiple mirror adder cells to the layout and then connecting the different cells. The resulting layout can be seen in Figure \ref{fig:ripple-adder-layout}.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"Pictures/Ripple Adder Layout"}
-		\caption{Ripple Adder Layout}
-		\label{fig:ripple-adder-layout}
-	\end{figure}
-
-	A design rule check and a layout-versus-schematic check were performed to ensure that the layout is able to be fabricated, and that the connections match the schematic. 
-	
-	The ripple-carry adder had the same height as the mirror adder ($11.83\mu m$). The length was four times that of the mirror adder ($59.02\mu m$). The design consisted of 112 transistors (56 nMOS, 56 pMOS).
-	
-	One of the goals of manual layout is to improve performance. As such, the timing simulation was repeated with the layout. First, a PEX extraction was used to extract parasitic resistance and capacitance. Then, a spice file was used to configure the simulation. The same parameters and forces were used as before layout. The simulation was performed with Eldo, and the waveform was viewed with EZwave. The resulting waveform and measurements can be seen in Figure \ref{fig:post-layout-simulation}.
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=1\linewidth]{"Pictures/Post-Layout Simulation"}
-		\caption{Ripple Adder Post-Layout Simulation}
-		\label{fig:post-layout-simulation}
-	\end{figure}
-
-	Sadly, the manually laid out circuit was slower than the automatically generated layout. This was likely do to the auto layout creating shorter routes. 	
-
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.7\linewidth]{"Pictures/Measured Timing Results"}
-		\caption{Measured Timing Results}
-		\label{fig:measured-timing-results}
-	\end{figure}
+		\subsubsection{16 Bit ALU}
 		
-	Equation \ref{eqn:Finputmax} shows the calculation for maximum input frequency.
-	
-	\begin{equation}\label{eqn:Finputmax}
-		F_{input,max} = \frac{1}{t_{rise}+t_{fall}}
-	\end{equation}
-	\begin{center}
-		Equation \ref{eqn:Finputmax}: Max Input Frequency
-	\end{center}
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU OR"}
+				\caption{Functional Simulation of 16-bit ALU: OR}
+				\label{fig:16-bit-alu-or}
+			\end{figure}
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU AND"}
+				\caption{Functional Simulation of 16-bit ALU: AND}
+				\label{fig:16-bit-alu-and}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU Add"}
+				\caption{Functional Simulation of 16-bit ALU: Addition}
+				\label{fig:16-bit-alu-add}
+			\end{figure}
 
-	Equation \ref{eqn:Fthroughputmax} shows the calculation for maximum throughput frequency.
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU Add Carry"}
+				\caption{Functional Simulation of 16-bit ALU: Addition with carry}
+				\label{fig:16-bit-alu-add-carry}
+			\end{figure}
+		
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit Alu Sub Pos"}
+				\caption{Functional Simulation of 16-bit ALU: Subtraction}
+				\label{fig:16-bit-alu-sub-pos}
+			\end{figure}
+			
+	
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU Sub Neg"}
+				\caption{Functional Simulation of 16-bit ALU: Subtraction with negative result}
+				\label{fig:16-bit-alu-sub-neg}
+			\end{figure}
+		
+		
+	\subsection{Layout}
 	
 	
-	\begin{equation}\label{eqn:Fthroughputmax}
-		F_{throughput,max} = \frac{1}{T_{P,HL}+T_{P,LH}}
-	\end{equation}
-	\begin{center}
-		Equation \ref{eqn:Fthroughputmax}: Max Throughput Frequency
-	\end{center}
-	
-	The maximum input and throughput frequency was calculated based on the timings recorded in Figure \ref{fig:measured-timing-results} and recorded in Figure \ref{fig:calculated-timing-results}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.7\linewidth]{"Pictures/Calculated Timing Results"}
-		\caption{Calculated Timing Results}
-		\label{fig:calculated-timing-results}
-	\end{figure}
-
-	The difference in frequency was recorded in Figure \ref{fig:percent-diff}.
-	
-	\begin{figure}[H]
-		\centering
-		\includegraphics[width=0.4\linewidth]{"Pictures/Percent Diff"}
-		\caption{Difference Between Pre and Post Layout Frequency Response}
-		\label{fig:percent-diff}
-	\end{figure}
-
-	The most significant bit had a slight reduction in performance with manual layout compared to automatic layout. For the most significant bit of the sum, the input frequency decreased form 311Hz to 303Hz, a reduction of 2.65\%. The throughput frequency decreased form 323Hz to 232Hz, a reduction of 28\%. The carry out had much worse timing with a reduction from 8.6kHz to 290Hz in input frequency and a throughput frequency reduction from 750Hz to 244Hz. 
-	
+	\subsection{}
 	
 
 \section{Conclusion}
 
-	The usage of the mirror adder cell to create the ripple-carry adder highlighted the engineering effort advantage of cell design. While manual layout of the 112 transistors present in the ripple-carry adder may have resulted in slight performance improvement, the engineering effort is very high. The cell design makes designing a larger adder very easy, with a near constant effort level. Timing of a ripple-carry adder scales linearly. While manual layout can be faster, it was not in this case. It would require multiple iterations of design to beat the auto layout. Manual layout should be saved for critical path designs. Overall this exercise was successful. 
+
+\section{Appendix}
+
+	\subsection{VHDL}
+	
+			\lstinputlisting[language=VHDL, caption={Controller\_16Bit VHDL}, captionpos=tlabel{lst:Controller\_16Bit}]{"Source/Lab7_Alu/SourceCode/Controller_16Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={nBitAdderSubtractor\_4Bit VHDL}, captionpos=tlabel{lst:nBitAdderSubtractor\_4Bit}]{"Source/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={FullAdder VHDL}, captionpos=tlabel{lst:FullAdder}]{"Source/Lab7_Alu/SourceCode/FullAdder.vhd"}
+		\lstinputlisting[language=VHDL, caption={ALU\_16Bit\_tb VHDL}, captionpos=tlabel{lst:ALU\_16Bit\_tb}]{"Source/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd"}
+		\lstinputlisting[language=VHDL, caption={Controller\_4Bit VHDL}, captionpos=tlabel{lst:Controller\_4Bit}]{"Source/Lab7_Alu/SourceCode/Controller_4Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={nBitOR\_4Bit VHDL}, captionpos=tlabel{lst:nBitOR\_4Bit}]{"Source/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={ALU\_4Bit VHDL}, captionpos=tlabel{lst:ALU\_4Bit}]{"Source/Lab7_Alu/SourceCode/ALU_4Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={nBitAND\_4Bit VHDL}, captionpos=tlabel{lst:nBitAND\_4Bit}]{"Source/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={ALU\_1Bit\_tb VHDL}, captionpos=tlabel{lst:ALU\_1Bit\_tb}]{"Source/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd"}
+		\lstinputlisting[language=VHDL, caption={ALU\_1Bit VHDL}, captionpos=tlabel{lst:ALU\_1Bit}]{"Source/Lab7_Alu/SourceCode/ALU_1Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={ALU\_4Bit\_tb VHDL}, captionpos=tlabel{lst:ALU\_4Bit\_tb}]{"Source/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd"}
+		\lstinputlisting[language=VHDL, caption={ALU\_16Bit VHDL}, captionpos=tlabel{lst:ALU\_16Bit}]{"Source/Lab7_Alu/SourceCode/ALU_16Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={nBitOR\_16Bit VHDL}, captionpos=tlabel{lst:nBitOR\_16Bit}]{"Source/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={nBitAdderSubtractor\_16Bit VHDL}, captionpos=tlabel{lst:nBitAdderSubtractor\_16Bit}]{"Source/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd"}
+		\lstinputlisting[language=VHDL, caption={nBitAND\_16Bit VHDL}, captionpos=tlabel{lst:nBitAND\_16Bit}]{"Source/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd"}
+
+	
+
+	\subsection{SPICE}
+
 
 \end{document}
