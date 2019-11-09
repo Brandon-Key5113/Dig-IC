@@ -171,13 +171,51 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 		\subsubsection{1 Bit ALU}
 		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-1Bit Layout"}
+				\caption{1 Bit ALU Layout}
+				\label{fig:alu-1bit-layout}
+			\end{figure}
 			
 	
 		\subsubsection{16 Bit ALU}
+			
+			Area 0.7
+			
+			Power Routing
+			\begin{itemize}
+				\item Varying levels of routing completion time
+				\item Slight preference for jogs over via to fill the area.
+				\item Rip
+				\item Under rip Options: 
+				\subitem Rips Most Aggressive
+				\subitem Automatic Rip Passes
+				\subitem Reroute
+				\item Under Advanced:
+				\subitem Allow all directions for stubs
+				\subitem Via Options > Use via generator
+			\end{itemize}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Layout"}
+				\caption{16 Bit ALU Layout}
+				\label{fig:alu-16bit-layout}
+			\end{figure}
 	
 	\subsection{Timing}
 	
 		\subsubsection{1 Bit ALU}
+			It was found that subtraction was by far the slowest operation, with the timing difference visible in the waveforms.  
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU_1Bit Timing"}
+				\caption{1 Bit ALU Worst Case Timing Simulation}
+				\label{fig:alu1bit-timing}
+			\end{figure}
+			
 		
 		\subsubsection{16 Bit ALU}
 	
