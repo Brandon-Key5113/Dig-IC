@@ -272,6 +272,12 @@ Your Signature:   \rule{13cm}{.1pt}
 				\label{fig:alu-16bit-layout}
 			\end{figure}
 	
+	\subsection{Area}
+	
+		\subsubsection{1 Bit ALU}
+	
+		\subsubsection{16 Bit ALU}
+	
 	\subsection{Timing}
 	
 		\subsubsection{1 Bit ALU}
@@ -339,6 +345,17 @@ Your Signature:   \rule{13cm}{.1pt}
 			\end{table}
 		
 		\subsubsection{16 Bit ALU}
+		
+			Listing \ref{lst:ALU-16-Bit-Spice} shows the SPICE file used to simulate the 16-Bit ALU.  
+		
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/Terrible Simulation"}
+				\caption{Simulation with Incorrect Forces}
+				\label{fig:terrible-simulation}
+			\end{figure}
+			
 		
 			\begin{figure}[H]
 				\centering
@@ -460,6 +477,8 @@ Your Signature:   \rule{13cm}{.1pt}
 
 	\subsection{SPICE}
 
-		\lstinputlisting[caption={1Bit ALU SPICE}, captionpos=tlabel{lst:ALU-1-Bit-Spice}]{"Source/Lab7_Alu/1 Bit ALU spice.cir"}
+		\lstinputlisting[caption={1Bit ALU SPICE}\label{lst:ALU-1-Bit-Spice}]{"Source/Lab7_Alu/1 Bit ALU spice.cir"}
+		
+		\lstinputlisting[caption={6Bit ALU SPICE}\label{lst:ALU-16-Bit-Spice}]{"Source/Lab7_Alu/16 Bit ALU spice.cir"}
 
 \end{document}
