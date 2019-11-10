@@ -199,7 +199,7 @@ Your Signature:   \rule{13cm}{.1pt}
 			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-1Bit Schematic"}
+				\includegraphics[width=0.4\linewidth]{"Pictures/ALU-1Bit Schematic"}
 				\caption{1 Bit ALU Schematic}
 				\label{fig:alu-1bit-schematic}
 			\end{figure}
@@ -212,21 +212,21 @@ Your Signature:   \rule{13cm}{.1pt}
 			
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 1"}
+				\includegraphics[width=0.3\linewidth]{"Pictures/ALU-16Bit Schematic 1"}
 				\caption{16 Bit ALU Schematic Page 1}
 				\label{fig:alu-16bit-schematic-1}
 			\end{figure}
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 2"}
+				\includegraphics[width=0.2\linewidth]{"Pictures/ALU-16Bit Schematic 2"}
 				\caption{16 Bit ALU Schematic Page 2}
 				\label{fig:alu-16bit-schematic-2}
 			\end{figure}
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 3"}
+				\includegraphics[width=0.4\linewidth]{"Pictures/ALU-16Bit Schematic 3"}
 				\caption{16 Bit ALU Schematic Page 3}
 				\label{fig:alu-16bit-schematic-3}
 			\end{figure}
@@ -279,25 +279,86 @@ Your Signature:   \rule{13cm}{.1pt}
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU_1Bit Timing"}
+				\includegraphics[width=1\linewidth]{"Pictures/ALU_1Bit Timing"}
 				\caption{1 Bit ALU Worst Case Timing Simulation}
 				\label{fig:alu1bit-timing}
 			\end{figure}
 			
+			\begin{table}[H]
+				\centering
+				\caption{1-Bit ALU Worst Case Rise Time}
+				\label{tab:ALU-1-Bit-Risetime}
+				\begin{tabular}{|cclcr|}
+					\hline
+					\textbf{Output} & \textbf{Rise Time (ps)} & \textbf{A} & \textbf{B} & \textbf{Operation} \\
+					Y               & 1167.5                  & 1          & 0          & SUB                \\
+					Carry           & 1557.1                  & 0          & 1          & SUB                \\
+					         \hline
+				\end{tabular}
+			\end{table}
+		
+		
+			\begin{table}[H]
+				\centering
+				\caption{1-Bit ALU Worst Case Fall Time}
+				\label{tab:ALU-1-Bit-Falltime}
+				\begin{tabular}{|cclcr|}
+					\hline
+					\textbf{Output} & \textbf{Fall Time (ps)} & \textbf{A} & \textbf{B} & \textbf{Operation} \\
+					Y               & 1001.3                  & 1          & 1          & SUB                \\
+					Carry           & 1068.1                  & 1          & 1          & SUB                \\
+					\hline
+				\end{tabular}
+			\end{table}
+		
+		
+			\begin{table}[H]
+				\centering
+				\caption{1-Bit ALU Worst Case Propagation Time High to Low}
+				\label{tab:ALU-1-Bit-Tpd-HL}
+				\begin{tabular}{|cclcr|}
+					\hline
+					\textbf{Output} & \textbf{Tp,HL (ps)} & \textbf{A} & \textbf{B} & \textbf{Operation} \\
+					Y               & 701.8                   & 1          & 1          & SUB                \\
+					Carry           & 810.3                   & 1          & 1          & SUB                \\
+					\hline
+				\end{tabular}
+			\end{table}
+		
+			\begin{table}[H]
+				\centering
+				\caption{1-Bit ALU Worst Case Propagation Time Low to High}
+				\label{tab:ALU-1-Bit-Tpd-LH}
+				\begin{tabular}{|cclcr|}
+					\hline
+					\textbf{Output} & \textbf{Tp,LH (ps)} & \textbf{A} & \textbf{B} & \textbf{Operation} \\
+					Y               & 686.1                   & 1          & 0          & SUB                \\
+					Carry           & 996.7                   & 0          & 1          & SUB                \\
+					\hline
+				\end{tabular}
+			\end{table}
 		
 		\subsubsection{16 Bit ALU}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=1\linewidth]{"Pictures/ALU 16-Bit Full Timing"}
+				\caption{16-Bit ALU Timing Waveforms}
+				\label{fig:alu-16-bit-full-timing}
+			\end{figure}
+			
 		
 			\begin{table}[H]
 				\centering
 				\caption{16-Bit ALU Worst Case Rise Time}
 				\label{tab:ALU-16-Bit-Risetime}
-				\begin{tabular}{|ccccccc|}
-					\hline \\
-					\textbf{Input} & \textbf{Output} & \textbf{Rise Time (ps)} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
+				\begin{tabular}{|cclcrcr|}
+					\hline
+					\multicolumn{2}{|c}{\textbf{Input}} & \textbf{Output} & \multicolumn{4}{c|}{\textbf{Rise Time (ps)}} \\
 					\textbf{A} & \textbf{B} & \textbf{Y} & \textbf{Op} & \textbf{Y} & \textbf{Op} & \textbf{CB} \\
-					\hline \\
-					0x0000 & 0x0000 & Y{[}15{]} & 11 & 938 & 11 & 1033.8 \\
-					0xFFFF & 0xFFFF & Y{[}15{]} & 11 & 938 & 01 & 1124.5 \\
+					\hline
+					0x0000 & 0x0000 & Y{[}15{]} & 11 & 938.0 & 11 & 1033.8 \\
+					0xFFFF & 0xFFFF & Y{[}15{]} & 11 & 938.0 & 01 & 1124.5 \\
 					0xFFFF & 0x0001 & Y{[}15{]} & 11 & 982.2 & 11 & 1044.6 \\
 					0x0001 & 0xFFFF & Y{[}15{]} & 01 & 904.63 & 00 & 1044.6 \\
 					0x0000 & 0x0001 & Y{[}0{]} & 00 & 1085.2 & 01 & 986.9 \\
@@ -305,6 +366,68 @@ Your Signature:   \rule{13cm}{.1pt}
 					\hline
 				\end{tabular}
 			\end{table}
+		
+		
+			\begin{table}[H]
+				\centering
+				\caption{16-Bit ALU Worst Case Fall Time}
+				\label{tab:ALU-16-Bit-Falltime}
+				\begin{tabular}{|cclcrcr|}
+					\hline
+					\multicolumn{2}{|c}{\textbf{Input}} & \textbf{Output} & \multicolumn{4}{c|}{\textbf{Fall Time (ps)}} \\
+					\textbf{A} & \textbf{B} & \textbf{Y} & \textbf{Op} & \textbf{Y} & \textbf{Op} & \textbf{CB} \\
+					\hline
+					0x0000 & 0x0000 & Y{[}15{]} & 01 & 1100.3 & 01 & 1027.1 \\
+					0xFFFF & 0xFFFF & Y{[}15{]} & 10 & 1067.0 & 10 & 1033.8 \\
+					0xFFFF & 0x0001 & Y{[}15{]} & 11 & 830.6 & 01 & 1124.5 \\
+					0x0001 & 0xFFFF & Y{[}15{]} & 10 & 1161.7 & 11 & 951.8 \\
+					0x0000 & 0x0001 & Y{[}0{]} & 00 & 996.8 & 10 & 1005.9 \\
+					0xABCD & 0x89EF & Y{[}15{]} & 01 & 855.5 & 01 & 969.5 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		
+		
+			\begin{table}[H]
+				\centering
+				\caption{16-Bit ALU Worst Case Propagation Time High to Low}
+				\label{tab:ALU-16-Bit-Tpd-HL}
+				\begin{tabular}{|cclcrcr|}
+					\hline
+					\multicolumn{2}{|c}{\textbf{Input}} & \textbf{Output} & \multicolumn{4}{c|}{\textbf{Tp,HL (ps)}} \\
+					\textbf{A} & \textbf{B} & \textbf{Y} & \textbf{Op} & \textbf{Y} & \textbf{Op} & \textbf{CB} \\
+					\hline
+					0x0000 & 0x0000 & Y{[}15{]} & 01 & 907.9 & 01 & 1154.5 \\
+					0xFFFF & 0xFFFF & Y{[}15{]} & 10 & 2185.6 & 10 & 1281.1 \\
+					0xFFFF & 0x0001 & Y{[}15{]} & 11 & 2154.6 & 01 & 1004.0 \\
+					0x0001 & 0xFFFF & Y{[}15{]} & 10 & 1670.7 & 11 & 1143.7 \\
+					0x0000 & 0x0001 & Y{[}0{]} & 00 & 1377.7 & 10 & 920.7 \\
+					0xABCD & 0x89EF & Y{[}15{]} & 01 & 1465.4 & 01 & 872.0 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		
+		
+			\begin{table}[H]
+				\centering
+				\caption{16-Bit ALU Worst Case Propagation Time Low to High}
+				\label{tab:ALU-16-Bit-Tpd-LH}
+				\begin{tabular}{|cclcrcr|}
+					\hline
+					\multicolumn{2}{|c}{\textbf{Input}} & \textbf{Output} & \multicolumn{4}{c|}{\textbf{Tp,LH (ps)}} \\
+					\textbf{A} & \textbf{B} & \textbf{Y} & \textbf{Op} & \textbf{Y} & \textbf{Op} & \textbf{CB} \\
+					\hline
+					0x0000 & 0x0000 & Y{[}15{]} & 11 & 2185.6 & 11 & 955.2 \\
+					0xFFFF & 0xFFFF & Y{[}15{]} & 11 & 2154.6 & 01 & 1521.9 \\
+					0xFFFF & 0x0001 & Y{[}15{]} & 11 & 1670.7 & 11 & 1143.7 \\
+					0x0001 & 0xFFFF & Y{[}15{]} & 01 & 1085.2 & 00 & 947.6 \\
+					0x0000 & 0x0001 & Y{[}0{]} & 00 & 1099.2 & 01 & 1047.9 \\
+					0xABCD & 0x89EF & Y{[}15{]} & 01 & 7608.9 & 11 & 1127.0 \\
+					\hline
+				\end{tabular}
+			\end{table}
+		
+			
 	
 	\subsection{Power}
 		
