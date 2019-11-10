@@ -21,6 +21,39 @@
 \fancyfoot{}
 \fancyfoot[R]{\thepage}
 
+\definecolor{mygreen}{rgb}{0,0.6,0}
+\definecolor{mygray}{rgb}{0.5,0.5,0.5}
+\definecolor{mymauve}{rgb}{0.58,0,0.82}
+
+\lstset{ 
+	backgroundcolor=\color{white},   % choose the background color; you must add \usepackage{color} or \usepackage{xcolor}; should come as last argument
+	basicstyle=\footnotesize,        % the size of the fonts that are used for the code
+	breakatwhitespace=false,         % sets if automatic breaks should only happen at whitespace
+	breaklines=true,                 % sets automatic line breaking
+	captionpos=t,                    % sets the caption-position to bottom
+	commentstyle=\color{mygreen},    % comment style
+	deletekeywords={},               % if you want to delete keywords from the given language
+	escapeinside={\%*}{*)},          % if you want to add LaTeX within your code
+	extendedchars=false,             % lets you use non-ASCII characters; for 8-bits encodings only, does not work with UTF-8
+	firstnumber=0,                   % start line enumeration with line 1000
+	frame=single,                    % adds a frame around the code
+	keepspaces=true,                 % keeps spaces in text, useful for keeping indentation of code (possibly needs columns=flexible)
+	keywordstyle=\color{blue},       % keyword style
+	language=VHDL,                   % the language of the code
+	morekeywords={},                 % if you want to add more keywords to the set
+	numbers=left,                    % where to put the line-numbers; possible values are (none, left, right)
+	numbersep=5pt,                   % how far the line-numbers are from the code
+	numberstyle=\tiny\color{mygray}, % the style that is used for the line-numbers
+	rulecolor=\color{black},         % if not set, the frame-color may be changed on line-breaks within not-black text (e.g. comments (green here))
+	showspaces=false,                % show spaces everywhere adding particular underscores; it overrides 'showstringspaces'
+	showstringspaces=false,          % underline spaces within strings only
+	showtabs=false,                  % show tabs within strings adding particular underscores
+	stepnumber=5,                    % the step between two line-numbers. If it's 1, each line will be numbered
+	stringstyle=\color{mymauve},     % string literal style
+	tabsize=4, 	                     % sets default tabsize to 2 spaces
+	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
+}
+
 \begin{document}
 
 %
@@ -66,62 +99,57 @@ Your Signature:   \rule{13cm}{.1pt}
 
 \section{Design Methodology and Theory}
 
-	\subsection{1-Bit ALU}	
+	The world of IC design is a very large and complex one. Engineering time is a critical factor when trying to create designs. An engineer tries to minimize power and cost, while maximizing performance. Modern ICs are very complex and manual engineer effort is not feasible. Fortunately, auto layout tools exists so that non-critical parts can be generated quickly. In this exercise, a single bit ALU and a 16-bit ALU were designed, automatically laid out and then power and timing results were extracted. 
 	
-		The 1 Bit ALU designed in this exercise was created from behavioral VHDL (see Listing \ref{lst:ALU\_1Bit). 
-		Behavioral
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\linewidth]{"Pictures/ALU-1Bit Schematic"}
-			\caption{1 Bit ALU Schematic}
-			\label{fig:alu-1bit-schematic}
-		\end{figure}
-		
-
-	\subsection{n-Bit ALU}
+	For all components designed in this exercise, VHDL was written to describe the functionality of the component. Leonardo Spectrum was used to turn the VHDL into synthesizable logic. The VHDL was then functionally tested with a test bench using Questa Sim. 
 	
-		Structural
-		
-		
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 1"}
-			\caption{16 Bit ALU Schematic Page 1}
-			\label{fig:alu-16bit-schematic-1}
-		\end{figure}
 	
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 2"}
-			\caption{16 Bit ALU Schematic Page 2}
-			\label{fig:alu-16bit-schematic-2}
-		\end{figure}
-	
-		\begin{figure}[H]
-			\centering
-			\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 3"}
-			\caption{16 Bit ALU Schematic Page 3}
-			\label{fig:alu-16bit-schematic-3}
-		\end{figure}
-
-
-\section{Results and Analysis}
 
 	\subsection{Functional Simulation}
 	
+		The ALUs in this exercise had a simple 2 bit op-code which can be seen in Table \ref{tab:OpCodes}.
+	
+		\begin{table}[H]
+			\centering
+			\caption{ALU Operations}
+			\label{tab:OpCodes}
+			\begin{tabular}{|ccc|}
+				\hline
+				\textbf{OpCode} & \textbf{Operation} & \textbf{Operands} \\
+				\hline
+				00              & AND                & A AND B           \\
+				01              & OR                 & A OR B            \\
+				10              & ADD                & A + B             \\
+				11              & SUB                & A - B   \\   
+				\hline       
+			\end{tabular}
+		\end{table}
+	
 		\subsubsection{1 Bit ALU}
+		
+			The 1 Bit ALU designed in this exercise was created from behavioral VHDL (see Listing \ref{lst:ALU-1Bit}). A Questa Sim simulation was performed to test the functionality of the 1 bit ALU. The test bench can be seen in Listing \ref{lst:ALU-1Bit-tb}. The test bench went through every op-code and every input. The resulting waveforms can be seen in Figure \ref{fig:alu1bit-functional-sim-}.
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU_1Bit Functional Sim "}
+				\includegraphics[width=1\linewidth]{"Pictures/ALU_1Bit Functional Sim "}
 				\caption{Functional Simulation of 1-bit ALU}
 				\label{fig:alu1bit-functional-sim-}
 			\end{figure}
 		
-			
-	
+			The 1 Bit ALU functioned properly.
+		
 		\subsubsection{16 Bit ALU}
+		
+			The 16-bit ALU was created structurally with generically large structures. The VHDL that describes the ALU can be seen in Listing \ref{lst:ALU-16Bit}. While the 1-bit ALU could have a full test bench that tested every input, the 16-bit ALU was far too large to do the same. Instead, a few test cases were selected to test each function of the ALU. Each component in the ALU was previously tested, so the main goal was to test the setup of the ALU itself. The testbench code can be seen in Listing \ref{lst:ALU-16Bit-tb}. The AND functionality was tested first and captured in Figure \ref{fig:16-bit-alu-and}.
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU AND"}
+				\caption{Functional Simulation of 16-bit ALU: AND}
+				\label{fig:16-bit-alu-and}
+			\end{figure}
+		
+			Once the and functionality was verified, the OR functionality was tested and recorded in Figure \ref{fig:16-bit-alu-or}.
 		
 			\begin{figure}[H]
 				\centering
@@ -130,27 +158,22 @@ Your Signature:   \rule{13cm}{.1pt}
 				\label{fig:16-bit-alu-or}
 			\end{figure}
 			
-			\begin{figure}[H]
-				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU AND"}
-				\caption{Functional Simulation of 16-bit ALU: AND}
-				\label{fig:16-bit-alu-and}
-			\end{figure}
-		
+			x
+			
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU Add"}
 				\caption{Functional Simulation of 16-bit ALU: Addition}
 				\label{fig:16-bit-alu-add}
 			\end{figure}
-
+			
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU Add Carry"}
 				\caption{Functional Simulation of 16-bit ALU: Addition with carry}
 				\label{fig:16-bit-alu-add-carry}
 			\end{figure}
-		
+			
 			
 			\begin{figure}[H]
 				\centering
@@ -159,13 +182,57 @@ Your Signature:   \rule{13cm}{.1pt}
 				\label{fig:16-bit-alu-sub-pos}
 			\end{figure}
 			
-	
+			
 			\begin{figure}[H]
 				\centering
 				\includegraphics[width=0.7\linewidth]{"Pictures/16 Bit ALU Sub Neg"}
 				\caption{Functional Simulation of 16-bit ALU: Subtraction with negative result}
 				\label{fig:16-bit-alu-sub-neg}
 			\end{figure}
+
+	\subsection{Schematic}
+
+		\subsubsection{1-Bit ALU}	
+		
+			
+			Behavioral
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-1Bit Schematic"}
+				\caption{1 Bit ALU Schematic}
+				\label{fig:alu-1bit-schematic}
+			\end{figure}
+		
+
+		\subsubsection{n-Bit ALU}
+		
+			Structural
+			
+			
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 1"}
+				\caption{16 Bit ALU Schematic Page 1}
+				\label{fig:alu-16bit-schematic-1}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 2"}
+				\caption{16 Bit ALU Schematic Page 2}
+				\label{fig:alu-16bit-schematic-2}
+			\end{figure}
+		
+			\begin{figure}[H]
+				\centering
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-16Bit Schematic 3"}
+				\caption{16 Bit ALU Schematic Page 3}
+				\label{fig:alu-16bit-schematic-3}
+			\end{figure}
+
+
+\section{Results and Analysis}
 		
 		
 	\subsection{Layout}
@@ -233,24 +300,24 @@ Your Signature:   \rule{13cm}{.1pt}
 
 	\subsection{VHDL}
 	
-		\lstinputlisting[language=VHDL, caption={Controller\_16Bit VHDL}, captionpos=tlabel{lst:Controller\_16Bit}]{"Source/Lab7_Alu/SourceCode/Controller_16Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={nBitAdderSubtractor\_4Bit VHDL}, captionpos=tlabel{lst:nBitAdderSubtractor\_4Bit}]{"Source/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={FullAdder VHDL}, captionpos=tlabel{lst:FullAdder}]{"Source/Lab7_Alu/SourceCode/FullAdder.vhd"}
-		\lstinputlisting[language=VHDL, caption={ALU\_16Bit\_tb VHDL}, captionpos=tlabel{lst:ALU\_16Bit\_tb}]{"Source/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd"}
-		\lstinputlisting[language=VHDL, caption={Controller\_4Bit VHDL}, captionpos=tlabel{lst:Controller\_4Bit}]{"Source/Lab7_Alu/SourceCode/Controller_4Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={nBitOR\_4Bit VHDL}, captionpos=tlabel{lst:nBitOR\_4Bit}]{"Source/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={ALU\_4Bit VHDL}, captionpos=tlabel{lst:ALU\_4Bit}]{"Source/Lab7_Alu/SourceCode/ALU_4Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={nBitAND\_4Bit VHDL}, captionpos=tlabel{lst:nBitAND\_4Bit}]{"Source/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={ALU\_1Bit\_tb VHDL}, captionpos=tlabel{lst:ALU\_1Bit\_tb}]{"Source/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd"}
-		\lstinputlisting[language=VHDL, caption={ALU\_1Bit VHDL}, captionpos=tlabel{lst:ALU\_1Bit}]{"Source/Lab7_Alu/SourceCode/ALU_1Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={ALU\_4Bit\_tb VHDL}, captionpos=tlabel{lst:ALU\_4Bit\_tb}]{"Source/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd"}
-		\lstinputlisting[language=VHDL, caption={ALU\_16Bit VHDL}, captionpos=tlabel{lst:ALU\_16Bit}]{"Source/Lab7_Alu/SourceCode/ALU_16Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={nBitOR\_16Bit VHDL}, captionpos=tlabel{lst:nBitOR\_16Bit}]{"Source/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={nBitAdderSubtractor\_16Bit VHDL}, captionpos=tlabel{lst:nBitAdderSubtractor\_16Bit}]{"Source/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd"}
-		\lstinputlisting[language=VHDL, caption={nBitAND\_16Bit VHDL}, captionpos=tlabel{lst:nBitAND\_16Bit}]{"Source/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd"}
+		\lstinputlisting[caption={Controller-16Bit VHDL}\label{lst:Controller-16Bit}]{"Source/Lab7_Alu/SourceCode/Controller_16Bit.vhd"}
+		\lstinputlisting[caption={nBitAdderSubtractor-4Bit VHDL}\label{lst:nBitAdderSubtractor-4Bit}]{"Source/Lab7_Alu/SourceCode/nBitAdderSubtractor_4Bit.vhd"}
+		\lstinputlisting[caption={FullAdder VHDL}\label{lst:FullAdder}]{"Source/Lab7_Alu/SourceCode/FullAdder.vhd"}
+		\lstinputlisting[caption={ALU-16Bit-tb VHDL}\label{lst:ALU-16Bit-tb}]{"Source/Lab7_Alu/SourceCode/ALU_16Bit_tb.vhd"}
+		\lstinputlisting[caption={Controller-4Bit VHDL}\label{lst:Controller-4Bit}]{"Source/Lab7_Alu/SourceCode/Controller_4Bit.vhd"}
+		\lstinputlisting[caption={nBitOR-4Bit VHDL}\label{lst:nBitOR-4Bit}]{"Source/Lab7_Alu/SourceCode/nBitOR_4Bit.vhd"}
+		\lstinputlisting[caption={ALU-4Bit VHDL}\label{lst:ALU-4Bit}]{"Source/Lab7_Alu/SourceCode/ALU_4Bit.vhd"}
+		\lstinputlisting[caption={nBitAND-4Bit VHDL}\label{lst:nBitAND-4Bit}]{"Source/Lab7_Alu/SourceCode/nBitAND_4Bit.vhd"}
+		\lstinputlisting[caption={ALU-1Bit-tb VHDL}\label{lst:ALU-1Bit-tb}]{"Source/Lab7_Alu/SourceCode/ALU_1Bit_tb.vhd"}
+		\lstinputlisting[caption={ALU-1Bit VHDL}\label{lst:ALU-1Bit}]{"Source/Lab7_Alu/SourceCode/ALU_1Bit.vhd"}
+		\lstinputlisting[caption={ALU-4Bit-tb VHDL}\label{lst:ALU-4Bit-tb}]{"Source/Lab7_Alu/SourceCode/ALU_4Bit_tb.vhd"}
+		\lstinputlisting[caption={ALU-16Bit VHDL}\label{lst:ALU-16Bit}]{"Source/Lab7_Alu/SourceCode/ALU_16Bit.vhd"}
+		\lstinputlisting[caption={nBitOR-16Bit VHDL}\label{lst:nBitOR-16Bit}]{"Source/Lab7_Alu/SourceCode/nBitOR_16Bit.vhd"}
+		\lstinputlisting[caption={nBitAdderSubtractor-16Bit VHDL}\label{lst:nBitAdderSubtractor-16Bit}]{"Source/Lab7_Alu/SourceCode/nBitAdderSubtractor_16Bit.vhd"}
+		\lstinputlisting[caption={nBitAND-16Bit VHDL}\label{lst:nBitAND-16Bit}]{"Source/Lab7_Alu/SourceCode/nBitAND_16Bit.vhd"}
 
 	\subsection{SPICE}
 
-		\lstinputlisting[caption={1-Bit ALU SPICE}, captionpos=tlabel{lst:ALU-1-Bit-Spice}]{"Source/Lab7_Alu/1 Bit ALU spice.cir"}
+		\lstinputlisting[caption={1Bit ALU SPICE}, captionpos=tlabel{lst:ALU-1-Bit-Spice}]{"Source/Lab7_Alu/1 Bit ALU spice.cir"}
 
 \end{document}
