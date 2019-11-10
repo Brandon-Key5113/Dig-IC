@@ -140,7 +140,7 @@ Your Signature:   \rule{13cm}{.1pt}
 		
 		\subsubsection{16 Bit ALU}
 		
-			The 16-bit ALU was created structurally with generically large structures. The VHDL that describes the ALU can be seen in Listing \ref{lst:ALU-16Bit}. While the 1-bit ALU could have a full test bench that tested every input, the 16-bit ALU was far too large to do the same. Instead, a few test cases were selected to test each function of the ALU. Each component in the ALU was previously tested, so the main goal was to test the setup of the ALU itself. The testbench code can be seen in Listing \ref{lst:ALU-16Bit-tb}. The AND functionality was tested first and captured in Figure \ref{fig:16-bit-alu-and}.
+			The 16-bit ALU was created structurally with generically large structures. The VHDL that describes the ALU can be seen in Listing \ref{lst:ALU-16Bit}. While the 1-bit ALU could have a full test bench that tested every input, the 16-bit ALU was far too large to do the same. Instead, a few test cases were selected to test each function of the ALU. Each component in the ALU was previously tested, so the main goal was to test the setup of the ALU itself. The testbanch code can be seen in Listing \ref{lst:ALU-16Bit-tb}. The AND functionality was tested first and captured in Figure \ref{fig:16-bit-alu-and}.
 		
 			\begin{figure}[H]
 				\centering
@@ -158,7 +158,7 @@ Your Signature:   \rule{13cm}{.1pt}
 				\label{fig:16-bit-alu-or}
 			\end{figure}
 			
-			x
+			The OR operation worked properly, so addition was tested and recorded in Figure \ref{fig:16-bit-alu-add}.
 			
 			\begin{figure}[H]
 				\centering
@@ -166,6 +166,8 @@ Your Signature:   \rule{13cm}{.1pt}
 				\caption{Functional Simulation of 16-bit ALU: Addition}
 				\label{fig:16-bit-alu-add}
 			\end{figure}
+		
+			More test cases were added to addition so that the carry bit was tickled. This simulation was recorded in Figure \ref{fig:16-bit-alu-add-carry}.
 			
 			\begin{figure}[H]
 				\centering
@@ -174,6 +176,7 @@ Your Signature:   \rule{13cm}{.1pt}
 				\label{fig:16-bit-alu-add-carry}
 			\end{figure}
 			
+			Add functionality worked, so the same was done with the subtraction operation. Figure \ref{fig:16-bit-alu-sub-pos}
 			
 			\begin{figure}[H]
 				\centering
@@ -241,7 +244,7 @@ Your Signature:   \rule{13cm}{.1pt}
 		
 			\begin{figure}[H]
 				\centering
-				\includegraphics[width=0.7\linewidth]{"Pictures/ALU-1Bit Layout"}
+				\includegraphics[width=0.7\linewidth]{"Pictures/ALU 1-Bit Layout"}
 				\caption{1 Bit ALU Layout}
 				\label{fig:alu-1bit-layout}
 			\end{figure}
@@ -279,6 +282,24 @@ Your Signature:   \rule{13cm}{.1pt}
 		\subsubsection{16 Bit ALU}
 	
 	\subsection{Timing}
+	
+		TODO frequency
+		
+		The maximum input and throughput frequencies were calculated from the measured timing values according to Equation \ref{eqn:Finputmax} and Equation \ref{eqn:Fthroughputmax} respectively. 
+		
+		\begin{equation}\label{eqn:Finputmax}
+		F_{input,max} = \frac{1}{t_{rise}+t_{fall}}
+		\end{equation}
+		\begin{center}
+			Equation \ref{eqn:Finputmax}: Max Input Frequency
+		\end{center}
+		
+		\begin{equation}\label{eqn:Fthroughputmax}
+		F_{throughput,max} = \frac{1}{T_{P,HL}+T_{P,LH}}
+		\end{equation}
+		\begin{center}
+			Equation \ref{eqn:Fthroughputmax}: Max Throughput Frequency
+		\end{center}
 	
 		\subsubsection{1 Bit ALU}
 			It was found that subtraction was by far the slowest operation, with the timing difference visible in the waveforms.  
@@ -344,7 +365,22 @@ Your Signature:   \rule{13cm}{.1pt}
 				\end{tabular}
 			\end{table}
 		
+			\begin{table}[H]
+				\centering
+				\caption{1-Bit ALU Calculated Max Frequency}
+				\label{tab:ALU-1-Bit-Freq}
+				\begin{tabular}{|ccc|}
+					\hline
+					\textbf{Output} & \textbf{Finput,max (MHz)} & \textbf{Fthroughput,max (MHz)} \\
+					\hline
+					Y               & 461.08                    & 720.51                         \\
+					Carry           & 380.92                    & 553.40                         \\
+					\hline
+				\end{tabular}
+			\end{table}
+		
 		\subsubsection{16 Bit ALU}
+		
 		
 			Listing \ref{lst:ALU-16-Bit-Spice} shows the SPICE file used to simulate the 16-Bit ALU.  
 		
@@ -444,16 +480,66 @@ Your Signature:   \rule{13cm}{.1pt}
 				\end{tabular}
 			\end{table}
 		
-			
+			\begin{table}[H]
+				\centering
+				\caption{16-Bit ALU Calculated Max Frequency}
+				\label{tab:ALU-16-Bit-Freq}
+				\begin{tabular}{|cc|cc|cc|}
+					\hline
+					\multicolumn{1}{|c}{\textbf{}}  & \multicolumn{1}{c}{\textbf{}}  & \multicolumn{2}{|c|}{\textbf{Finput,max (MHz)}} & \multicolumn{2}{c|}{\textbf{Fthroughput,max (MHz)}} \\
+					\textbf{A} & \textbf{B} & \textbf{Y}            & \textbf{CB}           & Y                        & CB                      \\
+					\hline
+					0x0000     & 0x0000     & 490.60                & 485.22                & 323.26                   & 474.00                  \\
+					0xFFFF                         & 0xFFFF                         & 498.75                & 463.33                & 230.40                   & 356.76                  \\
+					0xFFFF                         & 0x0001                         & 551.63                & 461.02                & 261.42                   & 465.61                  \\
+					0x0001                         & 0xFFFF                         & 483.95                & 500.90                & 362.86                   & 478.17                  \\
+					0x0000                         & 0x0001                         & 480.31                & 501.81                & 403.73                   & 507.98                  \\
+					0xABCD                         & 0x89EF                         & 563.89                & 520.48                & 110.20                   & 500.25                 \\
+					\hline
+				\end{tabular}
+			\end{table}
 	
 	\subsection{Power}
-		
-		\subsubsection{1 Bit ALU}
-		
-		\subsubsection{16 Bit ALU}
+	
+		The power drawn by each ALU was measured using Eldo. This was done by modifying the timing SPICE file to include static and dynamic power usage. The maximum power is drawn when the most amount of transistors are turned on. To capture this, power was measured when all output bits were high. For the 1-Bit ALU this occurred from 70ns to 130ns, for the 16-Bit ALU this occurred from 90ns to 150ns. The power draw was recorded in Table \ref{tab:ALU-power}.
+	
+		\begin{table}[H]
+			\centering
+			\caption{ALU Power Draw}
+			\label{tab:ALU-power}
+			\begin{tabular}{ccl}
+				\textbf{ALU} & \textbf{Static Power (nW)} & \textbf{Dynamic Power (uW)} \\
+				1-Bit        & 6303.8                     & 317.8                       \\
+				16-Bit       & 90463                      & 2922.6                     
+			\end{tabular}
+		\end{table}
+	
+		The 16-bit ALU consumed about 10 times the power as single bit ALU. This shows how more computation power drastically increases power draw. 
+			
 
 \section{Conclusion}
+	Overall, this exercise was successful.
 
+\section{Question}
+
+	The 16-Bit ALU was created with genaric VHDL, so creating a 4-bit ALU was simple. The routing actually proved more challenging than the 16-bit ALU. The 4-bit ALU's performance slotted in between the 1 and 16-bit ALU. The timing was recorded in Table \ref{tab:Question-Freq}.
+
+	\begin{table}[H]
+		\centering
+		\caption{Frequency Response of Manual Layout 4-Bit Ripple Adder and Auto Layout 4-Bit ALU}
+		\label{tab:Question-Freq}
+		\begin{tabular}{|cc|cc|cc|}
+			\hline
+			\multicolumn{2}{|c}{\textbf{4-Bit Ripple Adder}}          & \multicolumn{2}{|c|}{\textbf{4-Bit ALU}}                   & \multicolumn{2}{c|}{\textbf{Difference}}        \\
+			\textbf{Finput(Hz)} & \textbf{Ftput(Hz)} & \textbf{Finput(Hz)} & \textbf{Ftput(Hz)} & \textbf{Finput} & \textbf{Ftput} \\
+			\hline
+			302.92                   & 232.32                        & 424.48                   & 531.51                        & 40.13\%             & 128.78\%                 \\
+			290.69                   & 244.16                        & 360.85                   & 523.40                        & 24.14\%             & 114.37\%                 \\
+			\hline
+		\end{tabular}
+	\end{table}
+
+	It would be expected that the ALU would be slower than just the adder, however this was not the case. This is likely because the automatic tools were more competent than inexperienced manual layout. 
 
 \section{Appendix}
 

@@ -48,3 +48,6 @@ VFORCE__VSS VSS 0 DC 0
 * --- Params
 .TEMP 125
 
+* --- Power Measurement
+.measure tran static_pwr AVG power from=90ns to=150ns
+.measure tran inst_pwr MAX power from=90ns to=150ns
