@@ -219,6 +219,25 @@ Your Signature:   \rule{13cm}{.1pt}
 			
 		
 		\subsubsection{16 Bit ALU}
+		
+			\begin{table}[H]
+				\centering
+				\caption{16-Bit ALU Worst Case Rise Time}
+				\label{tab:ALU-16-Bit-Risetime}
+				\begin{tabular}{|ccccccc|}
+					\hline \\
+					\textbf{Input} & \textbf{Output} & \textbf{Rise Time (ps)} & \textbf{} & \textbf{} & \textbf{} & \textbf{} \\
+					\textbf{A} & \textbf{B} & \textbf{Y} & \textbf{Op} & \textbf{Y} & \textbf{Op} & \textbf{CB} \\
+					\hline \\
+					0x0000 & 0x0000 & Y{[}15{]} & 11 & 938 & 11 & 1033.8 \\
+					0xFFFF & 0xFFFF & Y{[}15{]} & 11 & 938 & 01 & 1124.5 \\
+					0xFFFF & 0x0001 & Y{[}15{]} & 11 & 982.2 & 11 & 1044.6 \\
+					0x0001 & 0xFFFF & Y{[}15{]} & 01 & 904.63 & 00 & 1044.6 \\
+					0x0000 & 0x0001 & Y{[}0{]} & 00 & 1085.2 & 01 & 986.9 \\
+					0xABCD & 0x89EF & Y{[}15{]} & 01 & 917.9 & 11 & 951.8 \\
+					\hline
+				\end{tabular}
+			\end{table}
 	
 	\subsection{Power}
 		
