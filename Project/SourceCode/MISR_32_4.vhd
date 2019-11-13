@@ -10,7 +10,7 @@
 --Architecture : behav
 --
 --Tool Version : VHDL '93
---Description  : MISR_32_4 8 bit output, 4 tap MISR.
+--Description  : MISR_32_4 32 bit output, 4 tap MISR.
 --------------------------------------------------------------------------
 
 library  IEEE;
