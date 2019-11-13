@@ -4,9 +4,9 @@
 --Created      : 02/18/2018
 --
 --Project Name : Lab 3
---File         : nBitAdderSubtractor_16Bit.vhd
+--File         : nBitAdder.vhd
 --
---Entity       : nBitAdderSubtractor_16Bit
+--Entity       : nBitAdder
 --Architecture : struct
 --
 --Tool Version : VHDL '93
@@ -20,16 +20,16 @@ use IEEE.STD_LOGIC_1164.ALL;
 use IEEE.numeric_std.all;
 use work.globals.all;
 
-entity  nBitAdderSubtractor_16Bit  is
+entity  nBitAdder  is
     generic (n : integer  := 32);
     port(
         A,B : in  std_logic_vector(n-1  downto  0);
         Y   : out std_logic_vector(n-1  downto  0);
         CB  : out std_logic
         );
-end  nBitAdderSubtractor_16Bit;
+end  nBitAdder;
 
-architecture  struct of  nBitAdderSubtractor_16Bit  is
+architecture  struct of  nBitAdder  is
 
     component full_adder is
         port(A,B,Cin : in  std_logic;
