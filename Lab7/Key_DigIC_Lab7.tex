@@ -91,17 +91,19 @@ Piers Kwan\\
 Your Signature:   \rule{13cm}{.1pt}
 
 
-%\tableofcontents
+\tableofcontents
 \newpage
 
 \section{Abstract}
+
+	Integrated Circuit Design is a costly and complex endeavor. Fortunately, automatic tools speed up the process and allow designs that are not possible to create manually. This exercise implemented a 1-Bit ALU and a 16-Bit ALU using autolayout. The autolayout tools generated very reasonable circuits. The 1-Bit ALU has an input frequency of 380.92MHz and a throughput frequency of 553.4MHz, while the 16-bit ALU has an input frequency of 461.02MHz and a throughput frequency of 110.2MHz. The area used by the ALUs was also reasonable with the 1-bit ALU taking up 647.89$\mu m^2$ and the 16-bit ALU occupying 9792.5$\mu m^2$.
 	
 
 \section{Design Methodology and Theory}
 
 	The world of IC design is a very large and complex one. Engineering time is a critical factor when trying to create designs. An engineer tries to minimize power and cost, while maximizing performance. Modern ICs are very complex and manual engineer effort is not feasible. Fortunately, auto layout tools exists so that non-critical parts can be generated quickly. In this exercise, a single bit ALU and a 16-bit ALU were designed, automatically laid out and then power and timing results were extracted. 
 	
-	For all components designed in this exercise, VHDL was written to describe the functionality of the component. Leonardo Spectrum was used to turn the VHDL into synthesizable logic. The VHDL was then functionally tested with a test bench using Questa Sim. Next, a schematic for each ALU was generated with Pyxis. 
+	For all components designed in this exercise (a 1-bit ALU and a 16-bit ALU), VHDL was written to describe the functionality of the component. Leonardo Spectrum was used to turn the VHDL into synthesizable logic. The VHDL was then functionally tested with a test bench using Questa Sim. Next, a schematic for each ALU was generated with Pyxis. 
 	
 
 	\subsection{Functional Simulation}
@@ -535,10 +537,13 @@ Your Signature:   \rule{13cm}{.1pt}
 			\centering
 			\caption{ALU Power Draw}
 			\label{tab:ALU-power}
-			\begin{tabular}{ccl}
+			\begin{tabular}{|ccc|}
+				\hline
 				\textbf{ALU} & \textbf{Static Power (nW)} & \textbf{Dynamic Power (uW)} \\
+				\hline
 				1-Bit        & 6303.8                     & 317.8                       \\
-				16-Bit       & 90463                      & 2922.6                     
+				16-Bit       & 90463                      & 2922.6                      \\
+				\hline
 			\end{tabular}
 		\end{table}
 	
@@ -546,7 +551,7 @@ Your Signature:   \rule{13cm}{.1pt}
 			
 
 \section{Conclusion}
-	While this exercise was successful,  Overall, this exercise was successful.
+	While this exercise was successful, routing the ALUs took much trial and error. With default settings, none of the designs were routable. With proper configuration, the automatic tools generate a fast circuit. The 1-Bit ALU has an input frequency of 380.92MHz and a throughput frequency of 553.4MHz, while the 16-bit ALU has an input frequency of 461.02MHz and a throughput frequency of 110.2MHz. The area used by the ALUs was also reasonable with the 1-bit ALU taking up 647.89$\mu m^2$ and the 16-bit ALU occupying 9792.5$\mu m^2$. The area could have been reduced by increasing the area ratio when configuring the auto-floorplan, that decreased area would have cost more engineer time when routing. Overall, this exercise was successful.
 
 \section{Question}
 
@@ -594,5 +599,9 @@ Your Signature:   \rule{13cm}{.1pt}
 		\lstinputlisting[caption={1Bit ALU SPICE}\label{lst:ALU-1-Bit-Spice}]{"Source/Lab7_Alu/1 Bit ALU spice.cir"}
 		
 		\lstinputlisting[caption={6Bit ALU SPICE}\label{lst:ALU-16-Bit-Spice}]{"Source/Lab7_Alu/16 Bit ALU spice.cir"}
+		
+\section{References}
+
+	Key, Brandon A. \textit{CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit}. CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit.
 
 \end{document}
