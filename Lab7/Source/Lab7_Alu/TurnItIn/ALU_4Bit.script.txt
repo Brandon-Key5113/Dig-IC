@@ -1,0 +1,9 @@
+set exclude_gates {PadInC PadOut}
+load_library ~/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/GDKgates_utilities/hdl_libs/gdk.syn
+read {./SourceCode/FullAdder.vhd ./SourceCode/nBitAdderSubtractor_4Bit.vhd ./SourceCode/nBitAND_4Bit.vhd ./SourceCode/nBitOR_4Bit.vhd ./SourceCode/Controller_4Bit.vhd ./SourceCode/ALU_4Bit.vhd }
+ungroup * -hierarchy
+set sdf_write_flat_netlist TRUE
+optimize
+write -format verilog ./Output/Alu_4Bit.v
+write -format vhdl ./Output/Alu_4Bit.vhdl
+write -format sdf ./Output/Alu_4Bit.sdf

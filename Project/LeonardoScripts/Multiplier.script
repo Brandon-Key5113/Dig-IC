@@ -1,0 +1,9 @@
+set exclude_gates {PadInC PadOut}
+load_library ~/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/GDKgates_utilities/hdl_libs/gdk.syn
+read {../SourceCode/AND2.vhd ../SourceCode/ANDADD.vhd ../SourceCode/Multiplier.vhd }
+ungroup * -hierarchy
+set sdf_write_flat_netlist TRUE
+optimize
+write -format verilog ./Output/Multiplier.v
+write -format vhdl ./Output/Multiplier.vhdl
+write -format sdf ./Output/Multiplier.sdf

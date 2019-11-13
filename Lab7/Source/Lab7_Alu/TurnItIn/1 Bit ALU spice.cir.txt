@@ -1,0 +1,53 @@
+* Example circuit file for simulating PEX
+
+.OPTION DOTNODE
+.HIER /
+
+.INCLUDE "/home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_1Bit/ALU_1Bit.cal/ALU_1Bit.pex.netlist"
+
+.LIB /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo TT
+
+* - Instantiate your parasitic netlist and add the load capacitor
+** FORMAT :
+* XLAYOUT [all inputs as listed by the ".subckt" line in the included netlist, in the order that they appear there] [name of the subcircuit as listed in the included netlist]
+XLAYOUT CB Y A B CONTROL[1] CONTROL[0] ALU_1Bit
+C1 Y 0 120f
+C2 CB 0 120f
+
+
+* - Analysis Setup - DC sweep
+* FORMAT : .DC [name] [low] [high] [step]
+*.DC VFORCE__A 0 1.2 0.01
+
+* - Analysis Setup - Trans
+* FORMAT : .TRAN [start time] [end time] [time step]
+.TRAN 0 160n 0.001n
+
+* --- Forces
+* FORMAT -- PULSE : [name] [port] [reference (0 means ground)] PULSE [low] [high] [delay] [fall time] [rise time] [pulse width] [period]
+*
+* FORMAT -- DC    : [name] [port] [reference (0 means ground)] DC [voltage]
+*
+
+VFORCE__A A 0 PULSE (0 1.08 40n 0.1n 0.1n 40n 80n)
+VFORCE__B B 0 PULSE (0 1.08 80n 0.1n 0.1n 80n 160n)
+VFORCE__C1 CONTROL[1] 0 DC 1.08
+VFORCE__C0 CONTROL[0] 0 DC 1.08
+
+VFORCE__VDD VDD 0 DC 1.08
+VFORCE__VSS VSS 0 DC 0
+
+* --- Waveform Outputs
+.PLOT TRAN V(A)
+.PLOT TRAN V(B)
+.PLOT TRAN V(CONTROL[1])
+.PLOT TRAN V(CONTROL[0])
+.PLOT TRAN V(Y)
+.PLOT TRAN V(CB)
+
+* --- Params
+.TEMP 125
+
+* --- Power Measurement
+.measure tran static_pwr AVG power from=90ns to=150ns
+.measure tran inst_pwr MAX power from=90ns to=150ns
