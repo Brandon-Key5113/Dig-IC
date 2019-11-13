@@ -37,7 +37,7 @@ entity Multiplier is
            Product : out  STD_LOGIC_VECTOR (N-1 downto 0));
 end Multiplier;
 
-architecture Behavioral of Multiplier is
+architecture Structural of Multiplier is
 	--COMPONENT DECLARATIONS
 	component ANDADD is
 		Port (  A : in  STD_LOGIC;
