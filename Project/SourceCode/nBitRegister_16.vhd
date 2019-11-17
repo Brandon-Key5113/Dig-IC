@@ -4,9 +4,9 @@
 --Created      : 2/8/2017
 --
 --Project Name : Lab 2
---File         : nBitRegister.vhd
+--File         : nBitRegister_16.vhd
 --
---Entity       : nBitRegister
+--Entity       : nBitRegister_16
 --Architecture : struct
 --Revision     :
 --Rev 0.01     : 2/8/2017
@@ -21,7 +21,7 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 
-entity nBitRegister is
+entity nBitRegister_16 is
     generic (n : integer  := 16);
     Port (
         nBitIn : in std_logic_vector(n-1 downto 0); -- n bits to store in the register
@@ -30,10 +30,10 @@ entity nBitRegister is
         clk    : in std_logic;
         Y : out std_logic_vector(n-1 downto 0) -- 1 output , n bits wide
     );
-end nBitRegister;
+end nBitRegister_16;
 
 
-architecture behav of nBitRegister is
+architecture behav of nBitRegister_16 is
 
 
 begin
