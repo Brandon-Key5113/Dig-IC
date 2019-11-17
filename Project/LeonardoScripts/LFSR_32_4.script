@@ -1,0 +1,8 @@
+set exclude_gates {PadInC PadOut}
+load_library ~/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/GDKgates_utilities/hdl_libs/gdk.syn
+read {../SourceCode/LFSR_32_4.vhd }
+set sdf_write_flat_netlist TRUE
+optimize
+write -format verilog ./Output/LFSR_32_4.v
+write -format vhdl ./Output/LFSR_32_4.vhdl
+write -format sdf ./Output/LFSR_32_4.sdf
