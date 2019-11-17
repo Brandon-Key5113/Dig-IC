@@ -31,9 +31,9 @@ use IEEE.NUMERIC_STD.ALL;
 --use UNISIM.VComponents.all;
 
 entity MAC is
-	 generic( N : integer :=16);
-    Port ( A : in  STD_LOGIC_VECTOR (N-1 downto 0);
-           B : in  STD_LOGIC_VECTOR (N-1 downto 0);
+	 generic( N : integer := 32);
+    Port ( A : in  STD_LOGIC_VECTOR ((N/2) - 1  downto 0);
+           B : in  STD_LOGIC_VECTOR ((N/2) - 1 downto 0);
            clk : in STD_LOGIC;
            WE : in STD_LOGIC;
            reset : in STD_LOGIC;
@@ -43,7 +43,7 @@ end MAC;
 architecture Behavioral of MAC is
 	--COMPONENT DECLARATIONS
     component Multiplier is
-        generic( N : integer :=16);
+        generic( N : integer := 32);
         Port (  A : in  STD_LOGIC_VECTOR ((N/2)-1 downto 0);
                 B : in  STD_LOGIC_VECTOR ((N/2)-1 downto 0);
                 Product : out  STD_LOGIC_VECTOR (N-1 downto 0));
@@ -71,34 +71,43 @@ architecture Behavioral of MAC is
 
 	--SIGNAL DECLARATIONS
     signal MultA,MultB : STD_LOGIC_VECTOR((N/2)-1 downto 0);
-    signal Product : STD_LOGIC_VECTOR((N/2) downto 0);
+    signal Product : STD_LOGIC_VECTOR(N-1 downto 0);
     signal adderA, adderB, adderOut : STD_LOGIC_VECTOR(N-1 downto 0);
     signal cout : STD_LOGIC;
     
 begin
 
-    RegMultIn : nBitRegister
-        generic map( N <= 32)
-        port map(nBitIn(N-1 downto N/2) => A, nBitIn((N/2) - 1 downto 0) => B,
-            WE => WE, clk => clk, Reset => reset, 
-            Y(N-1 downto N/2) => MultA, Y((N/1)-1 downto 0) => MultB
+    RegMultInA : nBitRegister
+        generic map( N => 16)
+        port map(nBitIn => A,
+            WE => '1', clk => clk, Reset => reset, 
+            Y => MultA
         );
+		  
+	 RegMultInB : nBitRegister
+	  generic map( N => 16)
+	  port map(nBitIn => B,
+			WE => '1', clk => clk, Reset => reset, 
+			Y=> MultB
+	  );
 	
     MULT1 : Multiplier
-        generic map( N <= 16)
+        generic map( N => 32)
         port map(A => MultA, B => MultB, Product => Product);
 
     RegMultOut : nBitRegister
-        generic map( N <= 32)
-        port map(nBitIn => Product, WE => WE, Reset => reset, clk => clk, Y => adderB);
+        generic map( N => 32)
+        port map(nBitIn => Product, WE => '1', Reset => reset, clk => clk, Y => adderB);
 
-    RegAddOut : nBitRegister
-        generic map( N <= 32)
+    BigBoyReg : nBitRegister
+        generic map( N => 32)
         port map(nBitIn => adderOut, WE => WE, Reset => reset, clk => clk, Y => adderA);
 
     ADD1 : nBitAdder
-        generic map ( N <= 32)
+        generic map ( N => 32)
         port map( A => adderA, B => adderB, Y => adderOut, CB => cout);
+		  
+	RegOut <= adderA;
 end Behavioral;
 
 
