@@ -80,14 +80,14 @@ begin
     RegMultInA : nBitRegister
         generic map( N => 16)
         port map(nBitIn => A,
-            WE => WE, clk => clk, Reset => reset, 
+            WE => '1', clk => clk, Reset => reset, 
             Y => MultA
         );
 		  
 	 RegMultInB : nBitRegister
 	  generic map( N => 16)
 	  port map(nBitIn => B,
-			WE => WE, clk => clk, Reset => reset, 
+			WE => '1', clk => clk, Reset => reset, 
 			Y=> MultB
 	  );
 	
@@ -97,9 +97,9 @@ begin
 
     RegMultOut : nBitRegister
         generic map( N => 32)
-        port map(nBitIn => Product, WE => WE, Reset => reset, clk => clk, Y => adderB);
+        port map(nBitIn => Product, WE => '1', Reset => reset, clk => clk, Y => adderB);
 
-    RegAddOut : nBitRegister
+    BigBoyReg : nBitRegister
         generic map( N => 32)
         port map(nBitIn => adderOut, WE => WE, Reset => reset, clk => clk, Y => adderA);
 
