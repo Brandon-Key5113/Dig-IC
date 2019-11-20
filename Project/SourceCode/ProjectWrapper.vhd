@@ -99,6 +99,7 @@ begin
         port map( MISR_in => MACOUT, clk => clk,
                     rst_n => reset, en => TestEN,
                     MISR_out => MISR_out);
+
     RegOut <= MACOUT;
         
 end Behavioral;
