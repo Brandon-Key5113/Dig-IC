@@ -97,9 +97,9 @@ begin
     MISR0 : MISR_32_4
         generic map(N => 32)
         port map( MISR_in => MACOUT, clk => clk,
-                    rst_n => reset, en => TestEN
+                    rst_n => reset, en => TestEN,
                     MISR_out => MISR_out);
-    RegOut => MACOUT;
+    RegOut <= MACOUT;
         
 end Behavioral;
 
