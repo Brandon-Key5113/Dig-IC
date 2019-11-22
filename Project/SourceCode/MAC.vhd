@@ -69,6 +69,28 @@ architecture Behavioral of MAC is
         );
     end component;
 
+    component nBitRegister_32 is
+        generic (n : integer  := 32);
+        Port (
+            nBitIn : in std_logic_vector(n-1 downto 0); -- n bits to store in the register
+            WE     : in std_logic; -- Active high write enable
+            Reset  : in std_logic; -- Async reset, disabled when low
+            clk    : in std_logic;
+            Y : out std_logic_vector(n-1 downto 0) -- 1 output , n bits wide
+        );
+    end component;
+
+    component nBitRegister_16 is
+        generic (n : integer  := 16);
+        Port (
+            nBitIn : in std_logic_vector(n-1 downto 0); -- n bits to store in the register
+            WE     : in std_logic; -- Active high write enable
+            Reset  : in std_logic; -- Async reset, disabled when low
+            clk    : in std_logic;
+            Y : out std_logic_vector(n-1 downto 0) -- 1 output , n bits wide
+        );
+    end component;
+
 	--SIGNAL DECLARATIONS
     signal MultA,MultB : STD_LOGIC_VECTOR((N/2)-1 downto 0);
     signal Product : STD_LOGIC_VECTOR(N-1 downto 0);
@@ -77,14 +99,14 @@ architecture Behavioral of MAC is
     
 begin
 
-    RegMultInA : nBitRegister
+    RegMultInA : nBitRegister_16
         generic map( N => 16)
         port map(nBitIn => A,
             WE => '1', clk => clk, Reset => reset, 
             Y => MultA
         );
 		  
-	 RegMultInB : nBitRegister
+	 RegMultInB : nBitRegister_16
 	  generic map( N => 16)
 	  port map(nBitIn => B,
 			WE => '1', clk => clk, Reset => reset, 
@@ -95,11 +117,11 @@ begin
         generic map( N => 32)
         port map(A => MultA, B => MultB, Product => Product);
 
-    RegMultOut : nBitRegister
+    RegMultOut : nBitRegister_32
         generic map( N => 32)
         port map(nBitIn => Product, WE => '1', Reset => reset, clk => clk, Y => adderB);
 
-    BigBoyReg : nBitRegister
+    BigBoyReg : nBitRegister_32
         generic map( N => 32)
         port map(nBitIn => adderOut, WE => WE, Reset => reset, clk => clk, Y => adderA);
 
