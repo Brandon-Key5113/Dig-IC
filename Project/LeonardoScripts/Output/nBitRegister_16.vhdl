@@ -1,14 +1,16 @@
 
--- 
+--
 -- Definition of  nBitRegister_16
--- 
+--
 --      Sun Nov 17 14:04:04 2019
---      
+--
 --      LeonardoSpectrum Level 3, 2008b.3
--- 
+--
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+library gdk;
+use gdk.gdk_comps.all;
 
 entity nBitRegister_16 is
    port (
@@ -20,10 +22,10 @@ entity nBitRegister_16 is
 end nBitRegister_16 ;
 
 architecture behav of nBitRegister_16 is
-   signal Y_dup0_15, Y_dup0_14, Y_dup0_13, Y_dup0_12, Y_dup0_11, Y_dup0_10, 
-      Y_dup0_9, Y_dup0_8, Y_dup0_7, Y_dup0_6, Y_dup0_5, Y_dup0_4, Y_dup0_3, 
-      Y_dup0_2, Y_dup0_1, Y_dup0_0, NOT_Reset, nx230, nx240, nx250, nx260, 
-      nx270, nx280, nx290, nx300, nx310, nx320, nx330, nx340, nx350, nx360, 
+   signal Y_dup0_15, Y_dup0_14, Y_dup0_13, Y_dup0_12, Y_dup0_11, Y_dup0_10,
+      Y_dup0_9, Y_dup0_8, Y_dup0_7, Y_dup0_6, Y_dup0_5, Y_dup0_4, Y_dup0_3,
+      Y_dup0_2, Y_dup0_1, Y_dup0_0, NOT_Reset, nx230, nx240, nx250, nx260,
+      nx270, nx280, nx290, nx300, nx310, nx320, nx330, nx340, nx350, nx360,
       nx370, nx380: std_logic ;
 
 begin

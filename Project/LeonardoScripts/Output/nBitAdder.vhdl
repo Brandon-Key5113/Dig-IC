@@ -1,14 +1,16 @@
 
--- 
+--
 -- Definition of  nBitAdder
--- 
+--
 --      Sun Nov 17 12:31:48 2019
---      
+--
 --      LeonardoSpectrum Level 3, 2008b.3
--- 
+--
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+library gdk;
+use gdk.gdk_comps.all;
 
 entity nBitAdder is
    port (
@@ -19,21 +21,21 @@ entity nBitAdder is
 end nBitAdder ;
 
 architecture struct of nBitAdder is
-   signal Y_dup0_31, Y_dup0_30, Y_dup0_29, Y_dup0_28, Y_dup0_27, Y_dup0_26, 
-      Y_dup0_25, Y_dup0_24, Y_dup0_23, Y_dup0_22, Y_dup0_21, Y_dup0_20, 
-      Y_dup0_19, Y_dup0_18, Y_dup0_17, Y_dup0_16, Y_dup0_15, Y_dup0_14, 
-      Y_dup0_13, Y_dup0_12, Y_dup0_11, Y_dup0_10, Y_dup0_9, Y_dup0_8, 
-      Y_dup0_7, Y_dup0_6, Y_dup0_5, Y_dup0_4, Y_dup0_3, Y_dup0_2, nx4, nx30, 
-      nx32, nx54, nx56, nx78, nx80, nx102, nx104, nx126, nx128, nx150, nx152, 
-      nx174, nx176, nx198, nx200, nx222, nx224, nx246, nx248, nx270, nx272, 
-      nx294, nx296, nx318, nx320, nx342, nx344, nx366, nx368, nx337, nx341, 
-      nx345, nx349, nx353, nx357, nx361, nx365, nx369, nx373, nx377, nx381, 
-      nx385, nx388, nx391, nx394, nx397, nx400, nx403, nx406, nx409, nx412, 
-      nx415, nx418, nx421, nx424, nx427, nx430, nx433, nx436, nx438, nx441, 
-      nx443, nx445, nx447, nx451, nx453, nx455, nx459, nx461, nx463, nx467, 
-      nx469, nx471, nx475, nx477, nx479, nx483, nx485, nx487, nx491, nx493, 
-      nx495, nx499, nx501, nx503, nx507, nx509, nx511, nx515, nx517, nx519, 
-      nx523, nx525, nx527, nx531, nx533, nx535, nx539, nx541, nx543, nx547, 
+   signal Y_dup0_31, Y_dup0_30, Y_dup0_29, Y_dup0_28, Y_dup0_27, Y_dup0_26,
+      Y_dup0_25, Y_dup0_24, Y_dup0_23, Y_dup0_22, Y_dup0_21, Y_dup0_20,
+      Y_dup0_19, Y_dup0_18, Y_dup0_17, Y_dup0_16, Y_dup0_15, Y_dup0_14,
+      Y_dup0_13, Y_dup0_12, Y_dup0_11, Y_dup0_10, Y_dup0_9, Y_dup0_8,
+      Y_dup0_7, Y_dup0_6, Y_dup0_5, Y_dup0_4, Y_dup0_3, Y_dup0_2, nx4, nx30,
+      nx32, nx54, nx56, nx78, nx80, nx102, nx104, nx126, nx128, nx150, nx152,
+      nx174, nx176, nx198, nx200, nx222, nx224, nx246, nx248, nx270, nx272,
+      nx294, nx296, nx318, nx320, nx342, nx344, nx366, nx368, nx337, nx341,
+      nx345, nx349, nx353, nx357, nx361, nx365, nx369, nx373, nx377, nx381,
+      nx385, nx388, nx391, nx394, nx397, nx400, nx403, nx406, nx409, nx412,
+      nx415, nx418, nx421, nx424, nx427, nx430, nx433, nx436, nx438, nx441,
+      nx443, nx445, nx447, nx451, nx453, nx455, nx459, nx461, nx463, nx467,
+      nx469, nx471, nx475, nx477, nx479, nx483, nx485, nx487, nx491, nx493,
+      nx495, nx499, nx501, nx503, nx507, nx509, nx511, nx515, nx517, nx519,
+      nx523, nx525, nx527, nx531, nx533, nx535, nx539, nx541, nx543, nx547,
       nx549, nx551, nx555, nx557, nx559: std_logic ;
 
 begin
@@ -70,67 +72,67 @@ begin
    ix383 : xor2 port map ( Y=>Y(0), A0=>B(0), A1=>A(0));
    ix379 : ao22 port map ( Y=>CB, A0=>B(31), A1=>nx366, B0=>A(31), B1=>nx559
    );
-   ix367 : oai22 port map ( Y=>nx366, A0=>nx337, A1=>Y_dup0_30, B0=>nx557, 
+   ix367 : oai22 port map ( Y=>nx366, A0=>nx337, A1=>Y_dup0_30, B0=>nx557,
       B1=>nx341);
    ix338 : inv01 port map ( Y=>nx337, A=>A(30));
    ix359 : xnor2 port map ( Y=>Y_dup0_30, A0=>nx341, A1=>nx555);
    ix342 : aoi22 port map ( Y=>nx341, A0=>B(29), A1=>nx342, B0=>A(29), B1=>
       nx551);
-   ix343 : oai22 port map ( Y=>nx342, A0=>nx345, A1=>Y_dup0_28, B0=>nx549, 
+   ix343 : oai22 port map ( Y=>nx342, A0=>nx345, A1=>Y_dup0_28, B0=>nx549,
       B1=>nx349);
    ix346 : inv01 port map ( Y=>nx345, A=>A(28));
    ix335 : xnor2 port map ( Y=>Y_dup0_28, A0=>nx349, A1=>nx547);
    ix350 : aoi22 port map ( Y=>nx349, A0=>B(27), A1=>nx318, B0=>A(27), B1=>
       nx543);
-   ix319 : oai22 port map ( Y=>nx318, A0=>nx353, A1=>Y_dup0_26, B0=>nx541, 
+   ix319 : oai22 port map ( Y=>nx318, A0=>nx353, A1=>Y_dup0_26, B0=>nx541,
       B1=>nx357);
    ix354 : inv01 port map ( Y=>nx353, A=>A(26));
    ix311 : xnor2 port map ( Y=>Y_dup0_26, A0=>nx357, A1=>nx539);
    ix358 : aoi22 port map ( Y=>nx357, A0=>B(25), A1=>nx294, B0=>A(25), B1=>
       nx535);
-   ix295 : oai22 port map ( Y=>nx294, A0=>nx361, A1=>Y_dup0_24, B0=>nx533, 
+   ix295 : oai22 port map ( Y=>nx294, A0=>nx361, A1=>Y_dup0_24, B0=>nx533,
       B1=>nx365);
    ix362 : inv01 port map ( Y=>nx361, A=>A(24));
    ix287 : xnor2 port map ( Y=>Y_dup0_24, A0=>nx365, A1=>nx531);
    ix366 : aoi22 port map ( Y=>nx365, A0=>B(23), A1=>nx270, B0=>A(23), B1=>
       nx527);
-   ix271 : oai22 port map ( Y=>nx270, A0=>nx369, A1=>Y_dup0_22, B0=>nx525, 
+   ix271 : oai22 port map ( Y=>nx270, A0=>nx369, A1=>Y_dup0_22, B0=>nx525,
       B1=>nx373);
    ix370 : inv01 port map ( Y=>nx369, A=>A(22));
    ix263 : xnor2 port map ( Y=>Y_dup0_22, A0=>nx373, A1=>nx523);
    ix374 : aoi22 port map ( Y=>nx373, A0=>B(21), A1=>nx246, B0=>A(21), B1=>
       nx519);
-   ix247 : oai22 port map ( Y=>nx246, A0=>nx377, A1=>Y_dup0_20, B0=>nx517, 
+   ix247 : oai22 port map ( Y=>nx246, A0=>nx377, A1=>Y_dup0_20, B0=>nx517,
       B1=>nx381);
    ix378 : inv01 port map ( Y=>nx377, A=>A(20));
    ix239 : xnor2 port map ( Y=>Y_dup0_20, A0=>nx381, A1=>nx515);
    ix382 : aoi22 port map ( Y=>nx381, A0=>B(19), A1=>nx222, B0=>A(19), B1=>
       nx511);
-   ix223 : oai22 port map ( Y=>nx222, A0=>nx385, A1=>Y_dup0_18, B0=>nx509, 
+   ix223 : oai22 port map ( Y=>nx222, A0=>nx385, A1=>Y_dup0_18, B0=>nx509,
       B1=>nx388);
    ix386 : inv01 port map ( Y=>nx385, A=>A(18));
    ix215 : xnor2 port map ( Y=>Y_dup0_18, A0=>nx388, A1=>nx507);
    ix389 : aoi22 port map ( Y=>nx388, A0=>B(17), A1=>nx198, B0=>A(17), B1=>
       nx503);
-   ix199 : oai22 port map ( Y=>nx198, A0=>nx391, A1=>Y_dup0_16, B0=>nx501, 
+   ix199 : oai22 port map ( Y=>nx198, A0=>nx391, A1=>Y_dup0_16, B0=>nx501,
       B1=>nx394);
    ix392 : inv01 port map ( Y=>nx391, A=>A(16));
    ix191 : xnor2 port map ( Y=>Y_dup0_16, A0=>nx394, A1=>nx499);
    ix395 : aoi22 port map ( Y=>nx394, A0=>B(15), A1=>nx174, B0=>A(15), B1=>
       nx495);
-   ix175 : oai22 port map ( Y=>nx174, A0=>nx397, A1=>Y_dup0_14, B0=>nx493, 
+   ix175 : oai22 port map ( Y=>nx174, A0=>nx397, A1=>Y_dup0_14, B0=>nx493,
       B1=>nx400);
    ix398 : inv01 port map ( Y=>nx397, A=>A(14));
    ix167 : xnor2 port map ( Y=>Y_dup0_14, A0=>nx400, A1=>nx491);
    ix401 : aoi22 port map ( Y=>nx400, A0=>B(13), A1=>nx150, B0=>A(13), B1=>
       nx487);
-   ix151 : oai22 port map ( Y=>nx150, A0=>nx403, A1=>Y_dup0_12, B0=>nx485, 
+   ix151 : oai22 port map ( Y=>nx150, A0=>nx403, A1=>Y_dup0_12, B0=>nx485,
       B1=>nx406);
    ix404 : inv01 port map ( Y=>nx403, A=>A(12));
    ix143 : xnor2 port map ( Y=>Y_dup0_12, A0=>nx406, A1=>nx483);
    ix407 : aoi22 port map ( Y=>nx406, A0=>B(11), A1=>nx126, B0=>A(11), B1=>
       nx479);
-   ix127 : oai22 port map ( Y=>nx126, A0=>nx409, A1=>Y_dup0_10, B0=>nx477, 
+   ix127 : oai22 port map ( Y=>nx126, A0=>nx409, A1=>Y_dup0_10, B0=>nx477,
       B1=>nx412);
    ix410 : inv01 port map ( Y=>nx409, A=>A(10));
    ix119 : xnor2 port map ( Y=>Y_dup0_10, A0=>nx412, A1=>nx475);
@@ -158,7 +160,7 @@ begin
       nx436);
    ix434 : inv01 port map ( Y=>nx433, A=>A(2));
    ix23 : xnor2 port map ( Y=>Y_dup0_2, A0=>nx436, A1=>nx443);
-   ix437 : aoi32 port map ( Y=>nx436, A0=>B(1), A1=>B(0), A2=>A(0), B0=>A(1), 
+   ix437 : aoi32 port map ( Y=>nx436, A0=>B(1), A1=>B(0), A2=>A(0), B0=>A(1),
       B1=>nx438);
    ix439 : xnor2 port map ( Y=>nx438, A0=>nx4, A1=>nx441);
    ix5 : nand02 port map ( Y=>nx4, A0=>B(0), A1=>A(0));

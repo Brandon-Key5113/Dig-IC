@@ -1,14 +1,16 @@
 
--- 
+--
 -- Definition of  nBitMux_2to1
--- 
+--
 --      Sun Nov 17 15:29:20 2019
---      
+--
 --      LeonardoSpectrum Level 3, 2008b.3
--- 
+--
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+library gdk;
+use gdk.gdk_comps.all;
 
 entity nBitMux_2to1 is
    port (

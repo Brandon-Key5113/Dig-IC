@@ -1,14 +1,16 @@
 
--- 
+--
 -- Definition of  nBitRegister_32
--- 
+--
 --      Sun Nov 17 14:04:11 2019
---      
+--
 --      LeonardoSpectrum Level 3, 2008b.3
--- 
+--
 
 library IEEE;
 use IEEE.STD_LOGIC_1164.all;
+library gdk;
+use gdk.gdk_comps.all;
 
 entity nBitRegister_32 is
    port (
@@ -20,14 +22,14 @@ entity nBitRegister_32 is
 end nBitRegister_32 ;
 
 architecture behav of nBitRegister_32 is
-   signal Y_dup0_31, Y_dup0_30, Y_dup0_29, Y_dup0_28, Y_dup0_27, Y_dup0_26, 
-      Y_dup0_25, Y_dup0_24, Y_dup0_23, Y_dup0_22, Y_dup0_21, Y_dup0_20, 
-      Y_dup0_19, Y_dup0_18, Y_dup0_17, Y_dup0_16, Y_dup0_15, Y_dup0_14, 
-      Y_dup0_13, Y_dup0_12, Y_dup0_11, Y_dup0_10, Y_dup0_9, Y_dup0_8, 
-      Y_dup0_7, Y_dup0_6, Y_dup0_5, Y_dup0_4, Y_dup0_3, Y_dup0_2, Y_dup0_1, 
-      Y_dup0_0, NOT_Reset, nx422, nx432, nx442, nx452, nx462, nx472, nx482, 
-      nx492, nx502, nx512, nx522, nx532, nx542, nx552, nx562, nx572, nx582, 
-      nx592, nx602, nx612, nx622, nx632, nx642, nx652, nx662, nx672, nx682, 
+   signal Y_dup0_31, Y_dup0_30, Y_dup0_29, Y_dup0_28, Y_dup0_27, Y_dup0_26,
+      Y_dup0_25, Y_dup0_24, Y_dup0_23, Y_dup0_22, Y_dup0_21, Y_dup0_20,
+      Y_dup0_19, Y_dup0_18, Y_dup0_17, Y_dup0_16, Y_dup0_15, Y_dup0_14,
+      Y_dup0_13, Y_dup0_12, Y_dup0_11, Y_dup0_10, Y_dup0_9, Y_dup0_8,
+      Y_dup0_7, Y_dup0_6, Y_dup0_5, Y_dup0_4, Y_dup0_3, Y_dup0_2, Y_dup0_1,
+      Y_dup0_0, NOT_Reset, nx422, nx432, nx442, nx452, nx462, nx472, nx482,
+      nx492, nx502, nx512, nx522, nx532, nx542, nx552, nx562, nx572, nx582,
+      nx592, nx602, nx612, nx622, nx632, nx642, nx652, nx662, nx672, nx682,
       nx692, nx702, nx712, nx722, nx732, nx845, nx847: std_logic ;
 
 begin
