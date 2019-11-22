@@ -1,0 +1,148 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Sunday, November 10, 2019 at 12:16:05 PM EST
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ====== Create the expressions =====
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[0])" -threshold 0.5398435768213571 Dig_V(NBITOUT[0])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[1])" -threshold 0.5398435768213571 Dig_V(NBITOUT[1])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[2])" -threshold 0.5398435768213571 Dig_V(NBITOUT[2])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[3])" -threshold 0.5398435768213571 Dig_V(NBITOUT[3])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[4])" -threshold 0.5398435768213571 Dig_V(NBITOUT[4])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[5])" -threshold 0.5398435768213571 Dig_V(NBITOUT[5])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[6])" -threshold 0.5398435768213571 Dig_V(NBITOUT[6])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[7])" -threshold 0.5398435768213571 Dig_V(NBITOUT[7])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[8])" -threshold 0.5398435768213571 Dig_V(NBITOUT[8])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[9])" -threshold 0.5398435768213571 Dig_V(NBITOUT[9])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[10])" -threshold 0.5398435768213571 Dig_V(NBITOUT[10])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[11])" -threshold 0.5398435768213571 Dig_V(NBITOUT[11])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[12])" -threshold 0.5398435768213571 Dig_V(NBITOUT[12])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[13])" -threshold 0.5398435768213571 Dig_V(NBITOUT[13])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[14])" -threshold 0.5398435768213571 Dig_V(NBITOUT[14])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(NBITOUT[15])" -threshold 0.5398435768213571 Dig_V(NBITOUT[15])
+w.create expressionbus V(NBITOUT[0:15] <Rise and Fall>Dig_V(NBITOUT[0]) <Rise and Fall>Dig_V(NBITOUT[1]) <Rise and Fall>Dig_V(NBITOUT[2]) <Rise and Fall>Dig_V(NBITOUT[3]) <Rise and Fall>Dig_V(NBITOUT[4]) <Rise and Fall>Dig_V(NBITOUT[5]) <Rise and Fall>Dig_V(NBITOUT[6]) <Rise and Fall>Dig_V(NBITOUT[7]) <Rise and Fall>Dig_V(NBITOUT[8]) <Rise and Fall>Dig_V(NBITOUT[9]) <Rise and Fall>Dig_V(NBITOUT[10]) <Rise and Fall>Dig_V(NBITOUT[11]) <Rise and Fall>Dig_V(NBITOUT[12]) <Rise and Fall>Dig_V(NBITOUT[13]) <Rise and Fall>Dig_V(NBITOUT[14]) <Rise and Fall>Dig_V(NBITOUT[15])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[0])" -threshold 0.54 Dig_V(B[0])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[1])" -threshold 0.54 Dig_V(B[1])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[2])" -threshold 0.54 Dig_V(B[2])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[3])" -threshold 0.54 Dig_V(B[3])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[4])" -threshold 0.54 Dig_V(B[4])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[5])" -threshold 0.54 Dig_V(B[5])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[6])" -threshold 0.54 Dig_V(B[6])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[7])" -threshold 0.54 Dig_V(B[7])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[8])" -threshold 0.54 Dig_V(B[8])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[9])" -threshold 0.54 Dig_V(B[9])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[10])" -threshold 0.54 Dig_V(B[10])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[11])" -threshold 0.54 Dig_V(B[11])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[12])" -threshold 0.54 Dig_V(B[12])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[13])" -threshold 0.54 Dig_V(B[13])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[14])" -threshold 0.54 Dig_V(B[14])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(B[15])" -threshold 0.54 Dig_V(B[15])
+w.create expressionbus V(B[0:15] <Rise and Fall>Dig_V(B[0]) <Rise and Fall>Dig_V(B[1]) <Rise and Fall>Dig_V(B[2]) <Rise and Fall>Dig_V(B[3]) <Rise and Fall>Dig_V(B[4]) <Rise and Fall>Dig_V(B[5]) <Rise and Fall>Dig_V(B[6]) <Rise and Fall>Dig_V(B[7]) <Rise and Fall>Dig_V(B[8]) <Rise and Fall>Dig_V(B[9]) <Rise and Fall>Dig_V(B[10]) <Rise and Fall>Dig_V(B[11]) <Rise and Fall>Dig_V(B[12]) <Rise and Fall>Dig_V(B[13]) <Rise and Fall>Dig_V(B[14]) <Rise and Fall>Dig_V(B[15])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[0])" -threshold 0.54 Dig_V(A[0])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[1])" -threshold 0.54 Dig_V(A[1])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[2])" -threshold 0.54 Dig_V(A[2])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[3])" -threshold 0.54 Dig_V(A[3])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[4])" -threshold 0.54 Dig_V(A[4])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[5])" -threshold 0.54 Dig_V(A[5])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[6])" -threshold 0.54 Dig_V(A[6])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[7])" -threshold 0.54 Dig_V(A[7])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[8])" -threshold 0.54 Dig_V(A[8])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[9])" -threshold 0.54 Dig_V(A[9])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[10])" -threshold 0.54 Dig_V(A[10])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[11])" -threshold 0.54 Dig_V(A[11])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[12])" -threshold 0.54 Dig_V(A[12])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[13])" -threshold 0.54 Dig_V(A[13])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[14])" -threshold 0.54 Dig_V(A[14])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(A[15])" -threshold 0.54 Dig_V(A[15])
+w.create expressionbus V(A[0:15] <Rise and Fall>Dig_V(A[0]) <Rise and Fall>Dig_V(A[1]) <Rise and Fall>Dig_V(A[2]) <Rise and Fall>Dig_V(A[3]) <Rise and Fall>Dig_V(A[4]) <Rise and Fall>Dig_V(A[5]) <Rise and Fall>Dig_V(A[6]) <Rise and Fall>Dig_V(A[7]) <Rise and Fall>Dig_V(A[8]) <Rise and Fall>Dig_V(A[9]) <Rise and Fall>Dig_V(A[10]) <Rise and Fall>Dig_V(A[11]) <Rise and Fall>Dig_V(A[12]) <Rise and Fall>Dig_V(A[13]) <Rise and Fall>Dig_V(A[14]) <Rise and Fall>Dig_V(A[15])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(CONTROL[0])" -threshold 0.54 Dig_V(CONTROL[0])
+analog2digital -sourcewf "<Rise and Fall/TRAN>V(CONTROL[1])" -threshold 0.54 Dig_V(CONTROL[1])
+w.create expressionbus V(CONTROL[0:1] <Rise and Fall>Dig_V(CONTROL[0]) <Rise and Fall>Dig_V(CONTROL[1])
+
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -position 0 0 -size 1354 756 -divider 0.91
+
+// ===== Create row #1 =====
+add waveform <calc>V(A[0:15] -transform "< none >" -unsigned
+set axis properties -axis X -scale linear
+
+// ===== Create row #2 =====
+add waveform <calc>V(B[0:15] -transform "< none >" -unsigned
+
+// ===== Create row #3 =====
+add waveform -expand <calc>V(CONTROL[0:1] -transform "< none >" -binary
+
+// ===== Create row #6 =====
+add waveform <calc>V(NBITOUT[0:15] -transform "< none >" -unsigned
+
+// ===== Create row #7 =====
+add waveform -color_index 2 <TRAN>V(CB) -transform "< none >"
+set axis properties -row 7 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 7 -axis Y1
+set row height -row 7 -exact 165
+
+// ===== Create row #8 =====
+add waveform -color_index 0 <TRAN>V(NBITOUT[15]) -transform "< none >"
+set axis properties -row 8 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 8 -axis Y1
+set row height -row 8 -exact 165
+
+// ===== Create row #9 =====
+add waveform -color_index 2 <TRAN>V(NBITOUT[0]) -transform "< none >"
+set axis properties -row 9 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 9 -axis Y1
+set row height -row 9 -exact 167
+
+// ===== Set X-axis data units =====
+set user scale Time 1.0 s -axis X
+
+// ====== Create the cursors, markers and measurements =====
+add cursor -name C1 -position 1.378490427043691E-7 -base
+add cursor -name C2 -position 3.854348714881353E-8
+measure rise -x1 2.524323760377024E-7 -x2 3.378490427043691E-7 -lower 0.1 -upper 0.9 -relative -id #wf:7.y1.1
+measure fall -x1 1.9757126492659133E-7 -x2 2.51737931593258E-7 -lower 0.1 -upper 0.9 -relative -id #wf:7.y1.1
+measure fall -x1 1.1666848714881354E-7 -x2 1.9548793159325798E-7 -lower 0.1 -upper 0.9 -relative -id #wf:7.y1.1
+measure rise -x1 1.1666848714881354E-7 -x2 1.9548793159325798E-7 -lower 0.1 -upper 0.9 -relative -id #wf:7.y1.1
+measure rise -x1 9.376820482146859E-9 -x2 1.1493237603770243E-7 -lower 0.1 -upper 0.9 -relative -id #wf:7.y1.1
+measure fall -x1 1.82048214685723E-12 -x2 1.1493237603770243E-7 -lower 0.1 -upper 0.9 -relative -id #wf:7.y1.1
+measure rise -x1 9.376820482146859E-9 -x2 1.1493237603770243E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure fall -x1 1.82048214685723E-12 -x2 1.1493237603770243E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure rise -x1 1.1666848714881354E-7 -x2 1.9548793159325798E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure rise -x1 2.7916848714881357E-7 -x2 3.6632126492659136E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure fall -x1 2.7916848714881357E-7 -x2 3.6632126492659136E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure rise -x1 2.524323760377024E-7 -x2 3.378490427043691E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure fall -x1 2.3368237603770244E-7 -x2 3.6632126492659136E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure rise -x1 1.9757126492659133E-7 -x2 2.51737931593258E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure rise -x1 9.376820482146859E-9 -x2 1.1493237603770243E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure fall -x1 1.1666848714881354E-7 -x2 1.9548793159325798E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure fall -x1 1.82048214685723E-12 -x2 1.1493237603770243E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure fall -x1 1.9757126492659133E-7 -x2 2.51737931593258E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure rise -x1 1.1666848714881354E-7 -x2 1.9548793159325798E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure rise -x1 2.524323760377024E-7 -x2 3.378490427043691E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure fall -x1 2.7916848714881357E-7 -x2 3.6632126492659136E-7 -lower 0.1 -upper 0.9 -relative -id #wf:9.y1.1
+measure fall -x1 1.9757126492659133E-7 -x2 2.51737931593258E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure fall -x1 1.1666848714881354E-7 -x2 1.9548793159325798E-7 -lower 0.1 -upper 0.9 -relative -id #wf:8.y1.1
+measure delay -x1 3.229348714881352E-8 -x2 1.0764070937103576E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -inverting -id1 #wf:7.y1.1 -id2 #wf:4.0.1
+measure delay -x1 3.229348714881352E-8 -x2 1.0764070937103576E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -inverting -id1 #wf:8.y1.1 -id2 #wf:4.0.1
+measure delay -x1 1.875182048214686E-8 -x2 1.0764070937103576E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -noninverting -id1 #wf:9.y1.1 -id2 #wf:4.0.1
+measure delay -x1 9.236293159325798E-8 -x2 1.506962649265913E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -noninverting -id1 #wf:8.y1.1 -id2 #wf:4.0.1
+measure delay -x1 1.1250182048214687E-7 -x2 2.0277959825992465E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -inverting -id1 #wf:8.y1.1 -id2 #wf:4.0.1
+measure delay -x1 1.1250182048214687E-7 -x2 2.0277959825992465E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -inverting -id1 #wf:7.y1.1 -id2 #wf:4.0.1
+measure delay -x1 1.1250182048214687E-7 -x2 2.0277959825992465E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -falling -inverting -id1 #wf:7.y1.1 -id2 #wf:4.0.1
+measure delay -x1 1.1250182048214687E-7 -x2 2.1319626492659131E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -falling -noninverting -id1 #wf:9.y1.1 -id2 #wf:4.0.1
+measure delay -x1 1.1250182048214687E-7 -x2 2.1319626492659131E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -noninverting -id1 #wf:9.y1.1 -id2 #wf:4.0.1
+measure delay -x1 6.77101538154802E-8 -x2 1.378490427043691E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -noninverting -id1 #wf:9.y1.1 -id2 #wf:4.0.1
+measure delay -x1 3.854348714881353E-8 -x2 1.378490427043691E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -noninverting -id1 #wf:7.y1.1 -id2 #wf:4.0.1
+measure delay -x1 3.854348714881353E-8 -x2 1.378490427043691E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -inverting -id1 #wf:7.y1.1 -id2 #wf:4.0.1
+measure delay -x1 3.854348714881353E-8 -x2 1.378490427043691E-7 -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -inverting -id1 #wf:8.y1.1 -id2 #wf:4.0.1
+
+set active workspace Workspace1

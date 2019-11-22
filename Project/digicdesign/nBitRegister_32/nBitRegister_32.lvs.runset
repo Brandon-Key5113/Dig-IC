@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/nBitRegister_32/nBitRegister_32.cal
+*lvsLayoutPaths: nBitRegister_32.calibre.gds
+*lvsLayoutPrimary: nBitRegister_32
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: nBitRegister_32.lvs.results
+*lvsSummaryFile: nBitRegister_32.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: nBitRegister_32.calibre.src.net
+*lvsSourcePrimary: nBitRegister_32

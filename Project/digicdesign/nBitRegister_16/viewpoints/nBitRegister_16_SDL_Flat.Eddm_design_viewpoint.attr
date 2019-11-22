@@ -1,0 +1,23 @@
+A 5 u Eddm_design_viewpoint 5dd19bd0ed34.03.81.15.9a.2a.00.24.d0 1 2 12 0
+V v 1 4 5dd19bd0ed34.03.81.15.9a.2a.01.24.d0
+F f 1 "nBitRegister_16_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitRegister_16/part" 2 Eddm_part 5dd19a13cc14.03.81.15.9a.2a.00.12.3e 5dd19a132e83.03.81.15.9a.2a.00.12.3e
+R cspuv 1 "$PYXIS_SPT/digicdesign/nBitRegister_16/nBitRegister_16" 1 mgc_symbol 5dd19a108fa0.03.81.15.9a.2a.00.12.3e 5dd19a108f9f.03.81.15.9a.2a.00.12.3e
+R cspuv 2 "$PYXIS_SPT/digicdesign/nBitRegister_16/schematic" 3 mgc_schematic 5dd19b1feabb.03.81.15.9a.2a.00.20.dd 5dd19a1343b8.03.81.15.9a.2a.00.12.3e
+R cspuv 3 "$GDKGATES/mux21/part" 6 Eddm_part 503e417a4993.03.93.22.28.96.00.79.ff 503d3cc570ce.03.93.22.28.96.14.7e.63
+R cspuv 4 "$GDKGATES/dffr/part" 4 Eddm_part 50c796be3b55.03.93.22.28.46.00.06.3f 503d3cc570cc.03.93.22.28.96.18.7e.63
+R cspuv 5 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R cspuv 6 "$GDKGATES/mux21/schematic" 2 mgc_schematic 4e72c8a8766a.03.93.22.28.e1.00.60.94 503d3cc570ce.03.93.22.28.96.15.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 7 "$GDKGATES/mux21/mux21" 12 mgc_symbol 503d77f4dab5.03.93.22.28.96.00.4f.76 503d3cc570ce.03.93.22.28.96.12.7e.63
+R cspuv 8 "$GDKGATES/dffr/schematic" 2 mgc_schematic 4e72c849658f.03.93.22.28.e1.00.60.94 503d3cc570cc.03.93.22.28.96.19.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 9 "$GDKGATES/dffr/dffr" 10 mgc_symbol 503d524e6135.03.93.22.28.96.00.4f.76 503d3cc570cc.03.93.22.28.96.16.7e.63
+R cspuv 10 "$GDKGATES/inv01/schematic" 2 mgc_schematic 4e72c874b901.03.93.22.28.e1.00.60.94 503d3cc570cd.03.93.22.28.96.09.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 11 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63

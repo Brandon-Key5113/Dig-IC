@@ -1,0 +1,21 @@
+A 5 u Eddm_design_viewpoint 5dd1c9825a83.03.81.15.9a.2a.00.11.83 1 2 11 0
+V v 1 4 5dd1c9825a83.03.81.15.9a.2a.01.11.83
+F f 1 "Multiplier_SDL_Flat2.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/Multiplier/part" 8 Eddm_part 5dd1bd1635bb.03.81.15.9a.2a.00.3b.f4 5dd185c4afd8.03.81.15.9a.2a.00.0a.87
+R cspuv 1 "$PYXIS_SPT/digicdesign/Multiplier/Multiplier" 1 mgc_symbol 5dd1bd11d8f5.03.81.15.9a.2a.01.3b.f4 5dd1bd11d8f5.03.81.15.9a.2a.00.3b.f4
+R cspuv 2 "$PYXIS_SPT/digicdesign/Multiplier/schematic" 21 mgc_schematic 5dd1bdff5247.03.81.15.9a.2a.00.4d.95 5dd1bd13e6c4.03.81.15.9a.2a.00.3b.f4
+R cspuv 3 "$PYXIS_SPT/digicdesign/FA_1bit/part" 8 Eddm_part 5dd1bd112fa3.03.81.15.9a.2a.00.3b.f4 5dd185c1c613.03.81.15.9a.2a.00.0a.87
+R cspuv 4 "$GDKGATES/and02/part" 8 Eddm_part 503d41c83ebc.03.93.22.28.96.00.34.40 503d3ceec93b.03.93.22.28.96.0d.7e.63
+R cspuv 5 "$GDKGATES/and02/schematic" 8 mgc_schematic 503459ce02a9.03.93.22.28.46.00.36.18 503d3ceec93b.03.93.22.28.96.0e.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 6 "$GDKGATES/and02/and02" 26 mgc_symbol 503d41c83e98.03.93.22.28.96.00.34.40 503d3ceec93b.03.93.22.28.96.0b.7e.63
+R cspuv 7 "$PYXIS_SPT/digicdesign/FA_1bit/FA_1bit" 1 mgc_symbol 5dd1bd0db7ac.03.81.15.9a.2a.01.3b.f4 5dd1bd0db7ac.03.81.15.9a.2a.00.3b.f4
+R cspuv 8 "$PYXIS_SPT/digicdesign/FA_1bit/schematic" 1 mgc_schematic 5dd1bd109d5c.03.81.15.9a.2a.00.3b.f4 5dd1bd109d5b.03.81.15.9a.2a.00.3b.f4
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 9 "$PYXIS_SPT/digicdesign/fake_gnd/part" 1 Eddm_part 5dd185c6add0.03.81.15.9a.2a.01.0a.87 5dd185c6add0.03.81.15.9a.2a.00.0a.87
+R cspuv 10 "$PYXIS_SPT/digicdesign/fake_gnd/fake_gnd" 1 mgc_symbol 5dd185c4e0f0.03.81.15.9a.2a.00.0a.87 5dd185c4e0ef.03.81.15.9a.2a.00.0a.87

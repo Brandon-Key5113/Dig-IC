@@ -1,0 +1,18 @@
+A 5 u Eddm_ba_mgr 5d9dc6d09115.03.81.15.9a.2a.07.49.a1 3 2 5 0
+V v 1 1 5d78e2d9a349.03.81.15.9a.2a.01.5e.4a
+F f 1 "default.ba_1"
+V v 2 1 5d78e8d38d60.03.81.15.9a.2a.00.1b.0a
+F f 2 "default.ba_2"
+V v 3 1 5d78f4494e06.03.81.15.9a.12.00.6d.77
+F f 3 "default.ba_3"
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 3 "$PYXIS_SPT/digicdesign/rippleadder/default" 13 Eddm_design_viewpoint 5d78edcddf47.03.81.15.9a.12.00.6d.77 5d9dc6d09115.03.81.15.9a.2a.02.49.a1
+R cspuv 4 "$PYXIS_SPT/digicdesign/rippleadder/schematic" 13 mgc_schematic 5d78e9e8d702.03.81.15.9a.2a.00.1b.0a 5d9dc6d09115.03.81.15.9a.2a.00.49.a1
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 1 "$PYXIS_SPT/digicdesign/rippleadder/default" 5 Eddm_design_viewpoint 5d78e7b6dde0.03.81.15.9a.2a.00.1b.0a 5d9dc6d09115.03.81.15.9a.2a.02.49.a1
+R cspuv 2 "$PYXIS_SPT/digicdesign/rippleadder/schematic" 11 mgc_schematic 5d78e747a582.03.81.15.9a.2a.00.03.4a 5d9dc6d09115.03.81.15.9a.2a.00.49.a1
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/rippleadder/default" 1 Eddm_design_viewpoint 5d78e2d98188.03.81.15.9a.2a.00.5e.4a 5d9dc6d09115.03.81.15.9a.2a.02.49.a1

@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Fri Oct 18 20:06:40 2019 " "v2013.4_26.18" "-xrc -pdb -rc -turbo 1 /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal/_PEX_"
+"Fri Oct 18 20:06:42 2019 " "v2013.4_26.18" "-xrc -fmt -all /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal/_PEX_"

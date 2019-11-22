@@ -1,0 +1,58 @@
+* Example circuit file for simulating PEX
+
+.OPTION DOTNODE
+.HIER /
+
+.INCLUDE "/home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/rippleadder/rippleadder.cal/rippleadder.pex.netlist"
+
+.LIB /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo TT
+
+* - Instantiate your parasitic netlist and add the load capacitor
+** FORMAT : 
+* XLAYOUT [all inputs as listed by the ".subckt" line in the included netlist, in the order that they appear there] [name of the subcircuit as listed in the included netlist]
+XLAYOUT GROUND B0 A0 S0 S1 S2 S3 B1 A1 B2 A2 B3 A3 CIN NS0 NS1 NS2 COUT NS3 rippleadder
+C0 S0 0 120f
+C1 S1 0 120f
+C2 S2 0 120f
+C3 S3 0 120f
+C4 COUT 0 120f
+
+
+
+* - Analysis Setup - DC sweep
+* FORMAT : .DC [name] [low] [high] [step]
+*.DC VFORCE__A 0 1.2 0.01
+
+* - Analysis Setup - Trans
+* FORMAT : .TRAN [start time] [end time] [time step]
+.TRAN 0 200n 0.001n
+
+* --- Forces
+* FORMAT -- PULSE : [name] [port] [reference (0 means ground)] PULSE [low] [high] [delay] [fall time] [rise time] [pulse width] [period]
+*
+* FORMAT -- DC    : [name] [port] [reference (0 means ground)] DC [voltage]
+*
+VFORCE__Vdd Vdd 0 DC 1.08
+VFORCE__GROUND GROUND 0 DC 0
+
+VFORCE__Cin Cin 0 DC 0
+
+VFORCE__A0 A0 0 PULSE (0 1.08 50n 0.1n 0.1n 50n 100n)
+VFORCE__A1 A1 0 DC 1.08
+VFORCE__A2 A2 0 DC 0
+VFORCE__A3 A3 0 DC 1.08
+
+VFORCE__B0 B0 0 DC 1.08
+VFORCE__B1 B1 0 DC 0
+VFORCE__B2 B2 0 DC 1.08
+VFORCE__B3 B3 0 DC 0
+
+
+* --- Waveform Outputs
+.PLOT TRAN V(A0)
+.PLOT TRAN V(Cout)
+.PLOT TRAN V(S3)
+
+* --- Params
+.TEMP 125
+

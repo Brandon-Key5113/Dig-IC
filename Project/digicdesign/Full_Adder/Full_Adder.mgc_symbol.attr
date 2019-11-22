@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dc03a763c8d.03.81.15.9a.2a.00.70.48 1 2 1 0
+V v 1 2 5dc03a763c8d.03.81.15.9a.2a.01.70.48
+F f 1 "Full_Adder.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/Full_Adder/part" 1 Eddm_part 5dc03a79309a.03.81.15.9a.2a.01.70.48 5dc03a79309a.03.81.15.9a.2a.00.70.48

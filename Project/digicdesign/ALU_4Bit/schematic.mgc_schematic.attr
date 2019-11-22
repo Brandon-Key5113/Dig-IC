@@ -1,0 +1,19 @@
+A 5 u mgc_schematic 5dc2dfcc8aec.03.81.15.9a.12.00.1e.6e 9 2 3 0
+V v 7 1 5dc2e16d5bf1.03.81.15.9a.12.00.13.1e
+F o 0 ""
+V v 8 1 5dc2e1e5756a.03.81.15.9a.12.00.13.1e
+F o 0 ""
+V v 9 1 5dc2e1e6c5b8.03.81.15.9a.12.00.13.1e
+F o 0 ""
+O 9
+R cspuv 0 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet1" 2 mgc_sheet 5dc2e1e573da.03.81.15.9a.12.00.13.1e 5dc2dfccba58.03.81.15.9a.12.00.1e.6e
+R cspuv 1 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet2" 2 mgc_sheet 5dc2e1e6c36b.03.81.15.9a.12.00.13.1e 5dc2dfcda63a.03.81.15.9a.12.00.1e.6e
+R cspuv 2 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet3" 2 mgc_sheet 5dc2e16d5a2f.03.81.15.9a.12.00.13.1e 5dc2dfce79e9.03.81.15.9a.12.00.1e.6e
+O 8
+R cspuv 0 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet1" 2 mgc_sheet 5dc2e1e573da.03.81.15.9a.12.00.13.1e 5dc2dfccba58.03.81.15.9a.12.00.1e.6e
+R cspuv 1 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet2" 1 mgc_sheet 5dc2dfcda63a.03.81.15.9a.12.01.1e.6e 5dc2dfcda63a.03.81.15.9a.12.00.1e.6e
+R cspuv 2 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet3" 2 mgc_sheet 5dc2e16d5a2f.03.81.15.9a.12.00.13.1e 5dc2dfce79e9.03.81.15.9a.12.00.1e.6e
+O 7
+R cspuv 0 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet1" 1 mgc_sheet 5dc2dfccba59.03.81.15.9a.12.00.1e.6e 5dc2dfccba58.03.81.15.9a.12.00.1e.6e
+R cspuv 1 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet2" 1 mgc_sheet 5dc2dfcda63a.03.81.15.9a.12.01.1e.6e 5dc2dfcda63a.03.81.15.9a.12.00.1e.6e
+R cspuv 2 "$PYXIS_SPT/digicdesign/ALU_4Bit/schematic/sheet3" 2 mgc_sheet 5dc2e16d5a2f.03.81.15.9a.12.00.13.1e 5dc2dfce79e9.03.81.15.9a.12.00.1e.6e

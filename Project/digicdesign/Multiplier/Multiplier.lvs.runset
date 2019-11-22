@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Multiplier/Multiplier.cal
+*lvsLayoutPaths: Multiplier.calibre.gds
+*lvsLayoutPrimary: Multiplier
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: Multiplier.lvs.results
+*lvsSummaryFile: Multiplier.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: Multiplier.calibre.src.net
+*lvsSourcePrimary: Multiplier

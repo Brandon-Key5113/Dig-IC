@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5d9dc6d09115.03.81.15.9a.2a.00.49.a1 28 2 1 0
+V v 26 1 5da9ccce2652.03.81.15.9a.2a.00.68.85
+F o 0 ""
+V v 27 1 5da9f76248b7.03.81.15.9a.2a.00.5e.cf
+F o 0 ""
+V v 28 1 5dab51797bbd.03.81.15.9a.2a.00.09.2b
+F o 0 ""
+O 28
+R cspuv 0 "$PYXIS_SPT/digicdesign/rippleadder/schematic/sheet1" 27 mgc_sheet 5dab51797651.03.81.15.9a.2a.00.09.2b 5d9dc6d09115.03.81.15.9a.2a.04.49.a1
+O 27
+R cspuv 0 "$PYXIS_SPT/digicdesign/rippleadder/schematic/sheet1" 26 mgc_sheet 5da9f76241a3.03.81.15.9a.2a.00.5e.cf 5d9dc6d09115.03.81.15.9a.2a.04.49.a1
+O 26
+R cspuv 0 "$PYXIS_SPT/digicdesign/rippleadder/schematic/sheet1" 25 mgc_sheet 5da9ccce20ba.03.81.15.9a.2a.00.68.85 5d9dc6d09115.03.81.15.9a.2a.04.49.a1

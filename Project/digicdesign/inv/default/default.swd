@@ -1,0 +1,47 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Wednesday, September 4, 2019 at 9:40:27 AM EDT
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -position 73 20 -size 929 489 -divider 0.87
+
+// ===== Create row #1 =====
+add waveform -color_index 0 <inv_default/TRAN>V(VIN) -transform "< none >"
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 1 -axis Y1
+set row height -row 1 -exact 175
+
+// ===== Create row #2 =====
+add waveform -color_index 1 <inv_default/TRAN>V(VOUT) -transform "< none >"
+set axis properties -row 2 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 2 -axis Y1
+set row height -row 2 -exact 175
+
+// ===== Set X-axis data units =====
+set user scale Time 1.0 s -axis X
+
+// ===== Set X-axis min/max extents =====
+set axis properties -axis X -min 8.988419618528598E-9 -max 1.1488419618528574E-8
+
+// ====== Create the cursors, markers and measurements =====
+measure fall -lower 0.1 -upper 0.9 -relative -id #wf:2.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -noninverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -inverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -falling -inverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -inverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+measure rise -lower 0.1 -upper 0.9 -relative -id #wf:2.y1.1
+measure fall -lower 0.1 -upper 0.9 -relative -id #wf:1.y1.1
+measure fall -lower 0.1 -upper 0.9 -relative -id #wf:2.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -inverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+
+set active workspace Workspace1

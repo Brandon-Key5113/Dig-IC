@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5d6675924fdc.03.81.15.9a.2f.00.4f.a7 1 2 1 0
+V v 1 1 5d6675924fdc.03.81.15.9a.2f.01.4f.a7
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/myfirstcell/schematic" 1 mgc_schematic 5d667245ea6b.03.81.15.9a.2f.01.4f.a7 5d667245ea6b.03.81.15.9a.2f.00.4f.a7

@@ -1,0 +1,52 @@
+* LVS netlist generated with ICnet by 'bxk5113' on Sun Nov 17 2019 at 15:49:23
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* Component pathname : $GDKGATES/mux21
+*
+.subckt mux21  Y A0 A1 S0 VDD_esc1 VSS_esc2
+
+        MN4 N$11 A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M1 Y N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN5 N$3 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M2 Y N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 N$11 A1 N$2 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP4 N$2 N$231 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN3 N$1 N$231 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$11 A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 N$7 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 N$231 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP1 N$231 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP3 N$11 A0 N$7 VDD_esc1 pmos l=0.14u w=1.54u m=1
+.ends mux21
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/nBitMux_2to1
+*
+.subckt nBitMux_2to1  Y[15] Y[14] Y[13] Y[12] Y[11] Y[10] Y[9] Y[8] Y[7]
++ Y[6] Y[5] Y[4] Y[3] Y[2] Y[1] Y[0] A[15] A[14] A[13] A[12] A[11] A[10]
++ A[9] A[8] A[7] A[6] A[5] A[4] A[3] A[2] A[1] A[0] B[15] B[14] B[13] B[12]
++ B[11] B[10] B[9] B[8] B[7] B[6] B[5] B[4] B[3] B[2] B[1] B[0] sel
+
+        X_ix127 Y[15] A[15] B[15] sel VDD VSS mux21
+        X_ix119 Y[14] A[14] B[14] sel VDD VSS mux21
+        X_ix111 Y[13] A[13] B[13] sel VDD VSS mux21
+        X_ix103 Y[12] A[12] B[12] sel VDD VSS mux21
+        X_ix95 Y[11] A[11] B[11] sel VDD VSS mux21
+        X_ix87 Y[10] A[10] B[10] sel VDD VSS mux21
+        X_ix79 Y[9] A[9] B[9] sel VDD VSS mux21
+        X_ix71 Y[8] A[8] B[8] sel VDD VSS mux21
+        X_ix63 Y[7] A[7] B[7] sel VDD VSS mux21
+        X_ix55 Y[6] A[6] B[6] sel VDD VSS mux21
+        X_ix47 Y[5] A[5] B[5] sel VDD VSS mux21
+        X_ix39 Y[4] A[4] B[4] sel VDD VSS mux21
+        X_ix31 Y[3] A[3] B[3] sel VDD VSS mux21
+        X_ix23 Y[2] A[2] B[2] sel VDD VSS mux21
+        X_ix15 Y[1] A[1] B[1] sel VDD VSS mux21
+        X_ix7 Y[0] A[0] B[0] sel VDD VSS mux21
+.ends nBitMux_2to1
+

@@ -1,0 +1,6 @@
+A 5 u Eddm_ba_mgr 5d76b1f1f103.03.81.15.9a.2a.00.69.55 1 2 1 0
+V v 1 1 5d76b1f1f103.03.81.15.9a.2a.01.69.55
+F f 1 "default.ba_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/badinv/default" 1 Eddm_design_viewpoint 5d76b1f1dddc.03.81.15.9a.2a.01.69.55 5d76b1f1dddc.03.81.15.9a.2a.00.69.55

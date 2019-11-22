@@ -1,0 +1,48 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT mimcap_g13 plus minus
+.ENDS
+***************************************
+.SUBCKT spiral_inductor_lvs pos neg
+.ENDS
+***************************************
+.SUBCKT mux21 VSS VDD Y S0 A1 A0
+** N=12 EP=6 IP=0 FDC=12
+M0 VSS S0 7 VSS nmos L=1.4e-07 W=3.5e-07 $X=850 $Y=1610 $D=19
+M1 8 S0 VSS VSS nmos L=1.4e-07 W=7.7e-07 $X=1445 $Y=1190 $D=19
+M2 9 A1 8 VSS nmos L=1.4e-07 W=7.7e-07 $X=1865 $Y=1190 $D=19
+M3 10 A0 9 VSS nmos L=1.4e-07 W=7.7e-07 $X=2425 $Y=1190 $D=19
+M4 VSS 7 10 VSS nmos L=1.4e-07 W=7.7e-07 $X=2845 $Y=1190 $D=19
+M5 Y 9 VSS VSS nmos L=1.4e-07 W=7.7e-07 $X=3405 $Y=1190 $D=19
+M6 VDD S0 7 VDD pmos L=1.4e-07 W=7.7e-07 $X=850 $Y=5670 $D=25
+M7 11 S0 VDD VDD pmos L=1.4e-07 W=1.54e-06 $X=1445 $Y=5670 $D=25
+M8 9 A0 11 VDD pmos L=1.4e-07 W=1.54e-06 $X=1865 $Y=5670 $D=25
+M9 12 A1 9 VDD pmos L=1.4e-07 W=1.54e-06 $X=2425 $Y=5670 $D=25
+M10 VDD 7 12 VDD pmos L=1.4e-07 W=1.54e-06 $X=2845 $Y=5670 $D=25
+M11 Y 9 VDD VDD pmos L=1.4e-07 W=1.54e-06 $X=3405 $Y=5670 $D=25
+.ENDS
+***************************************
+.SUBCKT ICV_1 1 2 3 4 5 6 7 8 9
+** N=9 EP=9 IP=12 FDC=24
+X0 2 1 6 3 4 5 mux21 $T=0 0 1 180 $X=-4410 $Y=0
+X1 2 1 9 3 7 8 mux21 $T=0 0 0 0 $X=0 $Y=0
+.ENDS
+***************************************
+.SUBCKT nBitMux_2to1 Y[8] Y[11] VSS VDD Y[15] A[15] A[8] B[8] B[15] A[11] B[11] B[2] A[2] sel B[7] B[0] A[7] A[0] Y[2] Y[7]
++ B[1] Y[0] A[12] A[1] B[12] Y[1] Y[12] Y[14] B[5] A[14] A[5] B[13] B[14] A[13] Y[5] Y[13] Y[6] B[10] A[10] B[3]
++ Y[10] B[6] A[3] A[6] B[4] B[9] A[4] A[9] Y[9] Y[4] Y[3]
+** N=51 EP=51 IP=81 FDC=192
+X0 VSS VDD Y[1] sel B[1] A[1] mux21 $T=8840 8450 0 0 $X=8840 $Y=8450
+X1 VSS VDD Y[12] sel B[12] A[12] mux21 $T=9545 16870 0 0 $X=9545 $Y=16870
+X2 VSS VDD Y[5] sel B[5] A[5] mux21 $T=13250 8450 0 0 $X=13250 $Y=8450
+X3 VSS VDD Y[13] sel B[13] A[13] mux21 $T=13955 16870 0 0 $X=13955 $Y=16870
+X4 VSS VDD Y[3] sel B[3] A[3] mux21 $T=20115 16870 0 0 $X=20115 $Y=16870
+X5 VSS VDD Y[4] sel B[4] A[4] mux21 $T=22070 30 0 0 $X=22070 $Y=30
+X6 VDD VSS sel B[7] A[7] Y[7] B[8] A[8] Y[8] ICV_1 $T=4430 30 1 180 $X=20 $Y=30
+X7 VDD VSS sel B[2] A[2] Y[2] B[15] A[15] Y[15] ICV_1 $T=4430 8450 1 180 $X=20 $Y=8450
+X8 VDD VSS sel B[0] A[0] Y[0] B[11] A[11] Y[11] ICV_1 $T=5135 16870 1 180 $X=725 $Y=16870
+X9 VDD VSS sel B[10] A[10] Y[10] B[14] A[14] Y[14] ICV_1 $T=17660 30 1 180 $X=13250 $Y=30
+X10 VDD VSS sel B[9] A[9] Y[9] B[6] A[6] Y[6] ICV_1 $T=22070 8450 1 180 $X=17660 $Y=8450
+.ENDS
+***************************************

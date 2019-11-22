@@ -1,0 +1,5 @@
+mgc_rve_context "mirroradder" 1000
+mgc_rve_property "w" 5.2e-07  "l" 1.3e-07  "model" "nmos"
+mgc_rve_layer "nmos"
+mr 1430 1040 1560 1560
+mgc_rve_zoom 1.403 0.929 1.587 1.671 1

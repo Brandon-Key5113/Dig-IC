@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5d781c8ece26.03.81.15.9a.12.00.3f.90 18 2 1 0
+V v 16 1 5d9dd8aaa89b.03.81.15.9a.2a.00.74.fa
+F o 0 ""
+V v 17 1 5da72d7e8a84.03.81.15.9a.2a.00.3e.90
+F o 0 ""
+V v 18 1 5da9d629d3d4.03.81.15.9a.2a.00.2e.3e
+F o 0 ""
+O 18
+R cspuv 0 "$PYXIS_SPT/digicdesign/mirroradder/schematic/sheet1" 17 mgc_sheet 5da9d629ced1.03.81.15.9a.2a.00.2e.3e 5d781c8eecee.03.81.15.9a.12.00.3f.90
+O 17
+R cspuv 0 "$PYXIS_SPT/digicdesign/mirroradder/schematic/sheet1" 16 mgc_sheet 5da72d7e84c6.03.81.15.9a.2a.00.3e.90 5d781c8eecee.03.81.15.9a.12.00.3f.90
+O 16
+R cspuv 0 "$PYXIS_SPT/digicdesign/mirroradder/schematic/sheet1" 15 mgc_sheet 5d9dd8aaa260.03.81.15.9a.2a.00.74.fa 5d781c8eecee.03.81.15.9a.12.00.3f.90

@@ -1,0 +1,25 @@
+A 5 u mgc_sheet 5dd867407e7a.03.81.15.9a.2a.00.49.22 1 2 17 0
+V v 1 4 5dd867407e7a.03.81.15.9a.2a.01.49.22
+F f 1 "sheet16.ssht_1"
+F f 1 "sheet16.sgfx_1"
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic" 31 mgc_schematic 5dd867407e78.03.81.15.9a.2a.00.49.22 5dd867351601.03.81.15.9a.2a.00.49.22
+R csduv 1 "$MGC_IC_GENERIC_LIB/offpag.in/part" 1 Eddm_part 5bc451019000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.02.3a.eb
+R csduv 2 "$MGC_IC_GENERIC_LIB/offpag.in/offpag.in" 1 mgc_symbol 5e8fb81f8000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.03.3a.eb
+R csduv 3 "$MGC_IC_GENERIC_LIB/offpag.out/part" 1 Eddm_part 5bc454e33000.0d.00.02.ed.d4.00.00.00 3890e8888efb.03.86.56.31.70.04.3a.eb
+R csduv 4 "$MGC_IC_GENERIC_LIB/offpag.out/offpag.out" 1 mgc_symbol 5e8fb82cd000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.00.3a.eb
+R csduv 5 "$GDKGATES/or02/part" 3 Eddm_part 503d932d29e4.03.93.22.28.96.00.09.b3 503d3d68681e.03.93.22.28.96.01.7e.63
+R csduv 6 "$GDKGATES/or02/or02" 10 mgc_symbol 503d932d29cd.03.93.22.28.96.00.09.b3 503d3d68681d.03.93.22.28.96.0d.7e.63
+R csduv 7 "$GDKGATES/xnor2/part" 3 Eddm_part 503d949195c9.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.0f.7e.63
+R csduv 8 "$GDKGATES/xnor2/xnor2" 10 mgc_symbol 503d949195af.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.11.7e.63
+R csduv 9 "$GDKGATES/oai32/part" 4 Eddm_part 503d9b3a4dac.03.93.22.28.96.00.16.34 503d3d431df0.03.93.22.28.96.21.7e.63
+R csduv 10 "$GDKGATES/oai32/oai32" 10 mgc_symbol 503d91dd30fa.03.93.22.28.96.00.09.b3 503d3d431df0.03.93.22.28.96.1f.7e.63
+R csduv 11 "$GDKGATES/xor2/part" 3 Eddm_part 503d94b7937c.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.1b.7e.63
+R csduv 12 "$GDKGATES/xor2/xor2" 10 mgc_symbol 503d94b7936c.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.1d.7e.63
+R csduv 13 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R csduv 14 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63
+R csduv 15 "$GDKGATES/aoi32/part" 4 Eddm_part 503d474cf34c.03.93.22.28.96.00.34.40 503d3ceec93d.03.93.22.28.96.05.7e.63
+R csduv 16 "$GDKGATES/aoi32/aoi32" 10 mgc_symbol 503d474cf322.03.93.22.28.96.00.34.40 503d3ceec93d.03.93.22.28.96.03.7e.63

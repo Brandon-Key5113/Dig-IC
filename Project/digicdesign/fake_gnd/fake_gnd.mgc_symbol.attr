@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dd185c4e0ef.03.81.15.9a.2a.00.0a.87 1 2 1 0
+V v 1 2 5dd185c4e0f0.03.81.15.9a.2a.00.0a.87
+F f 1 "fake_gnd.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/fake_gnd/part" 1 Eddm_part 5dd185c6add0.03.81.15.9a.2a.01.0a.87 5dd185c6add0.03.81.15.9a.2a.00.0a.87

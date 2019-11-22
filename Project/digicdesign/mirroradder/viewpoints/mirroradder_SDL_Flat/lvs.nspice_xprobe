@@ -1,0 +1,80 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground ground
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell #top#
+   Pin Cout Cout
+   Pin NS NS
+   Pin S S
+   Pin A A
+   Pin B B
+   Pin Cin Cin
+   Pin Vdd Vdd
+   Net N$74 N$74
+   Net N$92 N$92
+   Net N$96 N$96
+   Net N$100 N$100
+   Net N$83 N$83
+   Net N$81 N$81
+   Net N$75 N$75
+   Net N$72 N$72
+   Net N$139 N$139
+   Net N$128 N$128
+   Net N$126 N$126
+   Net A A
+   Net B B
+   Net Cin Cin
+   Net Vdd Vdd
+   Net Cout Cout
+   Net NS NS
+   Net S S
+   Global ground ground
+   Inst M18 M18 nmos
+   Inst M17 M17 nmos
+   Inst M8 M8 pmos
+   Inst M7 M7 pmos
+   Inst M6 M6 pmos
+   Inst M5 M5 pmos
+   Inst M4 M4 pmos
+   Inst M2 M2 pmos
+   Inst M1 M1 pmos
+   Inst M10 M10 pmos
+   Inst M13 M13 pmos
+   Inst M12 M12 pmos
+   Inst M11 M11 pmos
+   Inst M9 M9 pmos
+   Inst M14 M14 nmos
+   Inst M15 M15 nmos
+   Inst M16 M16 nmos
+   Inst M3 M3 pmos
+   Inst M19 M19 pmos
+   Inst M27 M27 nmos
+   Inst M26 M26 nmos
+   Inst M25 M25 nmos
+   Inst M24 M24 nmos
+   Inst M23 M23 nmos
+   Inst M22 M22 nmos
+   Inst M21 M21 nmos
+   Inst M20 M20 nmos
+   Inst M28 M28 nmos
+End Cell
+

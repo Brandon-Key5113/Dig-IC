@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/ALU_16Bit.dv
+dv_start matched                                  
+dv_cell {ALU_16Bit} {ALU_16Bit} matched
+dv_obj_count -transformed_nets {284 284} -transformed_inst {251 251} -transformed_port {53 53}
+dv_end

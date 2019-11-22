@@ -1,0 +1,274 @@
+
+Running eldo on eng-2500-07
+with Eldo libraries :
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldoudm_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomos1_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldoekv_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomosp9_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldocsem_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomos2_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomos3_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldobip_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldodio_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldojfet_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldosoi_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomos4_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldoasitft_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldohisim_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldospmod_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldopsp_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomosvar_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldolegtft_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldomoto_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldost_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldobnr_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldorockw_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldopubhicum_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldotftsh_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldobta_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldofas_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldofascm_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldosdsim_64.so
+/tools/mentor/ams/2013.12.2d/aol/lib/libeldowire_64.so
+Unable to load VerilogA library libogr_64.so,
+
+
+
+Copyright 1988 Mentor Graphics Corporation
+All Rights Reserved
+
+THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY
+INFORMATION WHICH ARE THE PROPERTY OF MENTOR
+GRAPHICS CORPORATION OR ITS LICENSORS AND IS
+SUBJECT TO LICENSE TERMS.
+
+
+
+***** SYSTEM INFORMATION ...
+
+*** User  : bxk5113@eng-2500-07
+*** OS    : \S [VCO = aol]
+*** CPU   :
+    AMD A10-7850K APU with Radeon(TM) R7 Graphics
+    Number of physical processors     : 1
+    Hyper-Threading Technology        : enabled
+    Number of cpu cores               : 2
+    Number of logical processors      : 4
+*** Freq  : 3700.000MHz
+*** Cache : 2048 KB
+*** MEM   : 15239504 kB
+*** Date  : Wed Sep 11 09:19:11 2019
+
+
+***** PRE-PROCESSING ...
+
+
+***** ANALYSIS ....
+
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter ISA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter BFA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter NFA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RBA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter REA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RCA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter RBMA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter CJEA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+Warning 46: In file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 6767:
++   Double definition for parameter CJCA
++   Previous definition was in file "/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo" line 8
+
+***** 0  error(s). 
+***** 9  warning(s). 
+
+
+***** GENERATION ...
+
+Warning 1615: In file "./mirroradder_default.cir" line 15:
++   COMMAND ".TRAN": TPRINT can not be <= 0.0.
++   It is set to TSTOP/20.0 = 8.000e-09 s.
+
+***** 0  error(s). 
+***** 10  warning(s). 
+
+
+INFORMATION ABOUT COMPILATION...
+
+
+Memory space allocated (MB):    250
+34 elements
+18 nodes
+4 input signals
+
+***> Parsing CPU TIME 0h 0mn 0s 050ms <***
+
+
+Eldo VERSION : ELDO 12.2d (64 bits) Mon Dec 16 16:33:30 GMT 2013
+
+*** DATE: 11-Sep-2019 09:19:12
+
+*** TITLE: * Component: $PYXIS_SPT/digicdesign/mirroradder Viewpoint: default
+
+TEMPERATURE : 125.000000 degrees C
+
+
+Performing DC analysis...
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:7 iterations FOR DC analysis
+A             0.0000     
+B             0.0000     
+CIN           0.0000     
+COUT          5.9174U    
+N$100         1.0799     
+N$126         1.0800     
+N$128         1.0800     
+N$139         23.5789M   
+N$72          38.0586M   
+N$74          1.0800     
+N$75          843.0874M  
+N$81          18.1867M   
+N$83          54.9360M   
+N$92          1.0800     
+N$96          1.0799     
+NS            1.0798     
+S             5.9433U    
+VDD           1.0800     
+
+   TOTAL POWER DISSIPATION:  77.5603N    WATTS
+
+Connecting to JWDB server, please wait...
+connected to wdb server : -jwdbhost eng-2500-07 -jwdbport 35211
+
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  257.6
+nb of components: 34
+nb of nodes: 74
+nb of MOS or BIP calls: 630
+Number of steps computed: 0
+
+***>CPU TIME 0s 010ms <***
+
+Searching Operating Point between -1.080000e+00V and 
+                                  2.160000e+00V
+
+--> Partitioning circuit...
+
+***> DC CPU TIME 0s 000ms <***
+
+DC:1 iterations FOR DC analysis
+A             0.0000     
+B             0.0000     
+CIN           0.0000     
+COUT          5.9174U    
+N$100         1.0799     
+N$126         1.0800     
+N$128         1.0800     
+N$139         23.5789M   
+N$72          38.0586M   
+N$74          1.0800     
+N$75          843.0874M  
+N$81          18.1867M   
+N$83          54.9360M   
+N$92          1.0800     
+N$96          1.0799     
+NS            1.0798     
+S             5.9433U    
+VDD           1.0800     
+
+   TOTAL POWER DISSIPATION:  77.5603N    WATTS
+
+
+Eldo NEWTON: VNTOL=1.000000e-06 RELTOL=6.111111e-04
+
+Compute from 0.000000 Nano to 160.000000 Nano
+................................................
+Simulation progress                : 10% (t = 20.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  10)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 20% (t = 34.5982 N)
+Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s  10)
+CPU Usage                          :   0%               (100%)
+................................................
+Simulation progress                : 30% (t = 52.7846 N)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  20)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 40% (t = 64.2151 N)
+Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s  20)
+CPU Usage                          :   0%               (100%)
+................................................
+Simulation progress                : 50% (t = 80.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s  20)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 60% (t = 100.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  30)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 70% (t = 117.3393 N)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  40)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 80% (t = 131.9755 N)
+Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s  40)
+CPU Usage                          :   0%               ( 97%)
+................................................
+Simulation progress                : 90% (t = 145.1777 N)
+Elapsed CPU time                   :  0h  0mn  0s  10   ( 0h  0mn  0s  50)
+CPU Usage                          : 100%               (100%)
+................................................
+Simulation progress                : 100% (t = 160.0000 N)
+Elapsed CPU time                   :  0h  0mn  0s   0   ( 0h  0mn  0s  50)
+CPU Usage                          : 100%               (100%)
+
+
+***>Current simulation completed
+
+
+
+
+SIMULATION INFORMATION 
+memory size allocated in Mbytes  257.6
+Latency: 0.000000%
+average number of newton iterations: 2.945455
+nb of components: 34
+nb of nodes: 74
+nb of MOS or BIP calls: 6955
+Number of steps computed: 165
+
+***>CPU TIME 0s 050ms <***
+
+***>MESSAGE SUMMARY: 10 warnings
+
+***>GLOBAL CPU TIME 0s 120ms <***
+
+
+***>GLOBAL ELAPSED TIME 2s <***
+

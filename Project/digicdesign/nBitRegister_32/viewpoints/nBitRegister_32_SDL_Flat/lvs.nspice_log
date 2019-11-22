@@ -1,0 +1,325 @@
+
+//  Pyxis Netlister  v10.4_0.0  Tue Apr 22 13:18:07 PDT 2014
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86_64 Linux.
+//
+
+//  Invocation args:  -lvs -preserve_case -spice_top_sub -o /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/nBitRegister_32/nBitRegister_32.cal/nBitRegister_32.calibre.src.net /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/nBitRegister_32/viewpoints/nBitRegister_32_SDL_Flat
+
+// **** Reading <$PYXIS_SPT/digicdesign/nBitRegister_32/viewpoints/nBitRegister_32_SDL_Flat> for LVS netlist ****
+
+// Checking 4 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/dffr/@ncf.dir/dffr.ncf' succeeded.
+// Parsing file '/tools/mentor/pyxis/current/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/mux21/@ncf.dir/mux21.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/inv01/@ncf.dir/inv01.ncf' succeeded.
+Processing [$PYXIS_SPT/digicdesign/nBitRegister_32] [nBitRegister_32/nBitRegister_32] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_24'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_24'
+Processing [$GDKGATES/dffr] [dffr/dffr] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_25'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_25'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_26'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_26'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_27'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_27'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_28'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_28'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_29'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_29'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_30'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_30'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_31'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_31'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix663'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix663'
+Processing [$GDKGATES/mux21] [mux21/mux21] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix673'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix673'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix683'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix683'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix693'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix693'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix703'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix703'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix713'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix713'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix723'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix723'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix733'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix733'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_0'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_0'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_1'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_1'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_2'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_2'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_3'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_3'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_4'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_4'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_5'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_5'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_6'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_6'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_7'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_7'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_8'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_8'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_9'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_9'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_10'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_10'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_11'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_11'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_12'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_12'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_13'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_13'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_14'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_14'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_15'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_15'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_16'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_16'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_17'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_17'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_18'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_18'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_19'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_19'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_20'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_20'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_21'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_21'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_22'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_22'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/reg_Y_23'
+
+ *** warning *** : Unable to evaluate expression 'dffr' in MODEL property on instance '/reg_Y_23'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix423'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix423'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix433'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix433'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix443'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix443'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix453'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix453'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix463'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix463'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix473'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix473'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix483'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix483'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix493'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix493'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix503'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix503'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix513'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix513'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix523'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix523'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix533'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix533'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix543'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix543'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix553'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix553'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix563'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix563'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix573'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix573'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix583'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix583'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix593'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix593'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix603'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix603'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix613'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix613'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix623'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix623'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix633'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix633'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix643'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix643'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix653'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix653'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix745'
+
+ *** warning *** : Unable to evaluate expression 'inv01' in MODEL property on instance '/ix745'
+Processing [$GDKGATES/inv01] [inv01/inv01] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix844'
+
+ *** warning *** : Unable to evaluate expression 'inv01' in MODEL property on instance '/ix844'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix846'
+
+ *** warning *** : Unable to evaluate expression 'inv01' in MODEL property on instance '/ix846'
+ COMPONENT [$GDKGATES/inv01] CELL [$GDKGATES/inv01]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/inv01] CELL [$GDKGATES/inv01]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [$GDKGATES/mux21] CELL [$GDKGATES/mux21]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/mux21] CELL [$GDKGATES/mux21]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [$GDKGATES/dffr] CELL [$GDKGATES/dffr]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/dffr] CELL [$GDKGATES/dffr]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
+Primitive [$GENERIC13/symbols/nmos] [nmos/nmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/nmos/@ncf.dir/nmos.ncf)
+
+**** Writing <$PYXIS_SPT/digicdesign/nBitRegister_32/viewpoints/nBitRegister_32_SDL_Flat> netlist for LVS ****
+
+Number of cells: 6
+Number of primitive instances: 1478
+
+Done...
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/dffr/@ncf.dir/dffr.ncf' closed.
+// Registration file '/tools/mentor/pyxis/current/pyxis_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/mux21/@ncf.dir/mux21.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/inv01/@ncf.dir/inv01.ncf' closed.

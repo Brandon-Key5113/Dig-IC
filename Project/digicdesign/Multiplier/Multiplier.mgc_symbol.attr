@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dd53e3827e7.03.81.15.9a.2a.00.2c.6c 1 2 1 0
+V v 1 2 5dd53e3827e7.03.81.15.9a.2a.01.2c.6c
+F f 1 "Multiplier.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/Multiplier/part" 10 Eddm_part 5dd53e3acd37.03.81.15.9a.2a.00.2c.6c 5dd185c4afd8.03.81.15.9a.2a.00.0a.87

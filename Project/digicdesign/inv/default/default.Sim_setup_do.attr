@@ -1,0 +1,15 @@
+A 5 u Sim_setup_do 5d6fb1cc7c0a.03.81.15.9a.12.00.08.54 2 2 8 0
+V v 1 1 5d6fb1f59f2f.03.81.15.9a.12.00.08.54
+F f 1 "default.db_1"
+V v 2 1 5d6fbecbbb22.03.81.15.9a.12.00.19.ba
+F f 2 "default.db_2"
+O 2
+R csdni 4 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 5 "$PYXIS_SPT/digicdesign/inv/default" 3 Eddm_design_viewpoint 5d6fb2255eac.03.81.15.9a.12.00.19.ba 5d6fb1ca28e9.03.81.15.9a.12.00.08.54
+R csdni 6 "$GENERIC13/models/include_all" 1 Mgc_file
+R csdni 7 "$GENERIC13/models/lib.eldo" 1 Mgc_file
+O 1
+R csdni 0 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 1 "$PYXIS_SPT/digicdesign/inv/default" 2 Eddm_design_viewpoint 5d6fb1cc5c98.03.81.15.9a.12.00.08.54 5d6fb1ca28e9.03.81.15.9a.12.00.08.54
+R csdni 2 "$GENERIC13/models/include_all" 1 Mgc_file
+R csdni 3 "$GENERIC13/models/lib.eldo" 1 Mgc_file

@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5dc2c8c48db5.03.81.15.9a.12.00.2d.d4 2 2 2 0
+V v 1 1 5dc2c8c48db5.03.81.15.9a.12.01.2d.d4
+F f 1 "part.part_1"
+V v 2 1 5dc2c8c553d6.03.81.15.9a.12.00.2d.d4
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/ALU_16Bit/ALU_16Bit" 1 mgc_symbol 5dc2c8c1db2c.03.81.15.9a.12.01.2d.d4 5dc2c8c1db2c.03.81.15.9a.12.00.2d.d4
+R csduv 1 "$PYXIS_SPT/digicdesign/ALU_16Bit/schematic" 1 mgc_schematic 5dc2c8c499d1.03.81.15.9a.12.01.2d.d4 5dc2c8c499d1.03.81.15.9a.12.00.2d.d4
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/ALU_16Bit/ALU_16Bit" 1 mgc_symbol 5dc2c8c1db2c.03.81.15.9a.12.01.2d.d4 5dc2c8c1db2c.03.81.15.9a.12.00.2d.d4

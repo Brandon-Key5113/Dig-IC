@@ -1,0 +1,16 @@
+* ELDO netlist generated with ICnet by 'bxk5113' on Wed Sep  4 2019 at 08:30:30
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* MAIN CELL: Component pathname : $PYXIS_SPT/digicdesign/nmosiv
+*
+        M1 VA VG GROUND GROUND nmos w=0.26u l=0.13u m=1 as=88.4f ad=88.4f
++  ps=0.94u pd=0.94u
+*
+.end

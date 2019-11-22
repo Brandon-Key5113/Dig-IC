@@ -1,0 +1,1050 @@
+
+
+
+                  ##################################################
+                  ##                                              ##
+                  ##         C A L I B R E    S Y S T E M         ##
+                  ##                                              ##
+                  ##             L V S   R E P O R T              ##
+                  ##                                              ##
+                  ##################################################
+
+
+
+REPORT FILE NAME:         inv.lvs.report
+LAYOUT NAME:              /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/inv.cal/svdb/inv.sp ('inv')
+SOURCE NAME:              /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/layout_test.cir ('inv')
+RULE FILE:                /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/inv.cal/_PEX_
+CREATION TIME:            Sat Oct  5 12:06:05 2019
+CURRENT DIRECTORY:        /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/inv.cal
+USER NAME:                bxk5113
+CALIBRE VERSION:          v2013.4_26.18    Fri Dec 13 14:55:29 PST 2013
+
+
+
+                               OVERALL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Properties missing on instances in source.
+  Error:    Different numbers of nets.
+  Error:    Different numbers of instances.
+  Error:    Connectivity errors.
+
+
+**************************************************************************************************************
+                                      CELL  SUMMARY
+**************************************************************************************************************
+
+  Result         Layout                        Source
+  -----------    -----------                   --------------
+  INCORRECT                                    PM_INV_A
+  INCORRECT                                    PM_INV_GROUND
+  INCORRECT                                    PM_INV_VDD
+  INCORRECT                                    PM_INV_Y
+  INCORRECT      inv                           inv
+
+
+
+**************************************************************************************************************
+                                      LVS PARAMETERS
+**************************************************************************************************************
+
+
+o LVS Setup:
+
+   // LVS COMPONENT TYPE PROPERTY
+   // LVS COMPONENT SUBTYPE PROPERTY
+   // LVS PIN NAME PROPERTY
+   LVS POWER NAME                         "VD33" "AVDDB" "DVDD" "VDDG" "AVDDG" "AHVDD" "AVDDBG" "AHVDDB" "VDD5V" "DHVDD" "TAVDDPST"
+                                          "TAVD33PST" "VDWELL" "AHVDDG" "AVDWELL" "AVDDR" "VDDSA" "TAVDD" "VDDPST" "TAVD33"
+                                          "AHVDDR" "HVDDWELL" "AHVDDWELL" "VDD" "AVDD"
+   LVS GROUND NAME                        "DVSS" "VSSG" "AVSSG" "AHVSS" "AVSSBG" "AHVSSB" "DHVSS" "TAVSSPST" "AHVSSG" "AVSSR"
+                                          "VS33" "TAVSS" "VSSPST" "VSSUB" "AVSSUB" "AHVSSR" "GND" "AGND" "HVSSUB" "VSS" "AHVSSUB"
+                                          "AVSS" "AVSSB"
+   LVS CELL SUPPLY                        NO
+   LVS RECOGNIZE GATES                    ALL
+   LVS IGNORE PORTS                       NO
+   LVS CHECK PORT NAMES                   YES
+   LVS IGNORE TRIVIAL NAMED PORTS         NO
+   LVS BUILTIN DEVICE PIN SWAP            YES
+   LVS ALL CAPACITOR PINS SWAPPABLE       YES
+   LVS DISCARD PINS BY DEVICE             NO
+   LVS SOFT SUBSTRATE PINS                NO
+   LVS INJECT LOGIC                       NO
+   LVS EXPAND UNBALANCED CELLS            YES
+   LVS FLATTEN INSIDE CELL                NO
+   LVS EXPAND SEED PROMOTIONS             NO
+   LVS PRESERVE PARAMETERIZED CELLS       NO
+   LVS GLOBALS ARE PORTS                  YES
+   LVS REVERSE WL                         NO
+   LVS SPICE PREFER PINS                  YES
+   LVS SPICE SLASH IS SPACE               YES
+   LVS SPICE ALLOW FLOATING PINS          YES
+   // LVS SPICE ALLOW INLINE PARAMETERS     
+   LVS SPICE ALLOW UNQUOTED STRINGS       NO
+   LVS SPICE CONDITIONAL LDD              NO
+   LVS SPICE CULL PRIMITIVE SUBCIRCUITS   NO
+   LVS SPICE IMPLIED MOS AREA             NO
+   // LVS SPICE MULTIPLIER NAME
+   LVS SPICE OVERRIDE GLOBALS             NO
+   LVS SPICE REDEFINE PARAM               NO
+   LVS SPICE REPLICATE DEVICES            NO
+   LVS SPICE SCALE X PARAMETERS           NO
+   LVS SPICE STRICT WL                    NO
+   // LVS SPICE OPTION
+   LVS STRICT SUBTYPES                    NO
+   LVS EXACT SUBTYPES                     NO
+   LAYOUT CASE                            NO
+   SOURCE CASE                            NO
+   LVS COMPARE CASE                       NO
+   LVS DOWNCASE DEVICE                    NO
+   LVS REPORT MAXIMUM                     1000
+   LVS PROPERTY RESOLUTION MAXIMUM        65536
+   // LVS SIGNATURE MAXIMUM
+   // LVS FILTER UNUSED OPTION
+   // LVS REPORT OPTION
+   LVS REPORT UNITS                       YES
+   // LVS NON USER NAME PORT
+   // LVS NON USER NAME NET
+   // LVS NON USER NAME INSTANCE
+   // LVS IGNORE DEVICE PIN
+
+   // Reduction
+
+   LVS REDUCE SERIES MOS                  NO
+   LVS REDUCE PARALLEL MOS                YES
+   LVS REDUCE SEMI SERIES MOS             NO
+   LVS REDUCE SPLIT GATES                 NO
+   LVS REDUCE PARALLEL BIPOLAR            YES
+   LVS REDUCE SERIES CAPACITORS           YES
+   LVS REDUCE PARALLEL CAPACITORS         YES
+   LVS REDUCE SERIES RESISTORS            YES
+   LVS REDUCE PARALLEL RESISTORS          YES
+   LVS REDUCE PARALLEL DIODES             YES
+   LVS REDUCTION PRIORITY                 PARALLEL
+   
+   LVS SHORT EQUIVALENT NODES             NO
+
+   // Trace Property
+
+   TRACE PROPERTY  r(rm1)  r r 0.2
+   TRACE PROPERTY  r(rm2)  r r 0.2
+   TRACE PROPERTY  r(rm3)  r r 0.2
+   TRACE PROPERTY  r(rm4)  r r 0.2
+   TRACE PROPERTY  r(rm5)  r r 0.2
+   TRACE PROPERTY  r(rm6)  r r 0.2
+   TRACE PROPERTY  r(rm7)  r r 0.2
+   TRACE PROPERTY  r(rm8)  r r 0.2
+   TRACE PROPERTY  mimcap_g13  a a 0
+   TRACE PROPERTY  mimcap_g13  m m 0
+   TRACE PROPERTY  r(rndiffs)  w w 0
+   TRACE PROPERTY  r(rndiffs)  l l 0
+   TRACE PROPERTY  r(rpdiffs)  w w 0
+   TRACE PROPERTY  r(rpdiffs)  l l 0
+   TRACE PROPERTY  r(rndiffwo)  w w 0
+   TRACE PROPERTY  r(rndiffwo)  l l 0
+   TRACE PROPERTY  r(rpdiffwo)  w w 0
+   TRACE PROPERTY  r(rpdiffwo)  l l 0
+   TRACE PROPERTY  r(rnwod)  w w 0
+   TRACE PROPERTY  r(rnwod)  l l 0
+   TRACE PROPERTY  r(rnwsti)  w w 0
+   TRACE PROPERTY  r(rnwsti)  l l 0
+   TRACE PROPERTY  r(rnpolylo)  w w 0
+   TRACE PROPERTY  r(rnpolylo)  l l 0
+   TRACE PROPERTY  r(rppolylo)  w w 0
+   TRACE PROPERTY  r(rppolylo)  l l 0
+   TRACE PROPERTY  r(rnpolyhi)  w w 0
+   TRACE PROPERTY  r(rnpolyhi)  l l 0
+   TRACE PROPERTY  r(rppolyhi)  w w 0
+   TRACE PROPERTY  r(rppolyhi)  l l 0
+   TRACE PROPERTY  mn(nmos)  l l 0
+   TRACE PROPERTY  mn(nmos)  w w 0
+   TRACE PROPERTY  mn(nmos_na)  l l 0
+   TRACE PROPERTY  mn(nmos_na)  w w 0
+   TRACE PROPERTY  mn(nmos_lvt)  l l 0
+   TRACE PROPERTY  mn(nmos_lvt)  w w 0
+   TRACE PROPERTY  mn(nmos_hvt)  l l 0
+   TRACE PROPERTY  mn(nmos_hvt)  w w 0
+   TRACE PROPERTY  mn(nmos_33)  l l 0
+   TRACE PROPERTY  mn(nmos_33)  w w 0
+   TRACE PROPERTY  mn(nmos_na33)  l l 0
+   TRACE PROPERTY  mn(nmos_na33)  w w 0
+   TRACE PROPERTY  mp(pmos)  l l 0
+   TRACE PROPERTY  mp(pmos)  w w 0
+   TRACE PROPERTY  mp(pmos_lvt)  l l 0
+   TRACE PROPERTY  mp(pmos_lvt)  w w 0
+   TRACE PROPERTY  mp(pmos_hvt)  l l 0
+   TRACE PROPERTY  mp(pmos_hvt)  w w 0
+   TRACE PROPERTY  mp(pmos_33)  l l 0
+   TRACE PROPERTY  mp(pmos_33)  w w 0
+   TRACE PROPERTY  d(ndiode)  a a 0.5
+   TRACE PROPERTY  d(ndiode_33)  a a 0.5
+   TRACE PROPERTY  d(pdiode)  a a 0.5
+   TRACE PROPERTY  d(pdiode_33)  a a 0.5
+   TRACE PROPERTY  d(nwdiode)  a a 0.5
+   TRACE PROPERTY  c(nmosvar)  lr lr 0
+   TRACE PROPERTY  c(nmosvar)  wr wr 0
+   TRACE PROPERTY  mp(pmos_rf25)  rl rl 0
+   TRACE PROPERTY  mp(pmos_rf25)  nr nr 0
+   TRACE PROPERTY  mp(pmos_rf)  rl rl 0
+   TRACE PROPERTY  mp(pmos_rf)  nr nr 0
+   TRACE PROPERTY  mn(nmos_rf)  nr nr 0
+   TRACE PROPERTY  mn(nmos_rf25)  nr nr 0
+   TRACE PROPERTY  c(moscap_rf)  nr nr 0
+   TRACE PROPERTY  c(moscap_rf25)  nr nr 0
+   TRACE PROPERTY  c(mimcap)  lt lt 0
+   TRACE PROPERTY  c(xjvar)  nr nr 0
+   TRACE PROPERTY  spiral_inductor_lvs  nr nr 0
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Properties missing on instances in source.
+
+
+SOURCE NAME:              PM_INV_A
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   SOURCE ERRORS
+
+DISC#
+**************************************************************************************************************
+
+Properties Missing on Instances:
+  1    property  w             not found on     r9 (R)
+  2    property  l             not found on     r9 (R)
+  3    property  w             not found on     r8 (R)
+  4    property  l             not found on     r8 (R)
+  5    property  w             not found on     r7 (R)
+  6    property  l             not found on     r7 (R)
+  7    property  w             not found on     r6 (R)
+  8    property  l             not found on     r6 (R)
+  9    property  w             not found on     r5 (R)
+ 10    property  l             not found on     r5 (R)
+ 11    property  w             not found on     r4 (R)
+ 12    property  l             not found on     r4 (R)
+ 13    property  wr            not found on     c3 (C)
+ 14    property  nr            not found on     c3 (C)
+ 15    property  lt            not found on     c3 (C)
+ 16    property  lr            not found on     c3 (C)
+ 17    property  wr            not found on     c2 (C)
+ 18    property  nr            not found on     c2 (C)
+ 19    property  lt            not found on     c2 (C)
+ 20    property  lr            not found on     c2 (C)
+ 21    property  wr            not found on     c1 (C)
+ 22    property  nr            not found on     c1 (C)
+ 23    property  lt            not found on     c1 (C)
+ 24    property  lr            not found on     c1 (C)
+ 25    property  wr            not found on     c0 (C)
+ 26    property  nr            not found on     c0 (C)
+ 27    property  lt            not found on     c0 (C)
+ 28    property  lr            not found on     c0 (C)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Statistics:
+
+   28 source properties were missing.
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Properties missing on instances in source.
+
+
+SOURCE NAME:              PM_INV_GROUND
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   SOURCE ERRORS
+
+DISC#
+**************************************************************************************************************
+
+Properties Missing on Instances:
+  1    property  w             not found on     r14 (R)
+  2    property  l             not found on     r14 (R)
+  3    property  w             not found on     r13 (R)
+  4    property  l             not found on     r13 (R)
+  5    property  w             not found on     r12 (R)
+  6    property  l             not found on     r12 (R)
+  7    property  w             not found on     r11 (R)
+  8    property  l             not found on     r11 (R)
+  9    property  w             not found on     r10 (R)
+ 10    property  l             not found on     r10 (R)
+ 11    property  w             not found on     r9 (R)
+ 12    property  l             not found on     r9 (R)
+ 13    property  w             not found on     r8 (R)
+ 14    property  l             not found on     r8 (R)
+ 15    property  w             not found on     r7 (R)
+ 16    property  l             not found on     r7 (R)
+ 17    property  w             not found on     r6 (R)
+ 18    property  l             not found on     r6 (R)
+ 19    property  w             not found on     r5 (R)
+ 20    property  l             not found on     r5 (R)
+ 21    property  w             not found on     r4 (R)
+ 22    property  l             not found on     r4 (R)
+ 23    property  wr            not found on     c3 (C)
+ 24    property  nr            not found on     c3 (C)
+ 25    property  lt            not found on     c3 (C)
+ 26    property  lr            not found on     c3 (C)
+ 27    property  wr            not found on     c2 (C)
+ 28    property  nr            not found on     c2 (C)
+ 29    property  lt            not found on     c2 (C)
+ 30    property  lr            not found on     c2 (C)
+ 31    property  wr            not found on     c1 (C)
+ 32    property  nr            not found on     c1 (C)
+ 33    property  lt            not found on     c1 (C)
+ 34    property  lr            not found on     c1 (C)
+ 35    property  wr            not found on     c0 (C)
+ 36    property  nr            not found on     c0 (C)
+ 37    property  lt            not found on     c0 (C)
+ 38    property  lr            not found on     c0 (C)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Statistics:
+
+   38 source properties were missing.
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Properties missing on instances in source.
+
+
+SOURCE NAME:              PM_INV_VDD
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   SOURCE ERRORS
+
+DISC#
+**************************************************************************************************************
+
+Properties Missing on Instances:
+  1    property  w             not found on     r15 (R)
+  2    property  l             not found on     r15 (R)
+  3    property  w             not found on     r14 (R)
+  4    property  l             not found on     r14 (R)
+  5    property  w             not found on     r13 (R)
+  6    property  l             not found on     r13 (R)
+  7    property  w             not found on     r12 (R)
+  8    property  l             not found on     r12 (R)
+  9    property  w             not found on     r11 (R)
+ 10    property  l             not found on     r11 (R)
+ 11    property  w             not found on     r10 (R)
+ 12    property  l             not found on     r10 (R)
+ 13    property  w             not found on     r9 (R)
+ 14    property  l             not found on     r9 (R)
+ 15    property  w             not found on     r8 (R)
+ 16    property  l             not found on     r8 (R)
+ 17    property  w             not found on     r7 (R)
+ 18    property  l             not found on     r7 (R)
+ 19    property  w             not found on     r6 (R)
+ 20    property  l             not found on     r6 (R)
+ 21    property  w             not found on     r5 (R)
+ 22    property  l             not found on     r5 (R)
+ 23    property  wr            not found on     c4 (C)
+ 24    property  nr            not found on     c4 (C)
+ 25    property  lt            not found on     c4 (C)
+ 26    property  lr            not found on     c4 (C)
+ 27    property  wr            not found on     c3 (C)
+ 28    property  nr            not found on     c3 (C)
+ 29    property  lt            not found on     c3 (C)
+ 30    property  lr            not found on     c3 (C)
+ 31    property  wr            not found on     c2 (C)
+ 32    property  nr            not found on     c2 (C)
+ 33    property  lt            not found on     c2 (C)
+ 34    property  lr            not found on     c2 (C)
+ 35    property  wr            not found on     c1 (C)
+ 36    property  nr            not found on     c1 (C)
+ 37    property  lt            not found on     c1 (C)
+ 38    property  lr            not found on     c1 (C)
+ 39    property  wr            not found on     c0 (C)
+ 40    property  nr            not found on     c0 (C)
+ 41    property  lt            not found on     c0 (C)
+ 42    property  lr            not found on     c0 (C)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Statistics:
+
+   42 source properties were missing.
+
+
+
+                               CELL COMPARISON RESULTS
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Properties missing on instances in source.
+
+
+SOURCE NAME:              PM_INV_Y
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   SOURCE ERRORS
+
+DISC#
+**************************************************************************************************************
+
+Properties Missing on Instances:
+  1    property  w             not found on     r13 (R)
+  2    property  l             not found on     r13 (R)
+  3    property  w             not found on     r12 (R)
+  4    property  l             not found on     r12 (R)
+  5    property  w             not found on     r11 (R)
+  6    property  l             not found on     r11 (R)
+  7    property  w             not found on     r10 (R)
+  8    property  l             not found on     r10 (R)
+  9    property  w             not found on     r9 (R)
+ 10    property  l             not found on     r9 (R)
+ 11    property  w             not found on     r8 (R)
+ 12    property  l             not found on     r8 (R)
+ 13    property  w             not found on     r7 (R)
+ 14    property  l             not found on     r7 (R)
+ 15    property  w             not found on     r6 (R)
+ 16    property  l             not found on     r6 (R)
+ 17    property  w             not found on     r5 (R)
+ 18    property  l             not found on     r5 (R)
+ 19    property  w             not found on     r4 (R)
+ 20    property  l             not found on     r4 (R)
+ 21    property  wr            not found on     c3 (C)
+ 22    property  nr            not found on     c3 (C)
+ 23    property  lt            not found on     c3 (C)
+ 24    property  lr            not found on     c3 (C)
+ 25    property  wr            not found on     c2 (C)
+ 26    property  nr            not found on     c2 (C)
+ 27    property  lt            not found on     c2 (C)
+ 28    property  lr            not found on     c2 (C)
+ 29    property  wr            not found on     c1 (C)
+ 30    property  nr            not found on     c1 (C)
+ 31    property  lt            not found on     c1 (C)
+ 32    property  lr            not found on     c1 (C)
+ 33    property  wr            not found on     c0 (C)
+ 34    property  nr            not found on     c0 (C)
+ 35    property  lt            not found on     c0 (C)
+ 36    property  lr            not found on     c0 (C)
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+o Statistics:
+
+   36 source properties were missing.
+
+
+
+                   CELL COMPARISON RESULTS ( TOP LEVEL )
+
+
+
+                  #   #         #####################  
+                   # #          #                   #  
+                    #           #     INCORRECT     #  
+                   # #          #                   #  
+                  #   #         #####################  
+
+
+  Error:    Different numbers of nets (see below).
+  Error:    Different numbers of instances (see below).
+  Error:    Connectivity errors.
+
+LAYOUT CELL NAME:         inv
+SOURCE CELL NAME:         inv
+
+--------------------------------------------------------------------------------------------------------------
+
+INITIAL NUMBERS OF OBJECTS
+--------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         5    *
+
+ Nets:               4        44    *
+
+ Instances:          1         1         MN (4 pins)
+                     1         1         MP (4 pins)
+                     0        17    *    C (2 pins)
+                     0        38    *    R (2 pins)
+                ------    ------
+ Total Inst:         2        57
+
+
+NUMBERS OF OBJECTS AFTER TRANSFORMATION
+---------------------------------------
+
+                Layout    Source         Component Type
+                ------    ------         --------------
+ Ports:              4         4
+
+ Nets:               4        33    *
+
+ Instances:          1         1         MN (4 pins)
+                     1         1         MP (4 pins)
+                     0        17    *    C (2 pins)
+                     0        28    *    R (2 pins)
+                ------    ------
+ Total Inst:         2        47
+
+
+       * = Number of objects in layout different from number in source.
+
+
+
+**************************************************************************************************************
+                                 INCORRECT OBJECTS
+**************************************************************************************************************
+
+
+LEGEND:
+-------
+
+  ne  = Naming Error (same layout name found in source
+        circuit, but object was matched otherwise).
+
+
+**************************************************************************************************************
+                                   INCORRECT NETS
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+  1    Net VDD                                                   VDD
+       --------------------------                                --------------------------
+       
+       M1(0.390,-90.870):b                                       ** missing connection **
+       M1(0.390,-90.870):s                                       ** missing connection **
+       
+       ** missing connection **                                  x_PM_INV_VDD/r6:neg
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  2    Net GROUND                                                GROUND
+       --------------------------                                --------------------------
+       
+       M0(0.390,-92.820):b                                       ** missing connection **
+       M0(0.390,-92.820):s                                       ** missing connection **
+       
+       ** missing connection **                                  x_PM_INV_GROUND/r5:neg
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  3    Net Y                                                     Y
+       --------------------------                                --------------------------
+       
+       M1(0.390,-90.870):d                                       ** missing connection **
+       M0(0.390,-92.820):d                                       ** missing connection **
+       
+       ** missing connection **                                  x_PM_INV_Y/r4:pos
+       ** missing connection **                                  x_PM_INV_Y/c1:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  4    Net A                                                     A
+       --------------------------                                --------------------------
+       
+       M1(0.390,-90.870):g                                       ** missing connection **
+       M0(0.390,-92.820):g                                       ** missing connection **
+       
+       ** missing connection **                                  x_PM_INV_A/r4:pos
+       
+
+--------------------------------------------------------------------------------------------------------------
+
+  5    ** missing net **                                         N_Y_M1_d
+
+--------------------------------------------------------------------------------------------------------------
+
+  6    ** missing net **                                         N_A_M1_g
+
+--------------------------------------------------------------------------------------------------------------
+
+  7    ** missing net **                                         N_GROUND_M1_s
+
+--------------------------------------------------------------------------------------------------------------
+
+  8    ** missing net **                                         N_GROUND_M1_b
+
+--------------------------------------------------------------------------------------------------------------
+
+  9    ** missing net **                                         N_Y_M2_d
+
+--------------------------------------------------------------------------------------------------------------
+
+ 10    ** missing net **                                         N_A_M2_g
+
+--------------------------------------------------------------------------------------------------------------
+
+ 11    ** missing net **                                         N_VDD_M2_s
+
+--------------------------------------------------------------------------------------------------------------
+
+ 12    ** missing net **                                         N_VDD_M2_b
+
+--------------------------------------------------------------------------------------------------------------
+
+ 13    ** missing net **                                         x_PM_INV_VDD/20
+
+--------------------------------------------------------------------------------------------------------------
+
+ 14    ** missing net **                                         x_PM_INV_VDD/0
+
+--------------------------------------------------------------------------------------------------------------
+
+ 15    ** missing net **                                         x_PM_INV_VDD/14
+
+--------------------------------------------------------------------------------------------------------------
+
+ 16    ** missing net **                                         x_PM_INV_VDD/13
+
+--------------------------------------------------------------------------------------------------------------
+
+ 17    ** missing net **                                         x_PM_INV_VDD/12
+
+--------------------------------------------------------------------------------------------------------------
+
+ 18    ** missing net **                                         x_PM_INV_VDD/5
+
+--------------------------------------------------------------------------------------------------------------
+
+ 19    ** missing net **                                         x_PM_INV_VDD/18
+
+--------------------------------------------------------------------------------------------------------------
+
+ 20    ** missing net **                                         x_PM_INV_GROUND/18
+
+--------------------------------------------------------------------------------------------------------------
+
+ 21    ** missing net **                                         x_PM_INV_GROUND/0
+
+--------------------------------------------------------------------------------------------------------------
+
+ 22    ** missing net **                                         x_PM_INV_GROUND/15
+
+--------------------------------------------------------------------------------------------------------------
+
+ 23    ** missing net **                                         x_PM_INV_GROUND/14
+
+--------------------------------------------------------------------------------------------------------------
+
+ 24    ** missing net **                                         x_PM_INV_GROUND/8
+
+--------------------------------------------------------------------------------------------------------------
+
+ 25    ** missing net **                                         x_PM_INV_GROUND/20
+
+--------------------------------------------------------------------------------------------------------------
+
+ 26    ** missing net **                                         x_PM_INV_Y/19
+
+--------------------------------------------------------------------------------------------------------------
+
+ 27    ** missing net **                                         x_PM_INV_Y/0
+
+--------------------------------------------------------------------------------------------------------------
+
+ 28    ** missing net **                                         x_PM_INV_Y/12
+
+--------------------------------------------------------------------------------------------------------------
+
+ 29    ** missing net **                                         x_PM_INV_Y/7
+
+--------------------------------------------------------------------------------------------------------------
+
+ 30    ** missing net **                                         x_PM_INV_Y/4
+
+--------------------------------------------------------------------------------------------------------------
+
+ 31    ** missing net **                                         x_PM_INV_A/15
+
+--------------------------------------------------------------------------------------------------------------
+
+ 32    ** missing net **                                         x_PM_INV_A/0
+
+--------------------------------------------------------------------------------------------------------------
+
+ 33    ** missing net **                                         x_PM_INV_A/10
+
+
+**************************************************************************************************************
+                                 INCORRECT INSTANCES
+
+DISC#  LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+ 34    ** missing instance **                                    x_PM_INV_VDD/c0  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 35    ** missing instance **                                    x_PM_INV_VDD/c1  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 36    ** missing instance **                                    x_PM_INV_VDD/c2  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 37    ** missing instance **                                    x_PM_INV_VDD/c3  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 38    ** missing instance **                                    x_PM_INV_VDD/c4  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 39    ** missing instance **                                    x_PM_INV_VDD/r5  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 40    ** missing instance **                                    x_PM_INV_VDD/r6  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 41    ** missing instance **                                    x_PM_INV_VDD/r7  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 42    ** missing instance **                                    x_PM_INV_VDD/r8  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 43    ** missing instance **                                    x_PM_INV_VDD/r9  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 44    ** missing instance **                                    x_PM_INV_VDD/r10  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 45    ** missing instance **                                    x_PM_INV_VDD/r11  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 46    ** missing instance **                                    x_PM_INV_VDD/r12  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 47    ** missing instance **                                    x_PM_INV_VDD/r14  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 48    ** missing instance **                                    x_PM_INV_GROUND/c0  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 49    ** missing instance **                                    x_PM_INV_GROUND/c1  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 50    ** missing instance **                                    x_PM_INV_GROUND/c2  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 51    ** missing instance **                                    x_PM_INV_GROUND/c3  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 52    ** missing instance **                                    x_PM_INV_GROUND/r4  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 53    ** missing instance **                                    x_PM_INV_GROUND/r5  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 54    ** missing instance **                                    x_PM_INV_GROUND/r6  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 55    ** missing instance **                                    x_PM_INV_GROUND/r7  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 56    ** missing instance **                                    x_PM_INV_GROUND/r9  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 57    ** missing instance **                                    x_PM_INV_GROUND/r10  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 58    ** missing instance **                                    x_PM_INV_GROUND/r11  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 59    ** missing instance **                                    x_PM_INV_GROUND/r12  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 60    ** missing instance **                                    x_PM_INV_Y/c0  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 61    ** missing instance **                                    x_PM_INV_Y/c1  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 62    ** missing instance **                                    x_PM_INV_Y/c2  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 63    ** missing instance **                                    x_PM_INV_Y/c3  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 64    ** missing instance **                                    x_PM_INV_Y/r4  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 65    ** missing instance **                                    x_PM_INV_Y/r6  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 66    ** missing instance **                                    x_PM_INV_Y/r8  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 67    ** missing instance **                                    x_PM_INV_Y/r10  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 68    ** missing instance **                                    x_PM_INV_Y/r11  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 69    ** missing instance **                                    x_PM_INV_Y/r12  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 70    ** missing instance **                                    x_PM_INV_Y/r13  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 71    ** missing instance **                                    x_PM_INV_A/c0  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 72    ** missing instance **                                    x_PM_INV_A/c1  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 73    ** missing instance **                                    x_PM_INV_A/c2  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 74    ** missing instance **                                    x_PM_INV_A/c3  C
+
+--------------------------------------------------------------------------------------------------------------
+
+ 75    ** missing instance **                                    x_PM_INV_A/r4  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 76    ** missing instance **                                    x_PM_INV_A/r5  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 77    ** missing instance **                                    x_PM_INV_A/r6  R
+
+--------------------------------------------------------------------------------------------------------------
+
+ 78    ** missing instance **                                    x_PM_INV_A/r7  R
+
+
+
+**************************************************************************************************************
+                               INFORMATION AND WARNINGS
+**************************************************************************************************************
+
+
+                  Matched    Matched    Unmatched    Unmatched    Component
+                   Layout     Source       Layout       Source    Type
+                  -------    -------    ---------    ---------    ---------
+   Ports:               4          4            0            0
+
+   Nets:                4          4            0           29
+
+   Instances:           1          1            0            0    MN(NMOS)
+                        1          1            0            0    MP(PMOS)
+                        0          0            0           17    C
+                        0          0            0           28    R
+                  -------    -------    ---------    ---------
+   Total Inst:          2          2            0           45
+
+
+o Statistics:
+
+   1 passthrough source net was deleted.
+
+   20 series source resistors were reduced to 10.  10 connecting nets were deleted.
+
+
+o Initial Correspondence Points:
+
+   Ports:        VDD GROUND Y A
+
+
+**************************************************************************************************************
+                             DETAILED INSTANCE CONNECTIONS
+
+       LAYOUT NAME                                               SOURCE NAME
+**************************************************************************************************************
+
+          (This section contains detailed information about connections of
+           matched instances that are involved in net discrepancies).
+
+--------------------------------------------------------------------------------------------------------------
+
+       M0(0.390,-92.820)  MN(NMOS)                               M1  MN(NMOS)
+         g: A                                                      ** A **
+         s: GROUND                                                 ** GROUND **
+         d: Y                                                      ** Y **
+         b: GROUND                                                 ** GROUND **
+         ** missing net **                                         g: N_A_M1_g
+         ** missing net **                                         s: N_GROUND_M1_s
+         ** missing net **                                         d: N_Y_M1_d
+         ** missing net **                                         b: N_GROUND_M1_b
+
+--------------------------------------------------------------------------------------------------------------
+
+       M1(0.390,-90.870)  MP(PMOS)                               M2  MP(PMOS)
+         g: A                                                      ** A **
+         s: VDD                                                    ** VDD **
+         d: Y                                                      ** Y **
+         b: VDD                                                    ** VDD **
+         ** missing net **                                         g: N_A_M2_g
+         ** missing net **                                         s: N_VDD_M2_s
+         ** missing net **                                         d: N_Y_M2_d
+         ** missing net **                                         b: N_VDD_M2_b
+
+
+**************************************************************************************************************
+                                         SUMMARY
+**************************************************************************************************************
+
+Total CPU Time:      0 sec
+Total Elapsed Time:  0 sec

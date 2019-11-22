@@ -1,0 +1,27 @@
+A 5 u Eddm_design_viewpoint 5dc2c49464fb.03.81.15.9a.12.00.21.83 1 2 15 0
+V v 1 4 5dc2c49464fb.03.81.15.9a.12.01.21.83
+F f 1 "nBitAdderSubtractor_16Bit_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/part" 2 Eddm_part 5dc04c5f0613.03.81.15.9a.2a.00.31.26 5dc04c5e4273.03.81.15.9a.2a.00.31.26
+R cspuv 1 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/nBitAdderSubtractor_16Bit" 1 mgc_symbol 5dc04c5b518f.03.81.15.9a.2a.00.31.26 5dc04c5b518e.03.81.15.9a.2a.00.31.26
+R cspuv 2 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic" 6 mgc_schematic 5dc050db4c6b.03.81.15.9a.2a.00.3e.4d 5dc04c5e7104.03.81.15.9a.2a.00.31.26
+R cspuv 3 "$GDKGATES/xor2/part" 3 Eddm_part 503d94b7937c.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.1b.7e.63
+R cspuv 4 "$GDKGATES/xnor2/part" 3 Eddm_part 503d949195c9.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.0f.7e.63
+R cspuv 5 "$GDKGATES/ao32/part" 4 Eddm_part 503d46d49a48.03.93.22.28.96.00.34.40 503d3ceec93c.03.93.22.28.96.0d.7e.63
+R cspuv 6 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R cspuv 7 "$GDKGATES/inv01/schematic" 2 mgc_schematic 4e72c874b901.03.93.22.28.e1.00.60.94 503d3cc570cd.03.93.22.28.96.09.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 8 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63
+R cspuv 9 "$GDKGATES/ao32/schematic" 2 mgc_schematic 4e72c7f34f2f.03.93.22.28.e1.00.60.94 503d3ceec93c.03.93.22.28.96.0e.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 10 "$GDKGATES/ao32/ao32" 12 mgc_symbol 503d46d49a2c.03.93.22.28.96.00.34.40 503d3ceec93c.03.93.22.28.96.0b.7e.63
+R cspuv 11 "$GDKGATES/xor2/schematic" 2 mgc_schematic 4e72c961210c.03.93.22.28.e1.00.60.94 503d3d68681f.03.93.22.28.96.1c.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 12 "$GDKGATES/xor2/xor2" 10 mgc_symbol 503d94b7936c.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.1d.7e.63
+R cspuv 13 "$GDKGATES/xnor2/schematic" 2 mgc_schematic 4e72c95959be.03.93.22.28.e1.00.60.94 503d3d68681f.03.93.22.28.96.10.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 14 "$GDKGATES/xnor2/xnor2" 10 mgc_symbol 503d949195af.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.11.7e.63

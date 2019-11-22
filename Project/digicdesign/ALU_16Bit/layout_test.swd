@@ -1,0 +1,352 @@
+//###########################################################
+//# ELDO 12.2d (64 bits) - Saved Window File
+//# Released Mon Dec 16 16:33:30 GMT 2013
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(CB) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Create row #2 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[15]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 2 -zerolevel on
+
+// ===== Create row #3 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[14]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 3 -zerolevel on
+
+// ===== Create row #4 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[13]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 4 -zerolevel on
+
+// ===== Create row #5 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[12]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 5 -zerolevel on
+
+// ===== Create row #6 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[11]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 6 -zerolevel on
+
+// ===== Create row #7 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[10]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 7 -zerolevel on
+
+// ===== Create row #8 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[9]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 8 -zerolevel on
+
+// ===== Create row #9 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[8]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 9 -zerolevel on
+
+// ===== Create row #10 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[7]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 10 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[6]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Create row #2 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[5]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 2 -zerolevel on
+
+// ===== Create row #3 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[4]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 3 -zerolevel on
+
+// ===== Create row #4 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[3]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 4 -zerolevel on
+
+// ===== Create row #5 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[2]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 5 -zerolevel on
+
+// ===== Create row #6 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[1]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 6 -zerolevel on
+
+// ===== Create row #7 =====
+ADD WAveform  <layout_test/TRAN>V(NBITOUT[0]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 7 -zerolevel on
+
+// ===== Create row #8 =====
+ADD WAveform  <layout_test/TRAN>V(A[15]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 8 -zerolevel on
+
+// ===== Create row #9 =====
+ADD WAveform  <layout_test/TRAN>V(A[14]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 9 -zerolevel on
+
+// ===== Create row #10 =====
+ADD WAveform  <layout_test/TRAN>V(A[13]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 10 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(A[12]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Create row #2 =====
+ADD WAveform  <layout_test/TRAN>V(A[11]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 2 -zerolevel on
+
+// ===== Create row #3 =====
+ADD WAveform  <layout_test/TRAN>V(A[10]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 3 -zerolevel on
+
+// ===== Create row #4 =====
+ADD WAveform  <layout_test/TRAN>V(A[9]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 4 -zerolevel on
+
+// ===== Create row #5 =====
+ADD WAveform  <layout_test/TRAN>V(A[8]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 5 -zerolevel on
+
+// ===== Create row #6 =====
+ADD WAveform  <layout_test/TRAN>V(A[7]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 6 -zerolevel on
+
+// ===== Create row #7 =====
+ADD WAveform  <layout_test/TRAN>V(A[6]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 7 -zerolevel on
+
+// ===== Create row #8 =====
+ADD WAveform  <layout_test/TRAN>V(A[5]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 8 -zerolevel on
+
+// ===== Create row #9 =====
+ADD WAveform  <layout_test/TRAN>V(A[4]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 9 -zerolevel on
+
+// ===== Create row #10 =====
+ADD WAveform  <layout_test/TRAN>V(A[3]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 10 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(A[2]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Create row #2 =====
+ADD WAveform  <layout_test/TRAN>V(A[1]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 2 -zerolevel on
+
+// ===== Create row #3 =====
+ADD WAveform  <layout_test/TRAN>V(A[0]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 3 -zerolevel on
+
+// ===== Create row #4 =====
+ADD WAveform  <layout_test/TRAN>V(B[15]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 4 -zerolevel on
+
+// ===== Create row #5 =====
+ADD WAveform  <layout_test/TRAN>V(B[14]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 5 -zerolevel on
+
+// ===== Create row #6 =====
+ADD WAveform  <layout_test/TRAN>V(B[13]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 6 -zerolevel on
+
+// ===== Create row #7 =====
+ADD WAveform  <layout_test/TRAN>V(B[12]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 7 -zerolevel on
+
+// ===== Create row #8 =====
+ADD WAveform  <layout_test/TRAN>V(B[11]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 8 -zerolevel on
+
+// ===== Create row #9 =====
+ADD WAveform  <layout_test/TRAN>V(B[10]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 9 -zerolevel on
+
+// ===== Create row #10 =====
+ADD WAveform  <layout_test/TRAN>V(B[9]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 10 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(B[8]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Create row #2 =====
+ADD WAveform  <layout_test/TRAN>V(B[7]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 2 -zerolevel on
+
+// ===== Create row #3 =====
+ADD WAveform  <layout_test/TRAN>V(B[6]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 3 -zerolevel on
+
+// ===== Create row #4 =====
+ADD WAveform  <layout_test/TRAN>V(B[5]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 4 -zerolevel on
+
+// ===== Create row #5 =====
+ADD WAveform  <layout_test/TRAN>V(B[4]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 5 -zerolevel on
+
+// ===== Create row #6 =====
+ADD WAveform  <layout_test/TRAN>V(B[3]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 6 -zerolevel on
+
+// ===== Create row #7 =====
+ADD WAveform  <layout_test/TRAN>V(B[2]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 7 -zerolevel on
+
+// ===== Create row #8 =====
+ADD WAveform  <layout_test/TRAN>V(B[1]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 8 -zerolevel on
+
+// ===== Create row #9 =====
+ADD WAveform  <layout_test/TRAN>V(B[0]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 9 -zerolevel on
+
+// ===== Create row #10 =====
+ADD WAveform  <layout_test/TRAN>V(CONTROL[1]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 10 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(CONTROL[0]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX

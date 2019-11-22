@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5dc2df9a8aed.03.81.15.9a.12.00.13.e0 2 2 2 0
+V v 1 1 5dc2df9a8aed.03.81.15.9a.12.01.13.e0
+F f 1 "part.part_1"
+V v 2 1 5dc2df9b5360.03.81.15.9a.12.00.13.e0
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/Controller_4Bit/Controller_4Bit" 1 mgc_symbol 5dc2df980ad7.03.81.15.9a.12.01.13.e0 5dc2df980ad7.03.81.15.9a.12.00.13.e0
+R csduv 1 "$PYXIS_SPT/digicdesign/Controller_4Bit/schematic" 1 mgc_schematic 5dc2df9a9aac.03.81.15.9a.12.01.13.e0 5dc2df9a9aac.03.81.15.9a.12.00.13.e0
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/Controller_4Bit/Controller_4Bit" 1 mgc_symbol 5dc2df980ad7.03.81.15.9a.12.01.13.e0 5dc2df980ad7.03.81.15.9a.12.00.13.e0

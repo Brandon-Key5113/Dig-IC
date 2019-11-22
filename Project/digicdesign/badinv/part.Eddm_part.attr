@@ -1,0 +1,6 @@
+A 5 u Eddm_part 5d76ab75ac2d.03.81.15.9a.2a.00.69.55 1 2 1 0
+V v 1 1 5d76ab75ac2e.03.81.15.9a.2a.00.69.55
+F f 1 "part.part_1"
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/badinv/schematic" 1 mgc_schematic 5d76aa871921.03.81.15.9a.2a.01.69.55 5d76aa871921.03.81.15.9a.2a.00.69.55

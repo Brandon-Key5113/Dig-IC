@@ -1,0 +1,16 @@
+A 5 u Eddm_part 5dd185c4afd8.03.81.15.9a.2a.00.0a.87 11 2 8 0
+V v 9 1 5dd53e34b259.03.81.15.9a.2a.00.2c.5e
+F f 9 "part.part_9"
+V v 10 1 5dd53e3acd37.03.81.15.9a.2a.00.2c.6c
+F f 10 "part.part_10"
+V v 11 1 5dd53e3c4c77.03.81.15.9a.2a.00.2c.6c
+F f 11 "part.part_11"
+O 11
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 6 "$PYXIS_SPT/digicdesign/Multiplier/Multiplier" 1 mgc_symbol 5dd53e3827e7.03.81.15.9a.2a.01.2c.6c 5dd53e3827e7.03.81.15.9a.2a.00.2c.6c
+R csduv 7 "$PYXIS_SPT/digicdesign/Multiplier/schematic" 1 mgc_schematic 5dd53e3adc8e.03.81.15.9a.2a.00.2c.6c 5dd53e3adc8d.03.81.15.9a.2a.00.2c.6c
+O 10
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 6 "$PYXIS_SPT/digicdesign/Multiplier/Multiplier" 1 mgc_symbol 5dd53e3827e7.03.81.15.9a.2a.01.2c.6c 5dd53e3827e7.03.81.15.9a.2a.00.2c.6c
+O 9
+P "eddm__stream_to_use" "eddm__propl_dstream"

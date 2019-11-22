@@ -1,0 +1,41 @@
+A 5 u mgc_sheet 5dd53e44598b.03.81.15.9a.2a.00.2c.6c 2 2 15 0
+V v 1 4 5dd53e44598b.03.81.15.9a.2a.01.2c.6c
+F f 1 "sheet10.ssht_1"
+F f 1 "sheet10.sgfx_1"
+F o 0 ""
+F o 0 ""
+V v 2 4 5dd54ba333d6.03.81.15.9a.2a.00.39.2e
+F f 2 "sheet10.ssht_2"
+F f 2 "sheet10.sgfx_2"
+F o 0 ""
+F o 0 ""
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/Multiplier/schematic" 19 mgc_schematic 5dd53e445988.03.81.15.9a.2a.00.2c.6c 5dd53e3adc8d.03.81.15.9a.2a.00.2c.6c
+R csduv 1 "$MGC_IC_GENERIC_LIB/offpag.out/part" 1 Eddm_part 5bc454e33000.0d.00.02.ed.d4.00.00.00 3890e8888efb.03.86.56.31.70.04.3a.eb
+R csduv 2 "$MGC_IC_GENERIC_LIB/offpag.out/offpag.out" 1 mgc_symbol 5e8fb82cd000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.00.3a.eb
+R csduv 3 "$MGC_IC_GENERIC_LIB/offpag.in/part" 1 Eddm_part 5bc451019000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.02.3a.eb
+R csduv 4 "$MGC_IC_GENERIC_LIB/offpag.in/offpag.in" 1 mgc_symbol 5e8fb81f8000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.03.3a.eb
+R csduv 5 "$GDKGATES/xnor2/part" 3 Eddm_part 503d949195c9.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.0f.7e.63
+R csduv 6 "$GDKGATES/xnor2/xnor2" 10 mgc_symbol 503d949195af.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.11.7e.63
+R csduv 7 "$GDKGATES/oai32/part" 4 Eddm_part 503d9b3a4dac.03.93.22.28.96.00.16.34 503d3d431df0.03.93.22.28.96.21.7e.63
+R csduv 8 "$GDKGATES/oai32/oai32" 10 mgc_symbol 503d91dd30fa.03.93.22.28.96.00.09.b3 503d3d431df0.03.93.22.28.96.1f.7e.63
+R csduv 9 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R csduv 10 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63
+R csduv 11 "$MGC_IC_GENERIC_LIB/vss/part" 1 Eddm_part 3db48db938fb.03.93.22.29.75.00.29.26 3db48db938f9.03.93.22.29.75.00.29.26
+R csduv 12 "$MGC_IC_GENERIC_LIB/vss/vss" 1 mgc_symbol 3db48db941cf.03.93.22.29.75.00.29.26 3db48db941ce.03.93.22.29.75.00.29.26
+R csduv 13 "$MGC_IC_GENERIC_LIB/vdd/part" 1 Eddm_part 3db48b399318.03.93.22.29.75.00.28.94 3db48b399317.03.93.22.29.75.00.28.94
+R csduv 14 "$MGC_IC_GENERIC_LIB/vdd/vdd" 1 mgc_symbol 3db48b399bae.03.93.22.29.75.00.28.94 3db48b399bac.03.93.22.29.75.00.28.94
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/Multiplier/schematic" 19 mgc_schematic 5dd53e445988.03.81.15.9a.2a.00.2c.6c 5dd53e3adc8d.03.81.15.9a.2a.00.2c.6c
+R csduv 1 "$MGC_IC_GENERIC_LIB/offpag.out/part" 1 Eddm_part 5bc454e33000.0d.00.02.ed.d4.00.00.00 3890e8888efb.03.86.56.31.70.04.3a.eb
+R csduv 2 "$MGC_IC_GENERIC_LIB/offpag.out/offpag.out" 1 mgc_symbol 5e8fb82cd000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.00.3a.eb
+R csduv 3 "$MGC_IC_GENERIC_LIB/offpag.in/part" 1 Eddm_part 5bc451019000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.02.3a.eb
+R csduv 4 "$MGC_IC_GENERIC_LIB/offpag.in/offpag.in" 1 mgc_symbol 5e8fb81f8000.0d.00.02.ed.d4.00.00.00 3890e8888efc.03.86.56.31.70.03.3a.eb
+R csduv 5 "$GDKGATES/xnor2/part" 3 Eddm_part 503d949195c9.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.0f.7e.63
+R csduv 6 "$GDKGATES/xnor2/xnor2" 10 mgc_symbol 503d949195af.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.11.7e.63
+R csduv 7 "$GDKGATES/oai32/part" 4 Eddm_part 503d9b3a4dac.03.93.22.28.96.00.16.34 503d3d431df0.03.93.22.28.96.21.7e.63
+R csduv 8 "$GDKGATES/oai32/oai32" 10 mgc_symbol 503d91dd30fa.03.93.22.28.96.00.09.b3 503d3d431df0.03.93.22.28.96.1f.7e.63
+R csduv 9 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R csduv 10 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63

@@ -1,0 +1,73 @@
+
+//  Pyxis Netlister  v10.4_0.0  Tue Apr 22 13:18:07 PDT 2014
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86_64 Linux.
+//
+
+//  Invocation args:  -lvs -preserve_case -spice_top_sub -o /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal/Full_Adder.src.net /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/viewpoints/Full_Adder_SDL_Flat1
+
+// **** Reading <$PYXIS_SPT/digicdesign/Full_Adder/viewpoints/Full_Adder_SDL_Flat1> for LVS netlist ****
+
+// Checking 4 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/ao22/@ncf.dir/ao22.ncf' succeeded.
+// Parsing file '/tools/mentor/pyxis/current/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/xnor2/@ncf.dir/xnor2.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/inv01/@ncf.dir/inv01.ncf' succeeded.
+Processing [$PYXIS_SPT/digicdesign/Full_Adder] [Full_Adder/Full_Adder] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix11'
+
+ *** warning *** : Unable to evaluate expression 'ao22' in MODEL property on instance '/ix11'
+Processing [$GDKGATES/ao22] [ao22/ao22] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix3'
+
+ *** warning *** : Unable to evaluate expression 'xnor2' in MODEL property on instance '/ix3'
+Processing [$GDKGATES/xnor2] [xnor2/xnor2] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix1'
+
+ *** warning *** : Unable to evaluate expression 'xnor2' in MODEL property on instance '/ix1'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix99'
+
+ *** warning *** : Unable to evaluate expression 'inv01' in MODEL property on instance '/ix99'
+Processing [$GDKGATES/inv01] [inv01/inv01] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+ COMPONENT [$GDKGATES/inv01] CELL [$GDKGATES/inv01]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/inv01] CELL [$GDKGATES/inv01]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [$GDKGATES/xnor2] CELL [$GDKGATES/xnor2]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/xnor2] CELL [$GDKGATES/xnor2]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+ COMPONENT [$GDKGATES/ao22] CELL [$GDKGATES/ao22]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/ao22] CELL [$GDKGATES/ao22]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
+Primitive [$GENERIC13/symbols/nmos] [nmos/nmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/nmos/@ncf.dir/nmos.ncf)
+
+**** Writing <$PYXIS_SPT/digicdesign/Full_Adder/viewpoints/Full_Adder_SDL_Flat1> netlist for LVS ****
+
+Number of cells: 6
+Number of primitive instances: 32
+
+Done...
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/ao22/@ncf.dir/ao22.ncf' closed.
+// Registration file '/tools/mentor/pyxis/current/pyxis_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/xnor2/@ncf.dir/xnor2.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/inv01/@ncf.dir/inv01.ncf' closed.

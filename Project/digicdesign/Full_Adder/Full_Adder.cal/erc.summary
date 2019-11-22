@@ -1,0 +1,128 @@
+
+
+==================================================================================
+=== CALIBRE::ERC-H SUMMARY REPORT
+===
+Execution Date/Time:          Mon Nov  4 10:54:50 2019
+Calibre Version:              v2013.4_26.18    Fri Dec 13 14:55:29 PST 2013
+Rule File Pathname:           /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal/_LVS_
+Rule File Title:              
+Layout System:                GDSII
+Layout Path(s):               /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.gdsii
+Layout Primary Cell:          Full_Adder
+Current Directory:            /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal
+User Name:                    bxk5113
+Maximum Results/ERC Check:    1000
+Maximum ERC Result Vertices:  4096
+ERC PATHCHK Results Database: svdb/Full_Adder.pathchk.erc
+ERC PATHCHK Report:           svdb/Full_Adder.pathchk.rep
+Layout Depth:                 ALL
+Text Depth:                   PRIMARY
+Summary Report File:          erc.summary (REPLACE)
+Geometry Flagging:            ACUTE = NO  SKEW = YES  ANGLED = NO  OFFGRID = YES
+                              NONSIMPLE POLYGON = NO  NONSIMPLE PATH = NO
+Excluded Cells:              
+CheckText Mapping:            COMMENT TEXT + RULE FILE INFORMATION
+Layers:                       MEMORY-BASED
+Keep Empty Checks:            YES
+----------------------------------------------------------------------------------
+--- RUNTIME WARNINGS
+---
+Path endsegment length 0.015 at location (2.24,7.175) in cell ao22 on layer 31 datatype 0 is less than 1/2 of path width 0.21.
+Path endsegment length 0.015 at location (1.19,7.175) in cell ao22 on layer 31 datatype 0 is less than 1/2 of path width 0.21.
+Path endsegment length 0.015 at location (1.435,5.845) in cell ao22 on layer 17 datatype 0 is less than 1/2 of path width 0.14.
+Layer 6 contains unmapped objects and is the source layer of LAYER MAP == 6 DATATYPE == 3.
+Layer 31 contains unmapped objects and is the source layer of LAYER MAP == 31 DATATYPE == 1.
+Layer 31 contains unmapped objects and is the source layer of LAYER MAP == 31 DATATYPE == 2.
+Layer 32 contains unmapped objects and is the source layer of LAYER MAP == 32 DATATYPE == 1.
+Layer 32 contains unmapped objects and is the source layer of LAYER MAP == 32 DATATYPE == 2.
+Layer 33 contains unmapped objects and is the source layer of LAYER MAP == 33 DATATYPE == 1.
+Layer 33 contains unmapped objects and is the source layer of LAYER MAP == 33 DATATYPE == 2.
+----------------------------------------------------------------------------------
+--- ORIGINAL LAYER STATISTICS
+---
+LAYER RHDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER POLYG ..... TOTAL Original Geometry Count = 97  (140)
+LAYER RPO ....... TOTAL Original Geometry Count = 0   (0)
+LAYER RODMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER OD ........ TOTAL Original Geometry Count = 45  (62)
+LAYER RPDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER NWDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER NWELL ..... TOTAL Original Geometry Count = 6   (8)
+LAYER NP ........ TOTAL Original Geometry Count = 8   (12)
+LAYER OD2 ....... TOTAL Original Geometry Count = 0   (0)
+LAYER NTN ....... TOTAL Original Geometry Count = 0   (0)
+LAYER VTL_N ..... TOTAL Original Geometry Count = 0   (0)
+LAYER VTH_N ..... TOTAL Original Geometry Count = 0   (0)
+LAYER DNW ....... TOTAL Original Geometry Count = 0   (0)
+LAYER PSUB2 ..... TOTAL Original Geometry Count = 0   (0)
+LAYER RFDUMMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER CONT ...... TOTAL Original Geometry Count = 114 (170)
+LAYER VARDMY .... TOTAL Original Geometry Count = 0   (0)
+LAYER PP ........ TOTAL Original Geometry Count = 8   (12)
+LAYER VTL_P ..... TOTAL Original Geometry Count = 0   (0)
+LAYER VTH_P ..... TOTAL Original Geometry Count = 0   (0)
+LAYER DIODMY .... TOTAL Original Geometry Count = 0   (0)
+LAYER BJTDMY .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM1 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M1 ........ TOTAL Original Geometry Count = 123 (160)
+LAYER M1SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER RMDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM2 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M2 ........ TOTAL Original Geometry Count = 38  (38)
+LAYER M2SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM3 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M3 ........ TOTAL Original Geometry Count = 25  (25)
+LAYER M3SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM4 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M4 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER M4SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM5 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M5 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER M5SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM6 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M6 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER M6SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM7 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M7 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER M7SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER DUM8 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER M8 ........ TOTAL Original Geometry Count = 0   (0)
+LAYER M8SLOT .... TOTAL Original Geometry Count = 0   (0)
+LAYER INDDMY .... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA7 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER CTM ....... TOTAL Original Geometry Count = 0   (0)
+LAYER POLY2 ..... TOTAL Original Geometry Count = 0   (0)
+LAYER DRAIN ..... TOTAL Original Geometry Count = 0   (0)
+LAYER RSDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER MGDMY ..... TOTAL Original Geometry Count = 0   (0)
+LAYER NPN1DMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER NPN2DMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER NPN3DMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER PNP1DMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER PNP2DMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER PNP3DMY ... TOTAL Original Geometry Count = 0   (0)
+LAYER var_lvs ... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA1 ...... TOTAL Original Geometry Count = 16  (16)
+LAYER VIA2 ...... TOTAL Original Geometry Count = 16  (16)
+LAYER VIA3 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA4 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA5 ...... TOTAL Original Geometry Count = 0   (0)
+LAYER VIA6 ...... TOTAL Original Geometry Count = 0   (0)
+----------------------------------------------------------------------------------
+--- RULECHECK RESULTS STATISTICS
+---
+----------------------------------------------------------------------------------
+--- ERC PATHCHK RESULTS STATISTICS
+---
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+  PATHCHK ! LABELED:
+----------------------------------------------------------------------------------
+--- SUMMARY
+---
+TOTAL CPU Time:                              0
+TOTAL REAL Time:                             0
+TOTAL Original Layer Geometries:             496 (659)
+TOTAL ERC PATHCHK Operations Executed:       4

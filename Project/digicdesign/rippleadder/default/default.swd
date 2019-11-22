@@ -1,0 +1,49 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Friday, October 18, 2019 at 8:30:44 PM EDT
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -position 0 0 -size 997 806 -divider 0.88
+
+// ===== Create row #1 =====
+add waveform -color_index 0 <rippleadder_default/TRAN>V(A0) -transform "< none >"
+set axis properties -axis X -scale linear
+set axis properties -row 1 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 1 -axis Y1
+set row height -row 1 -exact 222
+
+// ===== Create row #2 =====
+add waveform -color_index 1 <rippleadder_default/TRAN>V(COUT) -transform "< none >"
+set axis properties -row 2 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 2 -axis Y1
+set row height -row 2 -exact 222
+
+// ===== Create row #3 =====
+add waveform -color_index 2 <rippleadder_default/TRAN>V(S3) -transform "< none >"
+set axis properties -row 3 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 3 -axis Y1
+set row height -row 3 -exact 223
+
+// ===== Set X-axis data units =====
+set user scale Time 1.0 s -axis X
+
+// ====== Create the cursors, markers and measurements =====
+measure rise -lower 0.1 -upper 0.9 -relative -id #wf:2.y1.1
+measure fall -lower 0.1 -upper 0.9 -relative -id #wf:2.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -falling -inverting -id1 #wf:3.y1.1 -id2 #wf:1.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -noninverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -noninverting -id1 #wf:2.y1.1 -id2 #wf:1.y1.1
+measure rise -lower 0.1 -upper 0.9 -relative -id #wf:3.y1.1
+measure fall -lower 0.1 -upper 0.9 -relative -id #wf:3.y1.1
+measure delay -level1 0.5 -relative1 -level2 0.5 -relative2 -rising -inverting -id1 #wf:3.y1.1 -id2 #wf:1.y1.1
+
+set active workspace Workspace1

@@ -1,0 +1,231 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/Multiplier.dv
+dv_start unmatched                                
+dv_cell {Multiplier} {Multiplier} unmatched
+dv_obj_count -transformed_nets {1677 1671} -transformed_inst {3024 3024} -transformed_port {66 66}
+dv_discrep 1 {Incorrect Nets} -inst_count { 35 35}
+dv_discrep_line {Net } -lnet {A[12]} {                                                 } -snet {A[12]} {}
+dv_discrep_line {    } -lnet {230} {                                                  }
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X294/M7} {} -lloc {(216.565,150.945)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X520/X1/M7} {} -lloc {(134.805,123.180)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X710/X1/M7} {} -lloc {(124.935,56.645)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X314/X1/M7} {} -lloc {(91.615,5.705)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X273/M7} {} -lloc {(74.465,5.705)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X349/X1/M7} {} -lloc {(291.535,97.335)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X348/X1/M7} {} -lloc {(285.655,97.335)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2):}  {input} {                                          ** missing connection **}
+dv_discrep_line {  } -ldev {X625/X1/M7} {} -lloc {(178.835,56.645)} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix3470/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix2452/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix2592/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix3152/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix2820/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix3401/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix3536/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  (SPUP_3_2):}  {input} {}
+dv_discrep_line {                                                            } -sdev {X_ix3676/MP3} {:}  {g} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 8 8}
+dv_discrep_line {Net } -lnet {816} {                                                   } -snet {nx3518} {}
+dv_discrep_line {    } -lnet {1192} {                                                 }
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 8 8}
+dv_discrep_line {Net } -lnet {413} {                                                   } -snet {nx3270} {}
+dv_discrep_line {    } -lnet {1190} {                                                 }
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 8 8}
+dv_discrep_line {Net } -lnet {425} {                                                   } -snet {nx2960} {}
+dv_discrep_line {    } -lnet {1191} {                                                 }
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 7 7}
+dv_discrep_line {Net } -lnet {706} {                                                   } -snet {nx1486} {}
+dv_discrep_line {    } -lnet {1193} {                                                 }
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 8 8}
+dv_discrep_line {Net } -lnet {996} {                                                   } -snet {nx2569} {}
+dv_discrep_line {    } -lnet {959} {                                                  }
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {399} {                                               } -sport {output} {: } -snet {nx2451} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {640} {                                                } -sport {input} {: } -snet {nx930} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[1]} {                                               } -sport {input} {: } -snet {B[1]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {A[12]} {                                              } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {542} {                                                } -sport {input} {: } -snet {nx794} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {620} {                                                } -sport {input} {: } -snet {nx932} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X520/X1/M5} {} -lloc {(135.925,123.180)} {  MP(PMOS)                     } -sdev {X_ix2452/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X520/X1/M6} {} -lloc {(135.365,123.180)} {  MP(PMOS)                     } -sdev {X_ix2452/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X520/X1/M7} {} -lloc {(134.805,123.180)} {  MP(PMOS)                     } -sdev {X_ix2452/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X520/X1/M8} {} -lloc {(134.245,123.180)} {  MP(PMOS)                     } -sdev {X_ix2452/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X520/X1/M9} {} -lloc {(133.685,123.180)} {  MP(PMOS)                     } -sdev {X_ix2452/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {859} {                                               } -sport {output} {: } -snet {nx3535} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {690} {                                                } -sport {input} {: } -snet {nx2372} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[11]} {                                              } -sport {input} {: } -snet {B[11]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {A[12]} {                                              } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {923} {                                                } -sport {input} {: } -snet {nx2316} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {927} {                                                } -sport {input} {: } -snet {nx2374} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X294/M5} {} -lloc {(215.445,150.945)} {  MP(PMOS)                        } -sdev {X_ix3536/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X294/M6} {} -lloc {(216.005,150.945)} {  MP(PMOS)                        } -sdev {X_ix3536/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X294/M7} {} -lloc {(216.565,150.945)} {  MP(PMOS)                        } -sdev {X_ix3536/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X294/M8} {} -lloc {(217.125,150.945)} {  MP(PMOS)                        } -sdev {X_ix3536/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X294/M9} {} -lloc {(217.685,150.945)} {  MP(PMOS)                        } -sdev {X_ix3536/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {798} {                                               } -sport {output} {: } -snet {nx3151} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {776} {                                                } -sport {input} {: } -snet {nx1752} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[6]} {                                               } -sport {input} {: } -snet {B[6]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {230} {                                                } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {518} {                                                } -sport {input} {: } -snet {nx1636} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {763} {                                                } -sport {input} {: } -snet {nx1754} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X625/X1/M5} {} -lloc {(177.715,56.645)} {  MP(PMOS)                      } -sdev {X_ix3152/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X625/X1/M6} {} -lloc {(178.275,56.645)} {  MP(PMOS)                      } -sdev {X_ix3152/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X625/X1/M7} {} -lloc {(178.835,56.645)} {  MP(PMOS)                      } -sdev {X_ix3152/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X625/X1/M8} {} -lloc {(179.395,56.645)} {  MP(PMOS)                      } -sdev {X_ix3152/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X625/X1/M9} {} -lloc {(179.955,56.645)} {  MP(PMOS)                      } -sdev {X_ix3152/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {1151} {                                              } -sport {output} {: } -snet {nx3400} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {975} {                                                } -sport {input} {: } -snet {nx2160} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[9]} {                                               } -sport {input} {: } -snet {B[9]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {230} {                                                } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {858} {                                                } -sport {input} {: } -snet {nx2080} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {1144} {                                               } -sport {input} {: } -snet {nx2162} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X348/X1/M5} {} -lloc {(284.535,97.335)} {  MP(PMOS)                      } -sdev {X_ix3401/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X348/X1/M6} {} -lloc {(285.095,97.335)} {  MP(PMOS)                      } -sdev {X_ix3401/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X348/X1/M7} {} -lloc {(285.655,97.335)} {  MP(PMOS)                      } -sdev {X_ix3401/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X348/X1/M8} {} -lloc {(286.215,97.335)} {  MP(PMOS)                      } -sdev {X_ix3401/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X348/X1/M9} {} -lloc {(286.775,97.335)} {  MP(PMOS)                      } -sdev {X_ix3401/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {983} {                                               } -sport {output} {: } -snet {nx3469} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {952} {                                                } -sport {input} {: } -snet {nx2272} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[10]} {                                              } -sport {input} {: } -snet {B[10]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {230} {                                                } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {1168} {                                               } -sport {input} {: } -snet {nx2204} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {1169} {                                               } -sport {input} {: } -snet {nx2274} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X349/X1/M5} {} -lloc {(290.415,97.335)} {  MP(PMOS)                      } -sdev {X_ix3470/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X349/X1/M6} {} -lloc {(290.975,97.335)} {  MP(PMOS)                      } -sdev {X_ix3470/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X349/X1/M7} {} -lloc {(291.535,97.335)} {  MP(PMOS)                      } -sdev {X_ix3470/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X349/X1/M8} {} -lloc {(292.095,97.335)} {  MP(PMOS)                      } -sdev {X_ix3470/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X349/X1/M9} {} -lloc {(292.655,97.335)} {  MP(PMOS)                      } -sdev {X_ix3470/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {397} {                                               } -sport {output} {: } -snet {nx2591} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {212} {                                                } -sport {input} {: } -snet {nx1082} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[2]} {                                               } -sport {input} {: } -snet {B[2]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {230} {                                                } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {390} {                                                } -sport {input} {: } -snet {nx946} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {356} {                                                } -sport {input} {: } -snet {nx1084} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X273/M5} {} -lloc {(73.345,5.705)} {  MP(PMOS)                           } -sdev {X_ix2592/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X273/M6} {} -lloc {(73.905,5.705)} {  MP(PMOS)                           } -sdev {X_ix2592/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X273/M7} {} -lloc {(74.465,5.705)} {  MP(PMOS)                           } -sdev {X_ix2592/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X273/M8} {} -lloc {(75.025,5.705)} {  MP(PMOS)                           } -sdev {X_ix2592/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X273/M9} {} -lloc {(75.585,5.705)} {  MP(PMOS)                           } -sdev {X_ix2592/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {466} {                                               } -sport {output} {: } -snet {nx2819} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {313} {                                                } -sport {input} {: } -snet {nx1246} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[3]} {                                               } -sport {input} {: } -snet {B[3]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {230} {                                                } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {451} {                                                } -sport {input} {: } -snet {nx1110} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {334} {                                                } -sport {input} {: } -snet {nx1248} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X314/X1/M5} {} -lloc {(90.495,5.705)} {  MP(PMOS)                        } -sdev {X_ix2820/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X314/X1/M6} {} -lloc {(91.055,5.705)} {  MP(PMOS)                        } -sdev {X_ix2820/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X314/X1/M7} {} -lloc {(91.615,5.705)} {  MP(PMOS)                        } -sdev {X_ix2820/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X314/X1/M8} {} -lloc {(92.175,5.705)} {  MP(PMOS)                        } -sdev {X_ix2820/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X314/X1/M9} {} -lloc {(92.735,5.705)} {  MP(PMOS)                        } -sdev {X_ix2820/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {(SPUP_3_2)                                                (SPUP_3_2)}
+dv_discrep_line {  } -lport {output} {: } -lnet {606} {                                               } -sport {output} {: } -snet {nx3675} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {452} {                                                } -sport {input} {: } -snet {nx2600} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {B[14]} {                                              } -sport {input} {: } -snet {B[14]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {230} {                                                } -sport {input} {: } -snet {A[12]} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {520} {                                                } -sport {input} {: } -snet {nx2580} {}
+dv_discrep_line {  } -lport {input} {: } -lnet {535} {                                                } -sport {input} {: } -snet {nx2602} {}
+dv_discrep_line {}
+dv_discrep_line {Transistors:}
+dv_discrep_line {  } -ldev {X710/X1/M5} {} -lloc {(123.815,56.645)} {  MP(PMOS)                      } -sdev {X_ix3676/MP1} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X710/X1/M6} {} -lloc {(124.375,56.645)} {  MP(PMOS)                      } -sdev {X_ix3676/MP2} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X710/X1/M7} {} -lloc {(124.935,56.645)} {  MP(PMOS)                      } -sdev {X_ix3676/MP3} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X710/X1/M8} {} -lloc {(125.495,56.645)} {  MP(PMOS)                      } -sdev {X_ix3676/MP5} {  MP(PMOS)}
+dv_discrep_line {  } -ldev {X710/X1/M9} {} -lloc {(126.055,56.645)} {  MP(PMOS)                      } -sdev {X_ix3676/MP4} {  MP(PMOS)}
+dv_discrep_line {}
+dv_end

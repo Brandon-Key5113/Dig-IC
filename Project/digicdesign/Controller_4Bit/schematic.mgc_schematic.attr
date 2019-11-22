@@ -1,0 +1,10 @@
+A 5 u mgc_schematic 5dc2df9a9aac.03.81.15.9a.12.00.13.e0 2 2 1 0
+V v 1 1 5dc2df9a9aac.03.81.15.9a.12.01.13.e0
+F o 0 ""
+V v 2 1 5dc2df9b6089.03.81.15.9a.12.00.13.e0
+F o 0 ""
+O 2
+R cspuv 0 "$PYXIS_SPT/digicdesign/Controller_4Bit/schematic/sheet1" 1 mgc_sheet 5dc2df9ac05f.03.81.15.9a.12.00.13.e0 5dc2df9ac05e.03.81.15.9a.12.00.13.e0
+O 1
+R cspuv 0 "$PYXIS_SPT/digicdesign/Controller_4Bit/schematic/sheet1" 1 mgc_sheet 5dc2df9ac05f.03.81.15.9a.12.00.13.e0 5dc2df9ac05e.03.81.15.9a.12.00.13.e0
+P "eddm__refer_state" "eddm__refer_floating"

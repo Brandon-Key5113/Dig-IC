@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/rippleadder.dv
+dv_start matched                                  
+dv_cell {rippleadder} {rippleadder} matched
+dv_obj_count -transformed_nets {27 27} -transformed_inst {48 48} -transformed_port {20 20}
+dv_end

@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/inv.cal
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 0 4 0}
+lvs_LvsOutFile LVS_REPORT inv.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/layout_test.cir
+lvs_LvsOutFile RULES_FILE /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/inv/inv.cal/_PEX_
+lvs_LvsRunTimes 1570291565 1570291565

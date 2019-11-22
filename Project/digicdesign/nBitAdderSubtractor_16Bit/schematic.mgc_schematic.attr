@@ -1,0 +1,16 @@
+A 5 u mgc_schematic 5dc04c5e7104.03.81.15.9a.2a.00.31.26 6 2 2 0
+V v 4 1 5dc04c613c47.03.81.15.9a.2a.00.31.26
+F o 0 ""
+V v 5 1 5dc04cb97430.03.81.15.9a.2a.00.3e.4d
+F o 0 ""
+V v 6 1 5dc050db4c6b.03.81.15.9a.2a.00.3e.4d
+F o 0 ""
+O 6
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic/sheet1" 3 mgc_sheet 5dc050db463b.03.81.15.9a.2a.00.3e.4d 5dc04c5e8e98.03.81.15.9a.2a.00.31.26
+R cspuv 1 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic/sheet2" 1 mgc_sheet 5dc04c5f7a7a.03.81.15.9a.2a.01.31.26 5dc04c5f7a7a.03.81.15.9a.2a.00.31.26
+O 5
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic/sheet1" 2 mgc_sheet 5dc04cb96e15.03.81.15.9a.2a.00.3e.4d 5dc04c5e8e98.03.81.15.9a.2a.00.31.26
+R cspuv 1 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic/sheet2" 1 mgc_sheet 5dc04c5f7a7a.03.81.15.9a.2a.01.31.26 5dc04c5f7a7a.03.81.15.9a.2a.00.31.26
+O 4
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic/sheet1" 1 mgc_sheet 5dc04c5e8e98.03.81.15.9a.2a.01.31.26 5dc04c5e8e98.03.81.15.9a.2a.00.31.26
+R cspuv 1 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/schematic/sheet2" 1 mgc_sheet 5dc04c5f7a7a.03.81.15.9a.2a.01.31.26 5dc04c5f7a7a.03.81.15.9a.2a.00.31.26

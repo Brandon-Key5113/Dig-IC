@@ -1,0 +1,52 @@
+//###########################################################
+//# ELDO 12.2d (64 bits) - Saved Window File
+//# Released Mon Dec 16 16:33:30 GMT 2013
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+
+// ===== Open new window =====
+OPEn WIndow -POSition 0 0 -MAXimized
+
+// ===== Create row #1 =====
+ADD WAveform  <layout_test/TRAN>V(A) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 1 -zerolevel on
+
+// ===== Create row #2 =====
+ADD WAveform  <layout_test/TRAN>V(B) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 2 -zerolevel on
+
+// ===== Create row #3 =====
+ADD WAveform  <layout_test/TRAN>V(CONTROL[1]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 3 -zerolevel on
+
+// ===== Create row #4 =====
+ADD WAveform  <layout_test/TRAN>V(CONTROL[0]) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 4 -zerolevel on
+
+// ===== Create row #5 =====
+ADD WAveform  <layout_test/TRAN>V(Y) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 5 -zerolevel on
+
+// ===== Create row #6 =====
+ADD WAveform  <layout_test/TRAN>V(CB) 
+
+// ===== Set axis zero levels  =====
+SET AXis Properties -Axis Y1 -Row 6 -zerolevel on
+
+// ===== Format rows =====
+SET ROw Height -All -MAX
