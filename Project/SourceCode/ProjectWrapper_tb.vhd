@@ -65,14 +65,15 @@ begin
         
     -- Put initialisation code here
 		WE <= '1';
-        reset <= '1';
-        TestEN <= '0';
-		A <= "0000000000000010";
+        reset <= '0';
+        TestEN <= '1';
+	A <= "0000000000000010";
         B <= "0000000000000010";
 		
 		wait for 300 ns;
 		WE <= '0';
 		wait for 300 ns;
+		reset<='1';
 		A <= "0000000000010000";
 		B <= "0000000000000001";
 		WE <= '1';
