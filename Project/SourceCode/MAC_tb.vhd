@@ -58,15 +58,21 @@ begin
     -- Put initialisation code here
 		WE <= '1';
 		reset <= '1';
-		A <= "0000000000000010";
-		B <= "0000000000000010";
+		A <= "1111111111111111";
+		B <= "1111111111111111";
 		
 		wait for 300 ns;
 		WE <= '0';
-		wait for 300 ns;
 		A <= "0000000000010000";
 		B <= "0000000000000001";
+		wait for 300 ns;
 		WE <= '1';
+		
+		wait for 300 ns;
+		B <= "0000000000000000";
+		
+		wait for 300 ns;
+		reset <= '0';
 	 
 
     -- Put test bench stimulus code here
