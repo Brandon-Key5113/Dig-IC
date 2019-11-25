@@ -18,9 +18,10 @@ entity ProjectWrapper is
         clk : in STD_LOGIC;
         WE : in STD_LOGIC;
         reset : in STD_LOGIC;
-        TestEN : in STD_LOGIC;
+        StartTest : in STD_LOGIC;
         RegOut : out  STD_LOGIC_VECTOR (N-1 downto 0);
-        MISR_out : out std_logic_vector(N-1 downto 0)
+        Pass : out STD_LOGIC;
+        Complete : out STD_LOGIC
     );
 end ProjectWrapper;
 
@@ -65,12 +66,34 @@ architecture Behavioral of ProjectWrapper is
             Y   : out std_logic_vector(n-1  downto  0)
             );
     end  component;
+
+    component TestController is
+        generic( N : integer := 32);
+       Port ( clk : in STD_LOGIC;
+              StartTest : in STD_LOGIC;
+              reset_n : in STD_LOGIC;
+              Count : in  STD_LOGIC_VECTOR (N-1 downto 0);
+              MISR_IN : in STD_LOGIC_VECTOR (N-1 downto 0);
+              Complete : out STD_LOGIC;
+              Pass : out STD_LOGIC;
+              TestEN: out STD_LOGIC
+              );
+    end component;
+
+    component Counter is
+        generic( N : integer := 32);
+       Port ( clk : in STD_LOGIC;
+              TestEN : in STD_LOGIC;
+              reset : in STD_LOGIC;
+              Count : out  STD_LOGIC_VECTOR (N-1 downto 0));
+    end component;
     
 	--SIGNAL DECLARATIONS
     signal MACA, MACB : STD_LOGIC_VECTOR ((N/2) - 1  downto 0);
     signal MACOUT : STD_LOGIC_VECTOR (N-1 downto 0);
     signal LFSROUT : std_logic_vector(N-1 downto 0);
-    
+    signal MISR_out, CounterOut :  std_logic_vector(N-1 downto 0);
+    signal TestEN : STD_LOGIC;
 begin
     --Map those ports
     MAC0 : MAC 
@@ -99,6 +122,18 @@ begin
         port map( MISR_in => MACOUT, clk => clk,
                     rst_n => reset, en => TestEN,
                     MISR_out => MISR_out);
+
+    TEST0 : TestController 
+        generic map( N => 32)
+        port map(clk => clk, StartTest => StartTest,
+            reset_n => reset, Count => CounterOut,
+            MISR_IN => MISR_out, Complete => Complete, 
+            Pass => Pass, TestEN => TestEN);
+    
+    COUNT0 : Counter
+        generic map( N => 32)
+        port map( clk => clk, TestEN => TestEN, reset => reset,
+            Count => CounterOut);
 
     RegOut <= MACOUT;
         

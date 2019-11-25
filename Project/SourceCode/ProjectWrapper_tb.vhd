@@ -12,14 +12,15 @@ architecture bench of ProjectWrapper_tb is
   component ProjectWrapper
       generic( N : integer := 32);
       Port ( A : in  STD_LOGIC_VECTOR ((N/2) - 1  downto 0);
-          B : in  STD_LOGIC_VECTOR ((N/2) - 1 downto 0);
-          clk : in STD_LOGIC;
-          WE : in STD_LOGIC;
-          reset : in STD_LOGIC;
-          TestEN : in STD_LOGIC;
-          RegOut : out  STD_LOGIC_VECTOR (N-1 downto 0);
-          MISR_out : out std_logic_vector(N-1 downto 0)
-      );
+      B : in  STD_LOGIC_VECTOR ((N/2) - 1 downto 0);
+      clk : in STD_LOGIC;
+      WE : in STD_LOGIC;
+      reset : in STD_LOGIC;
+      StartTest : in STD_LOGIC;
+      RegOut : out  STD_LOGIC_VECTOR (N-1 downto 0);
+      Pass : out STD_LOGIC;
+      Complete : out STD_LOGIC
+    );
   end component;
 
   signal A: STD_LOGIC_VECTOR ((N/2) - 1 downto 0);
@@ -27,9 +28,10 @@ architecture bench of ProjectWrapper_tb is
   signal clk: STD_LOGIC;
   signal WE: STD_LOGIC;
   signal reset: STD_LOGIC;
-  signal TestEN: STD_LOGIC;
+  signal StartTest: STD_LOGIC;
   signal RegOut: STD_LOGIC_VECTOR (N-1 downto 0);
-  signal MISR_out: std_logic_vector(N-1 downto 0) ;
+  signal Pass : STD_LOGIC;
+  signal Complete : STD_LOGIC;
 
 begin
 
@@ -40,9 +42,10 @@ begin
                                     clk      => clk,
                                     WE       => WE,
                                     reset    => reset,
-                                    TestEN   => TestEN,
+                                    StartTest   => StartTest,
                                     RegOut   => RegOut,
-                                    MISR_out => MISR_out );
+                                    Pass => Pass,
+				    Complete => Complete );
 
     clk_proc : process
     begin
@@ -66,17 +69,25 @@ begin
     -- Put initialisation code here
 		WE <= '1';
         reset <= '0';
-        TestEN <= '1';
+        StartTest <= '1';
 	A <= "0000000000000010";
         B <= "0000000000000010";
-		
 		wait for 300 ns;
 		WE <= '0';
 		wait for 300 ns;
 		reset<='1';
 		A <= "0000000000010000";
 		B <= "0000000000000001";
-		WE <= '1';
+        WE <= '1';
+        wait for 100800 ns;
+        reset <= '0';
+        StartTest <= '0';
+        A <= "0000000000000010";
+        B <= "0000000000000010";
+        wait for 600 ns;
+        reset <= '1';
+        wait for 600 ns;
+
 	 
 
 
