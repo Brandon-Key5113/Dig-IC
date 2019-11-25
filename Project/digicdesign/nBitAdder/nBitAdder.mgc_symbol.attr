@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dd1859de88e.03.81.15.9a.2a.00.7f.77 1 2 1 0
+V v 1 2 5dd1859de88f.03.81.15.9a.2a.00.7f.77
+F f 1 "nBitAdder.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/nBitAdder/part" 1 Eddm_part 5dd185a0a07b.03.81.15.9a.2a.00.7f.77 5dd185a0a07a.03.81.15.9a.2a.00.7f.77

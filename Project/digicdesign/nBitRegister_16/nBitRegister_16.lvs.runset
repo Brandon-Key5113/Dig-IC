@@ -1,0 +1,12 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/nBitRegister_16/nBitRegister_16.cal
+*lvsLayoutPaths: nBitRegister_16.calibre.gds
+*lvsLayoutPrimary: nBitRegister_16
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: nBitRegister_16.calibre.src.net
+*lvsSourcePrimary: nBitRegister_16
+*lvsSourceGetFromViewer: 1
+*cmnApplyTemplates: 0
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}

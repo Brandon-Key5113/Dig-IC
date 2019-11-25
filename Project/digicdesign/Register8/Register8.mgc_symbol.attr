@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5db050e5eb83.03.81.15.9a.12.00.3b.82 1 2 1 0
+V v 1 2 5db050e5eb83.03.81.15.9a.12.01.3b.82
+F f 1 "Register8.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/Register8/part" 1 Eddm_part 5db050e89e38.03.81.15.9a.12.01.3b.82 5db050e89e38.03.81.15.9a.12.00.3b.82

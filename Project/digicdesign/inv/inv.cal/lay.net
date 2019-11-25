@@ -1,0 +1,16 @@
+* LVS netlist generated with ICnet by 'bxk5113' on Wed Oct  2 2019 at 08:01:11
+
+*
+* Globals.
+*
+.global ground
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/inv
+*
+.subckt inv  Y A Vdd
+
+        M2 Y A Vdd Vdd pmos l=0.13u w=0.52u m=1
+        M1 Y A ground ground nmos l=0.13u w=0.26u m=1
+.ends inv
+

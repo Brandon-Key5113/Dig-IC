@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1571509148 1571509152
+lvs_ExtOutFile RUNDIR /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal
+lvs_ExtOutFile RULES_FILE /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal/_LVS_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 4 0 0 0 1 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal/lay.net
+lvs_ExtOutFile EXTRACTION_REPORT lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/mirroradder.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/mirroradder.pathchk.rep

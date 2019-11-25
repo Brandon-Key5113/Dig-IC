@@ -1,0 +1,23 @@
+A 5 u Ic_cell_template 5dc043a75bdc.03.81.15.9a.2a.00.16.bb 2 4 8 0
+V v 1 2 5dc0487c6d19.03.81.15.9a.2a.00.16.bb
+F f 1 "Full_Adder.iccel_1"
+F o 0 
+V v 2 2 5dc04b5a05c6.03.81.15.9a.2a.00.16.bb
+F f 2 "Full_Adder.iccel_2"
+F o 0 
+O 2
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/Full_Adder/viewpoints/Full_Adder_SDL_Flat1" 1 Eddm_design_viewpoint 5dc043a728d4.03.81.15.9a.2a.00.16.bb 5dc043a728d3.03.81.15.9a.2a.00.16.bb
+R csduv 3 "$GDKGATES/inv01/inv01" 13 Ic_cell_template 50c6b6e6b7e1.03.93.22.28.46.00.42.de 503d3cc570cd.03.93.22.28.96.07.7e.63
+R csduv 4 "$GDKGATES/ao22/ao22" 19 Ic_cell_template 50c6b6e5de3c.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.00.7e.63
+R csduv 5 "$GDKGATES/xnor2/xnor2" 7 Ic_cell_template 50c6b6e7d0e1.03.93.22.28.46.00.42.de 503d3d68681f.03.93.22.28.96.12.7e.63
+R cmduv 6 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdui 7 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/Full_Adder/viewpoints/Full_Adder_SDL_Flat1" 1 Eddm_design_viewpoint 5dc043a728d4.03.81.15.9a.2a.00.16.bb 5dc043a728d3.03.81.15.9a.2a.00.16.bb
+R csduv 3 "$GDKGATES/inv01/inv01" 13 Ic_cell_template 50c6b6e6b7e1.03.93.22.28.46.00.42.de 503d3cc570cd.03.93.22.28.96.07.7e.63
+R csduv 4 "$GDKGATES/ao22/ao22" 19 Ic_cell_template 50c6b6e5de3c.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.00.7e.63
+R csduv 5 "$GDKGATES/xnor2/xnor2" 7 Ic_cell_template 50c6b6e7d0e1.03.93.22.28.46.00.42.de 503d3d68681f.03.93.22.28.96.12.7e.63
+R cmduv 6 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdui 7 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa

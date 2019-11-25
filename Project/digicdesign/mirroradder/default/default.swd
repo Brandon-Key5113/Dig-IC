@@ -1,0 +1,46 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Wednesday, September 11, 2019 at 9:38:56 AM EDT
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ====== Create the expressions =====
+analog2digital -sourcewf <mirroradder_default/TRAN>V(A) -threshold 0.54 Dig_V(A)
+analog2digital -sourcewf <mirroradder_default/TRAN>V(B) -threshold 0.54 Dig_V(B)
+analog2digital -sourcewf <mirroradder_default/TRAN>V(CIN) -threshold 0.54 Dig_V(CIN)
+analog2digital -sourcewf <mirroradder_default/TRAN>V(COUT) -threshold 0.54032 Dig_V(COUT)
+analog2digital -sourcewf <mirroradder_default/TRAN>V(S) -threshold 0.54032 Dig_V(S)
+
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -position 4 2 -size 1288 771 -divider 0.91
+
+// ===== Create row #1 =====
+add waveform <calc>Dig_V(A) -transform "< none >"
+set axis properties -axis X -scale linear
+
+// ===== Create row #2 =====
+add waveform <calc>Dig_V(B) -transform "< none >"
+
+// ===== Create row #3 =====
+add waveform <calc>Dig_V(CIN) -transform "< none >"
+
+// ===== Create row #4 =====
+add waveform <calc>Dig_V(COUT) -transform "< none >"
+
+// ===== Create row #5 =====
+add waveform <calc>Dig_V(S) -transform "< none >"
+
+// ===== Set X-axis data units =====
+set user scale Time 1.0 s -axis X
+
+// ====== Create the cursors, markers and measurements =====
+
+set active workspace Workspace1

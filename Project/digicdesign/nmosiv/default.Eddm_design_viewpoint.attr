@@ -1,0 +1,35 @@
+A 5 u Eddm_design_viewpoint 5d6faacd6b50.03.81.15.9a.12.00.62.09 5 2 23 0
+V v 3 4 5d6fac570d3a.03.81.15.9a.12.00.62.09
+F f 3 "default.dvpt_3"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 4 4 5d6face39fd7.03.81.15.9a.12.00.77.14
+F f 4 "default.dvpt_4"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+V v 5 4 5d6fbeffbd4a.03.81.15.9a.12.00.55.47
+F f 5 "default.dvpt_5"
+F o 0 ""
+F o 0 ""
+F o 0 ""
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/nmosiv/schematic" 2 mgc_schematic 5d6faa4d1398.03.81.15.9a.12.00.62.09 5d6fa86fc5b8.03.81.15.9a.12.00.62.09
+R cspuv 1 "$PYXIS_SPT/digicdesign/nmosiv/part" 1 Eddm_part 5d6faa4cb1a0.03.81.15.9a.12.00.62.09 5d6faa4cb19f.03.81.15.9a.12.00.62.09
+R cspuv 2 "$PYXIS_SPT/digicdesign/nmosiv/default/default" 1 Eddm_ba_mgr 5d6faacd8627.03.81.15.9a.12.01.62.09 5d6faacd8627.03.81.15.9a.12.00.62.09
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/nmosiv/schematic" 2 mgc_schematic 5d6faa4d1398.03.81.15.9a.12.00.62.09 5d6fa86fc5b8.03.81.15.9a.12.00.62.09
+R cspuv 1 "$PYXIS_SPT/digicdesign/nmosiv/part" 1 Eddm_part 5d6faa4cb1a0.03.81.15.9a.12.00.62.09 5d6faa4cb19f.03.81.15.9a.12.00.62.09
+R cspuv 2 "$PYXIS_SPT/digicdesign/nmosiv/default/default" 1 Eddm_ba_mgr 5d6faacd8627.03.81.15.9a.12.01.62.09 5d6faacd8627.03.81.15.9a.12.00.62.09
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3
+R cspuv 14 "$GENERIC13/symbols/nmos/nmos" 41 mgc_symbol 4f3c52ec7400.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0b.11.a3
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/nmosiv/schematic" 2 mgc_schematic 5d6faa4d1398.03.81.15.9a.12.00.62.09 5d6fa86fc5b8.03.81.15.9a.12.00.62.09
+R cspuv 1 "$PYXIS_SPT/digicdesign/nmosiv/part" 1 Eddm_part 5d6faa4cb1a0.03.81.15.9a.12.00.62.09 5d6faa4cb19f.03.81.15.9a.12.00.62.09
+R cspuv 2 "$PYXIS_SPT/digicdesign/nmosiv/default/default" 1 Eddm_ba_mgr 5d6faacd8627.03.81.15.9a.12.01.62.09 5d6faacd8627.03.81.15.9a.12.00.62.09
+R cspuv 3 "$GENERIC13/symbols/nmos/part" 33 Eddm_part 4f3c52ec7414.03.93.22.28.e1.00.55.af 488e22b57232.03.93.22.28.e1.0a.11.a3

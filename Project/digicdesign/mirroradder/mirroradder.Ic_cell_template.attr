@@ -1,0 +1,36 @@
+A 5 u Ic_cell_template 5da06fb22572.03.81.15.9a.2a.00.60.87 46 4 4 0
+V v 42 2 5da735278c99.03.81.15.9a.2a.00.2d.49
+F f 42 "mirroradder.iccel_42"
+F o 0 ""
+V v 43 2 5da9c166c06c.03.81.15.9a.2a.00.2e.53
+F f 43 "mirroradder.iccel_43"
+F o 0 ""
+V v 44 2 5da9d62fbcaa.03.81.15.9a.2a.00.2e.53
+F f 44 "mirroradder.iccel_44"
+F o 0 ""
+V v 45 2 5daa592d2128.03.81.15.9a.12.00.4f.df
+F f 45 "mirroradder.iccel_45"
+F o 0 ""
+V v 46 2 5dab46ab862e.03.81.15.9a.2a.00.42.70
+F f 46 "mirroradder.iccel_46"
+F o 0 ""
+O 46
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/mirroradder/viewpoints/mirroradder_SDL_Flat" 1 Eddm_design_viewpoint 5da06fb1bef3.03.81.15.9a.2a.01.60.87 5da06fb1bef3.03.81.15.9a.2a.00.60.87
+R csdni 3 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+O 45
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/mirroradder/viewpoints/mirroradder_SDL_Flat" 1 Eddm_design_viewpoint 5da06fb1bef3.03.81.15.9a.2a.01.60.87 5da06fb1bef3.03.81.15.9a.2a.00.60.87
+R csdni 3 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+O 44
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/mirroradder/viewpoints/mirroradder_SDL_Flat" 1 Eddm_design_viewpoint 5da06fb1bef3.03.81.15.9a.2a.01.60.87 5da06fb1bef3.03.81.15.9a.2a.00.60.87
+R csdni 3 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+O 43
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/mirroradder/viewpoints/mirroradder_SDL_Flat" 1 Eddm_design_viewpoint 5da06fb1bef3.03.81.15.9a.2a.01.60.87 5da06fb1bef3.03.81.15.9a.2a.00.60.87
+R csdni 3 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file
+O 42
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/mirroradder/viewpoints/mirroradder_SDL_Flat" 1 Eddm_design_viewpoint 5da06fb1bef3.03.81.15.9a.2a.01.60.87 5da06fb1bef3.03.81.15.9a.2a.00.60.87
+R csdni 3 "$GENERIC13/process/sdl_process_rules" 1 Mgc_file

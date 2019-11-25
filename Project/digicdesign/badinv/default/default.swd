@@ -1,0 +1,30 @@
+//###########################################################
+//# EZwave - Saved Window File
+//# Tuesday, September 10, 2019 at 9:35:53 AM EDT
+//#
+//# Note: This is an auto-generated file.
+//#
+//# Any edits that you make may cause the restore of
+//# this window to fail - EDIT AT YOUR OWN RISK
+//###########################################################
+
+SET DOFILE VERSION 2.1
+
+// ===== Open the window =====
+add workspace -name Workspace1 -active
+open window -position 0 0 -size 690 673 -divider 0.82
+
+// ===== Create row #1 =====
+add waveform -color_index 0 <badinv_default/DC>V(IN) -transform "< none >"
+set axis properties -axis X -scale linear
+add waveform -row 1 -axis Y1 -color_index 1 <badinv_default/DC>V(OUT) -transform "< none >"
+set axis properties -row 1 -axis Y1 -autorange
+set user scale Voltage 1.0 V -row 1 -axis Y1
+set row height -row 1 -exact 534
+
+// ===== Set X-axis data units =====
+set user scale Voltage 1.0 V -axis X
+
+// ====== Create the cursors, markers and measurements =====
+
+set active workspace Workspace1

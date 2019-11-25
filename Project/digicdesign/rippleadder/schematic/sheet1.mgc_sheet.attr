@@ -1,0 +1,51 @@
+A 5 u mgc_sheet 5d9dc6d09115.03.81.15.9a.2a.04.49.a1 27 2 21 0
+V v 25 4 5da9ccce20ba.03.81.15.9a.2a.00.68.85
+F f 25 "sheet1.ssht_25"
+F f 25 "sheet1.sgfx_25"
+F o 0 ""
+F o 0 ""
+V v 26 4 5da9f76241a3.03.81.15.9a.2a.00.5e.cf
+F f 26 "sheet1.ssht_26"
+F f 26 "sheet1.sgfx_26"
+F o 0 ""
+F o 0 ""
+V v 27 4 5dab51797651.03.81.15.9a.2a.00.09.2b
+F f 27 "sheet1.ssht_27"
+F f 27 "sheet1.sgfx_27"
+F o 0 ""
+F o 0 ""
+O 27
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/rippleadder/schematic" 1 mgc_schematic 5d781c8ece26.03.81.15.9a.12.01.3f.90 5d9dc6d09115.03.81.15.9a.2a.00.49.a1
+R csduv 7 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 8 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 13 "$PYXIS_SPT/digicdesign/mirroradder/part" 2 Eddm_part 5d9dcf1f076c.03.81.15.9a.2a.00.74.fa 5d78255fa89a.03.81.15.9a.12.00.3f.90
+R csduv 14 "$PYXIS_SPT/digicdesign/mirroradder/mirroradder" 1 mgc_symbol 5d9dcf15b0a9.03.81.15.9a.2a.01.74.fa 5d9dcf15b0a9.03.81.15.9a.2a.00.74.fa
+R csduv 15 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 16 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb
+O 26
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/rippleadder/schematic" 1 mgc_schematic 5d781c8ece26.03.81.15.9a.12.01.3f.90 5d9dc6d09115.03.81.15.9a.2a.00.49.a1
+R csduv 7 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 8 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 13 "$PYXIS_SPT/digicdesign/mirroradder/part" 2 Eddm_part 5d9dcf1f076c.03.81.15.9a.2a.00.74.fa 5d78255fa89a.03.81.15.9a.12.00.3f.90
+R csduv 14 "$PYXIS_SPT/digicdesign/mirroradder/mirroradder" 1 mgc_symbol 5d9dcf15b0a9.03.81.15.9a.2a.01.74.fa 5d9dcf15b0a9.03.81.15.9a.2a.00.74.fa
+R csduv 15 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 16 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb
+R csduv 17 "$MGC_IC_DEVICE_LIB/ideal_capacitor/part" 7 Eddm_part 52ce5fe01e9f.03.89.ca.95.24.00.3c.63 3900e8d5884e.03.93.22.22.60.00.56.1b
+R csduv 18 "$MGC_IC_DEVICE_LIB/ideal_capacitor/ideal_capacitor" 7 mgc_symbol 52ce5fe01e99.03.89.ca.95.24.00.3c.63 3900e8d588b1.03.93.22.22.60.00.56.1b
+R csduv 19 "$MGC_IC_GENERIC_LIB/ground/part" 1 Eddm_part 3db4867e4bc8.03.93.22.29.75.00.27.f6 3db4867e4bc7.03.93.22.29.75.00.27.f6
+R csduv 20 "$MGC_IC_GENERIC_LIB/ground/ground" 1 mgc_symbol 3db4867e5447.03.93.22.29.75.00.27.f6 3db4867e5446.03.93.22.29.75.00.27.f6
+O 25
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/rippleadder/schematic" 1 mgc_schematic 5d781c8ece26.03.81.15.9a.12.01.3f.90 5d9dc6d09115.03.81.15.9a.2a.00.49.a1
+R csduv 7 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 8 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 13 "$PYXIS_SPT/digicdesign/mirroradder/part" 2 Eddm_part 5d9dcf1f076c.03.81.15.9a.2a.00.74.fa 5d78255fa89a.03.81.15.9a.12.00.3f.90
+R csduv 14 "$PYXIS_SPT/digicdesign/mirroradder/mirroradder" 1 mgc_symbol 5d9dcf15b0a9.03.81.15.9a.2a.01.74.fa 5d9dcf15b0a9.03.81.15.9a.2a.00.74.fa
+R csduv 15 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 16 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb
+R csduv 17 "$MGC_IC_DEVICE_LIB/ideal_capacitor/part" 7 Eddm_part 52ce5fe01e9f.03.89.ca.95.24.00.3c.63 3900e8d5884e.03.93.22.22.60.00.56.1b
+R csduv 18 "$MGC_IC_DEVICE_LIB/ideal_capacitor/ideal_capacitor" 7 mgc_symbol 52ce5fe01e99.03.89.ca.95.24.00.3c.63 3900e8d588b1.03.93.22.22.60.00.56.1b
+R csduv 19 "$MGC_IC_GENERIC_LIB/ground/part" 1 Eddm_part 3db4867e4bc8.03.93.22.29.75.00.27.f6 3db4867e4bc7.03.93.22.29.75.00.27.f6
+R csduv 20 "$MGC_IC_GENERIC_LIB/ground/ground" 1 mgc_symbol 3db4867e5447.03.93.22.29.75.00.27.f6 3db4867e5446.03.93.22.29.75.00.27.f6

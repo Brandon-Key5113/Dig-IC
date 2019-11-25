@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/rippleadder/rippleadder.cal
+*lvsLayoutPaths: rippleadder.calibre.gds
+*lvsLayoutPrimary: rippleadder
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: rippleadder.lvs.results
+*lvsSummaryFile: rippleadder.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: rippleadder.calibre.src.net
+*lvsSourcePrimary: rippleadder

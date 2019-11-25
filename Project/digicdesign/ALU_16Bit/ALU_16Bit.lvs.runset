@@ -1,0 +1,12 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_16Bit/ALU_16Bit.cal
+*lvsLayoutPaths: ALU_16Bit.calibre.gds
+*lvsLayoutPrimary: ALU_16Bit
+*lvsLayoutGetFromViewer: 1
+*lvsSourcePath: ALU_16Bit.calibre.src.net
+*lvsSourcePrimary: ALU_16Bit
+*lvsSourceGetFromViewer: 1
+*cmnApplyTemplates: 0
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}

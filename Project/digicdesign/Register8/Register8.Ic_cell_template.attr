@@ -1,0 +1,13 @@
+A 5 u Ic_cell_template 5db051feb25e.03.81.15.9a.12.00.56.4a 1 4 9 0
+V v 1 2 5db0548bcdf2.03.81.15.9a.12.00.56.4a
+F f 1 "Register8.iccel_1"
+F o 0 
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/Register8/viewpoints/Register8_SDL_Flat" 1 Eddm_design_viewpoint 5db051fe8324.03.81.15.9a.12.01.56.4a 5db051fe8324.03.81.15.9a.12.00.56.4a
+R csduv 3 "$GDKGATES/dffr/dffr" 13 Ic_cell_template 50c6b0a4dcb8.03.93.22.28.46.00.42.de 503d3cc570cc.03.93.22.28.96.17.7e.63
+R csduv 4 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R csduv 5 "$GENERIC13/process/vias/M1M2" 13 Ic_cell_template 4a60aad6e40c.03.93.22.28.e1.00.3a.ee 488e22b5722d.03.93.22.28.e1.03.11.a3
+R csduv 6 "$GENERIC13/process/vias/M2M3" 14 Ic_cell_template 4a60aad6db43.03.93.22.28.e1.00.3a.ee 4a561a47b55d.03.93.22.28.e1.00.1c.08
+R csduv 7 "$GENERIC13/process/vias/M3M4" 15 Ic_cell_template 4a60aad6d285.03.93.22.28.e1.00.3a.ee 4a561bb13417.03.93.22.28.e1.00.25.b6
+R csdui 8 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa

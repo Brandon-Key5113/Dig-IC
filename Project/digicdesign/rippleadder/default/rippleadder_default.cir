@@ -1,0 +1,42 @@
+* Component: $PYXIS_SPT/digicdesign/rippleadder Viewpoint: default
+
+.INCLUDE "$PYXIS_SPT/digicdesign/rippleadder/default/netlist.spi"
+.INCLUDE "$GENERIC13/models/include_all"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+
+* - Analysis Setup - DCOP
+.OPTION PROBEOP2
+.OP
+
+* - Analysis Setup - Trans
+.TRAN 0 200n 0n
+
+* --- Forces
+VFORCE__Cin CIN GROUND DC 0
+VFORCE__Vdd VDD GROUND DC 1.08
+VFORCE__A0 A0 GROUND PATTERN 1.08 0 0 0.1n 0.1n 50n 1010 R=0.0
+VFORCE__A1 A1 GROUND DC 1.08
+VFORCE__A2 A2 GROUND DC 0
+VFORCE__A3 A3 GROUND DC 1.08
+VFORCE__B0 B0 GROUND DC 1.08
+VFORCE__B1 B1 GROUND DC 0
+VFORCE__B2 B2 GROUND DC 1.08
+VFORCE__B3 B3 GROUND DC 0
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Params
+.TEMP 125.0
+
+* --- Libsetup
+.LIB KEY=MOS "$GENERIC13/models/lib.eldo" TT
+.LIB KEY=MOS_33 "$GENERIC13/models/lib.eldo" TT_33
+.LIB KEY=MOS_lvt "$GENERIC13/models/lib.eldo" TT_lvt
+.LIB KEY=MOS_hvt "$GENERIC13/models/lib.eldo" TT_hvt
+.LIB KEY=BIP "$GENERIC13/models/lib.eldo" TT_BIP
+.LIB KEY=BIP_NPN "$GENERIC13/models/lib.eldo" TT_BIP_NPN
+.LIB KEY=RES "$GENERIC13/models/lib.eldo" TT_RES

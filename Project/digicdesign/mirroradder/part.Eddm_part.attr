@@ -1,0 +1,12 @@
+A 5 u Eddm_part 5d78255fa89a.03.81.15.9a.12.00.3f.90 2 2 2 0
+V v 1 1 5d78255fa89a.03.81.15.9a.12.01.3f.90
+F f 1 "part.part_1"
+V v 2 1 5d9dcf1f076c.03.81.15.9a.2a.00.74.fa
+F f 2 "part.part_2"
+O 2
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/mirroradder/schematic" 1 mgc_schematic 5d781c8ece26.03.81.15.9a.12.01.3f.90 5d781c8ece26.03.81.15.9a.12.00.3f.90
+R csduv 1 "$PYXIS_SPT/digicdesign/mirroradder/mirroradder" 1 mgc_symbol 5d9dcf15b0a9.03.81.15.9a.2a.01.74.fa 5d9dcf15b0a9.03.81.15.9a.2a.00.74.fa
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/mirroradder/schematic" 1 mgc_schematic 5d781c8ece26.03.81.15.9a.12.01.3f.90 5d781c8ece26.03.81.15.9a.12.00.3f.90

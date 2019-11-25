@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/nBitMux_2to1.dv
+dv_start matched                                  
+dv_cell {nBitMux_2to1} {nBitMux_2to1} matched
+dv_obj_count -transformed_nets {83 83} -transformed_inst {96 96} -transformed_port {51 51}
+dv_end

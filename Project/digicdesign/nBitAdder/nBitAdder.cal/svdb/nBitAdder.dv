@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/nBitAdder.dv
+dv_start matched                                  
+dv_cell {nBitAdder} {nBitAdder} matched
+dv_obj_count -transformed_nets {287 287} -transformed_inst {409 409} -transformed_port {99 99}
+dv_end

@@ -1,0 +1,278 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS VSS
+   VDD VDD
+End Globals
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell inv01
+   Pin Y Y
+   Pin A A
+   Pin VDD VDD
+   Pin VSS VSS
+   Net Y Y
+   Net A A
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MP1 MP1 pmos
+   Inst MN1 MN1 nmos
+End Cell
+
+Cell mux21
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin S0 S0
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$231 N$231
+   Net N$11 N$11
+   Net N$3 N$3
+   Net N$7 N$7
+   Net N$2 N$2
+   Net N$1 N$1
+   Net Y Y
+   Net A1 A1
+   Net A0 A0
+   Net S0 S0
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MN4 MN4 nmos
+   Inst M1 M1 pmos
+   Inst MN5 MN5 nmos
+   Inst M2 M2 nmos
+   Inst MP5 MP5 pmos
+   Inst MP4 MP4 pmos
+   Inst MN3 MN3 nmos
+   Inst MN2 MN2 nmos
+   Inst MP2 MP2 pmos
+   Inst MN1 MN1 nmos
+   Inst MP1 MP1 pmos
+   Inst MP3 MP3 pmos
+End Cell
+
+Cell dffr
+   Pin Q Q
+   Pin QB QB
+   Pin CLK CLK
+   Pin D D
+   Pin R R
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$22 N$22
+   Net N$29 N$29
+   Net N$28 N$28
+   Net N$27 N$27
+   Net N$25 N$25
+   Net N$23 N$23
+   Net N$21 N$21
+   Net N$18 N$18
+   Net N$16 N$16
+   Net N$14 N$14
+   Net N$13 N$13
+   Net N$12 N$12
+   Net N$11 N$11
+   Net bclk bclk
+   Net bclk- bclk-
+   Net N$10 N$10
+   Net D D
+   Net CLK CLK
+   Net Q Q
+   Net QB QB
+   Net R R
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MN17 MN17 nmos
+   Inst MP9 MP9 pmos
+   Inst MP17 MP17 pmos
+   Inst MP8 MP8 pmos
+   Inst MN16 MN16 nmos
+   Inst MN12 MN12 nmos
+   Inst MN11 MN11 nmos
+   Inst MN10 MN10 nmos
+   Inst MP12 MP12 pmos
+   Inst MP11 MP11 pmos
+   Inst MP13 MP13 pmos
+   Inst MN13 MN13 nmos
+   Inst MN6 MN6 nmos
+   Inst MP4 MP4 pmos
+   Inst MN4 MN4 nmos
+   Inst MN2 MN2 nmos
+   Inst MN7 MN7 nmos
+   Inst MN9 MN9 nmos
+   Inst MP10 MP10 pmos
+   Inst MP15 MP15 pmos
+   Inst MP14 MP14 pmos
+   Inst MP1 MP1 pmos
+   Inst MN5 MN5 nmos
+   Inst MN15 MN15 nmos
+   Inst MP16 MP16 pmos
+   Inst MP2 MP2 pmos
+   Inst MN1 MN1 nmos
+   Inst MN3 MN3 nmos
+   Inst MP3 MP3 pmos
+   Inst MN14 MN14 nmos
+   Inst MP7 MP7 pmos
+   Inst MP6 MP6 pmos
+   Inst MP5 MP5 pmos
+   Inst MN8 MN8 nmos
+End Cell
+
+Cell #top#
+   Pin Y[15] Y[15]
+   Pin Y[14] Y[14]
+   Pin Y[13] Y[13]
+   Pin Y[12] Y[12]
+   Pin Y[11] Y[11]
+   Pin Y[10] Y[10]
+   Pin Y[9] Y[9]
+   Pin Y[8] Y[8]
+   Pin Y[7] Y[7]
+   Pin Y[6] Y[6]
+   Pin Y[5] Y[5]
+   Pin Y[4] Y[4]
+   Pin Y[3] Y[3]
+   Pin Y[2] Y[2]
+   Pin Y[1] Y[1]
+   Pin Y[0] Y[0]
+   Pin clk clk
+   Pin nBitIn[15] nBitIn[15]
+   Pin nBitIn[14] nBitIn[14]
+   Pin nBitIn[13] nBitIn[13]
+   Pin nBitIn[12] nBitIn[12]
+   Pin nBitIn[11] nBitIn[11]
+   Pin nBitIn[10] nBitIn[10]
+   Pin nBitIn[9] nBitIn[9]
+   Pin nBitIn[8] nBitIn[8]
+   Pin nBitIn[7] nBitIn[7]
+   Pin nBitIn[6] nBitIn[6]
+   Pin nBitIn[5] nBitIn[5]
+   Pin nBitIn[4] nBitIn[4]
+   Pin nBitIn[3] nBitIn[3]
+   Pin nBitIn[2] nBitIn[2]
+   Pin nBitIn[1] nBitIn[1]
+   Pin nBitIn[0] nBitIn[0]
+   Pin Reset Reset
+   Pin WE WE
+   Net $dummy[15] N$dummy_esc3[15]
+   Net $dummy[14] N$dummy_esc3[14]
+   Net $dummy[13] N$dummy_esc3[13]
+   Net $dummy[12] N$dummy_esc3[12]
+   Net $dummy[11] N$dummy_esc3[11]
+   Net $dummy[10] N$dummy_esc3[10]
+   Net $dummy[9] N$dummy_esc3[9]
+   Net $dummy[8] N$dummy_esc3[8]
+   Net $dummy[7] N$dummy_esc3[7]
+   Net $dummy[6] N$dummy_esc3[6]
+   Net $dummy[5] N$dummy_esc3[5]
+   Net $dummy[4] N$dummy_esc3[4]
+   Net $dummy[3] N$dummy_esc3[3]
+   Net $dummy[2] N$dummy_esc3[2]
+   Net $dummy[1] N$dummy_esc3[1]
+   Net $dummy[0] N$dummy_esc3[0]
+   Net nx370 nx370
+   Net nx360 nx360
+   Net nx350 nx350
+   Net nx320 nx320
+   Net nx310 nx310
+   Net nx300 nx300
+   Net nx290 nx290
+   Net nx280 nx280
+   Net nx270 nx270
+   Net nx260 nx260
+   Net nx250 nx250
+   Net nx240 nx240
+   Net nx380 nx380
+   Net nx340 nx340
+   Net nx330 nx330
+   Net NOT_Reset NOT_Reset
+   Net nx230 nx230
+   Net WE WE
+   Net Reset Reset
+   Net clk clk
+   Net Y[15] Y[15]
+   Net Y[14] Y[14]
+   Net Y[13] Y[13]
+   Net Y[12] Y[12]
+   Net Y[11] Y[11]
+   Net Y[10] Y[10]
+   Net Y[9] Y[9]
+   Net Y[8] Y[8]
+   Net Y[7] Y[7]
+   Net Y[6] Y[6]
+   Net Y[5] Y[5]
+   Net Y[4] Y[4]
+   Net Y[3] Y[3]
+   Net Y[2] Y[2]
+   Net Y[1] Y[1]
+   Net Y[0] Y[0]
+   Net nBitIn[15] nBitIn[15]
+   Net nBitIn[14] nBitIn[14]
+   Net nBitIn[13] nBitIn[13]
+   Net nBitIn[12] nBitIn[12]
+   Net nBitIn[11] nBitIn[11]
+   Net nBitIn[10] nBitIn[10]
+   Net nBitIn[9] nBitIn[9]
+   Net nBitIn[8] nBitIn[8]
+   Net nBitIn[7] nBitIn[7]
+   Net nBitIn[6] nBitIn[6]
+   Net nBitIn[5] nBitIn[5]
+   Net nBitIn[4] nBitIn[4]
+   Net nBitIn[3] nBitIn[3]
+   Net nBitIn[2] nBitIn[2]
+   Net nBitIn[1] nBitIn[1]
+   Net nBitIn[0] nBitIn[0]
+   Global VSS VSS
+   Global VDD VDD
+   Inst ix393 X_ix393 inv01
+   Inst ix321 X_ix321 mux21
+   Inst ix311 X_ix311 mux21
+   Inst ix301 X_ix301 mux21
+   Inst ix291 X_ix291 mux21
+   Inst ix281 X_ix281 mux21
+   Inst ix271 X_ix271 mux21
+   Inst ix261 X_ix261 mux21
+   Inst ix251 X_ix251 mux21
+   Inst ix241 X_ix241 mux21
+   Inst ix231 X_ix231 mux21
+   Inst reg_Y_15 X_reg_Y_15 dffr
+   Inst reg_Y_14 X_reg_Y_14 dffr
+   Inst reg_Y_13 X_reg_Y_13 dffr
+   Inst reg_Y_12 X_reg_Y_12 dffr
+   Inst reg_Y_11 X_reg_Y_11 dffr
+   Inst reg_Y_10 X_reg_Y_10 dffr
+   Inst reg_Y_9 X_reg_Y_9 dffr
+   Inst reg_Y_8 X_reg_Y_8 dffr
+   Inst reg_Y_7 X_reg_Y_7 dffr
+   Inst reg_Y_6 X_reg_Y_6 dffr
+   Inst reg_Y_5 X_reg_Y_5 dffr
+   Inst reg_Y_4 X_reg_Y_4 dffr
+   Inst reg_Y_3 X_reg_Y_3 dffr
+   Inst reg_Y_2 X_reg_Y_2 dffr
+   Inst reg_Y_1 X_reg_Y_1 dffr
+   Inst reg_Y_0 X_reg_Y_0 dffr
+   Inst ix381 X_ix381 mux21
+   Inst ix371 X_ix371 mux21
+   Inst ix361 X_ix361 mux21
+   Inst ix351 X_ix351 mux21
+   Inst ix341 X_ix341 mux21
+   Inst ix331 X_ix331 mux21
+End Cell
+

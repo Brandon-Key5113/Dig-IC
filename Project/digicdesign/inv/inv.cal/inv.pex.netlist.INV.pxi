@@ -1,0 +1,7 @@
+* File: inv.pex.netlist.INV.pxi
+* Created: Sat Oct  5 12:06:08 2019
+* 
+x_PM_INV_VDD N_VDD_M2_b N_VDD_M2_d VDD PM_INV_VDD
+x_PM_INV_GROUND N_GROUND_M1_d N_GROUND_M1_b GROUND PM_INV_GROUND
+x_PM_INV_Y N_Y_M1_s N_Y_M2_s Y PM_INV_Y
+x_PM_INV_A N_A_M1_g N_A_M2_g A PM_INV_A

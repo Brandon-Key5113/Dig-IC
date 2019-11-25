@@ -1,0 +1,8 @@
+//OK 
+//NUMBER_OF_HEADER_LINES: 6
+//VERSION: 1
+//TOKEN_DELIMITER: "
+//TOKEN_SEPARATOR: " "
+//FORMAT: "time" "calibre version" "command line"
+"Sat Oct 19 18:21:43 2019 " "v2013.4_26.18" "-xrc -pdb -rc -turbo 1 /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/rippleadder/rippleadder.cal/_PEX_"
+"Sat Oct 19 18:21:45 2019 " "v2013.4_26.18" "-xrc -fmt -all /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/rippleadder/rippleadder.cal/_PEX_"

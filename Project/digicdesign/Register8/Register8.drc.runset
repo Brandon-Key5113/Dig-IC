@@ -1,0 +1,7 @@
+*drcRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/DRC
+*drcRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Register8/Register8.cal
+*drcLayoutPaths: Register8.calibre.gds
+*drcLayoutPrimary: Register8
+*drcLayoutGetFromViewer: 1
+*drcResultsFile: Register8.drc.results
+*drcSummaryFile: Register8.drc.summary

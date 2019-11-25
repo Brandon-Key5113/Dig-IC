@@ -1,0 +1,61 @@
+A 5 u mgc_schematic 5dd53e3adc8d.03.81.15.9a.2a.00.2c.6c 53 2 17 0
+V v 51 1 5dd54ba354e0.03.81.15.9a.2a.00.39.2e
+F o 0 ""
+V v 52 1 5dd54ba371df.03.81.15.9a.2a.00.39.2e
+F o 0 ""
+V v 53 1 5dd54ba3c02a.03.81.15.9a.2a.00.39.2e
+F o 0 ""
+O 53
+R cspuv 0 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet1" 2 mgc_sheet 5dd54ba1b165.03.81.15.9a.2a.00.39.2e 5dd53e3ae442.03.81.15.9a.2a.00.2c.6c
+R cspuv 1 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet2" 2 mgc_sheet 5dd54ba2095f.03.81.15.9a.2a.00.39.2e 5dd53e3ca205.03.81.15.9a.2a.00.2c.6c
+R cspuv 2 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet3" 2 mgc_sheet 5dd54ba24bd1.03.81.15.9a.2a.00.39.2e 5dd53e3ebb57.03.81.15.9a.2a.00.2c.6c
+R cspuv 3 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet4" 2 mgc_sheet 5dd54ba26f74.03.81.15.9a.2a.00.39.2e 5dd53e40263a.03.81.15.9a.2a.00.2c.6c
+R cspuv 4 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet5" 2 mgc_sheet 5dd543f6cdb0.03.81.15.9a.2a.00.39.2e 5dd53e41427b.03.81.15.9a.2a.00.2c.6c
+R cspuv 5 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet6" 2 mgc_sheet 5dd544b46830.03.81.15.9a.2a.00.39.2e 5dd53e42014f.03.81.15.9a.2a.00.2c.6c
+R cspuv 6 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet7" 2 mgc_sheet 5dd54ba2984c.03.81.15.9a.2a.00.39.2e 5dd53e42d9e1.03.81.15.9a.2a.00.2c.6c
+R cspuv 7 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet8" 3 mgc_sheet 5dd54ba2ea38.03.81.15.9a.2a.00.39.2e 5dd53e4382a5.03.81.15.9a.2a.00.2c.6c
+R cspuv 8 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet9" 2 mgc_sheet 5dd54ba3160d.03.81.15.9a.2a.00.39.2e 5dd53e440163.03.81.15.9a.2a.00.2c.6c
+R cspuv 9 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet10" 2 mgc_sheet 5dd54ba333d6.03.81.15.9a.2a.00.39.2e 5dd53e44598b.03.81.15.9a.2a.00.2c.6c
+R cspuv 10 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet11" 2 mgc_sheet 5dd54b6dcc8a.03.81.15.9a.2a.00.39.2e 5dd53e44d480.03.81.15.9a.2a.00.2c.6c
+R cspuv 11 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet12" 2 mgc_sheet 5dd54ba352d5.03.81.15.9a.2a.00.39.2e 5dd53e455001.03.81.15.9a.2a.00.2c.6c
+R cspuv 12 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet13" 2 mgc_sheet 5dd54ba36fa7.03.81.15.9a.2a.00.39.2e 5dd53e45be13.03.81.15.9a.2a.00.2c.6c
+R cspuv 13 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet14" 3 mgc_sheet 5dd549fb3175.03.81.15.9a.2a.00.39.2e 5dd53e466baa.03.81.15.9a.2a.00.2c.6c
+R cspuv 14 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet15" 2 mgc_sheet 5dd54ba3be21.03.81.15.9a.2a.00.39.2e 5dd53e46cb9b.03.81.15.9a.2a.00.2c.6c
+R cspuv 15 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet16" 2 mgc_sheet 5dd54b076f57.03.81.15.9a.2a.00.39.2e 5dd53e4761b0.03.81.15.9a.2a.00.2c.6c
+R cspuv 16 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet17" 2 mgc_sheet 5dd540d1ae64.03.81.15.9a.2a.00.39.2e 5dd53e47d556.03.81.15.9a.2a.00.2c.6c
+O 52
+R cspuv 0 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet1" 2 mgc_sheet 5dd54ba1b165.03.81.15.9a.2a.00.39.2e 5dd53e3ae442.03.81.15.9a.2a.00.2c.6c
+R cspuv 1 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet2" 2 mgc_sheet 5dd54ba2095f.03.81.15.9a.2a.00.39.2e 5dd53e3ca205.03.81.15.9a.2a.00.2c.6c
+R cspuv 2 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet3" 2 mgc_sheet 5dd54ba24bd1.03.81.15.9a.2a.00.39.2e 5dd53e3ebb57.03.81.15.9a.2a.00.2c.6c
+R cspuv 3 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet4" 2 mgc_sheet 5dd54ba26f74.03.81.15.9a.2a.00.39.2e 5dd53e40263a.03.81.15.9a.2a.00.2c.6c
+R cspuv 4 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet5" 2 mgc_sheet 5dd543f6cdb0.03.81.15.9a.2a.00.39.2e 5dd53e41427b.03.81.15.9a.2a.00.2c.6c
+R cspuv 5 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet6" 2 mgc_sheet 5dd544b46830.03.81.15.9a.2a.00.39.2e 5dd53e42014f.03.81.15.9a.2a.00.2c.6c
+R cspuv 6 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet7" 2 mgc_sheet 5dd54ba2984c.03.81.15.9a.2a.00.39.2e 5dd53e42d9e1.03.81.15.9a.2a.00.2c.6c
+R cspuv 7 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet8" 3 mgc_sheet 5dd54ba2ea38.03.81.15.9a.2a.00.39.2e 5dd53e4382a5.03.81.15.9a.2a.00.2c.6c
+R cspuv 8 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet9" 2 mgc_sheet 5dd54ba3160d.03.81.15.9a.2a.00.39.2e 5dd53e440163.03.81.15.9a.2a.00.2c.6c
+R cspuv 9 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet10" 2 mgc_sheet 5dd54ba333d6.03.81.15.9a.2a.00.39.2e 5dd53e44598b.03.81.15.9a.2a.00.2c.6c
+R cspuv 10 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet11" 2 mgc_sheet 5dd54b6dcc8a.03.81.15.9a.2a.00.39.2e 5dd53e44d480.03.81.15.9a.2a.00.2c.6c
+R cspuv 11 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet12" 2 mgc_sheet 5dd54ba352d5.03.81.15.9a.2a.00.39.2e 5dd53e455001.03.81.15.9a.2a.00.2c.6c
+R cspuv 12 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet13" 2 mgc_sheet 5dd54ba36fa7.03.81.15.9a.2a.00.39.2e 5dd53e45be13.03.81.15.9a.2a.00.2c.6c
+R cspuv 13 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet14" 3 mgc_sheet 5dd549fb3175.03.81.15.9a.2a.00.39.2e 5dd53e466baa.03.81.15.9a.2a.00.2c.6c
+R cspuv 14 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet15" 1 mgc_sheet 5dd53e46cb9b.03.81.15.9a.2a.01.2c.6c 5dd53e46cb9b.03.81.15.9a.2a.00.2c.6c
+R cspuv 15 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet16" 2 mgc_sheet 5dd54b076f57.03.81.15.9a.2a.00.39.2e 5dd53e4761b0.03.81.15.9a.2a.00.2c.6c
+R cspuv 16 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet17" 2 mgc_sheet 5dd540d1ae64.03.81.15.9a.2a.00.39.2e 5dd53e47d556.03.81.15.9a.2a.00.2c.6c
+O 51
+R cspuv 0 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet1" 2 mgc_sheet 5dd54ba1b165.03.81.15.9a.2a.00.39.2e 5dd53e3ae442.03.81.15.9a.2a.00.2c.6c
+R cspuv 1 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet2" 2 mgc_sheet 5dd54ba2095f.03.81.15.9a.2a.00.39.2e 5dd53e3ca205.03.81.15.9a.2a.00.2c.6c
+R cspuv 2 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet3" 2 mgc_sheet 5dd54ba24bd1.03.81.15.9a.2a.00.39.2e 5dd53e3ebb57.03.81.15.9a.2a.00.2c.6c
+R cspuv 3 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet4" 2 mgc_sheet 5dd54ba26f74.03.81.15.9a.2a.00.39.2e 5dd53e40263a.03.81.15.9a.2a.00.2c.6c
+R cspuv 4 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet5" 2 mgc_sheet 5dd543f6cdb0.03.81.15.9a.2a.00.39.2e 5dd53e41427b.03.81.15.9a.2a.00.2c.6c
+R cspuv 5 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet6" 2 mgc_sheet 5dd544b46830.03.81.15.9a.2a.00.39.2e 5dd53e42014f.03.81.15.9a.2a.00.2c.6c
+R cspuv 6 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet7" 2 mgc_sheet 5dd54ba2984c.03.81.15.9a.2a.00.39.2e 5dd53e42d9e1.03.81.15.9a.2a.00.2c.6c
+R cspuv 7 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet8" 3 mgc_sheet 5dd54ba2ea38.03.81.15.9a.2a.00.39.2e 5dd53e4382a5.03.81.15.9a.2a.00.2c.6c
+R cspuv 8 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet9" 2 mgc_sheet 5dd54ba3160d.03.81.15.9a.2a.00.39.2e 5dd53e440163.03.81.15.9a.2a.00.2c.6c
+R cspuv 9 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet10" 2 mgc_sheet 5dd54ba333d6.03.81.15.9a.2a.00.39.2e 5dd53e44598b.03.81.15.9a.2a.00.2c.6c
+R cspuv 10 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet11" 2 mgc_sheet 5dd54b6dcc8a.03.81.15.9a.2a.00.39.2e 5dd53e44d480.03.81.15.9a.2a.00.2c.6c
+R cspuv 11 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet12" 2 mgc_sheet 5dd54ba352d5.03.81.15.9a.2a.00.39.2e 5dd53e455001.03.81.15.9a.2a.00.2c.6c
+R cspuv 12 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet13" 1 mgc_sheet 5dd53e45be13.03.81.15.9a.2a.01.2c.6c 5dd53e45be13.03.81.15.9a.2a.00.2c.6c
+R cspuv 13 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet14" 3 mgc_sheet 5dd549fb3175.03.81.15.9a.2a.00.39.2e 5dd53e466baa.03.81.15.9a.2a.00.2c.6c
+R cspuv 14 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet15" 1 mgc_sheet 5dd53e46cb9b.03.81.15.9a.2a.01.2c.6c 5dd53e46cb9b.03.81.15.9a.2a.00.2c.6c
+R cspuv 15 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet16" 2 mgc_sheet 5dd54b076f57.03.81.15.9a.2a.00.39.2e 5dd53e4761b0.03.81.15.9a.2a.00.2c.6c
+R cspuv 16 "$PYXIS_SPT/digicdesign/Multiplier/schematic/sheet17" 2 mgc_sheet 5dd540d1ae64.03.81.15.9a.2a.00.39.2e 5dd53e47d556.03.81.15.9a.2a.00.2c.6c

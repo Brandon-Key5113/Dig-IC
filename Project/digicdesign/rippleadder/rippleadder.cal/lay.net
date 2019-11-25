@@ -1,0 +1,49 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT mimcap_g13 plus minus
+.ENDS
+***************************************
+.SUBCKT spiral_inductor_lvs pos neg
+.ENDS
+***************************************
+.SUBCKT mirroradder GROUND VDD Cout NS S B A Cin
+** N=19 EP=8 IP=0 FDC=28
+M0 GROUND B 9 GROUND nmos L=1.3e-07 W=5.2e-07 $X=-1560 $Y=1040 $D=19
+M1 10 B GROUND GROUND nmos L=1.3e-07 W=5.2e-07 $X=-650 $Y=1040 $D=19
+M2 11 A 10 GROUND nmos L=1.3e-07 W=5.2e-07 $X=-130 $Y=1040 $D=19
+M3 9 Cin 11 GROUND nmos L=1.3e-07 W=5.2e-07 $X=780 $Y=1040 $D=19
+M4 GROUND A 9 GROUND nmos L=1.3e-07 W=5.2e-07 $X=1430 $Y=1040 $D=19
+M5 Cout 11 GROUND GROUND nmos L=1.3e-07 W=2.6e-07 $X=2340 $Y=1170 $D=19
+M6 12 Cin GROUND GROUND nmos L=1.3e-07 W=5.2e-07 $X=4160 $Y=1040 $D=19
+M7 GROUND B 12 GROUND nmos L=1.3e-07 W=5.2e-07 $X=5070 $Y=1040 $D=19
+M8 12 A GROUND GROUND nmos L=1.3e-07 W=5.2e-07 $X=5980 $Y=1040 $D=19
+M9 NS 11 12 GROUND nmos L=1.3e-07 W=5.2e-07 $X=7020 $Y=1040 $D=19
+M10 13 Cin NS GROUND nmos L=1.3e-07 W=7.8e-07 $X=7930 $Y=780 $D=19
+M11 14 B 13 GROUND nmos L=1.3e-07 W=7.8e-07 $X=8840 $Y=780 $D=19
+M12 GROUND A 14 GROUND nmos L=1.3e-07 W=7.8e-07 $X=9490 $Y=780 $D=19
+M13 S NS GROUND GROUND nmos L=1.3e-07 W=2.6e-07 $X=10400 $Y=1170 $D=19
+M14 VDD B 15 VDD pmos L=1.3e-07 W=1.04e-06 $X=-1560 $Y=6370 $D=25
+M15 16 B VDD VDD pmos L=1.3e-07 W=1.04e-06 $X=-650 $Y=6370 $D=25
+M16 11 A 16 VDD pmos L=1.3e-07 W=1.04e-06 $X=-130 $Y=6370 $D=25
+M17 15 Cin 11 VDD pmos L=1.3e-07 W=1.04e-06 $X=780 $Y=6370 $D=25
+M18 VDD A 15 VDD pmos L=1.3e-07 W=1.04e-06 $X=1430 $Y=6370 $D=25
+M19 Cout 11 VDD VDD pmos L=1.3e-07 W=5.2e-07 $X=2340 $Y=6630 $D=25
+M20 17 Cin VDD VDD pmos L=1.3e-07 W=1.04e-06 $X=4160 $Y=6370 $D=25
+M21 VDD B 17 VDD pmos L=1.3e-07 W=1.04e-06 $X=5070 $Y=6370 $D=25
+M22 17 A VDD VDD pmos L=1.3e-07 W=1.04e-06 $X=5980 $Y=6370 $D=25
+M23 NS 11 17 VDD pmos L=1.3e-07 W=1.04e-06 $X=7020 $Y=6370 $D=25
+M24 18 Cin NS VDD pmos L=1.3e-07 W=1.56e-06 $X=7930 $Y=6370 $D=25
+M25 19 B 18 VDD pmos L=1.3e-07 W=1.56e-06 $X=8840 $Y=6370 $D=25
+M26 VDD A 19 VDD pmos L=1.3e-07 W=1.56e-06 $X=9490 $Y=6370 $D=25
+M27 S NS VDD VDD pmos L=1.3e-07 W=5.2e-07 $X=10400 $Y=6630 $D=25
+.ENDS
+***************************************
+.SUBCKT rippleadder GROUND Vdd B0 A0 S0 S1 S2 S3 B1 A1 B2 A2 B3 A3 Cin NS0 NS1 NS2 Cout NS3
+** N=23 EP=20 IP=32 FDC=112
+X0 GROUND Vdd 17 NS0 S0 B0 A0 Cin mirroradder $T=-1170 260 0 0 $X=-3900 $Y=-1300
+X1 GROUND Vdd 19 NS1 S1 B1 A1 17 mirroradder $T=13260 260 0 0 $X=10530 $Y=-1300
+X2 GROUND Vdd 21 NS2 S2 B2 A2 19 mirroradder $T=27690 260 0 0 $X=24960 $Y=-1300
+X3 GROUND Vdd Cout NS3 S3 B3 A3 21 mirroradder $T=42120 260 0 0 $X=39390 $Y=-1300
+.ENDS
+***************************************

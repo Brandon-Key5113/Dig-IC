@@ -1,0 +1,138 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   ground GROUND
+End Globals
+
+Cell IDEAL_CAPACITOR
+   Pin POS POS
+   Pin NEG NEG
+End Cell
+
+Cell NMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell PMOS
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell MIRRORADDER
+   Pin Cout COUT
+   Pin NS NS
+   Pin S S
+   Pin A A
+   Pin B B
+   Pin Cin CIN
+   Pin Vdd VDD
+   Net N$74 N$74
+   Net N$92 N$92
+   Net N$96 N$96
+   Net N$100 N$100
+   Net N$83 N$83
+   Net N$81 N$81
+   Net N$75 N$75
+   Net N$72 N$72
+   Net N$139 N$139
+   Net N$128 N$128
+   Net N$126 N$126
+   Net A A
+   Net B B
+   Net Cin CIN
+   Net Vdd VDD
+   Net Cout COUT
+   Net NS NS
+   Net S S
+   Global ground GROUND
+   Inst M18 M18 NMOS
+   Inst M17 M17 NMOS
+   Inst M8 M8 PMOS
+   Inst M7 M7 PMOS
+   Inst M6 M6 PMOS
+   Inst M5 M5 PMOS
+   Inst M4 M4 PMOS
+   Inst M2 M2 PMOS
+   Inst M1 M1 PMOS
+   Inst M10 M10 PMOS
+   Inst M13 M13 PMOS
+   Inst M12 M12 PMOS
+   Inst M11 M11 PMOS
+   Inst M9 M9 PMOS
+   Inst M14 M14 NMOS
+   Inst M15 M15 NMOS
+   Inst M16 M16 NMOS
+   Inst M3 M3 PMOS
+   Inst M19 M19 PMOS
+   Inst M27 M27 NMOS
+   Inst M26 M26 NMOS
+   Inst M25 M25 NMOS
+   Inst M24 M24 NMOS
+   Inst M23 M23 NMOS
+   Inst M22 M22 NMOS
+   Inst M21 M21 NMOS
+   Inst M20 M20 NMOS
+   Inst M28 M28 NMOS
+End Cell
+
+Cell #top#
+   Pin Cout COUT
+   Pin NS0 NS0
+   Pin NS1 NS1
+   Pin NS2 NS2
+   Pin NS3 NS3
+   Pin S0 S0
+   Pin S1 S1
+   Pin S2 S2
+   Pin S3 S3
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin A3 A3
+   Pin B0 B0
+   Pin B1 B1
+   Pin B2 B2
+   Pin B3 B3
+   Pin Cin CIN
+   Pin Vdd VDD
+   Net N$335 N$335
+   Net N$333 N$333
+   Net N$331 N$331
+   Net Cin CIN
+   Net NS0 NS0
+   Net Cout COUT
+   Net NS3 NS3
+   Net Vdd VDD
+   Net NS1 NS1
+   Net NS2 NS2
+   Net S0 S0
+   Net S1 S1
+   Net S2 S2
+   Net S3 S3
+   Net A3 A3
+   Net B3 B3
+   Net A2 A2
+   Net B2 B2
+   Net A1 A1
+   Net B1 B1
+   Net A0 A0
+   Net B0 B0
+   Global ground GROUND
+   Inst C4 C4 IDEAL_CAPACITOR
+   Inst C3 C3 IDEAL_CAPACITOR
+   Inst C2 C2 IDEAL_CAPACITOR
+   Inst C1 C1 IDEAL_CAPACITOR
+   Inst MIRRORADDER4 X_MIRRORADDER4 MIRRORADDER
+   Inst MIRRORADDER3 X_MIRRORADDER3 MIRRORADDER
+   Inst MIRRORADDER2 X_MIRRORADDER2 MIRRORADDER
+   Inst MIRRORADDER1 X_MIRRORADDER1 MIRRORADDER
+End Cell
+

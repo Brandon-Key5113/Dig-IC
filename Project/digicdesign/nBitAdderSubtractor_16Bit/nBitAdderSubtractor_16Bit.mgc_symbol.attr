@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dc04c5b518e.03.81.15.9a.2a.00.31.26 1 2 1 0
+V v 1 2 5dc04c5b518f.03.81.15.9a.2a.00.31.26
+F f 1 "nBitAdderSubtractor_16Bit.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/part" 1 Eddm_part 5dc04c5e4273.03.81.15.9a.2a.01.31.26 5dc04c5e4273.03.81.15.9a.2a.00.31.26

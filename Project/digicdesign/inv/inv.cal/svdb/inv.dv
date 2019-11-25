@@ -1,0 +1,585 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/inv.dv
+dv_start unmatched                                
+dv_cell {} {PM_INV_A} notcompared
+dv_discrep 1 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r9} { (R)}
+dv_discrep 2 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r9} { (R)}
+dv_discrep 3 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r8} { (R)}
+dv_discrep 4 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r8} { (R)}
+dv_discrep 5 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r7} { (R)}
+dv_discrep 6 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r7} { (R)}
+dv_discrep 7 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r6} { (R)}
+dv_discrep 8 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r6} { (R)}
+dv_discrep 9 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r5} { (R)}
+dv_discrep 10 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r5} { (R)}
+dv_discrep 11 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r4} { (R)}
+dv_discrep 12 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r4} { (R)}
+dv_discrep 13 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c3} { (C)}
+dv_discrep 14 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c3} { (C)}
+dv_discrep 15 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c3} { (C)}
+dv_discrep 16 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c3} { (C)}
+dv_discrep 17 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c2} { (C)}
+dv_discrep 18 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c2} { (C)}
+dv_discrep 19 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c2} { (C)}
+dv_discrep 20 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c2} { (C)}
+dv_discrep 21 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c1} { (C)}
+dv_discrep 22 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c1} { (C)}
+dv_discrep 23 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c1} { (C)}
+dv_discrep 24 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c1} { (C)}
+dv_discrep 25 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c0} { (C)}
+dv_discrep 26 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c0} { (C)}
+dv_discrep 27 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c0} { (C)}
+dv_discrep 28 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c0} { (C)}
+dv_cell {} {PM_INV_GROUND} notcompared
+dv_discrep 1 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r14} { (R)}
+dv_discrep 2 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r14} { (R)}
+dv_discrep 3 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r13} { (R)}
+dv_discrep 4 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r13} { (R)}
+dv_discrep 5 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r12} { (R)}
+dv_discrep 6 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r12} { (R)}
+dv_discrep 7 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r11} { (R)}
+dv_discrep 8 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r11} { (R)}
+dv_discrep 9 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r10} { (R)}
+dv_discrep 10 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r10} { (R)}
+dv_discrep 11 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r9} { (R)}
+dv_discrep 12 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r9} { (R)}
+dv_discrep 13 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r8} { (R)}
+dv_discrep 14 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r8} { (R)}
+dv_discrep 15 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r7} { (R)}
+dv_discrep 16 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r7} { (R)}
+dv_discrep 17 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r6} { (R)}
+dv_discrep 18 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r6} { (R)}
+dv_discrep 19 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r5} { (R)}
+dv_discrep 20 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r5} { (R)}
+dv_discrep 21 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r4} { (R)}
+dv_discrep 22 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r4} { (R)}
+dv_discrep 23 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c3} { (C)}
+dv_discrep 24 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c3} { (C)}
+dv_discrep 25 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c3} { (C)}
+dv_discrep 26 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c3} { (C)}
+dv_discrep 27 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c2} { (C)}
+dv_discrep 28 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c2} { (C)}
+dv_discrep 29 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c2} { (C)}
+dv_discrep 30 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c2} { (C)}
+dv_discrep 31 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c1} { (C)}
+dv_discrep 32 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c1} { (C)}
+dv_discrep 33 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c1} { (C)}
+dv_discrep 34 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c1} { (C)}
+dv_discrep 35 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c0} { (C)}
+dv_discrep 36 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c0} { (C)}
+dv_discrep 37 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c0} { (C)}
+dv_discrep 38 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c0} { (C)}
+dv_cell {} {PM_INV_VDD} notcompared
+dv_discrep 1 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r15} { (R)}
+dv_discrep 2 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r15} { (R)}
+dv_discrep 3 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r14} { (R)}
+dv_discrep 4 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r14} { (R)}
+dv_discrep 5 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r13} { (R)}
+dv_discrep 6 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r13} { (R)}
+dv_discrep 7 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r12} { (R)}
+dv_discrep 8 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r12} { (R)}
+dv_discrep 9 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r11} { (R)}
+dv_discrep 10 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r11} { (R)}
+dv_discrep 11 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r10} { (R)}
+dv_discrep 12 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r10} { (R)}
+dv_discrep 13 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r9} { (R)}
+dv_discrep 14 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r9} { (R)}
+dv_discrep 15 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r8} { (R)}
+dv_discrep 16 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r8} { (R)}
+dv_discrep 17 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r7} { (R)}
+dv_discrep 18 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r7} { (R)}
+dv_discrep 19 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r6} { (R)}
+dv_discrep 20 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r6} { (R)}
+dv_discrep 21 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r5} { (R)}
+dv_discrep 22 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r5} { (R)}
+dv_discrep 23 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c4} { (C)}
+dv_discrep 24 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c4} { (C)}
+dv_discrep 25 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c4} { (C)}
+dv_discrep 26 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c4} { (C)}
+dv_discrep 27 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c3} { (C)}
+dv_discrep 28 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c3} { (C)}
+dv_discrep 29 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c3} { (C)}
+dv_discrep 30 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c3} { (C)}
+dv_discrep 31 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c2} { (C)}
+dv_discrep 32 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c2} { (C)}
+dv_discrep 33 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c2} { (C)}
+dv_discrep 34 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c2} { (C)}
+dv_discrep 35 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c1} { (C)}
+dv_discrep 36 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c1} { (C)}
+dv_discrep 37 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c1} { (C)}
+dv_discrep 38 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c1} { (C)}
+dv_discrep 39 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c0} { (C)}
+dv_discrep 40 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c0} { (C)}
+dv_discrep 41 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c0} { (C)}
+dv_discrep 42 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c0} { (C)}
+dv_cell {} {PM_INV_Y} notcompared
+dv_discrep 1 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r13} { (R)}
+dv_discrep 2 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r13} { (R)}
+dv_discrep 3 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r12} { (R)}
+dv_discrep 4 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r12} { (R)}
+dv_discrep 5 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r11} { (R)}
+dv_discrep 6 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r11} { (R)}
+dv_discrep 7 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r10} { (R)}
+dv_discrep 8 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r10} { (R)}
+dv_discrep 9 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r9} { (R)}
+dv_discrep 10 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r9} { (R)}
+dv_discrep 11 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r8} { (R)}
+dv_discrep 12 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r8} { (R)}
+dv_discrep 13 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r7} { (R)}
+dv_discrep 14 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r7} { (R)}
+dv_discrep 15 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r6} { (R)}
+dv_discrep 16 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r6} { (R)}
+dv_discrep 17 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r5} { (R)}
+dv_discrep 18 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r5} { (R)}
+dv_discrep 19 {Property Errors}
+dv_discrep_line {property  w             not found on     } -ldev {r4} { (R)}
+dv_discrep 20 {Property Errors}
+dv_discrep_line {property  l             not found on     } -ldev {r4} { (R)}
+dv_discrep 21 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c3} { (C)}
+dv_discrep 22 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c3} { (C)}
+dv_discrep 23 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c3} { (C)}
+dv_discrep 24 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c3} { (C)}
+dv_discrep 25 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c2} { (C)}
+dv_discrep 26 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c2} { (C)}
+dv_discrep 27 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c2} { (C)}
+dv_discrep 28 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c2} { (C)}
+dv_discrep 29 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c1} { (C)}
+dv_discrep 30 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c1} { (C)}
+dv_discrep 31 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c1} { (C)}
+dv_discrep 32 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c1} { (C)}
+dv_discrep 33 {Property Errors}
+dv_discrep_line {property  wr            not found on     } -ldev {c0} { (C)}
+dv_discrep 34 {Property Errors}
+dv_discrep_line {property  nr            not found on     } -ldev {c0} { (C)}
+dv_discrep 35 {Property Errors}
+dv_discrep_line {property  lt            not found on     } -ldev {c0} { (C)}
+dv_discrep 36 {Property Errors}
+dv_discrep_line {property  lr            not found on     } -ldev {c0} { (C)}
+dv_cell {inv} {inv} unmatched
+dv_obj_count -transformed_nets {4 33} -transformed_inst {2 47} -transformed_port {4 4}
+dv_discrep 1 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {VDD} {                                                   } -snet {VDD} {}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M1} {} -lloc {(0.390,-90.870)} {:}  {b} {                                       ** missing connection **}
+dv_discrep_line {} -ldev {M1} {} -lloc {(0.390,-90.870)} {:}  {s} {                                       ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {x_PM_INV_VDD/r6} {:}  {neg} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 2 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {GROUND} {                                                } -snet {GROUND} {}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M0} {} -lloc {(0.390,-92.820)} {:}  {b} {                                       ** missing connection **}
+dv_discrep_line {} -ldev {M0} {} -lloc {(0.390,-92.820)} {:}  {s} {                                       ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {x_PM_INV_GROUND/r5} {:}  {neg} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 3 {Incorrect Nets} -inst_count { 3 3}
+dv_discrep_line {Net } -lnet {Y} {                                                     } -snet {Y} {}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M1} {} -lloc {(0.390,-90.870)} {:}  {d} {                                       ** missing connection **}
+dv_discrep_line {} -ldev {M0} {} -lloc {(0.390,-92.820)} {:}  {d} {                                       ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {x_PM_INV_Y/r4} {:}  {pos} {}
+dv_discrep_line {** missing connection **                                  } -sdev {x_PM_INV_Y/c1} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 4 {Incorrect Nets} -inst_count { 3 2}
+dv_discrep_line {Net } -lnet {A} {                                                     } -snet {A} {}
+dv_discrep_line {--------------------------                                --------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M1} {} -lloc {(0.390,-90.870)} {:}  {g} {                                       ** missing connection **}
+dv_discrep_line {} -ldev {M0} {} -lloc {(0.390,-92.820)} {:}  {g} {                                       ** missing connection **}
+dv_discrep_line {}
+dv_discrep_line {** missing connection **                                  } -sdev {x_PM_INV_A/r4} {:}  {pos} {}
+dv_discrep_line {}
+dv_discrep_line {}
+dv_discrep 5 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** missing net **                                         } -snet {N_Y_M1_d} {}
+dv_discrep_line {}
+dv_discrep 6 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {N_A_M1_g} {}
+dv_discrep_line {}
+dv_discrep 7 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** missing net **                                         } -snet {N_GROUND_M1_s} {}
+dv_discrep_line {}
+dv_discrep 8 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {N_GROUND_M1_b} {}
+dv_discrep_line {}
+dv_discrep 9 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** missing net **                                         } -snet {N_Y_M2_d} {}
+dv_discrep_line {}
+dv_discrep 10 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {N_A_M2_g} {}
+dv_discrep_line {}
+dv_discrep 11 {Incorrect Nets} -inst_count { 0 2}
+dv_discrep_line {** missing net **                                         } -snet {N_VDD_M2_s} {}
+dv_discrep_line {}
+dv_discrep 12 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {N_VDD_M2_b} {}
+dv_discrep_line {}
+dv_discrep 13 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/20} {}
+dv_discrep_line {}
+dv_discrep 14 {Incorrect Nets} -inst_count { 0 5}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/0} {}
+dv_discrep_line {}
+dv_discrep 15 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/14} {}
+dv_discrep_line {}
+dv_discrep 16 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/13} {}
+dv_discrep_line {}
+dv_discrep 17 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/12} {}
+dv_discrep_line {}
+dv_discrep 18 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/5} {}
+dv_discrep_line {}
+dv_discrep 19 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_VDD/18} {}
+dv_discrep_line {}
+dv_discrep 20 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_GROUND/18} {}
+dv_discrep_line {}
+dv_discrep 21 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_GROUND/0} {}
+dv_discrep_line {}
+dv_discrep 22 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_GROUND/15} {}
+dv_discrep_line {}
+dv_discrep 23 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_GROUND/14} {}
+dv_discrep_line {}
+dv_discrep 24 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_GROUND/8} {}
+dv_discrep_line {}
+dv_discrep 25 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_GROUND/20} {}
+dv_discrep_line {}
+dv_discrep 26 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_Y/19} {}
+dv_discrep_line {}
+dv_discrep 27 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_Y/0} {}
+dv_discrep_line {}
+dv_discrep 28 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_Y/12} {}
+dv_discrep_line {}
+dv_discrep 29 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_Y/7} {}
+dv_discrep_line {}
+dv_discrep 30 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_Y/4} {}
+dv_discrep_line {}
+dv_discrep 31 {Incorrect Nets} -inst_count { 0 3}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_A/15} {}
+dv_discrep_line {}
+dv_discrep 32 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_A/0} {}
+dv_discrep_line {}
+dv_discrep 33 {Incorrect Nets} -inst_count { 0 4}
+dv_discrep_line {** missing net **                                         } -snet {x_PM_INV_A/10} {}
+dv_discrep_line {}
+dv_discrep 34 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/c0} {  C}
+dv_discrep_line {}
+dv_discrep 35 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/c1} {  C}
+dv_discrep_line {}
+dv_discrep 36 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/c2} {  C}
+dv_discrep_line {}
+dv_discrep 37 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/c3} {  C}
+dv_discrep_line {}
+dv_discrep 38 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/c4} {  C}
+dv_discrep_line {}
+dv_discrep 39 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r5} {  R}
+dv_discrep_line {}
+dv_discrep 40 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r6} {  R}
+dv_discrep_line {}
+dv_discrep 41 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r7} {  R}
+dv_discrep_line {}
+dv_discrep 42 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r8} {  R}
+dv_discrep_line {}
+dv_discrep 43 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r9} {  R}
+dv_discrep_line {}
+dv_discrep 44 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r10} {  R}
+dv_discrep_line {}
+dv_discrep 45 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r11} {  R}
+dv_discrep_line {}
+dv_discrep 46 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r12} {  R}
+dv_discrep_line {}
+dv_discrep 47 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_VDD/r14} {  R}
+dv_discrep_line {}
+dv_discrep 48 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/c0} {  C}
+dv_discrep_line {}
+dv_discrep 49 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/c1} {  C}
+dv_discrep_line {}
+dv_discrep 50 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/c2} {  C}
+dv_discrep_line {}
+dv_discrep 51 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/c3} {  C}
+dv_discrep_line {}
+dv_discrep 52 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r4} {  R}
+dv_discrep_line {}
+dv_discrep 53 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r5} {  R}
+dv_discrep_line {}
+dv_discrep 54 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r6} {  R}
+dv_discrep_line {}
+dv_discrep 55 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r7} {  R}
+dv_discrep_line {}
+dv_discrep 56 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r9} {  R}
+dv_discrep_line {}
+dv_discrep 57 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r10} {  R}
+dv_discrep_line {}
+dv_discrep 58 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r11} {  R}
+dv_discrep_line {}
+dv_discrep 59 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_GROUND/r12} {  R}
+dv_discrep_line {}
+dv_discrep 60 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/c0} {  C}
+dv_discrep_line {}
+dv_discrep 61 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/c1} {  C}
+dv_discrep_line {}
+dv_discrep 62 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/c2} {  C}
+dv_discrep_line {}
+dv_discrep 63 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/c3} {  C}
+dv_discrep_line {}
+dv_discrep 64 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r4} {  R}
+dv_discrep_line {}
+dv_discrep 65 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r6} {  R}
+dv_discrep_line {}
+dv_discrep 66 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r8} {  R}
+dv_discrep_line {}
+dv_discrep 67 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r10} {  R}
+dv_discrep_line {}
+dv_discrep 68 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r11} {  R}
+dv_discrep_line {}
+dv_discrep 69 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r12} {  R}
+dv_discrep_line {}
+dv_discrep 70 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_Y/r13} {  R}
+dv_discrep_line {}
+dv_discrep 71 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/c0} {  C}
+dv_discrep_line {}
+dv_discrep 72 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/c1} {  C}
+dv_discrep_line {}
+dv_discrep 73 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/c2} {  C}
+dv_discrep_line {}
+dv_discrep 74 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/c3} {  C}
+dv_discrep_line {}
+dv_discrep 75 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/r4} {  R}
+dv_discrep_line {}
+dv_discrep 76 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/r5} {  R}
+dv_discrep_line {}
+dv_discrep 77 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/r6} {  R}
+dv_discrep_line {}
+dv_discrep 78 {Incorrect Instances}
+dv_discrep_line {** missing instance **                                    } -sdev {x_PM_INV_A/r7} {  R}
+dv_discrep_line {}
+dv_discrep -1 {Detailed Instance Connections}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M0} {} -lloc {(0.390,-92.820)} {  MN(NMOS)                               } -sdev {M1} {  MN(NMOS)}
+dv_discrep_line {  } -lport {g} {: } -lnet {A} {                                                      ** } -snet {A} { **}
+dv_discrep_line {  } -lport {s} {: } -lnet {GROUND} {                                                 ** } -snet {GROUND} { **}
+dv_discrep_line {  } -lport {d} {: } -lnet {Y} {                                                      ** } -snet {Y} { **}
+dv_discrep_line {  } -lport {b} {: } -lnet {GROUND} {                                                 ** } -snet {GROUND} { **}
+dv_discrep_line {  ** missing net **                                         } -sport {g} {: } -snet {N_A_M1_g} {}
+dv_discrep_line {  ** missing net **                                         } -sport {s} {: } -snet {N_GROUND_M1_s} {}
+dv_discrep_line {  ** missing net **                                         } -sport {d} {: } -snet {N_Y_M1_d} {}
+dv_discrep_line {  ** missing net **                                         } -sport {b} {: } -snet {N_GROUND_M1_b} {}
+dv_discrep_line {}
+dv_discrep_line {--------------------------------------------------------------------------------------------------------------}
+dv_discrep_line {}
+dv_discrep_line {} -ldev {M1} {} -lloc {(0.390,-90.870)} {  MP(PMOS)                               } -sdev {M2} {  MP(PMOS)}
+dv_discrep_line {  } -lport {g} {: } -lnet {A} {                                                      ** } -snet {A} { **}
+dv_discrep_line {  } -lport {s} {: } -lnet {VDD} {                                                    ** } -snet {VDD} { **}
+dv_discrep_line {  } -lport {d} {: } -lnet {Y} {                                                      ** } -snet {Y} { **}
+dv_discrep_line {  } -lport {b} {: } -lnet {VDD} {                                                    ** } -snet {VDD} { **}
+dv_discrep_line {  ** missing net **                                         } -sport {g} {: } -snet {N_A_M2_g} {}
+dv_discrep_line {  ** missing net **                                         } -sport {s} {: } -snet {N_VDD_M2_s} {}
+dv_discrep_line {  ** missing net **                                         } -sport {d} {: } -snet {N_Y_M2_d} {}
+dv_discrep_line {  ** missing net **                                         } -sport {b} {: } -snet {N_VDD_M2_b} {}
+dv_discrep_line {}
+dv_end

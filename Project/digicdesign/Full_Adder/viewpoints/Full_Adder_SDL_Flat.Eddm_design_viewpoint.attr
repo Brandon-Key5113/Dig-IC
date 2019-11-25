@@ -1,0 +1,23 @@
+A 5 u Eddm_design_viewpoint 5dc03bc5b3f5.03.81.15.9a.2a.00.7f.b6 1 2 12 0
+V v 1 4 5dc03bc5b3f5.03.81.15.9a.2a.01.7f.b6
+F f 1 "Full_Adder_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/Full_Adder/part" 2 Eddm_part 5dc03a79db84.03.81.15.9a.2a.00.70.48 5dc03a79309a.03.81.15.9a.2a.00.70.48
+R cspuv 1 "$PYXIS_SPT/digicdesign/Full_Adder/Full_Adder" 1 mgc_symbol 5dc03a763c8d.03.81.15.9a.2a.01.70.48 5dc03a763c8d.03.81.15.9a.2a.00.70.48
+R cspuv 2 "$PYXIS_SPT/digicdesign/Full_Adder/schematic" 3 mgc_schematic 5dc03af4d887.03.81.15.9a.2a.00.7d.c5 5dc03a795feb.03.81.15.9a.2a.00.70.48
+R cspuv 3 "$GDKGATES/ao22/part" 4 Eddm_part 503d4367ceeb.03.93.22.28.96.00.34.40 503d3ceec93c.03.93.22.28.96.01.7e.63
+R cspuv 4 "$GDKGATES/xnor2/part" 3 Eddm_part 503d949195c9.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.0f.7e.63
+R cspuv 5 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R cspuv 6 "$GDKGATES/inv01/schematic" 2 mgc_schematic 4e72c874b901.03.93.22.28.e1.00.60.94 503d3cc570cd.03.93.22.28.96.09.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 7 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63
+R cspuv 8 "$GDKGATES/xnor2/schematic" 2 mgc_schematic 4e72c95959be.03.93.22.28.e1.00.60.94 503d3d68681f.03.93.22.28.96.10.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 9 "$GDKGATES/xnor2/xnor2" 10 mgc_symbol 503d949195af.03.93.22.28.96.00.09.b3 503d3d68681f.03.93.22.28.96.11.7e.63
+R cspuv 10 "$GDKGATES/ao22/schematic" 2 mgc_schematic 4e72c7eab702.03.93.22.28.e1.00.60.94 503d3ceec93c.03.93.22.28.96.02.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 11 "$GDKGATES/ao22/ao22" 11 mgc_symbol 503d4367cec1.03.93.22.28.96.00.34.40 503d3ceec93b.03.93.22.28.96.24.7e.63

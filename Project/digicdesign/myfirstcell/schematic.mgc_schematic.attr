@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5d667245ea6b.03.81.15.9a.2f.00.4f.a7 9 2 1 0
+V v 7 1 5d6676c284b3.03.81.15.9a.2f.00.4f.a7
+F o 0 ""
+V v 8 1 5d6676ceac0b.03.81.15.9a.2f.00.4f.a7
+F o 0 ""
+V v 9 1 5d6676ecdfa8.03.81.15.9a.2f.00.5a.de
+F o 0 ""
+O 9
+R cspuv 0 "$PYXIS_SPT/digicdesign/myfirstcell/schematic/sheet1" 8 mgc_sheet 5d6676ecd61a.03.81.15.9a.2f.00.5a.de 5d66724641cf.03.81.15.9a.2f.00.4f.a7
+O 8
+R cspuv 0 "$PYXIS_SPT/digicdesign/myfirstcell/schematic/sheet1" 7 mgc_sheet 5d6676cea000.03.81.15.9a.2f.00.4f.a7 5d66724641cf.03.81.15.9a.2f.00.4f.a7
+O 7
+R cspuv 0 "$PYXIS_SPT/digicdesign/myfirstcell/schematic/sheet1" 6 mgc_sheet 5d6676c27c57.03.81.15.9a.2f.00.4f.a7 5d66724641cf.03.81.15.9a.2f.00.4f.a7

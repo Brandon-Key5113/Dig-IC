@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Multiplier/Multiplier.cal
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {5 0 2 0}
+lvs_LvsOutFile LVS_REPORT lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Multiplier/Multiplier.cal/Multiplier.calibre.src.net
+lvs_LvsOutFile RULES_FILE /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Multiplier/Multiplier.cal/_LVS_
+lvs_LvsRunTimes 1574264632 1574264632

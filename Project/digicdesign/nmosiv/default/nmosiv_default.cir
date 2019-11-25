@@ -1,0 +1,38 @@
+* Component: $PYXIS_SPT/digicdesign/nmosiv Viewpoint: default
+
+.INCLUDE "$PYXIS_SPT/digicdesign/nmosiv/default/netlist.spi"
+.INCLUDE "$GENERIC13/models/include_all"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+
+* - Analysis Setup - DCOP
+.OPTION PROBEOP2
+.OP
+
+* - Analysis Setup - DC
+.DC VFORCE__VA 0 1.2 0.01
++ VFORCE__VG 0 1.2 0.3
+
+* --- Forces
+VFORCE__Va VA GROUND DC 1.2
+VFORCE__Vg VG GROUND DC 1.2
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Waveform Outputs
+.PLOT DC I(M1.D)
+
+* --- Params
+.TEMP 25.0
+
+* --- Libsetup
+.LIB KEY=MOS "$GENERIC13/models/lib.eldo" TT
+.LIB KEY=MOS_33 "$GENERIC13/models/lib.eldo" TT_33
+.LIB KEY=MOS_lvt "$GENERIC13/models/lib.eldo" TT_lvt
+.LIB KEY=MOS_hvt "$GENERIC13/models/lib.eldo" TT_hvt
+.LIB KEY=BIP "$GENERIC13/models/lib.eldo" TT_BIP
+.LIB KEY=BIP_NPN "$GENERIC13/models/lib.eldo" TT_BIP_NPN
+.LIB KEY=RES "$GENERIC13/models/lib.eldo" TT_RES

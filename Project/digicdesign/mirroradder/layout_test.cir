@@ -1,0 +1,43 @@
+* Example circuit file for simulating PEX
+
+.INCLUDE "/home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal/mirroradder.pex.netlist"
+
+.LIB /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/models/lib.eldo TT
+
+* - Instantiate your parasitic netlist and add the load capacitor
+** FORMAT :
+* XLAYOUT [all inputs as listed by the ".subckt" line in the included netlist, in the order that they appear there] [name of the subcircuit as listed in the included netlist]
+XLAYOUT GROUND COUT NS S B A CIN MIRRORADDER
+C1 COUT 0 120f
+C1 S 0 120f
+
+
+* - Analysis Setup - DC sweep
+* FORMAT : .DC [name] [low] [high] [step]
+.DC VFORCE__A 0 1.2 0.01
+
+* - Analysis Setup - Trans
+* FORMAT : .TRAN [start time] [end time] [time step]
+.TRAN 0 200n 0.001n
+
+* --- Forces
+* FORMAT -- PULSE : [name] [port] [reference (0 means ground)] PULSE [low] [high] [delay] [fall time] [rise time] [pulse width] [period]
+*
+* FORMAT -- DC    : [name] [port] [reference (0 means ground)] DC [voltage]
+*
+VFORCE__A A 0 PULSE (0 1.2 50n 0.1n 0.1n 50n 100n)
+VFORCE__Vdd Vdd 0 DC 1.2
+VFORCE__GROUND GROUND 0 DC 0
+
+* --- Waveform Outputs
+.PLOT DC V(A)
+.PLOT DC V(Y)
+.PLOT TRAN V(A)
+.PLOT TRAN V(Y)
+
+* --- Params
+.TEMP 25
+
+* --- Power Measurement
+.measure tran static_pwr AVG power from=70ns to=130ns
+.measure tran inst_pwr MAX power from=70ns to=130ns

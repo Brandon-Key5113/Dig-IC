@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dc2c8c1db2c.03.81.15.9a.12.00.2d.d4 1 2 1 0
+V v 1 2 5dc2c8c1db2c.03.81.15.9a.12.01.2d.d4
+F f 1 "ALU_16Bit.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/ALU_16Bit/part" 1 Eddm_part 5dc2c8c48db5.03.81.15.9a.12.01.2d.d4 5dc2c8c48db5.03.81.15.9a.12.00.2d.d4

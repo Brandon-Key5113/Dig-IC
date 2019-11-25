@@ -1,0 +1,16 @@
+A 5 u Eddm_part 5dd1979b582b.03.81.15.9a.2a.00.5d.12 8 2 6 0
+V v 6 1 5dd199679f33.03.81.15.9a.2a.00.76.85
+F f 6 "part.part_6"
+V v 7 1 5dd1996ad451.03.81.15.9a.2a.00.76.94
+F f 7 "part.part_7"
+V v 8 1 5dd1996bba58.03.81.15.9a.2a.00.76.94
+F f 8 "part.part_8"
+O 8
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 4 "$PYXIS_SPT/digicdesign/nBitRegister/nBitRegister" 1 mgc_symbol 5dd199684374.03.81.15.9a.2a.01.76.94 5dd199684374.03.81.15.9a.2a.00.76.94
+R csduv 5 "$PYXIS_SPT/digicdesign/nBitRegister/schematic" 1 mgc_schematic 5dd1996ae10a.03.81.15.9a.2a.01.76.94 5dd1996ae10a.03.81.15.9a.2a.00.76.94
+O 7
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 4 "$PYXIS_SPT/digicdesign/nBitRegister/nBitRegister" 1 mgc_symbol 5dd199684374.03.81.15.9a.2a.01.76.94 5dd199684374.03.81.15.9a.2a.00.76.94
+O 6
+P "eddm__stream_to_use" "eddm__propl_dstream"

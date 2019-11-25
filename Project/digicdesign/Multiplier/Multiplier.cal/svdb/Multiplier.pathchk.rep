@@ -1,0 +1,7 @@
+ERC PATHCHK REPORT for Multiplier
+  PATHCHK GROUND && ! POWER:
+  PATHCHK POWER && ! GROUND:
+  PATHCHK ! POWER && ! GROUND:
+      cell Multiplier: 230 996 1190 1191 1192 1193 
+  PATHCHK ! LABELED:
+      cell Multiplier: 230 996 1190 1191 1192 1193 

@@ -1,0 +1,14 @@
+A 5 u mgc_schematic 5dd1adc46954.03.81.15.9a.2a.00.53.f8 3 2 1 0
+V v 1 1 5dd1adc46954.03.81.15.9a.2a.01.53.f8
+F o 0 ""
+V v 2 1 5dd1adc4d974.03.81.15.9a.2a.00.53.f8
+F o 0 ""
+V v 3 1 5dd1adf241de.03.81.15.9a.2a.00.61.11
+F o 0 ""
+O 3
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitMux_2to1/schematic/sheet1" 2 mgc_sheet 5dd1adf24040.03.81.15.9a.2a.00.61.11 5dd1adc471ae.03.81.15.9a.2a.00.53.f8
+O 2
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitMux_2to1/schematic/sheet1" 1 mgc_sheet 5dd1adc471ae.03.81.15.9a.2a.01.53.f8 5dd1adc471ae.03.81.15.9a.2a.00.53.f8
+O 1
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitMux_2to1/schematic/sheet1" 1 mgc_sheet 5dd1adc471ae.03.81.15.9a.2a.01.53.f8 5dd1adc471ae.03.81.15.9a.2a.00.53.f8
+P "eddm__refer_state" "eddm__refer_floating"

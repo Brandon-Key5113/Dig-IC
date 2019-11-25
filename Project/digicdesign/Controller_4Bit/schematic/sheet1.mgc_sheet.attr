@@ -1,0 +1,27 @@
+A 5 u mgc_sheet 5dc2df9ac05e.03.81.15.9a.12.00.13.e0 1 2 19 0
+V v 1 4 5dc2df9ac05f.03.81.15.9a.12.00.13.e0
+F f 1 "sheet1.ssht_1"
+F f 1 "sheet1.sgfx_1"
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 0 "$PYXIS_SPT/digicdesign/Controller_4Bit/schematic" 1 mgc_schematic 5dc2df9a9aac.03.81.15.9a.12.01.13.e0 5dc2df9a9aac.03.81.15.9a.12.00.13.e0
+R csduv 1 "$MGC_IC_GENERIC_LIB/rip/part" 1 Eddm_part 5f94d2b7f000.0d.00.02.e4.17.00.00.00 3890e8888ef7.03.86.56.31.70.03.3a.eb
+R csduv 2 "$MGC_IC_GENERIC_LIB/rip/1X1" 1 mgc_symbol 6021b4b18000.0d.00.03.97.39.00.00.00 3890e8888ef7.03.86.56.31.70.04.3a.eb
+R csduv 3 "$GDKGATES/aoi222/part" 3 Eddm_part 503d4859dcff.03.93.22.28.96.00.34.40 503d3ceec93c.03.93.22.28.96.25.7e.63
+R csduv 4 "$GDKGATES/aoi222/aoi222" 10 mgc_symbol 503d4859dcd9.03.93.22.28.96.00.34.40 503d3ceec93c.03.93.22.28.96.23.7e.63
+R csduv 5 "$GDKGATES/nor02/part" 3 Eddm_part 503d790f4d1b.03.93.22.28.96.00.4f.76 503d3cc570cf.03.93.22.28.96.13.7e.63
+R csduv 6 "$GDKGATES/nor02/nor02" 10 mgc_symbol 503d790f4d0a.03.93.22.28.96.00.4f.76 503d3cc570cf.03.93.22.28.96.11.7e.63
+R csduv 7 "$GDKGATES/nor02ii/part" 3 Eddm_part 503d799f4002.03.93.22.28.96.00.4f.76 503d3cc570cf.03.93.22.28.96.1f.7e.63
+R csduv 8 "$GDKGATES/nor02ii/nor02ii" 10 mgc_symbol 503d799f3fed.03.93.22.28.96.00.4f.76 503d3cc570cf.03.93.22.28.96.1d.7e.63
+R csduv 9 "$GDKGATES/buf02/part" 3 Eddm_part 503d51b242b6.03.93.22.28.96.00.4f.76 503d3cc570cb.03.93.22.28.96.1e.7e.63
+R csduv 10 "$GDKGATES/buf02/buf02" 10 mgc_symbol 503d51b24260.03.93.22.28.96.00.4f.76 503d3cc570cb.03.93.22.28.96.1c.7e.63
+R csduv 11 "$MGC_IC_GENERIC_LIB/portin/part" 1 Eddm_part 35773eaadc18.03.86.56.31.87.00.0e.9f 3890e8888efb.03.86.56.31.70.00.3a.eb
+R csduv 12 "$MGC_IC_GENERIC_LIB/portin/portin" 1 mgc_symbol 35773d18855d.03.86.56.31.87.00.0e.9f 3890e8888efa.03.86.56.31.70.04.3a.eb
+R csduv 13 "$MGC_IC_GENERIC_LIB/portout/part" 1 Eddm_part 35785fdc394b.03.86.56.31.87.00.12.30 3890e8888efa.03.86.56.31.70.03.3a.eb
+R csduv 14 "$MGC_IC_GENERIC_LIB/portout/portout" 1 mgc_symbol 357ed6243e32.03.86.56.31.87.00.28.94 3890e8888efa.03.86.56.31.70.02.3a.eb
+R csduv 15 "$GDKGATES/and02/part" 8 Eddm_part 503d41c83ebc.03.93.22.28.96.00.34.40 503d3ceec93b.03.93.22.28.96.0d.7e.63
+R csduv 16 "$GDKGATES/and02/and02" 26 mgc_symbol 503d41c83e98.03.93.22.28.96.00.34.40 503d3ceec93b.03.93.22.28.96.0b.7e.63
+R csduv 17 "$GDKGATES/inv01/part" 3 Eddm_part 503d52b54dca.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.08.7e.63
+R csduv 18 "$GDKGATES/inv01/inv01" 10 mgc_symbol 503d52b54db4.03.93.22.28.96.00.4f.76 503d3cc570cd.03.93.22.28.96.06.7e.63
