@@ -1,6 +1,6 @@
 set exclude_gates {PadInC PadOut}
 load_library ~/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/GDKgates_utilities/hdl_libs/gdk.syn
-read {../SourceCode/AND2.vhd ../SourceCode/ANDADD.vhd ../SourceCode/FA_1bit.vhd ../SourceCode/FullAdder.vhd ../SourceCode/LFSR_32_4.vhd ../SourceCode/MISR_32_4.vhd ../SourceCode/Multiplier.vhd ../SourceCode/nBitRegister.vhd ../SourceCode/nBitAdder.vhd ../SourceCode/Counter.vhd ../SourceCode/TestController.vhd ../SourceCode/nBitMux_2to1.vhd ../SourceCode/MAC.vhd ../SourceCode/ProjectWrapper.vhd }
+read {../SourceCode/AND2.vhd ../SourceCode/ANDADD.vhd ../SourceCode/FA_1bit.vhd ../SourceCode/FullAdder.vhd ../SourceCode/LFSR_32_4.vhd ../SourceCode/MISR_32_4.vhd ../SourceCode/Multiplier.vhd ../SourceCode/nBitRegister_16.vhd ../SourceCode/nBitRegister_32.vhd ../SourceCode/nBitAdder.vhd ../SourceCode/Counter.vhd ../SourceCode/TestController.vhd ../SourceCode/nBitMux_2to1.vhd ../SourceCode/MAC.vhd ../SourceCode/ProjectWrapper.vhd }
 ungroup * -hierarchy
 set sdf_write_flat_netlist TRUE
 optimize
