@@ -101,13 +101,21 @@ Your Signature:   \rule{13cm}{.1pt}
 
 \section{Design Methodology and Theory}
 
-	A cornerstone of IC design is the ability to create large, complex designs from smaller more manageable parts. The project outlined in this exercise calls for the design, testing and layout of a multiply and accumulate (MAC) unit, which takes two 16-bit inputs, multiplies them together, adds them to the value stored in a register, and then stores that output back into the register.
+	A cornerstone of IC design is the ability to create large, complex designs from smaller more manageable parts. The project outlined in this exercise calls for the design, testing and layout of a multiply and accumulate (MAC) unit, which takes two 16-bit inputs, multiplies them together, adds them to the value stored in a register, and then stores that output back into the register. The final component should contain a built in self test (BIST) that verifies the functionality of the MAC.
 	
-	For all components designed in this exercise (a 1-bit ALU and a 16-bit ALU), VHDL was written to describe the functionality of the component. Leonardo Spectrum was used to turn the VHDL into synthesizable logic. The VHDL was then functionally tested with a test bench using Questa Sim. Next, a schematic for each ALU was generated with Pyxis. 
+	The MAC is composed of a carry-save multiplier, ripple carry full-adder, and parallel register. The BIST is implemented through the use of an LFSR for the inputs, an MISR for the output, and a test controller which controls the timing and sets the test passed and test complete outputs. A full diagram of the MAC with BIST can be seen below in \textit{Figure 1}.
+	
+	\begin{figure}
+		\centering
+		\includegraphics[width=0.7\linewidth]{Report/Pictures/Full-Project-Block}
+		\caption{\textbf{Figure 1: } High Level Block Diagram of the MAC with BIST.}
+		\label{fig:full-project-block}
+	\end{figure}
 	
 
 	\subsection{Functional Simulation}
 	
+
 		The ALUs in this exercise had a simple 2 bit op-code which can be seen in Table \ref{tab:OpCodes}.
 	
 		\begin{table}[H]
