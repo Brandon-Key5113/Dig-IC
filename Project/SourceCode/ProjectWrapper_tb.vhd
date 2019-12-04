@@ -87,6 +87,7 @@ begin
         wait for 600 ns;
         reset <= '1';
         wait for 600 ns;
+	B <= "0000000000000100";
 
 	 
 
