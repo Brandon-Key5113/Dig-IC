@@ -1,0 +1,9 @@
+ProjectWrapper 1000
+ERC PATHCHK GROUND && ! POWER
+0 0 0 Dec  2 12:57:36 2019                                                      
+ERC PATHCHK POWER && ! GROUND
+0 0 0 Dec  2 12:57:36 2019                                                      
+ERC PATHCHK ! POWER && ! GROUND
+0 0 0 Dec  2 12:57:36 2019                                                      
+ERC PATHCHK ! LABELED
+0 0 0 Dec  2 12:57:36 2019                                                      

@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ProjectWrapper/ProjectWrapper.cal
+*lvsLayoutPaths: ProjectWrapper.calibre.gds
+*lvsLayoutPrimary: ProjectWrapper
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: ProjectWrapper.lvs.results
+*lvsSummaryFile: ProjectWrapper.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: ProjectWrapper.calibre.src.net
+*lvsSourcePrimary: ProjectWrapper

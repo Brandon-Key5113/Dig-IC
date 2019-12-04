@@ -1,91 +1,94 @@
-A 5 u mgc_schematic 5dd867351601.03.81.15.9a.2a.00.49.22 59 2 27 0
-V v 57 1 5dd86a1c7951.03.81.15.9a.2a.00.45.5c
+A 5 u mgc_schematic 5ddc70aeb002.03.81.15.9a.1d.00.6a.2a 88 2 28 0
+V v 86 1 5ddc79d2bf08.03.81.15.9a.1d.00.69.a8
 F o 0 ""
-V v 58 1 5dd86a1f4224.03.81.15.9a.2a.00.45.5c
+V v 87 1 5ddc79d2d487.03.81.15.9a.1d.00.69.a8
 F o 0 ""
-V v 59 1 5dd86b3d0406.03.81.15.9a.2a.00.45.5c
+V v 88 1 5ddc79d2ea31.03.81.15.9a.1d.00.69.a8
 F o 0 ""
-O 59
-R cspuv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet1" 1 mgc_sheet 5dd8673544f6.03.81.15.9a.2a.00.49.22 5dd8673544f5.03.81.15.9a.2a.00.49.22
-R cspuv 1 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet2" 1 mgc_sheet 5dd867366412.03.81.15.9a.2a.01.49.22 5dd867366412.03.81.15.9a.2a.00.49.22
-R cspuv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet3" 2 mgc_sheet 5dd86a1aa804.03.81.15.9a.2a.00.45.5c 5dd867377d0b.03.81.15.9a.2a.00.49.22
-R cspuv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet4" 2 mgc_sheet 5dd86a1c76e8.03.81.15.9a.2a.00.45.5c 5dd867385e26.03.81.15.9a.2a.00.49.22
-R cspuv 4 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet5" 2 mgc_sheet 5dd86a1f3f7b.03.81.15.9a.2a.00.45.5c 5dd867394433.03.81.15.9a.2a.00.49.22
-R cspuv 5 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet6" 1 mgc_sheet 5dd8673a02fb.03.81.15.9a.2a.01.49.22 5dd8673a02fb.03.81.15.9a.2a.00.49.22
-R cspuv 6 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet7" 1 mgc_sheet 5dd8673ac3ca.03.81.15.9a.2a.01.49.22 5dd8673ac3ca.03.81.15.9a.2a.00.49.22
-R cspuv 7 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet8" 1 mgc_sheet 5dd8673b7b86.03.81.15.9a.2a.01.49.22 5dd8673b7b86.03.81.15.9a.2a.00.49.22
-R cspuv 8 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet9" 1 mgc_sheet 5dd8673c4118.03.81.15.9a.2a.01.49.22 5dd8673c4118.03.81.15.9a.2a.00.49.22
-R cspuv 9 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet10" 1 mgc_sheet 5dd8673cb39d.03.81.15.9a.2a.00.49.22 5dd8673cb39c.03.81.15.9a.2a.00.49.22
-R cspuv 10 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet11" 1 mgc_sheet 5dd8673d6456.03.81.15.9a.2a.01.49.22 5dd8673d6456.03.81.15.9a.2a.00.49.22
-R cspuv 11 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet12" 1 mgc_sheet 5dd8673dd7f1.03.81.15.9a.2a.01.49.22 5dd8673dd7f1.03.81.15.9a.2a.00.49.22
-R cspuv 12 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet13" 1 mgc_sheet 5dd8673e924f.03.81.15.9a.2a.01.49.22 5dd8673e924f.03.81.15.9a.2a.00.49.22
-R cspuv 13 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet14" 1 mgc_sheet 5dd8673f2d8d.03.81.15.9a.2a.01.49.22 5dd8673f2d8d.03.81.15.9a.2a.00.49.22
-R cspuv 14 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet15" 1 mgc_sheet 5dd8673fc983.03.81.15.9a.2a.01.49.22 5dd8673fc983.03.81.15.9a.2a.00.49.22
-R cspuv 15 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet16" 1 mgc_sheet 5dd867407e7a.03.81.15.9a.2a.01.49.22 5dd867407e7a.03.81.15.9a.2a.00.49.22
-R cspuv 16 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet17" 1 mgc_sheet 5dd86741168e.03.81.15.9a.2a.01.49.22 5dd86741168e.03.81.15.9a.2a.00.49.22
-R cspuv 17 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet18" 1 mgc_sheet 5dd86741a69b.03.81.15.9a.2a.01.49.22 5dd86741a69b.03.81.15.9a.2a.00.49.22
-R cspuv 18 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet19" 1 mgc_sheet 5dd8674221d8.03.81.15.9a.2a.01.49.22 5dd8674221d8.03.81.15.9a.2a.00.49.22
-R cspuv 19 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet20" 1 mgc_sheet 5dd86742c298.03.81.15.9a.2a.01.49.22 5dd86742c298.03.81.15.9a.2a.00.49.22
-R cspuv 20 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet21" 1 mgc_sheet 5dd867436164.03.81.15.9a.2a.01.49.22 5dd867436164.03.81.15.9a.2a.00.49.22
-R cspuv 21 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet22" 1 mgc_sheet 5dd8674408b6.03.81.15.9a.2a.01.49.22 5dd8674408b6.03.81.15.9a.2a.00.49.22
-R cspuv 22 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet23" 1 mgc_sheet 5dd867449411.03.81.15.9a.2a.01.49.22 5dd867449411.03.81.15.9a.2a.00.49.22
-R cspuv 23 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet24" 1 mgc_sheet 5dd867451727.03.81.15.9a.2a.01.49.22 5dd867451727.03.81.15.9a.2a.00.49.22
-R cspuv 24 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet25" 1 mgc_sheet 5dd86745b2f1.03.81.15.9a.2a.01.49.22 5dd86745b2f1.03.81.15.9a.2a.00.49.22
-R cspuv 25 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet26" 1 mgc_sheet 5dd86746995b.03.81.15.9a.2a.01.49.22 5dd86746995b.03.81.15.9a.2a.00.49.22
-R cspuv 26 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet27" 3 mgc_sheet 5dd86b3d023f.03.81.15.9a.2a.00.45.5c 5dd867472e52.03.81.15.9a.2a.00.49.22
-O 58
-R cspuv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet1" 1 mgc_sheet 5dd8673544f6.03.81.15.9a.2a.00.49.22 5dd8673544f5.03.81.15.9a.2a.00.49.22
-R cspuv 1 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet2" 1 mgc_sheet 5dd867366412.03.81.15.9a.2a.01.49.22 5dd867366412.03.81.15.9a.2a.00.49.22
-R cspuv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet3" 2 mgc_sheet 5dd86a1aa804.03.81.15.9a.2a.00.45.5c 5dd867377d0b.03.81.15.9a.2a.00.49.22
-R cspuv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet4" 2 mgc_sheet 5dd86a1c76e8.03.81.15.9a.2a.00.45.5c 5dd867385e26.03.81.15.9a.2a.00.49.22
-R cspuv 4 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet5" 2 mgc_sheet 5dd86a1f3f7b.03.81.15.9a.2a.00.45.5c 5dd867394433.03.81.15.9a.2a.00.49.22
-R cspuv 5 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet6" 1 mgc_sheet 5dd8673a02fb.03.81.15.9a.2a.01.49.22 5dd8673a02fb.03.81.15.9a.2a.00.49.22
-R cspuv 6 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet7" 1 mgc_sheet 5dd8673ac3ca.03.81.15.9a.2a.01.49.22 5dd8673ac3ca.03.81.15.9a.2a.00.49.22
-R cspuv 7 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet8" 1 mgc_sheet 5dd8673b7b86.03.81.15.9a.2a.01.49.22 5dd8673b7b86.03.81.15.9a.2a.00.49.22
-R cspuv 8 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet9" 1 mgc_sheet 5dd8673c4118.03.81.15.9a.2a.01.49.22 5dd8673c4118.03.81.15.9a.2a.00.49.22
-R cspuv 9 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet10" 1 mgc_sheet 5dd8673cb39d.03.81.15.9a.2a.00.49.22 5dd8673cb39c.03.81.15.9a.2a.00.49.22
-R cspuv 10 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet11" 1 mgc_sheet 5dd8673d6456.03.81.15.9a.2a.01.49.22 5dd8673d6456.03.81.15.9a.2a.00.49.22
-R cspuv 11 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet12" 1 mgc_sheet 5dd8673dd7f1.03.81.15.9a.2a.01.49.22 5dd8673dd7f1.03.81.15.9a.2a.00.49.22
-R cspuv 12 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet13" 1 mgc_sheet 5dd8673e924f.03.81.15.9a.2a.01.49.22 5dd8673e924f.03.81.15.9a.2a.00.49.22
-R cspuv 13 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet14" 1 mgc_sheet 5dd8673f2d8d.03.81.15.9a.2a.01.49.22 5dd8673f2d8d.03.81.15.9a.2a.00.49.22
-R cspuv 14 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet15" 1 mgc_sheet 5dd8673fc983.03.81.15.9a.2a.01.49.22 5dd8673fc983.03.81.15.9a.2a.00.49.22
-R cspuv 15 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet16" 1 mgc_sheet 5dd867407e7a.03.81.15.9a.2a.01.49.22 5dd867407e7a.03.81.15.9a.2a.00.49.22
-R cspuv 16 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet17" 1 mgc_sheet 5dd86741168e.03.81.15.9a.2a.01.49.22 5dd86741168e.03.81.15.9a.2a.00.49.22
-R cspuv 17 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet18" 1 mgc_sheet 5dd86741a69b.03.81.15.9a.2a.01.49.22 5dd86741a69b.03.81.15.9a.2a.00.49.22
-R cspuv 18 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet19" 1 mgc_sheet 5dd8674221d8.03.81.15.9a.2a.01.49.22 5dd8674221d8.03.81.15.9a.2a.00.49.22
-R cspuv 19 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet20" 1 mgc_sheet 5dd86742c298.03.81.15.9a.2a.01.49.22 5dd86742c298.03.81.15.9a.2a.00.49.22
-R cspuv 20 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet21" 1 mgc_sheet 5dd867436164.03.81.15.9a.2a.01.49.22 5dd867436164.03.81.15.9a.2a.00.49.22
-R cspuv 21 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet22" 1 mgc_sheet 5dd8674408b6.03.81.15.9a.2a.01.49.22 5dd8674408b6.03.81.15.9a.2a.00.49.22
-R cspuv 22 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet23" 1 mgc_sheet 5dd867449411.03.81.15.9a.2a.01.49.22 5dd867449411.03.81.15.9a.2a.00.49.22
-R cspuv 23 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet24" 1 mgc_sheet 5dd867451727.03.81.15.9a.2a.01.49.22 5dd867451727.03.81.15.9a.2a.00.49.22
-R cspuv 24 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet25" 1 mgc_sheet 5dd86745b2f1.03.81.15.9a.2a.01.49.22 5dd86745b2f1.03.81.15.9a.2a.00.49.22
-R cspuv 25 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet26" 1 mgc_sheet 5dd86746995b.03.81.15.9a.2a.01.49.22 5dd86746995b.03.81.15.9a.2a.00.49.22
-R cspuv 26 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet27" 2 mgc_sheet 5dd86a0bd33a.03.81.15.9a.2a.00.45.5c 5dd867472e52.03.81.15.9a.2a.00.49.22
-O 57
-R cspuv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet1" 1 mgc_sheet 5dd8673544f6.03.81.15.9a.2a.00.49.22 5dd8673544f5.03.81.15.9a.2a.00.49.22
-R cspuv 1 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet2" 1 mgc_sheet 5dd867366412.03.81.15.9a.2a.01.49.22 5dd867366412.03.81.15.9a.2a.00.49.22
-R cspuv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet3" 2 mgc_sheet 5dd86a1aa804.03.81.15.9a.2a.00.45.5c 5dd867377d0b.03.81.15.9a.2a.00.49.22
-R cspuv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet4" 2 mgc_sheet 5dd86a1c76e8.03.81.15.9a.2a.00.45.5c 5dd867385e26.03.81.15.9a.2a.00.49.22
-R cspuv 4 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet5" 1 mgc_sheet 5dd867394433.03.81.15.9a.2a.01.49.22 5dd867394433.03.81.15.9a.2a.00.49.22
-R cspuv 5 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet6" 1 mgc_sheet 5dd8673a02fb.03.81.15.9a.2a.01.49.22 5dd8673a02fb.03.81.15.9a.2a.00.49.22
-R cspuv 6 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet7" 1 mgc_sheet 5dd8673ac3ca.03.81.15.9a.2a.01.49.22 5dd8673ac3ca.03.81.15.9a.2a.00.49.22
-R cspuv 7 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet8" 1 mgc_sheet 5dd8673b7b86.03.81.15.9a.2a.01.49.22 5dd8673b7b86.03.81.15.9a.2a.00.49.22
-R cspuv 8 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet9" 1 mgc_sheet 5dd8673c4118.03.81.15.9a.2a.01.49.22 5dd8673c4118.03.81.15.9a.2a.00.49.22
-R cspuv 9 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet10" 1 mgc_sheet 5dd8673cb39d.03.81.15.9a.2a.00.49.22 5dd8673cb39c.03.81.15.9a.2a.00.49.22
-R cspuv 10 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet11" 1 mgc_sheet 5dd8673d6456.03.81.15.9a.2a.01.49.22 5dd8673d6456.03.81.15.9a.2a.00.49.22
-R cspuv 11 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet12" 1 mgc_sheet 5dd8673dd7f1.03.81.15.9a.2a.01.49.22 5dd8673dd7f1.03.81.15.9a.2a.00.49.22
-R cspuv 12 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet13" 1 mgc_sheet 5dd8673e924f.03.81.15.9a.2a.01.49.22 5dd8673e924f.03.81.15.9a.2a.00.49.22
-R cspuv 13 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet14" 1 mgc_sheet 5dd8673f2d8d.03.81.15.9a.2a.01.49.22 5dd8673f2d8d.03.81.15.9a.2a.00.49.22
-R cspuv 14 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet15" 1 mgc_sheet 5dd8673fc983.03.81.15.9a.2a.01.49.22 5dd8673fc983.03.81.15.9a.2a.00.49.22
-R cspuv 15 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet16" 1 mgc_sheet 5dd867407e7a.03.81.15.9a.2a.01.49.22 5dd867407e7a.03.81.15.9a.2a.00.49.22
-R cspuv 16 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet17" 1 mgc_sheet 5dd86741168e.03.81.15.9a.2a.01.49.22 5dd86741168e.03.81.15.9a.2a.00.49.22
-R cspuv 17 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet18" 1 mgc_sheet 5dd86741a69b.03.81.15.9a.2a.01.49.22 5dd86741a69b.03.81.15.9a.2a.00.49.22
-R cspuv 18 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet19" 1 mgc_sheet 5dd8674221d8.03.81.15.9a.2a.01.49.22 5dd8674221d8.03.81.15.9a.2a.00.49.22
-R cspuv 19 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet20" 1 mgc_sheet 5dd86742c298.03.81.15.9a.2a.01.49.22 5dd86742c298.03.81.15.9a.2a.00.49.22
-R cspuv 20 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet21" 1 mgc_sheet 5dd867436164.03.81.15.9a.2a.01.49.22 5dd867436164.03.81.15.9a.2a.00.49.22
-R cspuv 21 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet22" 1 mgc_sheet 5dd8674408b6.03.81.15.9a.2a.01.49.22 5dd8674408b6.03.81.15.9a.2a.00.49.22
-R cspuv 22 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet23" 1 mgc_sheet 5dd867449411.03.81.15.9a.2a.01.49.22 5dd867449411.03.81.15.9a.2a.00.49.22
-R cspuv 23 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet24" 1 mgc_sheet 5dd867451727.03.81.15.9a.2a.01.49.22 5dd867451727.03.81.15.9a.2a.00.49.22
-R cspuv 24 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet25" 1 mgc_sheet 5dd86745b2f1.03.81.15.9a.2a.01.49.22 5dd86745b2f1.03.81.15.9a.2a.00.49.22
-R cspuv 25 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet26" 1 mgc_sheet 5dd86746995b.03.81.15.9a.2a.01.49.22 5dd86746995b.03.81.15.9a.2a.00.49.22
-R cspuv 26 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet27" 2 mgc_sheet 5dd86a0bd33a.03.81.15.9a.2a.00.45.5c 5dd867472e52.03.81.15.9a.2a.00.49.22
+O 88
+R cspuv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet1" 2 mgc_sheet 5ddc79c69799.03.81.15.9a.1d.00.69.a8 5ddc70aebabe.03.81.15.9a.1d.00.6a.2a
+R cspuv 1 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet2" 2 mgc_sheet 5ddc79c6b7d9.03.81.15.9a.1d.00.69.a8 5ddc70afe7f6.03.81.15.9a.1d.00.6a.2a
+R cspuv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet3" 2 mgc_sheet 5ddc79c6d5b5.03.81.15.9a.1d.00.69.a8 5ddc70b10087.03.81.15.9a.1d.00.6a.2a
+R cspuv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet4" 2 mgc_sheet 5ddc79c7003a.03.81.15.9a.1d.00.69.a8 5ddc70b1d952.03.81.15.9a.1d.00.6a.2a
+R cspuv 4 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet5" 2 mgc_sheet 5ddc79c71cd6.03.81.15.9a.1d.00.69.a8 5ddc70b28b3b.03.81.15.9a.1d.00.6a.2a
+R cspuv 5 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet6" 2 mgc_sheet 5ddc79c735ef.03.81.15.9a.1d.00.69.a8 5ddc70b31800.03.81.15.9a.1d.00.6a.2a
+R cspuv 6 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet7" 2 mgc_sheet 5ddc79c74f30.03.81.15.9a.1d.00.69.a8 5ddc70b3a9c8.03.81.15.9a.1d.00.6a.2a
+R cspuv 7 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet8" 3 mgc_sheet 5ddc79c765c0.03.81.15.9a.1d.00.69.a8 5ddc70b44a42.03.81.15.9a.1d.00.6a.2a
+R cspuv 8 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet9" 2 mgc_sheet 5ddc79d17ff6.03.81.15.9a.1d.00.69.a8 5ddc70b4c394.03.81.15.9a.1d.00.6a.2a
+R cspuv 9 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet10" 3 mgc_sheet 5ddc79d19b1e.03.81.15.9a.1d.00.69.a8 5ddc70b5658c.03.81.15.9a.1d.00.6a.2a
+R cspuv 10 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet11" 2 mgc_sheet 5ddc79d1b508.03.81.15.9a.1d.00.69.a8 5ddc70b5ef97.03.81.15.9a.1d.00.6a.2a
+R cspuv 11 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet12" 2 mgc_sheet 5ddc79d1cc44.03.81.15.9a.1d.00.69.a8 5ddc70b66bb7.03.81.15.9a.1d.00.6a.2a
+R cspuv 12 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet13" 2 mgc_sheet 5ddc79d1e63b.03.81.15.9a.1d.00.69.a8 5ddc70b700bd.03.81.15.9a.1d.00.6a.2a
+R cspuv 13 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet14" 2 mgc_sheet 5ddc79d20927.03.81.15.9a.1d.00.69.a8 5ddc70b78658.03.81.15.9a.1d.00.6a.2a
+R cspuv 14 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet15" 3 mgc_sheet 5ddc79d2205c.03.81.15.9a.1d.00.69.a8 5ddc70b83308.03.81.15.9a.1d.00.6a.2a
+R cspuv 15 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet16" 2 mgc_sheet 5ddc79d23806.03.81.15.9a.1d.00.69.a8 5ddc70b8d67e.03.81.15.9a.1d.00.6a.2a
+R cspuv 16 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet17" 2 mgc_sheet 5ddc75b483ad.03.81.15.9a.1d.00.69.a8 5ddc70b96e00.03.81.15.9a.1d.00.6a.2a
+R cspuv 17 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet18" 2 mgc_sheet 5ddc79d24e4e.03.81.15.9a.1d.00.69.a8 5ddc70ba0249.03.81.15.9a.1d.00.6a.2a
+R cspuv 18 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet19" 2 mgc_sheet 5ddc79d2652a.03.81.15.9a.1d.00.69.a8 5ddc70baa5cf.03.81.15.9a.1d.00.6a.2a
+R cspuv 19 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet20" 2 mgc_sheet 5ddc79d27bd2.03.81.15.9a.1d.00.69.a8 5ddc70bb3bf1.03.81.15.9a.1d.00.6a.2a
+R cspuv 20 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet21" 2 mgc_sheet 5ddc79d29201.03.81.15.9a.1d.00.69.a8 5ddc70bbc862.03.81.15.9a.1d.00.6a.2a
+R cspuv 21 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet22" 2 mgc_sheet 5ddc79d2a7e8.03.81.15.9a.1d.00.69.a8 5ddc70bc5d2c.03.81.15.9a.1d.00.6a.2a
+R cspuv 22 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet23" 2 mgc_sheet 5ddc79d2bd71.03.81.15.9a.1d.00.69.a8 5ddc70bce6c5.03.81.15.9a.1d.00.6a.2a
+R cspuv 23 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet24" 2 mgc_sheet 5ddc79d2d308.03.81.15.9a.1d.00.69.a8 5ddc70bd642a.03.81.15.9a.1d.00.6a.2a
+R cspuv 24 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet25" 2 mgc_sheet 5ddc78eea26f.03.81.15.9a.1d.00.69.a8 5ddc70be0800.03.81.15.9a.1d.00.6a.2a
+R cspuv 25 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet26" 2 mgc_sheet 5ddc79d2e8a7.03.81.15.9a.1d.00.69.a8 5ddc70be8b8e.03.81.15.9a.1d.00.6a.2a
+R cspuv 26 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet27" 2 mgc_sheet 5ddc798b0ae0.03.81.15.9a.1d.00.69.a8 5ddc70bedd6a.03.81.15.9a.1d.00.6a.2a
+R cspuv 27 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet28" 3 mgc_sheet 5ddc732c8f64.03.81.15.9a.1d.00.69.a8 5ddc70bf6aaf.03.81.15.9a.1d.00.6a.2a
+O 87
+R cspuv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet1" 2 mgc_sheet 5ddc79c69799.03.81.15.9a.1d.00.69.a8 5ddc70aebabe.03.81.15.9a.1d.00.6a.2a
+R cspuv 1 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet2" 2 mgc_sheet 5ddc79c6b7d9.03.81.15.9a.1d.00.69.a8 5ddc70afe7f6.03.81.15.9a.1d.00.6a.2a
+R cspuv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet3" 2 mgc_sheet 5ddc79c6d5b5.03.81.15.9a.1d.00.69.a8 5ddc70b10087.03.81.15.9a.1d.00.6a.2a
+R cspuv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet4" 2 mgc_sheet 5ddc79c7003a.03.81.15.9a.1d.00.69.a8 5ddc70b1d952.03.81.15.9a.1d.00.6a.2a
+R cspuv 4 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet5" 2 mgc_sheet 5ddc79c71cd6.03.81.15.9a.1d.00.69.a8 5ddc70b28b3b.03.81.15.9a.1d.00.6a.2a
+R cspuv 5 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet6" 2 mgc_sheet 5ddc79c735ef.03.81.15.9a.1d.00.69.a8 5ddc70b31800.03.81.15.9a.1d.00.6a.2a
+R cspuv 6 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet7" 2 mgc_sheet 5ddc79c74f30.03.81.15.9a.1d.00.69.a8 5ddc70b3a9c8.03.81.15.9a.1d.00.6a.2a
+R cspuv 7 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet8" 3 mgc_sheet 5ddc79c765c0.03.81.15.9a.1d.00.69.a8 5ddc70b44a42.03.81.15.9a.1d.00.6a.2a
+R cspuv 8 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet9" 2 mgc_sheet 5ddc79d17ff6.03.81.15.9a.1d.00.69.a8 5ddc70b4c394.03.81.15.9a.1d.00.6a.2a
+R cspuv 9 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet10" 3 mgc_sheet 5ddc79d19b1e.03.81.15.9a.1d.00.69.a8 5ddc70b5658c.03.81.15.9a.1d.00.6a.2a
+R cspuv 10 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet11" 2 mgc_sheet 5ddc79d1b508.03.81.15.9a.1d.00.69.a8 5ddc70b5ef97.03.81.15.9a.1d.00.6a.2a
+R cspuv 11 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet12" 2 mgc_sheet 5ddc79d1cc44.03.81.15.9a.1d.00.69.a8 5ddc70b66bb7.03.81.15.9a.1d.00.6a.2a
+R cspuv 12 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet13" 2 mgc_sheet 5ddc79d1e63b.03.81.15.9a.1d.00.69.a8 5ddc70b700bd.03.81.15.9a.1d.00.6a.2a
+R cspuv 13 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet14" 2 mgc_sheet 5ddc79d20927.03.81.15.9a.1d.00.69.a8 5ddc70b78658.03.81.15.9a.1d.00.6a.2a
+R cspuv 14 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet15" 3 mgc_sheet 5ddc79d2205c.03.81.15.9a.1d.00.69.a8 5ddc70b83308.03.81.15.9a.1d.00.6a.2a
+R cspuv 15 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet16" 2 mgc_sheet 5ddc79d23806.03.81.15.9a.1d.00.69.a8 5ddc70b8d67e.03.81.15.9a.1d.00.6a.2a
+R cspuv 16 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet17" 2 mgc_sheet 5ddc75b483ad.03.81.15.9a.1d.00.69.a8 5ddc70b96e00.03.81.15.9a.1d.00.6a.2a
+R cspuv 17 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet18" 2 mgc_sheet 5ddc79d24e4e.03.81.15.9a.1d.00.69.a8 5ddc70ba0249.03.81.15.9a.1d.00.6a.2a
+R cspuv 18 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet19" 2 mgc_sheet 5ddc79d2652a.03.81.15.9a.1d.00.69.a8 5ddc70baa5cf.03.81.15.9a.1d.00.6a.2a
+R cspuv 19 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet20" 2 mgc_sheet 5ddc79d27bd2.03.81.15.9a.1d.00.69.a8 5ddc70bb3bf1.03.81.15.9a.1d.00.6a.2a
+R cspuv 20 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet21" 2 mgc_sheet 5ddc79d29201.03.81.15.9a.1d.00.69.a8 5ddc70bbc862.03.81.15.9a.1d.00.6a.2a
+R cspuv 21 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet22" 2 mgc_sheet 5ddc79d2a7e8.03.81.15.9a.1d.00.69.a8 5ddc70bc5d2c.03.81.15.9a.1d.00.6a.2a
+R cspuv 22 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet23" 2 mgc_sheet 5ddc79d2bd71.03.81.15.9a.1d.00.69.a8 5ddc70bce6c5.03.81.15.9a.1d.00.6a.2a
+R cspuv 23 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet24" 2 mgc_sheet 5ddc79d2d308.03.81.15.9a.1d.00.69.a8 5ddc70bd642a.03.81.15.9a.1d.00.6a.2a
+R cspuv 24 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet25" 2 mgc_sheet 5ddc78eea26f.03.81.15.9a.1d.00.69.a8 5ddc70be0800.03.81.15.9a.1d.00.6a.2a
+R cspuv 25 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet26" 1 mgc_sheet 5ddc70be8b8e.03.81.15.9a.1d.01.6a.2a 5ddc70be8b8e.03.81.15.9a.1d.00.6a.2a
+R cspuv 26 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet27" 2 mgc_sheet 5ddc798b0ae0.03.81.15.9a.1d.00.69.a8 5ddc70bedd6a.03.81.15.9a.1d.00.6a.2a
+R cspuv 27 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet28" 3 mgc_sheet 5ddc732c8f64.03.81.15.9a.1d.00.69.a8 5ddc70bf6aaf.03.81.15.9a.1d.00.6a.2a
+O 86
+R cspuv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet1" 2 mgc_sheet 5ddc79c69799.03.81.15.9a.1d.00.69.a8 5ddc70aebabe.03.81.15.9a.1d.00.6a.2a
+R cspuv 1 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet2" 2 mgc_sheet 5ddc79c6b7d9.03.81.15.9a.1d.00.69.a8 5ddc70afe7f6.03.81.15.9a.1d.00.6a.2a
+R cspuv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet3" 2 mgc_sheet 5ddc79c6d5b5.03.81.15.9a.1d.00.69.a8 5ddc70b10087.03.81.15.9a.1d.00.6a.2a
+R cspuv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet4" 2 mgc_sheet 5ddc79c7003a.03.81.15.9a.1d.00.69.a8 5ddc70b1d952.03.81.15.9a.1d.00.6a.2a
+R cspuv 4 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet5" 2 mgc_sheet 5ddc79c71cd6.03.81.15.9a.1d.00.69.a8 5ddc70b28b3b.03.81.15.9a.1d.00.6a.2a
+R cspuv 5 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet6" 2 mgc_sheet 5ddc79c735ef.03.81.15.9a.1d.00.69.a8 5ddc70b31800.03.81.15.9a.1d.00.6a.2a
+R cspuv 6 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet7" 2 mgc_sheet 5ddc79c74f30.03.81.15.9a.1d.00.69.a8 5ddc70b3a9c8.03.81.15.9a.1d.00.6a.2a
+R cspuv 7 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet8" 3 mgc_sheet 5ddc79c765c0.03.81.15.9a.1d.00.69.a8 5ddc70b44a42.03.81.15.9a.1d.00.6a.2a
+R cspuv 8 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet9" 2 mgc_sheet 5ddc79d17ff6.03.81.15.9a.1d.00.69.a8 5ddc70b4c394.03.81.15.9a.1d.00.6a.2a
+R cspuv 9 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet10" 3 mgc_sheet 5ddc79d19b1e.03.81.15.9a.1d.00.69.a8 5ddc70b5658c.03.81.15.9a.1d.00.6a.2a
+R cspuv 10 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet11" 2 mgc_sheet 5ddc79d1b508.03.81.15.9a.1d.00.69.a8 5ddc70b5ef97.03.81.15.9a.1d.00.6a.2a
+R cspuv 11 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet12" 2 mgc_sheet 5ddc79d1cc44.03.81.15.9a.1d.00.69.a8 5ddc70b66bb7.03.81.15.9a.1d.00.6a.2a
+R cspuv 12 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet13" 2 mgc_sheet 5ddc79d1e63b.03.81.15.9a.1d.00.69.a8 5ddc70b700bd.03.81.15.9a.1d.00.6a.2a
+R cspuv 13 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet14" 2 mgc_sheet 5ddc79d20927.03.81.15.9a.1d.00.69.a8 5ddc70b78658.03.81.15.9a.1d.00.6a.2a
+R cspuv 14 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet15" 3 mgc_sheet 5ddc79d2205c.03.81.15.9a.1d.00.69.a8 5ddc70b83308.03.81.15.9a.1d.00.6a.2a
+R cspuv 15 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet16" 2 mgc_sheet 5ddc79d23806.03.81.15.9a.1d.00.69.a8 5ddc70b8d67e.03.81.15.9a.1d.00.6a.2a
+R cspuv 16 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet17" 2 mgc_sheet 5ddc75b483ad.03.81.15.9a.1d.00.69.a8 5ddc70b96e00.03.81.15.9a.1d.00.6a.2a
+R cspuv 17 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet18" 2 mgc_sheet 5ddc79d24e4e.03.81.15.9a.1d.00.69.a8 5ddc70ba0249.03.81.15.9a.1d.00.6a.2a
+R cspuv 18 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet19" 2 mgc_sheet 5ddc79d2652a.03.81.15.9a.1d.00.69.a8 5ddc70baa5cf.03.81.15.9a.1d.00.6a.2a
+R cspuv 19 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet20" 2 mgc_sheet 5ddc79d27bd2.03.81.15.9a.1d.00.69.a8 5ddc70bb3bf1.03.81.15.9a.1d.00.6a.2a
+R cspuv 20 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet21" 2 mgc_sheet 5ddc79d29201.03.81.15.9a.1d.00.69.a8 5ddc70bbc862.03.81.15.9a.1d.00.6a.2a
+R cspuv 21 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet22" 2 mgc_sheet 5ddc79d2a7e8.03.81.15.9a.1d.00.69.a8 5ddc70bc5d2c.03.81.15.9a.1d.00.6a.2a
+R cspuv 22 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet23" 2 mgc_sheet 5ddc79d2bd71.03.81.15.9a.1d.00.69.a8 5ddc70bce6c5.03.81.15.9a.1d.00.6a.2a
+R cspuv 23 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet24" 1 mgc_sheet 5ddc70bd642a.03.81.15.9a.1d.01.6a.2a 5ddc70bd642a.03.81.15.9a.1d.00.6a.2a
+R cspuv 24 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet25" 2 mgc_sheet 5ddc78eea26f.03.81.15.9a.1d.00.69.a8 5ddc70be0800.03.81.15.9a.1d.00.6a.2a
+R cspuv 25 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet26" 1 mgc_sheet 5ddc70be8b8e.03.81.15.9a.1d.01.6a.2a 5ddc70be8b8e.03.81.15.9a.1d.00.6a.2a
+R cspuv 26 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet27" 2 mgc_sheet 5ddc798b0ae0.03.81.15.9a.1d.00.69.a8 5ddc70bedd6a.03.81.15.9a.1d.00.6a.2a
+R cspuv 27 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic/sheet28" 3 mgc_sheet 5ddc732c8f64.03.81.15.9a.1d.00.69.a8 5ddc70bf6aaf.03.81.15.9a.1d.00.6a.2a
