@@ -1,6 +1,6 @@
 formaty1 = "\\begin{figure}[H] \n\
     \\centering \n\
-    \\includegraphics[width=0.7\linewidth]{\""
+    \\includegraphics[width=\\textwidth,height=\\dimexpr\\textheight-4\\baselineskip-\\abovecaptionskip-\\belowcaptionskip\\relax,keepaspectratio]{\""
 formaty2 = "\"}\n\
     \\caption{"
 formaty3 = "} \n\
@@ -20,7 +20,7 @@ def rchop(thestring, ending):
     return thestring[:-len(ending)]
   return thestring
 
-for file in os.listdir("./Pictures"):
+for file in sorted(os.listdir("./Pictures")):
     if file.lower().endswith(".png"):
         files += [file]
 

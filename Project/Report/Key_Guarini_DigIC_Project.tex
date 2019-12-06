@@ -1,5 +1,6 @@
 \documentclass[11pt]{article}
 \usepackage[margin=1.0in]{geometry}
+\usepackage{lastpage}
 \usepackage{mathtools}
 \usepackage{graphicx}
 \usepackage{float}
@@ -19,7 +20,30 @@
 \pagestyle{fancy}
 \fancyhead{}
 \fancyfoot{}
-\fancyfoot[R]{\thepage}
+
+
+\newcommand{\ClassNameS}{CMPE-630}
+\newcommand{\ClassNameL}{Digital Integrated Circuit Design}
+\newcommand{\ExerciseName}{Final Project}
+\newcommand{\SubTitle}{Multiply and Accumulate (MAC) Datapath Unit Design}
+\newcommand{\Arthur}{Brandon Key \& Chris Guarini}
+\newcommand{\DueDate}{9 Dec 2019}
+
+\fancyhead[L]{\ClassNameS}
+\fancyhead[R]{\ExerciseName}
+
+\fancyfoot[L]{\Arthur}
+\fancyfoot[C]{\DueDate}
+\fancyfoot[R]{\thepage \space of \pageref{LastPage}}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em}
+
+\linespread{1.0}
+% where value determine line spacing.
+% 1.0	single spacing
+% 1.3	one-and-a-half spacing
+% 1.6	double spacing
 
 \definecolor{mygreen}{rgb}{0,0.6,0}
 \definecolor{mygray}{rgb}{0.5,0.5,0.5}
@@ -54,7 +78,7 @@
 	title=\lstname                   % show the filename of files included with \lstinputlisting; also try caption instead of title
 }
 
-\begin{document}
+\begin{document}\thispagestyle{empty}
 
 %
 % cover page
@@ -63,19 +87,20 @@
 \vspace*{2 cm}
 
 \begin{center}
-\bf{CMPE-630 Digital IC Design\\
-    Laboratory Exercise 7\\
+\bf{\ClassNameS \space \ClassNameL\\
+    \ExerciseName\\
 \vspace{0.25 cm}
-Autolayout Design Techniques (HDL-Layout)
+\SubTitle
 }
 \end{center}
 
-\vspace{6 cm}
+\vspace{4 cm}
 
 \begin{flushright}
-Brandon Key and Chris Guarini\\
+Brandon Key\\
+Chris Guarini\\
 Performed: 9 Dec 2019\\
-Submitted: 9 Dec 2019\\
+Submitted: \DueDate\\
 \vspace{0.5 cm}
 Instructor: Dr. Amlan Ganguly\\
 TAs: Abhishek Vashist\\
@@ -90,409 +115,459 @@ Piers Kwan\\
 \vspace{1 cm}
 Your Signature:   \rule{13cm}{.1pt}
 
-
+\newpage
 \tableofcontents
 \newpage
 
 \section{Abstract}
 
-	Integrated Circuit Design is a costly and complex endeavor. Fortunately, automatic tools speed up the process and allow designs that are not possible to create manually. This exercise implemented a 1-Bit ALU and a 16-Bit ALU using autolayout. The autolayout tools generated very reasonable circuits. The 1-Bit ALU has an input frequency of 380.92MHz and a throughput frequency of 553.4MHz, while the 16-bit ALU has an input frequency of 461.02MHz and a throughput frequency of 110.2MHz. The area used by the ALUs was also reasonable with the 1-bit ALU taking up 647.89$\mu m^2$ and the 16-bit ALU occupying 9792.5$\mu m^2$.
+	
 	
 
 \section{Design Methodology and Theory}
 
 	A cornerstone of IC design is the ability to create large, complex designs from smaller more manageable parts. The project outlined in this exercise calls for the design, testing and layout of a multiply and accumulate (MAC) unit, which takes two 16-bit inputs, multiplies them together, adds them to the value stored in a register, and then stores that output back into the register. The final component should contain a built in self test (BIST) that verifies the functionality of the MAC.
 	
-	The MAC is composed of a carry-save multiplier, ripple carry full-adder, and parallel register. The BIST is implemented through the use of an LFSR for the inputs, an MISR for the output, and a test controller which controls the timing and sets the test passed and test complete outputs. A full diagram of the MAC with BIST can be seen below in \textit{Figure 1}.
+	The MAC is composed of a carry-save multiplier, ripple carry full-adder, and parallel register. The BIST is implemented through the use of an LFSR for the inputs, an MISR for the output, and a test controller which controls the timing and sets the test passed and test complete outputs. A full diagram of the MAC with BIST can be seen below in Figure \ref{fig:full-project-block}.
 	
-	\begin{figure}
+	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{Pictures/Full-Project-Block}
-		\caption{\textbf{Figure 1: } High Level Block Diagram of the MAC with BIST.}
+		\caption{High Level Block Diagram of the MAC with BIST.}
 		\label{fig:full-project-block}
 	\end{figure}
+
+
+	\subsection{User Operation}
+		//TODO Chris, talk about how to use this and go into test mode
 	
 
+	\subsection{Adder}
 	
-
-\section{Results and Analysis}
+		The adder used in this design was 32 bits wide to accept input form the multiplier and the accumulation register. 
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitAdder Schematic Page 1"}
+			\caption{nBitAdder Schematic Page 1} 
+			\label{fig:nBitAdder-Schematic-Page-1} 
+		\end{figure}
 		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitAdder Schematic Page 2"}
+			\caption{nBitAdder Schematic Page 2} 
+			\label{fig:nBitAdder-Schematic-Page-2} 
+		\end{figure}
+	
+	\subsection{Multiplier}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Multiplier Schematic Page 1"}
+			\caption{Multiplier Schematic Page 1} 
+			\label{fig:Multiplier-Schematic-Page-1} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Multiplier Schematic Page 2"}
+			\caption{Multiplier Schematic Page 2} 
+			\label{fig:Multiplier-Schematic-Page-2} 
+		\end{figure}
+	
+	\subsection{16-Bit Register}
+
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitRegister 16-Bit Schematic"}
+			\caption{16 Bit Register Schematic} 
+			\label{fig:nBitRegister-16-Bit-Schematic} 
+		\end{figure}
+
+	\subsection{32-Bit Register}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitRegister 32-Bit Schematic"}
+			\caption{32 Bit Register Schematic} 
+			\label{fig:nBitRegister-32-Bit-Schematic} 
+		\end{figure}
+	
+	\subsection{MAC}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/MAC-block"}
+			\caption{MAC block} 
+			\label{fig:MAC-block} 
+		\end{figure}
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/MAC-16bit-Test-Bench"}
+			\caption{MAC 16bit Test Bench} 
+			\label{fig:MAC-16bit-Test-Bench} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/MAC-Test-Bench"}
+			\caption{MAC Test Bench} 
+			\label{fig:MAC-Test-Bench} 
+		\end{figure}
+	
+	
+	\subsection{Mux}
+		The multiplexer was used to change the input from the user input to the 
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitMux_2to1 Schematic"}
+			\caption{nBitMux 2to1 Schematic} 
+			\label{fig:nBitMux-2to1-Schematic} 
+		\end{figure}
+	
+	\subsection{LFSR}
+	
+	\subsection{MISR}
+	//TODO Get MISR and LFSR layoyt and schematic
+	
+	
+	\subsection{BIST}
 	\begin{figure}[H] 
 		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 7"}
-		\caption{Full Schematic Page 7} 
-		\label{fig:Full-Schematic-Page-7} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full-Project-Block"}
-		\caption{Full Project Block} 
-		\label{fig:Full-Project-Block} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Layout"}
-		\caption{Full Layout} 
-		\label{fig:Full-Layout} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 8"}
-		\caption{Full Schematic Page 8} 
-		\label{fig:Full-Schematic-Page-8} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 2"}
-		\caption{Full Schematic Page 2} 
-		\label{fig:Full-Schematic-Page-2} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Multiplier Schematic Page 2"}
-		\caption{Multiplier Schematic Page 2} 
-		\label{fig:Multiplier-Schematic-Page-2} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Layout Close Up View"}
-		\caption{Full Layout Close Up View} 
-		\label{fig:Full-Layout-Close-Up-View} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/BIST-Test-Bench"}
+		\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/BIST-Test-Bench"}
 		\caption{BIST Test Bench} 
 		\label{fig:BIST-Test-Bench} 
 	\end{figure}
 	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 17"}
-		\caption{Full Schematic Page 17} 
-		\label{fig:Full-Schematic-Page-17} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 6"}
-		\caption{Full Schematic Page 6} 
-		\label{fig:Full-Schematic-Page-6} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitAdder Schematic Page 1"}
-		\caption{nBitAdder Schematic Page 1} 
-		\label{fig:nBitAdder-Schematic-Page-1} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 27"}
-		\caption{Full Schematic Page 27} 
-		\label{fig:Full-Schematic-Page-27} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 15"}
-		\caption{Full Schematic Page 15} 
-		\label{fig:Full-Schematic-Page-15} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 19"}
-		\caption{Full Schematic Page 19} 
-		\label{fig:Full-Schematic-Page-19} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitRegister 16-Bit Schematic"}
-		\caption{nBitRegister 16 Bit Schematic} 
-		\label{fig:nBitRegister-16-Bit-Schematic} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 20"}
-		\caption{Full Schematic Page 20} 
-		\label{fig:Full-Schematic-Page-20} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 24"}
-		\caption{Full Schematic Page 24} 
-		\label{fig:Full-Schematic-Page-24} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/MAC-block"}
-		\caption{MAC block} 
-		\label{fig:MAC-block} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 5"}
-		\caption{Full Schematic Page 5} 
-		\label{fig:Full-Schematic-Page-5} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 16"}
-		\caption{Full Schematic Page 16} 
-		\label{fig:Full-Schematic-Page-16} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitAdder Schematic Page 2"}
-		\caption{nBitAdder Schematic Page 2} 
-		\label{fig:nBitAdder-Schematic-Page-2} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 26"}
-		\caption{Full Schematic Page 26} 
-		\label{fig:Full-Schematic-Page-26} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitMux_2to1 Schematic"}
-		\caption{nBitMux 2to1 Schematic} 
-		\label{fig:nBitMux-2to1-Schematic} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 1"}
-		\caption{Full Schematic Page 1} 
-		\label{fig:Full-Schematic-Page-1} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitRegister 32-Bit Layout"}
-		\caption{nBitRegister 32 Bit Layout} 
-		\label{fig:nBitRegister-32-Bit-Layout} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 9"}
-		\caption{Full Schematic Page 9} 
-		\label{fig:Full-Schematic-Page-9} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitRegister 16-Bit Layout"}
-		\caption{nBitRegister 16 Bit Layout} 
-		\label{fig:nBitRegister-16-Bit-Layout} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 23"}
-		\caption{Full Schematic Page 23} 
-		\label{fig:Full-Schematic-Page-23} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 28"}
-		\caption{Full Schematic Page 28} 
-		\label{fig:Full-Schematic-Page-28} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 22"}
-		\caption{Full Schematic Page 22} 
-		\label{fig:Full-Schematic-Page-22} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 14"}
-		\caption{Full Schematic Page 14} 
-		\label{fig:Full-Schematic-Page-14} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 13"}
-		\caption{Full Schematic Page 13} 
-		\label{fig:Full-Schematic-Page-13} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/MAC-16bit-Test-Bench"}
-		\caption{MAC 16bit Test Bench} 
-		\label{fig:MAC-16bit-Test-Bench} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitRegister 32-Bit Schematic"}
-		\caption{nBitRegister 32 Bit Schematic} 
-		\label{fig:nBitRegister-32-Bit-Schematic} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 18"}
-		\caption{Full Schematic Page 18} 
-		\label{fig:Full-Schematic-Page-18} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/MAC-Test-Bench"}
-		\caption{MAC Test Bench} 
-		\label{fig:MAC-Test-Bench} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 12"}
-		\caption{Full Schematic Page 12} 
-		\label{fig:Full-Schematic-Page-12} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 11"}
-		\caption{Full Schematic Page 11} 
-		\label{fig:Full-Schematic-Page-11} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Multiplier Schematic Page 1"}
-		\caption{Multiplier Schematic Page 1} 
-		\label{fig:Multiplier-Schematic-Page-1} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 21"}
-		\caption{Full Schematic Page 21} 
-		\label{fig:Full-Schematic-Page-21} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 4"}
-		\caption{Full Schematic Page 4} 
-		\label{fig:Full-Schematic-Page-4} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 3"}
-		\caption{Full Schematic Page 3} 
-		\label{fig:Full-Schematic-Page-3} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 25"}
-		\caption{Full Schematic Page 25} 
-		\label{fig:Full-Schematic-Page-25} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/Full Schematic Page 10"}
-		\caption{Full Schematic Page 10} 
-		\label{fig:Full-Schematic-Page-10} 
-	\end{figure}
-	
-	
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=0.7\linewidth]{"Pictures/nBitMux_2to1 Layout"}
-		\caption{nBitMux 2to1 Layout} 
-		\label{fig:nBitMux-2to1-Layout} 
-	\end{figure}
+	\subsection{Schematic}
 	
 	
 		
-	\subsection{Layout}
 		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 1"}
+			\caption{Full Schematic Page 1} 
+			\label{fig:Full-Schematic-Page-1} 
+		\end{figure}
 	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 2"}
+			\caption{Full Schematic Page 2} 
+			\label{fig:Full-Schematic-Page-2} 
+		\end{figure}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 3"}
+			\caption{Full Schematic Page 3} 
+			\label{fig:Full-Schematic-Page-3} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 4"}
+			\caption{Full Schematic Page 4} 
+			\label{fig:Full-Schematic-Page-4} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 5"}
+			\caption{Full Schematic Page 5} 
+			\label{fig:Full-Schematic-Page-5} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 6"}
+			\caption{Full Schematic Page 6} 
+			\label{fig:Full-Schematic-Page-6} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 7"}
+			\caption{Full Schematic Page 7} 
+			\label{fig:Full-Schematic-Page-7} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 8"}
+			\caption{Full Schematic Page 8} 
+			\label{fig:Full-Schematic-Page-8} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 9"}
+			\caption{Full Schematic Page 9} 
+			\label{fig:Full-Schematic-Page-9} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 10"}
+			\caption{Full Schematic Page 10} 
+			\label{fig:Full-Schematic-Page-10} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 11"}
+			\caption{Full Schematic Page 11} 
+			\label{fig:Full-Schematic-Page-11} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 12"}
+			\caption{Full Schematic Page 12} 
+			\label{fig:Full-Schematic-Page-12} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 13"}
+			\caption{Full Schematic Page 13} 
+			\label{fig:Full-Schematic-Page-13} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 14"}
+			\caption{Full Schematic Page 14} 
+			\label{fig:Full-Schematic-Page-14} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 15"}
+			\caption{Full Schematic Page 15} 
+			\label{fig:Full-Schematic-Page-15} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 16"}
+			\caption{Full Schematic Page 16} 
+			\label{fig:Full-Schematic-Page-16} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 17"}
+			\caption{Full Schematic Page 17} 
+			\label{fig:Full-Schematic-Page-17} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 18"}
+			\caption{Full Schematic Page 18} 
+			\label{fig:Full-Schematic-Page-18} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 19"}
+			\caption{Full Schematic Page 19} 
+			\label{fig:Full-Schematic-Page-19} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 20"}
+			\caption{Full Schematic Page 20} 
+			\label{fig:Full-Schematic-Page-20} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 21"}
+			\caption{Full Schematic Page 21} 
+			\label{fig:Full-Schematic-Page-21} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 22"}
+			\caption{Full Schematic Page 22} 
+			\label{fig:Full-Schematic-Page-22} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 23"}
+			\caption{Full Schematic Page 23} 
+			\label{fig:Full-Schematic-Page-23} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 24"}
+			\caption{Full Schematic Page 24} 
+			\label{fig:Full-Schematic-Page-24} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 25"}
+			\caption{Full Schematic Page 25} 
+			\label{fig:Full-Schematic-Page-25} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 26"}
+			\caption{Full Schematic Page 26} 
+			\label{fig:Full-Schematic-Page-26} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 27"}
+			\caption{Full Schematic Page 27} 
+			\label{fig:Full-Schematic-Page-27} 
+		\end{figure}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 28"}
+			\caption{Full Schematic Page 28} 
+			\label{fig:Full-Schematic-Page-28} 
+		\end{figure}
+		
+		
+
+		
+		
+		
+
+\section{Results and Analysis}
+		
+	The MAC was initially laid out structurally; components were laid out and turned into cells that would then be connected together. This was done to limit the complexity of the final design. 
+	
+	\subsection{Full Adder}
+	
+	
+	\subsection{Multiplier}
+	
+	
+	\subsection{16-Bit Register}
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitRegister 16-Bit Layout"}
+			\caption{nBitRegister 16 Bit Layout} 
+			\label{fig:nBitRegister-16-Bit-Layout} 
+		\end{figure}
+	
+	
+	\subsection{32-Bit Register}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitRegister 32-Bit Layout"}
+			\caption{nBitRegister 32 Bit Layout} 
+			\label{fig:nBitRegister-32-Bit-Layout} 
+		\end{figure}
+	
+	\subsection{Mux}
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitMux_2to1 Layout"}
+			\caption{nBitMux 2to1 Layout} 
+			\label{fig:nBitMux-2to1-Layout} 
+		\end{figure}
+	
+	\subsection{LFSR}
+	
+	\subsection{MISR}
+	
+	
+	
+	
+		
+	\subsection{MAC with BIST Layout}
+		
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Layout"}
+			\caption{Full Layout} 
+			\label{fig:Full-Layout} 
+		\end{figure}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Layout Close Up View"}
+			\caption{Full Layout Close Up View} 
+			\label{fig:Full-Layout-Close-Up-View} 
+		\end{figure}
 	
 	\subsection{Timing}
 	
-
+		\subsubsection{Setup}
+	
+		\subsubsection{Hold}
+		
+		\subsubsection{Maximum Frequency}
 	
 	\subsection{Power}
+		Power was measured with an Eldo simulation based on the layout. To measure static power, the average power was measured while the circuit was not active but powered. The static power was measured to be 1.87nW and was recorded in Table \ref{tab:power}. 
+		
+		Dynamic power was measured by recording the maximum power measured while the circuit was changing as many transistors as possible. To activate as many transistor as possible, multiple, random inputs were supplied to the circuit for a long period of time (2000us). The maximum power was found to be 16.03mW, which was recorded in Table \ref{tab:power}.
+		
+		
+		
+		\begin{table}[H]
+			\centering
+			\caption{Simulated Power for MAC}
+			\label{tab:power}
+			\begin{tabular}{|cc|}
+				\hline
+				\textbf{}        & \textbf{Measured Power (W)} \\
+				\hline
+				\textbf{Static}  & 1.8787E-06           \\
+				\textbf{Dynamic} & 1.6029E-02           \\ 
+				\hline                     
+			\end{tabular}
+		\end{table}
 	
-	
-	 STATIC_PWR  = -1.8787E-06   
-	INST_PWR    =  1.6029E-02   
-	
-	
+		It is clear that for this circuit, dynamic power far exceeds the static power. This shows that arithmetic operations draw a lot of power. This is mostly due to their high activity factor and their high speed requirements.  
 
 			
 
@@ -605,6 +680,7 @@ Your Signature:   \rule{13cm}{.1pt}
 
 	Key, Brandon A. \textit{CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit}. CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit.
 	
-	// TODO add BIST from DSD II
+	//TODO add BIST from DSD II
+	//TODO Added Chris's DSD II lab
 
 \end{document}
