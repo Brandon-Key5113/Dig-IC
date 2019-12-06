@@ -1,0 +1,14 @@
+A 5 u mgc_schematic 5dd19a1343b8.03.81.15.9a.2a.00.12.3e 3 2 1 0
+V v 1 1 5dd19a1343b8.03.81.15.9a.2a.01.12.3e
+F o 0 ""
+V v 2 1 5dd19a13df0c.03.81.15.9a.2a.00.12.3e
+F o 0 ""
+V v 3 1 5dd19b1feabb.03.81.15.9a.2a.00.20.dd
+F o 0 ""
+O 3
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitRegister_16/schematic/sheet1" 2 mgc_sheet 5dd19b1fe824.03.81.15.9a.2a.00.20.dd 5dd19a134b80.03.81.15.9a.2a.00.12.3e
+O 2
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitRegister_16/schematic/sheet1" 1 mgc_sheet 5dd19a134b80.03.81.15.9a.2a.01.12.3e 5dd19a134b80.03.81.15.9a.2a.00.12.3e
+O 1
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitRegister_16/schematic/sheet1" 1 mgc_sheet 5dd19a134b80.03.81.15.9a.2a.01.12.3e 5dd19a134b80.03.81.15.9a.2a.00.12.3e
+P "eddm__refer_state" "eddm__refer_floating"

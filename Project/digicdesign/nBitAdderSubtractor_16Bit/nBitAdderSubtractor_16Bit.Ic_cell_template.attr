@@ -1,0 +1,9 @@
+A 5 u Ic_cell_template 5dc2c4948fc9.03.81.15.9a.12.00.21.83 1 4 21 0
+V v 1 2 5dc2c79f841d.03.81.15.9a.12.00.21.83
+F f 1 "nBitAdderSubtractor_16Bit.iccel_1"
+F o 0 
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/nBitAdderSubtractor_16Bit/viewpoints/nBitAdderSubtractor_16Bit_SDL_Flat" 1 Eddm_design_viewpoint 5dc2c49464fb.03.81.15.9a.12.01.21.83 5dc2c49464fb.03.81.15.9a.12.00.21.83
+R cmduv 19 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+R csdui 20 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa

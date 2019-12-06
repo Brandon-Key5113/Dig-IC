@@ -1,0 +1,7 @@
+*pexRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/rippleadder/rippleadder.cal
+*pexLayoutPaths: rippleadder.calibre.gds
+*pexLayoutPrimary: rippleadder
+*pexLayoutGetFromViewer: 1
+*pexResultsFile: rippleadder.pex.results
+*pexSummaryFile: rippleadder.pex.summary

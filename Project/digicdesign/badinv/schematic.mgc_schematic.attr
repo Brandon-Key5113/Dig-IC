@@ -1,0 +1,13 @@
+A 5 u mgc_schematic 5d76aa871921.03.81.15.9a.2a.00.69.55 4 2 1 0
+V v 2 1 5d76ab75d16a.03.81.15.9a.2a.00.69.55
+F o 0 ""
+V v 3 1 5d76b27ca7e1.03.81.15.9a.2a.00.7f.d4
+F o 0 ""
+V v 4 1 5d77917bbc2a.03.81.15.9a.2a.00.33.42
+F o 0 ""
+O 4
+R cspuv 0 "$PYXIS_SPT/digicdesign/badinv/schematic/sheet1" 3 mgc_sheet 5d77917bb5a6.03.81.15.9a.2a.00.33.42 5d76aa873728.03.81.15.9a.2a.00.69.55
+O 3
+R cspuv 0 "$PYXIS_SPT/digicdesign/badinv/schematic/sheet1" 2 mgc_sheet 5d76b27ca15e.03.81.15.9a.2a.00.7f.d4 5d76aa873728.03.81.15.9a.2a.00.69.55
+O 2
+R cspuv 0 "$PYXIS_SPT/digicdesign/badinv/schematic/sheet1" 1 mgc_sheet 5d76aa873728.03.81.15.9a.2a.01.69.55 5d76aa873728.03.81.15.9a.2a.00.69.55

@@ -1,0 +1,107 @@
+
+//  Pyxis Netlister  v10.4_0.0  Tue Apr 22 13:18:07 PDT 2014
+//
+//             Copyright Mentor Graphics Corporation 1982
+//
+//                      All Rights Reserved.
+//
+//    THIS WORK CONTAINS TRADE SECRET AND PROPRIETARY INFORMATION
+//      WHICH IS THE PROPERTY OF MENTOR GRAPHICS CORPORATION OR
+//           ITS LICENSORS AND IS SUBJECT TO LICENSE TERMS.
+//
+//  Mentor Graphics software executing under x86_64 Linux.
+//
+
+//  Invocation args:  -lvs -preserve_case -spice_top_sub -o /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/nBitMux_2to1/nBitMux_2to1.cal/nBitMux_2to1.calibre.src.net /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat
+
+// **** Reading <$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat> for LVS netlist ****
+
+// Checking 2 sheet(s) for out of date references to symbols and interfaces...
+// Done.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/mux21/@ncf.dir/mux21.ncf' succeeded.
+// Parsing file '/tools/mentor/pyxis/current/pyxis_home/mgc_icstd_lib/global.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' succeeded.
+// Parsing file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' succeeded.
+Processing [$PYXIS_SPT/digicdesign/nBitMux_2to1] [nBitMux_2to1/nBitMux_2to1] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix7'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix7'
+Processing [$GDKGATES/mux21] [mux21/mux21] [schematic] (NCF entry line: 17 file: $NCF_GLOBAL)
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix15'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix15'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix23'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix23'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix31'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix31'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix39'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix39'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix47'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix47'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix55'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix55'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix63'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix63'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix71'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix71'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix79'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix79'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix87'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix87'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix95'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix95'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix103'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix103'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix111'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix111'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix119'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix119'
+
+ *** warning *** : Unable to evaluate expression '$default()' in VIEW property on instance '/ix127'
+
+ *** warning *** : Unable to evaluate expression 'mux21' in MODEL property on instance '/ix127'
+ COMPONENT [$GDKGATES/mux21] CELL [$GDKGATES/mux21]
+ *** warning *** : The net 'VDD' has a name that conflicts with a global net.  It is being renamed to 'VDD_esc1'.
+ COMPONENT [$GDKGATES/mux21] CELL [$GDKGATES/mux21]
+ *** warning *** : The net 'VSS' has a name that conflicts with a global net.  It is being renamed to 'VSS_esc2'.
+Primitive [$GENERIC13/symbols/nmos] [nmos/nmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/nmos/@ncf.dir/nmos.ncf)
+Primitive [$GENERIC13/symbols/pmos] [pmos/pmos] [SPICE=M] (NCF entry line: 7 file: $GENERIC13/symbols/pmos/@ncf.dir/pmos.ncf)
+
+**** Writing <$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat> netlist for LVS ****
+
+Number of cells: 4
+Number of primitive instances: 192
+
+Done...
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/mux21/@ncf.dir/mux21.ncf' closed.
+// Registration file '/tools/mentor/pyxis/current/pyxis_home/mgc_icstd_lib/global.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/pmos/@ncf.dir/pmos.ncf' closed.
+// Registration file '/home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/symbols/nmos/@ncf.dir/nmos.ncf' closed.

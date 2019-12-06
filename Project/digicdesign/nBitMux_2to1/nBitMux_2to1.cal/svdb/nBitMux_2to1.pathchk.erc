@@ -1,0 +1,9 @@
+nBitMux_2to1 1000
+ERC PATHCHK GROUND && ! POWER
+0 0 0 Nov 17 15:49:24 2019                                                      
+ERC PATHCHK POWER && ! GROUND
+0 0 0 Nov 17 15:49:24 2019                                                      
+ERC PATHCHK ! POWER && ! GROUND
+0 0 0 Nov 17 15:49:24 2019                                                      
+ERC PATHCHK ! LABELED
+0 0 0 Nov 17 15:49:24 2019                                                      

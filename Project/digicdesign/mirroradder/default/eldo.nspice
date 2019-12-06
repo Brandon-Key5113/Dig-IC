@@ -1,0 +1,68 @@
+* ELDO netlist generated with ICnet by 'bxk5113' on Sat Oct 19 2019 at 13:22:33
+
+*
+* Globals.
+*
+.global ground
+
+*
+* MAIN CELL: Component pathname : $PYXIS_SPT/digicdesign/mirroradder
+*
+        m18 n$72 b ground ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m17 n$74 a n$72 ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m8 n$92 cin vdd vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m7 n$92 b vdd vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m6 n$92 a vdd vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m5 n$74 a n$126 vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m4 n$126 b vdd vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m2 n$128 b vdd vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m1 n$128 a vdd vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m10 n$96 b n$100 vdd pmos w=1.56u l=0.13u m=1 as=0.5304p ad=0.5304p
++  ps=2.24u pd=2.24u
+        m13 s ns vdd vdd pmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m12 ns n$74 n$92 vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m11 ns cin n$96 vdd pmos w=1.56u l=0.13u m=1 as=0.5304p ad=0.5304p
++  ps=2.24u pd=2.24u
+        m9 n$100 a vdd vdd pmos w=1.56u l=0.13u m=1 as=0.5304p ad=0.5304p
++  ps=2.24u pd=2.24u
+        m14 n$74 cin n$139 ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m15 n$139 a ground ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m16 n$139 b ground ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m3 n$74 cin n$128 vdd pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        m19 cout n$74 vdd vdd pmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m27 ns cin n$83 ground nmos w=0.78u l=0.13u m=1 as=0.2652p ad=0.2652p
++  ps=1.46u pd=1.46u
+        m26 n$83 b n$81 ground nmos w=0.78u l=0.13u m=1 as=0.2652p ad=0.2652p
++  ps=1.46u pd=1.46u
+        m25 n$81 a ground ground nmos w=0.78u l=0.13u m=1 as=0.2652p ad=0.2652p
++  ps=1.46u pd=1.46u
+        m24 n$75 cin ground ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m23 n$75 b ground ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m22 n$75 a ground ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m21 ns n$74 n$75 ground nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        m20 cout n$74 ground ground nmos w=0.26u l=0.13u m=1 as=88.4f ad=88.4f
++  ps=0.94u pd=0.94u
+        m28 s ns ground ground nmos w=0.26u l=0.13u m=1 as=88.4f ad=88.4f
++  ps=0.94u pd=0.94u
+*
+.end

@@ -1,0 +1,45 @@
+A 5 u Ic_cell_template 5dd1ae4b91c1.03.81.15.9a.2a.00.61.fc 9 4 10 0
+V v 5 2 5dd1b13002cc.03.81.15.9a.2a.00.61.fc
+F f 5 "nBitMux_2to1.iccel_5"
+F o 0 
+V v 6 2 5dd1b13b8c5b.03.81.15.9a.2a.00.61.fc
+F f 6 "nBitMux_2to1.iccel_6"
+F o 0 
+V v 7 2 5dd1b1fb312a.03.81.15.9a.2a.00.61.fc
+F f 7 "nBitMux_2to1.iccel_7"
+F o 0 
+V v 8 2 5dd1b25a9116.03.81.15.9a.2a.00.61.fc
+F f 8 "nBitMux_2to1.iccel_8"
+F o 0 
+V v 9 2 5dd1b2823d46.03.81.15.9a.2a.00.61.fc
+F f 9 "nBitMux_2to1.iccel_9"
+F o 0 
+O 9
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat" 1 Eddm_design_viewpoint 5dd1ae4b8053.03.81.15.9a.2a.01.61.fc 5dd1ae4b8053.03.81.15.9a.2a.00.61.fc
+R csdui 6 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+R csduv 8 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R cmduv 9 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+O 8
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat" 1 Eddm_design_viewpoint 5dd1ae4b8053.03.81.15.9a.2a.01.61.fc 5dd1ae4b8053.03.81.15.9a.2a.00.61.fc
+R csdui 6 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+R csduv 8 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R cmduv 9 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+O 7
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat" 1 Eddm_design_viewpoint 5dd1ae4b8053.03.81.15.9a.2a.01.61.fc 5dd1ae4b8053.03.81.15.9a.2a.00.61.fc
+R csdui 6 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+R csduv 8 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R cmduv 9 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+O 6
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat" 1 Eddm_design_viewpoint 5dd1ae4b8053.03.81.15.9a.2a.01.61.fc 5dd1ae4b8053.03.81.15.9a.2a.00.61.fc
+R csdui 6 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+R csduv 8 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R cmduv 9 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+O 5
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/nBitMux_2to1/viewpoints/nBitMux_2to1_SDL_Flat" 1 Eddm_design_viewpoint 5dd1ae4b8053.03.81.15.9a.2a.01.61.fc 5dd1ae4b8053.03.81.15.9a.2a.00.61.fc
+R csdui 6 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+R csduv 8 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63

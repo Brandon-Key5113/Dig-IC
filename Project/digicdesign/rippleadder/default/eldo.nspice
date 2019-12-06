@@ -1,0 +1,85 @@
+* ELDO netlist generated with ICnet by 'bxk5113' on Fri Oct 18 2019 at 18:27:23
+
+.CONNECT GROUND 0
+
+*
+* Globals.
+*
+.global GROUND
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/mirroradder
+*
+.subckt MIRRORADDER  COUT NS S A B CIN VDD
+
+        M18 N$72 B GROUND GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M17 N$74 A N$72 GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M8 N$92 CIN VDD VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M7 N$92 B VDD VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M6 N$92 A VDD VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M5 N$74 A N$126 VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M4 N$126 B VDD VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M2 N$128 B VDD VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M1 N$128 A VDD VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M10 N$96 B N$100 VDD pmos w=1.56u l=0.13u m=1 as=0.5304p ad=0.5304p
++  ps=2.24u pd=2.24u
+        M13 S NS VDD VDD pmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M12 NS N$74 N$92 VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M11 NS CIN N$96 VDD pmos w=1.56u l=0.13u m=1 as=0.5304p ad=0.5304p
++  ps=2.24u pd=2.24u
+        M9 N$100 A VDD VDD pmos w=1.56u l=0.13u m=1 as=0.5304p ad=0.5304p
++  ps=2.24u pd=2.24u
+        M14 N$74 CIN N$139 GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M15 N$139 A GROUND GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M16 N$139 B GROUND GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M3 N$74 CIN N$128 VDD pmos w=1.04u l=0.13u m=1 as=0.3536p ad=0.3536p
++  ps=1.72u pd=1.72u
+        M19 COUT N$74 VDD VDD pmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M27 NS CIN N$83 GROUND nmos w=0.78u l=0.13u m=1 as=0.2652p ad=0.2652p
++  ps=1.46u pd=1.46u
+        M26 N$83 B N$81 GROUND nmos w=0.78u l=0.13u m=1 as=0.2652p ad=0.2652p
++  ps=1.46u pd=1.46u
+        M25 N$81 A GROUND GROUND nmos w=0.78u l=0.13u m=1 as=0.2652p ad=0.2652p
++  ps=1.46u pd=1.46u
+        M24 N$75 CIN GROUND GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M23 N$75 B GROUND GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M22 N$75 A GROUND GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M21 NS N$74 N$75 GROUND nmos w=0.52u l=0.13u m=1 as=0.1768p ad=0.1768p
++  ps=1.2u pd=1.2u
+        M20 COUT N$74 GROUND GROUND nmos w=0.26u l=0.13u m=1 as=88.4f ad=88.4f
++  ps=0.94u pd=0.94u
+        M28 S NS GROUND GROUND nmos w=0.26u l=0.13u m=1 as=88.4f ad=88.4f
++  ps=0.94u pd=0.94u
+.ends MIRRORADDER
+
+*
+* MAIN CELL: Component pathname : $PYXIS_SPT/digicdesign/rippleadder
+*
+        C4 S3 GROUND 120f
+        C3 S2 GROUND 120f
+        C2 S1 GROUND 120f
+        C1 S0 GROUND 120f
+        X_MIRRORADDER4 COUT NS3 S3 A3 B3 N$335 VDD MIRRORADDER
+        X_MIRRORADDER3 N$335 NS2 S2 A2 B2 N$333 VDD MIRRORADDER
+        X_MIRRORADDER2 N$333 NS1 S1 A1 B1 N$331 VDD MIRRORADDER
+        X_MIRRORADDER1 N$331 NS0 S0 A0 B0 CIN VDD MIRRORADDER
+*
+.end

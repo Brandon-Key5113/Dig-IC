@@ -1,0 +1,12 @@
+# Automagically generated file: Please do not edit!
+lvs_ExtfVersion 3
+lvs_ExtRunTimes 1572883260 1572883261
+lvs_ExtOutFile RUNDIR /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal
+lvs_ExtOutFile RULES_FILE /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal/_PEX_
+lvs_ExtInfoExtSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoErcSummary {0 0 0 0 0 0 0 0 0 0 0}
+lvs_ExtInfoDfmSummary {0}
+lvs_ExtOutFile LAYOUT_NETLIST /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal/svdb/Full_Adder.sp
+lvs_ExtOutFile EXTRACTION_REPORT Full_Adder.lvs.report.ext
+lvs_ExtOutFile ERC_PATHCHK_DATABASE svdb/Full_Adder.pathchk.erc
+lvs_ExtOutFile ERC_PATHCHK_REPORT svdb/Full_Adder.pathchk.rep

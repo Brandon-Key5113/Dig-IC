@@ -1,0 +1,453 @@
+* LVS netlist generated with ICnet by 'bxk5113' on Sat Nov  9 2019 at 15:44:41
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* Component pathname : $GDKGATES/nor02ii
+*
+.subckt nor02ii  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MN1 N$4 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP1 N$4 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN4 Y A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN2 Y N$4 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP4 Y N$4 N$1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+.ends nor02ii
+
+*
+* Component pathname : $GDKGATES/aoi32
+*
+.subckt aoi32  Y A0 A1 A2 B0 B1 VDD_esc1 VSS_esc2
+
+        MN4 Y B0 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 N$5 A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN2 N$4 A1 N$5 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN1 Y A0 N$4 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP5 Y B0 N$11 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP4 Y B1 N$11 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP3 N$11 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$11 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 N$11 A2 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN5 N$6 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends aoi32
+
+*
+* Component pathname : $GDKGATES/oai21
+*
+.subckt oai21  Y A0 A1 B0 VDD_esc1 VSS_esc2
+
+        MN1 Y A0 N$7 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 Y B0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP2 Y A1 N$6 VDD_esc1 pmos l=0.14u w=2.03u m=1
+        MP1 N$6 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.03u m=1
+        MN2 Y A1 N$7 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 N$7 B0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends oai21
+
+*
+* Component pathname : $GDKGATES/nand02
+*
+.subckt nand02  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MP1 Y A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MN1 Y A0 N$5 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$5 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 Y A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+.ends nand02
+
+*
+* Component pathname : $GDKGATES/xnor2
+*
+.subckt xnor2  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MP5 N$9 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP4 N$9 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN4 N$9 A0 N$8 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 N$3 N$9 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 Y A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 Y A0 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 Y A1 N$1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP2 Y N$9 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN5 N$8 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends xnor2
+
+*
+* Component pathname : $GDKGATES/inv02
+*
+.subckt inv02  Y A VDD_esc1 VSS_esc2
+
+        MP1 Y A VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 Y A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends inv02
+
+*
+* Component pathname : $GDKGATES/nand03
+*
+.subckt nand03  Y A0 A1 A2 VDD_esc1 VSS_esc2
+
+        MP3 Y A2 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.26u m=1
+        MN2 Y A0 N$4 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN1 N$5 A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN3 N$4 A1 N$5 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP2 Y A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.26u m=1
+        MP1 Y A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.26u m=1
+.ends nand03
+
+*
+* Component pathname : $GDKGATES/inv01
+*
+.subckt inv01  Y A VDD_esc1 VSS_esc2
+
+        MP1 Y A VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN1 Y A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends inv01
+
+*
+* Component pathname : $GDKGATES/nor03
+*
+.subckt nor03  Y A0 A1 A2 VDD_esc1 VSS_esc2
+
+        MP3 Y A2 N$3 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MN2 Y A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MN1 Y A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MP2 N$3 A1 N$1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MN3 Y A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+.ends nor03
+
+*
+* Component pathname : $GDKGATES/or02
+*
+.subckt or02  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MP4 Y N$5 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN2 N$5 A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN1 N$5 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP3 N$5 A1 N$1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN3 Y N$5 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends or02
+
+*
+* Component pathname : $GDKGATES/aoi22
+*
+.subckt aoi22  Y A0 A1 B0 B1 VDD_esc1 VSS_esc2
+
+        M_I$13 Y B1 N$6 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$12 N$1 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$11 Y A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$14 Y B0 N$2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$7 Y B0 N$6 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$6 N$6 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$5 N$6 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$4 N$2 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends aoi22
+
+*
+* Component pathname : $GDKGATES/ao22
+*
+.subckt ao22  Y A0 A1 B0 B1 VDD_esc1 VSS_esc2
+
+        MN4 N$13 B0 N$2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP4 N$13 B1 N$6 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN2 N$1 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 N$13 A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 Y N$13 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP3 N$13 B0 N$6 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$6 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 N$6 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN3 N$2 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN5 Y N$13 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends ao22
+
+*
+* Component pathname : $GDKGATES/oai321
+*
+.subckt oai321  Y A0 A1 A2 B0 B1 C0 VDD_esc1 VSS_esc2
+
+        MP6 Y C0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.26u m=1
+        MP3 Y A2 N$12 VDD_esc1 pmos l=0.14u w=3.15u m=1
+        MN5 N$6 C0 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN4 N$10 B1 N$6 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP5 Y B1 N$4 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN3 N$10 B0 N$6 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN2 Y A1 N$10 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN1 Y A0 N$10 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP4 N$4 B0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP2 N$12 A1 N$5 VDD_esc1 pmos l=0.14u w=3.15u m=1
+        MP1 N$5 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=3.15u m=1
+        MN6 Y A2 N$10 VSS_esc2 nmos l=0.14u w=1.19u m=1
+.ends oai321
+
+*
+* Component pathname : $GDKGATES/xor2
+*
+.subckt xor2  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MN5 N$6 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN4 N$7 A0 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP4 N$7 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP3 N$7 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 Y N$4 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN3 N$3 N$7 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$4 A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 N$4 A0 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP6 N$4 A1 N$1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP2 N$4 N$7 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP5 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN6 Y N$4 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends xor2
+
+*
+* Component pathname : $GDKGATES/mux21
+*
+.subckt mux21  Y A0 A1 S0 VDD_esc1 VSS_esc2
+
+        MN4 N$11 A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M1 Y N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN5 N$3 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M2 Y N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 N$11 A1 N$2 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP4 N$2 N$231 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN3 N$1 N$231 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$11 A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 N$7 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 N$231 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP1 N$231 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP3 N$11 A0 N$7 VDD_esc1 pmos l=0.14u w=1.54u m=1
+.ends mux21
+
+*
+* Component pathname : $GDKGATES/aoi221
+*
+.subckt aoi221  Y A0 A1 B0 B1 C0 VDD_esc1 VSS_esc2
+
+        MN5 Y C0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN4 N$4 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 Y B0 N$4 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$3 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.91u m=1
+        MN1 Y A0 N$3 VSS_esc2 nmos l=0.14u w=0.91u m=1
+        MP5 Y C0 N$2 VDD_esc1 pmos l=0.14u w=1.61u m=1
+        MP4 N$2 B0 N$10 VDD_esc1 pmos l=0.14u w=1.61u m=1
+        MP3 N$2 B1 N$10 VDD_esc1 pmos l=0.14u w=1.61u m=1
+        MP2 N$10 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.61u m=1
+        MP1 N$10 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.61u m=1
+.ends aoi221
+
+*
+* Component pathname : $GDKGATES/oai222
+*
+.subckt oai222  Y A0 A1 B0 B1 C0 C1 VDD_esc1 VSS_esc2
+
+        MP5 N$12 C0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.52u m=1
+        MN6 N$7 C1 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN5 N$7 C0 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN4 N$6 B1 N$7 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP4 Y B1 N$4 VDD_esc1 pmos l=0.14u w=2.52u m=1
+        MN3 N$6 B0 N$7 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN2 Y A1 N$6 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN1 Y A0 N$6 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP3 N$4 B0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.52u m=1
+        MP2 Y A1 N$5 VDD_esc1 pmos l=0.14u w=2.52u m=1
+        MP1 N$5 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.52u m=1
+        MP6 Y C1 N$12 VDD_esc1 pmos l=0.14u w=2.52u m=1
+.ends oai222
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/ALU_16Bit
+*
+.subckt ALU_16Bit  CB nBitOut[15] nBitOut[14] nBitOut[13] nBitOut[12] nBitOut[11]
++ nBitOut[10] nBitOut[9] nBitOut[8] nBitOut[7] nBitOut[6] nBitOut[5] nBitOut[4]
++ nBitOut[3] nBitOut[2] nBitOut[1] nBitOut[0] A[15] A[14] A[13] A[12] A[11]
++ A[10] A[9] A[8] A[7] A[6] A[5] A[4] A[3] A[2] A[1] A[0] B[15] B[14] B[13]
++ B[12] B[11] B[10] B[9] B[8] B[7] B[6] B[5] B[4] B[3] B[2] B[1] B[0] Control[1]
++ Control[0]
+
+        X_ix633 nx632 nx511 Control[1] VDD VSS nor02ii
+        X_ix593 nx592 nx335 Control[1] VDD VSS nor02ii
+        X_ix553 nx552 nx491 Control[1] VDD VSS nor02ii
+        X_ix513 nx512 nx339 Control[1] VDD VSS nor02ii
+        X_ix473 nx472 nx471 Control[1] VDD VSS nor02ii
+        X_ix518 nx517 nx24 Control[0] nx377 Control[1] nx40 VDD VSS aoi32
+        X_ix81 nx80 Control[1] nx531 nx539 VDD VSS oai21
+        X_ix579 nx578 nx495 nx335 VDD VSS nand02
+        X_ix619 nx618 nx509 nx511 VDD VSS nand02
+        X_ix499 nx498 nx475 nx339 VDD VSS nand02
+        X_ix539 nx538 nx489 nx491 VDD VSS nand02
+        X_ix419 nx418 nx455 nx343 VDD VSS nand02
+        X_ix690 nx689 Control[1] nx331 VDD VSS nand02
+        X_ix5 nx4 Control[0] Control[1] VDD VSS nand02
+        X_ix433 nx432 nx343 Control[1] VDD VSS nor02ii
+        X_ix393 nx392 nx451 Control[1] VDD VSS nor02ii
+        X_ix353 nx352 nx347 Control[1] VDD VSS nor02ii
+        X_ix313 nx312 nx431 Control[1] VDD VSS nor02ii
+        X_ix273 nx272 nx351 Control[1] VDD VSS nor02ii
+        X_ix233 nx232 nx411 Control[1] VDD VSS nor02ii
+        X_ix193 nx192 nx355 Control[1] VDD VSS nor02ii
+        X_ix153 nx152 nx391 Control[1] VDD VSS nor02ii
+        X_ix113 nx112 nx359 Control[1] VDD VSS nor02ii
+        X_ix534 nx48 Control[1] Control[0] VDD VSS nor02ii
+        X_ix651 CB nx721 nx331 VDD VSS xnor2
+        X_ix722 nx723 nx4 VDD VSS inv02
+        X_ix720 nx721 nx4 VDD VSS inv02
+        X_ix710 nx711 Control[1] VDD VSS inv02
+        X_ix708 nx709 Control[1] VDD VSS inv02
+        X_ix706 nx707 Control[1] VDD VSS inv02
+        X_ix540 nx539 nx52 Control[1] nx18 VDD VSS nand03
+        X_ix496 nx495 nx572 VDD VSS inv01
+        X_ix510 nx509 nx612 VDD VSS inv01
+        X_ix476 nx475 nx492 VDD VSS inv01
+        X_ix490 nx489 nx532 VDD VSS inv01
+        X_ix456 nx455 nx412 VDD VSS inv01
+        X_ix378 nx377 nx18 VDD VSS inv01
+        X_ix265 nx264 nx431 VDD VSS inv01
+        X_ix622 nx621 nx360 nx719 A[8] VDD VSS oai21
+        X_ix470 nx469 nx452 VDD VSS inv01
+        X_ix436 nx435 nx332 VDD VSS inv01
+        X_ix450 nx449 nx372 VDD VSS inv01
+        X_ix416 nx415 nx252 VDD VSS inv01
+        X_ix430 nx429 nx292 VDD VSS inv01
+        X_ix396 nx395 nx172 VDD VSS inv01
+        X_ix410 nx409 nx212 VDD VSS inv01
+        X_ix370 nx369 nx92 VDD VSS inv01
+        X_ix390 nx389 nx132 VDD VSS inv01
+        X_ix65 nx64 nx359 VDD VSS inv01
+        X_ix105 nx104 nx391 VDD VSS inv01
+        X_ix145 nx144 nx355 VDD VSS inv01
+        X_ix185 nx184 nx411 VDD VSS inv01
+        X_ix225 nx224 nx351 VDD VSS inv01
+        X_ix139 nx138 nx389 nx391 VDD VSS nand02
+        X_ix305 nx304 nx347 VDD VSS inv01
+        X_ix345 nx344 nx451 VDD VSS inv01
+        X_ix385 nx384 nx343 VDD VSS inv01
+        X_ix425 nx424 nx471 VDD VSS inv01
+        X_ix465 nx464 nx339 VDD VSS inv01
+        X_ix505 nx504 nx491 VDD VSS inv01
+        X_ix545 nx544 nx335 VDD VSS inv01
+        X_ix585 nx584 nx511 VDD VSS inv01
+        X_ix692 nx691 A[15] VDD VSS inv01
+        X_ix528 nx527 nx18 A[1] nx52 VDD VSS nor03
+        X_ix546 nx545 nx64 A[2] nx92 VDD VSS nor03
+        X_ix558 nx557 nx104 A[3] nx132 VDD VSS nor03
+        X_ix570 nx569 nx144 A[4] nx172 VDD VSS nor03
+        X_ix582 nx581 nx184 A[5] nx212 VDD VSS nor03
+        X_ix594 nx593 nx224 A[6] nx252 VDD VSS nor03
+        X_ix606 nx605 nx264 A[7] nx292 VDD VSS nor03
+        X_ix618 nx617 nx304 A[8] nx332 VDD VSS nor03
+        X_ix630 nx629 nx344 A[9] nx372 VDD VSS nor03
+        X_ix640 nx639 nx384 A[10] nx412 VDD VSS nor03
+        X_ix652 nx651 nx424 A[11] nx452 VDD VSS nor03
+        X_ix661 nx660 nx464 A[12] nx492 VDD VSS nor03
+        X_ix670 nx669 nx504 A[13] nx532 VDD VSS nor03
+        X_ix679 nx678 nx544 A[14] nx572 VDD VSS nor03
+        X_ix688 nx687 nx584 A[15] nx612 VDD VSS nor03
+        X_ix536 nx535 nx80 nx719 A[1] VDD VSS oai21
+        X_ix550 nx549 nx120 nx719 A[2] VDD VSS oai21
+        X_ix562 nx561 nx160 nx719 A[3] VDD VSS oai21
+        X_ix574 nx573 nx200 nx719 A[4] VDD VSS oai21
+        X_ix586 nx585 nx240 nx719 A[5] VDD VSS oai21
+        X_ix598 nx597 nx280 nx719 A[6] VDD VSS oai21
+        X_ix610 nx609 nx320 nx719 A[7] VDD VSS oai21
+        X_ix634 nx633 nx400 nx719 A[9] VDD VSS oai21
+        X_ix644 nx643 nx440 nx719 A[10] VDD VSS oai21
+        X_ix656 nx655 nx480 nx719 A[11] VDD VSS oai21
+        X_ix665 nx664 nx520 nx719 A[12] VDD VSS oai21
+        X_ix674 nx673 nx560 nx719 A[13] VDD VSS oai21
+        X_ix683 nx682 nx600 nx719 A[14] VDD VSS oai21
+        X_ix59 nx58 nx52 nx18 VDD VSS or02
+        X_ix25 nx24 nx6 A[0] VDD VSS or02
+        X_ix360 nx359 nx18 nx52 A[1] nx58 VDD VSS aoi22
+        X_ix392 nx391 nx64 nx92 A[2] nx98 VDD VSS aoi22
+        X_ix356 nx355 nx104 nx132 A[3] nx138 VDD VSS aoi22
+        X_ix412 nx411 nx144 nx172 A[4] nx178 VDD VSS aoi22
+        X_ix352 nx351 nx184 nx212 A[5] nx218 VDD VSS aoi22
+        X_ix432 nx431 nx224 nx252 A[6] nx258 VDD VSS aoi22
+        X_ix348 nx347 nx264 nx292 A[7] nx298 VDD VSS aoi22
+        X_ix452 nx451 nx304 nx332 A[8] nx338 VDD VSS aoi22
+        X_ix344 nx343 nx344 nx372 A[9] nx378 VDD VSS aoi22
+        X_ix472 nx471 nx384 nx412 A[10] nx418 VDD VSS aoi22
+        X_ix340 nx339 nx424 nx452 A[11] nx458 VDD VSS aoi22
+        X_ix492 nx491 nx464 nx492 A[12] nx498 VDD VSS aoi22
+        X_ix336 nx335 nx504 nx532 A[13] nx538 VDD VSS aoi22
+        X_ix512 nx511 nx544 nx572 A[14] nx578 VDD VSS aoi22
+        X_ix332 nx331 nx584 nx612 A[15] nx618 VDD VSS aoi22
+        X_ix459 nx458 nx469 nx471 VDD VSS nand02
+        X_ix339 nx338 nx435 nx347 VDD VSS nand02
+        X_ix379 nx378 nx449 nx451 VDD VSS nand02
+        X_ix259 nx258 nx415 nx351 VDD VSS nand02
+        X_ix299 nx298 nx429 nx431 VDD VSS nand02
+        X_ix179 nx178 nx395 nx355 VDD VSS nand02
+        X_ix219 nx218 nx409 nx411 VDD VSS nand02
+        X_ix99 nx98 nx369 nx359 VDD VSS nand02
+        X_ix712 nx713 nx48 VDD VSS inv02
+        X_ix561 nx560 nx711 B[13] nx532 nx552 VDD VSS ao22
+        X_ix601 nx600 nx711 B[14] nx572 nx592 VDD VSS ao22
+        X_ix718 nx719 nx713 VDD VSS inv01
+        X_ix532 nx531 B[1] VDD VSS inv01
+        X_ix548 nx547 B[2] VDD VSS inv01
+        X_ix560 nx559 B[3] VDD VSS inv01
+        X_ix572 nx571 B[4] VDD VSS inv01
+        X_ix584 nx583 B[5] VDD VSS inv01
+        X_ix596 nx595 B[6] VDD VSS inv01
+        X_ix608 nx607 B[7] VDD VSS inv01
+        X_ix620 nx619 B[8] VDD VSS inv01
+        X_ix632 nx631 B[9] VDD VSS inv01
+        X_ix642 nx641 B[10] VDD VSS inv01
+        X_ix654 nx653 B[11] VDD VSS inv01
+        X_ix663 nx662 B[12] VDD VSS inv01
+        X_ix672 nx671 B[13] VDD VSS inv01
+        X_ix681 nx680 B[14] VDD VSS inv01
+        X_ix697 nx696 B[15] VDD VSS inv01
+        X_ix89 nBitOut[1] nx527 nx707 nx64 nx531 nx713 nx535 VDD VSS oai321
+        X_ix7 nx6 B[0] nx723 VDD VSS xor2
+        X_ix41 nx40 A[0] B[0] VDD VSS xor2
+        X_ix53 nx52 B[1] nx721 VDD VSS xor2
+        X_ix93 nx92 B[2] nx721 VDD VSS xor2
+        X_ix133 nx132 B[3] nx721 VDD VSS xor2
+        X_ix173 nx172 B[4] nx721 VDD VSS xor2
+        X_ix213 nx212 B[5] nx721 VDD VSS xor2
+        X_ix253 nx252 B[6] nx721 VDD VSS xor2
+        X_ix293 nx292 B[7] nx721 VDD VSS xor2
+        X_ix333 nx332 B[8] nx721 VDD VSS xor2
+        X_ix373 nx372 B[9] nx723 VDD VSS xor2
+        X_ix413 nx412 B[10] nx723 VDD VSS xor2
+        X_ix453 nx452 B[11] nx723 VDD VSS xor2
+        X_ix493 nx492 B[12] nx723 VDD VSS xor2
+        X_ix533 nx532 B[13] nx723 VDD VSS xor2
+        X_ix573 nx572 B[14] nx723 VDD VSS xor2
+        X_ix613 nx612 B[15] nx723 VDD VSS xor2
+        X_ix47 nBitOut[0] Control[1] nx377 nx517 VDD VSS oai21
+        X_ix19 nx18 nx721 A[0] B[0] VDD VSS mux21
+        X_ix694 nx693 nx711 B[15] nx612 nx632 nx719 VDD VSS aoi221
+        X_ix649 nBitOut[15] nx687 nx689 nx691 nx693 nx696 nx713 VDD VSS oai222
+        X_ix121 nx120 nx707 B[2] nx92 nx112 VDD VSS ao22
+        X_ix161 nx160 nx707 B[3] nx132 nx152 VDD VSS ao22
+        X_ix201 nx200 nx707 B[4] nx172 nx192 VDD VSS ao22
+        X_ix241 nx240 nx707 B[5] nx212 nx232 VDD VSS ao22
+        X_ix281 nx280 nx709 B[6] nx252 nx272 VDD VSS ao22
+        X_ix321 nx320 nx709 B[7] nx292 nx312 VDD VSS ao22
+        X_ix361 nx360 nx709 B[8] nx332 nx352 VDD VSS ao22
+        X_ix401 nx400 nx709 B[9] nx372 nx392 VDD VSS ao22
+        X_ix441 nx440 nx709 B[10] nx412 nx432 VDD VSS ao22
+        X_ix481 nx480 nx711 B[11] nx452 nx472 VDD VSS ao22
+        X_ix521 nx520 nx711 B[12] nx492 nx512 VDD VSS ao22
+        X_ix129 nBitOut[2] nx545 nx707 nx104 nx547 nx713 nx549 VDD VSS oai321
+        X_ix169 nBitOut[3] nx557 nx707 nx144 nx559 nx713 nx561 VDD VSS oai321
+        X_ix209 nBitOut[4] nx569 nx707 nx184 nx571 nx713 nx573 VDD VSS oai321
+        X_ix249 nBitOut[5] nx581 nx707 nx224 nx583 nx713 nx585 VDD VSS oai321
+        X_ix289 nBitOut[6] nx593 nx707 nx264 nx595 nx713 nx597 VDD VSS oai321
+        X_ix329 nBitOut[7] nx605 nx709 nx304 nx607 nx713 nx609 VDD VSS oai321
+        X_ix369 nBitOut[8] nx617 nx709 nx344 nx619 nx713 nx621 VDD VSS oai321
+        X_ix409 nBitOut[9] nx629 nx709 nx384 nx631 nx713 nx633 VDD VSS oai321
+        X_ix449 nBitOut[10] nx639 nx709 nx424 nx641 nx713 nx643 VDD VSS oai321
+        X_ix489 nBitOut[11] nx651 nx709 nx464 nx653 nx713 nx655 VDD VSS oai321
+        X_ix529 nBitOut[12] nx660 nx711 nx504 nx662 nx713 nx664 VDD VSS oai321
+        X_ix569 nBitOut[13] nx669 nx711 nx544 nx671 nx713 nx673 VDD VSS oai321
+        X_ix609 nBitOut[14] nx678 nx711 nx584 nx680 nx713 nx682 VDD VSS oai321
+.ends ALU_16Bit
+

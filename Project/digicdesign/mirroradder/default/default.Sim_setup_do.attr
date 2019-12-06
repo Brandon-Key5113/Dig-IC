@@ -1,0 +1,22 @@
+A 5 u Sim_setup_do 5d78e2dd029c.03.81.15.9a.2a.00.5e.4a 13 2 52 0
+V v 11 1 5d78edbe8072.03.81.15.9a.12.00.60.8f
+F f 11 "default.db_11"
+V v 12 1 5d78f8f09117.03.81.15.9a.12.00.6d.77
+F f 12 "default.db_12"
+V v 13 1 5dab5e4f4553.03.81.15.9a.2a.00.44.ac
+F f 13 "default.db_13"
+O 13
+R csdni 48 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 49 "$PYXIS_SPT/digicdesign/mirroradder/default" 14 Eddm_design_viewpoint 5daa4e058383.03.81.15.9a.12.00.5d.10 5d78e2d98187.03.81.15.9a.2a.00.5e.4a
+R csdni 50 "$GENERIC13/models/include_all" 1 Mgc_file
+R csdni 51 "$GENERIC13/models/lib.eldo" 1 Mgc_file
+O 12
+R csdni 44 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 45 "$PYXIS_SPT/digicdesign/mirroradder/default" 13 Eddm_design_viewpoint 5d78edcddf47.03.81.15.9a.12.00.6d.77 5d78e2d98187.03.81.15.9a.2a.00.5e.4a
+R csdni 46 "$GENERIC13/models/include_all" 1 Mgc_file
+R csdni 47 "$GENERIC13/models/lib.eldo" 1 Mgc_file
+O 11
+R csdni 40 "$MGC_HOME/shared/pkgs/daicsim/userware/En_na" 1 Mgc_container
+R csduv 41 "$PYXIS_SPT/digicdesign/mirroradder/default" 11 Eddm_design_viewpoint 5d78ecc899fb.03.81.15.9a.12.00.53.7c 5d78e2d98187.03.81.15.9a.2a.00.5e.4a
+R csdni 42 "$GENERIC13/models/include_all" 1 Mgc_file
+R csdni 43 "$GENERIC13/models/lib.eldo" 1 Mgc_file

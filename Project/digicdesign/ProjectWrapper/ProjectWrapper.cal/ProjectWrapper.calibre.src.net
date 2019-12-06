@@ -1,0 +1,2530 @@
+* LVS netlist generated with ICnet by 'bxk5113' on Mon Dec  2 2019 at 12:57:34
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* Component pathname : $GDKGATES/inv01
+*
+.subckt inv01  Y A VDD_esc1 VSS_esc2
+
+        MP1 Y A VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN1 Y A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends inv01
+
+*
+* Component pathname : $GDKGATES/xnor2
+*
+.subckt xnor2  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MP5 N$9 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP4 N$9 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN4 N$9 A0 N$8 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 N$3 N$9 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 Y A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 Y A0 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 Y A1 N$1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP2 Y N$9 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN5 N$8 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends xnor2
+
+*
+* Component pathname : $GDKGATES/and03
+*
+.subckt and03  Y A0 A1 A2 VDD_esc1 VSS_esc2
+
+        MP3 A A2 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.4u m=1
+        MN2 A A0 N$214 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN1 N$215 A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN3 N$214 A1 N$215 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN4 Y A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP2 A A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.4u m=1
+        MP1 A A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.4u m=1
+        MP4 Y A VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+.ends and03
+
+*
+* Component pathname : $GDKGATES/and04
+*
+.subckt and04  Y A0 A1 A2 A3 VDD_esc1 VSS_esc2
+
+        MN4 N$6 A1 N$7 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MN3 N$11 A0 N$6 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MP4 N$11 A3 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.75u m=1
+        MP3 N$11 A2 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.75u m=1
+        MN2 N$2 A3 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MN1 N$7 A2 N$2 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MN5 Y N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP2 N$11 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.75u m=1
+        MP1 N$11 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.75u m=1
+        MP5 Y N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+.ends and04
+
+*
+* Component pathname : $GDKGATES/mux21
+*
+.subckt mux21  Y A0 A1 S0 VDD_esc1 VSS_esc2
+
+        MN4 N$11 A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M1 Y N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN5 N$3 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M2 Y N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 N$11 A1 N$2 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP4 N$2 N$231 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN3 N$1 N$231 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$11 A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 N$7 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 N$231 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP1 N$231 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP3 N$11 A0 N$7 VDD_esc1 pmos l=0.14u w=1.54u m=1
+.ends mux21
+
+*
+* Component pathname : $GDKGATES/dffr
+*
+.subckt dffr  Q QB CLK D R VDD_esc1 VSS_esc2
+
+        MN17 N$25 bclk- N$27 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP9 N$29 N$28 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP17 N$27 R N$29 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP8 N$25 bclk N$27 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN16 N$27 N$28 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN12 N$14 bclk VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN11 N$12 bclk- VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN10 N$11 D N$12 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP12 N$11 D N$10 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP11 N$10 bclk VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP13 N$11 N$16 N$18 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN13 N$11 N$16 N$14 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN6 N$21 bclk VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP4 Q QB VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN4 Q QB VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 bclk bclk- VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN7 N$28 N$25 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN9 N$22 N$16 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP10 N$22 N$16 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP15 N$18 bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP14 N$13 N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP1 bclk- CLK VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN5 N$25 N$22 N$21 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN15 N$16 R VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP16 N$16 R N$13 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP2 bclk bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 bclk- CLK VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 QB N$25 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 QB N$25 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN14 N$16 N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP7 N$28 N$25 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP6 N$25 N$22 N$23 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP5 N$23 bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN8 N$27 R VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends dffr
+
+*
+* Component pathname : $GDKGATES/or04
+*
+.subckt or04  Y A0 A1 A2 A3 VDD_esc1 VSS_esc2
+
+        MN4 N$9 A3 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.49u m=1
+        MP4 N$9 A3 N$6 VDD_esc1 pmos l=0.14u w=3.01u m=1
+        MN3 N$9 A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.49u m=1
+        MP3 N$6 A2 N$3 VDD_esc1 pmos l=0.14u w=3.01u m=1
+        MP5 Y N$9 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN2 N$9 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.49u m=1
+        MN1 N$9 A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.49u m=1
+        MP2 N$3 A1 N$1 VDD_esc1 pmos l=0.14u w=3.01u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=3.01u m=1
+        MN5 Y N$9 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends or04
+
+*
+* Component pathname : $GDKGATES/inv02
+*
+.subckt inv02  Y A VDD_esc1 VSS_esc2
+
+        MP1 Y A VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 Y A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends inv02
+
+*
+* Component pathname : $GDKGATES/dffs
+*
+.subckt dffs  Q QB CLK D S VDD_esc1 VSS_esc2
+
+        MP6 N$11 bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP7 N$12 N$250 N$11 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP8 N$27 N$12 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN6 N$12 N$250 N$13 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP12 N$261 D N$17 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP4 Q QB VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP11 N$17 bclk VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN2 bclk bclk- VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN4 Q QB VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN17 N$28 S N$31 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP15 N$21 bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN13 N$22 bclk VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP14 N$26 N$261 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP13 N$261 N$26 N$21 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP16 N$26 S VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MN16 N$26 S N$23 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 QB N$12 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 QB N$12 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP9 N$12 bclk N$28 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN10 N$12 bclk- N$28 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN14 N$261 N$26 N$22 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN9 N$31 N$27 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN15 N$23 N$261 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN8 N$27 N$12 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN7 N$13 bclk VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP17 N$28 N$27 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN11 N$261 D N$19 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN5 N$250 N$26 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 N$250 N$26 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP2 bclk bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 bclk- CLK VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN12 N$19 bclk- VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP1 bclk- CLK VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP10 N$28 S VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+.ends dffs
+
+*
+* Component pathname : $GDKGATES/xor2
+*
+.subckt xor2  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MN5 N$6 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN4 N$7 A0 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP4 N$7 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP3 N$7 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 Y N$4 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN3 N$3 N$7 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$4 A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 N$4 A0 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP6 N$4 A1 N$1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP2 N$4 N$7 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP5 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN6 Y N$4 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends xor2
+
+*
+* Component pathname : $GDKGATES/nand04
+*
+.subckt nand04  Y A0 A1 A2 A3 VDD_esc1 VSS_esc2
+
+        MP4 Y A3 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MP3 Y A2 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MN2 N$2 A3 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MN1 N$9 A2 N$2 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MN3 Y A0 N$6 VSS_esc2 nmos l=0.14u w=1.61u m=1
+        MP2 Y A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MP1 Y A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MN4 N$6 A1 N$9 VSS_esc2 nmos l=0.14u w=1.61u m=1
+.ends nand04
+
+*
+* Component pathname : $GDKGATES/nor04
+*
+.subckt nor04  Y A0 A1 A2 A3 VDD_esc1 VSS_esc2
+
+        MP4 Y A3 N$6 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN3 Y A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 N$6 A2 N$3 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN4 Y A3 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 Y A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 Y A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 N$3 A1 N$1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+.ends nor04
+
+*
+* Component pathname : $GDKGATES/or02
+*
+.subckt or02  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MP4 Y N$5 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN2 N$5 A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN1 N$5 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP3 N$5 A1 N$1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN3 Y N$5 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends or02
+
+*
+* Component pathname : $GDKGATES/oai32
+*
+.subckt oai32  Y A0 A1 A2 B0 B1 VDD_esc1 VSS_esc2
+
+        MN5 Y A2 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN4 N$6 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 Y B1 N$4 VDD_esc1 pmos l=0.14u w=2.03u m=1
+        MN3 N$6 B0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 Y A1 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 Y A0 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 Y A2 N$12 VDD_esc1 pmos l=0.14u w=2.73u m=1
+        MP2 N$12 A1 N$5 VDD_esc1 pmos l=0.14u w=2.73u m=1
+        MP1 N$5 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.73u m=1
+        MP4 N$4 B0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.03u m=1
+.ends oai32
+
+*
+* Component pathname : $GDKGATES/aoi32
+*
+.subckt aoi32  Y A0 A1 A2 B0 B1 VDD_esc1 VSS_esc2
+
+        MN4 Y B0 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 N$5 A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN2 N$4 A1 N$5 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN1 Y A0 N$4 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP5 Y B0 N$11 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP4 Y B1 N$11 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP3 N$11 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$11 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 N$11 A2 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MN5 N$6 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends aoi32
+
+*
+* Component pathname : $GDKGATES/nand02
+*
+.subckt nand02  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MP1 Y A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MN1 Y A0 N$5 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$5 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 Y A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+.ends nand02
+
+*
+* Component pathname : $GDKGATES/buf02
+*
+.subckt buf02  Y A VDD_esc1 VSS_esc2
+
+        MP1 N$5 A VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN1 N$5 A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP2 Y N$5 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN2 Y N$5 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends buf02
+
+*
+* Component pathname : $GDKGATES/or03
+*
+.subckt or03  Y A0 A1 A2 VDD_esc1 VSS_esc2
+
+        MN3 N$7 A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MP3 N$7 A2 N$3 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP4 Y N$7 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN2 N$7 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MN1 N$7 A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MP2 N$3 A1 N$1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN4 Y N$7 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends or03
+
+*
+* Component pathname : $GDKGATES/nor02
+*
+.subckt nor02  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MN2 Y A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN1 Y A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP2 Y A1 N$1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+.ends nor02
+
+*
+* Component pathname : $GDKGATES/nor03
+*
+.subckt nor03  Y A0 A1 A2 VDD_esc1 VSS_esc2
+
+        MP3 Y A2 N$3 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MN2 Y A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MN1 Y A2 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+        MP2 N$3 A1 N$1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.68u m=1
+        MN3 Y A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.42u m=1
+.ends nor03
+
+*
+* Component pathname : $GDKGATES/nor02ii
+*
+.subckt nor02ii  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MN1 N$4 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP1 N$4 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN4 Y A0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN2 Y N$4 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP4 Y N$4 N$1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        MP2 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+.ends nor02ii
+
+*
+* Component pathname : $GDKGATES/aoi21
+*
+.subckt aoi21  Y A0 A1 B0 VDD_esc1 VSS_esc2
+
+        M_I$11 Y A0 N$2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$7 Y B0 N$1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$6 N$1 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$5 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$4 Y B0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        M_I$12 N$2 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends aoi21
+
+*
+* Component pathname : $GDKGATES/aoi22
+*
+.subckt aoi22  Y A0 A1 B0 B1 VDD_esc1 VSS_esc2
+
+        M_I$13 Y B1 N$6 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$12 N$1 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$11 Y A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$14 Y B0 N$2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M_I$7 Y B0 N$6 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$6 N$6 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$5 N$6 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.19u m=1
+        M_I$4 N$2 B1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends aoi22
+
+*
+* Component pathname : $GDKGATES/and02
+*
+.subckt and02  Y A0 A1 VDD_esc1 VSS_esc2
+
+        MN3 Y N$1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN2 N$6 A1 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN1 N$1 A0 N$6 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 Y N$1 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP2 N$1 A1 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP1 N$1 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+.ends and02
+
+*
+* Component pathname : $GDKGATES/oai21
+*
+.subckt oai21  Y A0 A1 B0 VDD_esc1 VSS_esc2
+
+        MN1 Y A0 N$7 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 Y B0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP2 Y A1 N$6 VDD_esc1 pmos l=0.14u w=2.03u m=1
+        MP1 N$6 A0 VDD_esc1 VDD_esc1 pmos l=0.14u w=2.03u m=1
+        MN2 Y A1 N$7 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 N$7 B0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+.ends oai21
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/ProjectWrapper
+*
+.subckt ProjectWrapper  Complete Pass RegOut[31] RegOut[30] RegOut[29] RegOut[28]
++ RegOut[27] RegOut[26] RegOut[25] RegOut[24] RegOut[23] RegOut[22] RegOut[21]
++ RegOut[20] RegOut[19] RegOut[18] RegOut[17] RegOut[16] RegOut[15] RegOut[14]
++ RegOut[13] RegOut[12] RegOut[11] RegOut[10] RegOut[9] RegOut[8] RegOut[7]
++ RegOut[6] RegOut[5] RegOut[4] RegOut[3] RegOut[2] RegOut[1] RegOut[0]
++ A[15] A[14] A[13] A[12] A[11] A[10] A[9] A[8] A[7] A[6] A[5] A[4] A[3]
++ A[2] A[1] A[0] B[15] B[14] B[13] B[12] B[11] B[10] B[9] B[8] B[7] B[6]
++ B[5] B[4] B[3] B[2] B[1] B[0] clk reset StartTest WE
+
+        X_ix4473 nx4472 nx2671 VDD VSS inv01
+        X_ix4511 nx4510 nx5595 VDD VSS inv01
+        X_ix4457 nx4456 nx2679 VDD VSS inv01
+        X_ix4465 nx1041 nx5561 VDD VSS inv01
+        X_ix4441 nx4440 nx2687 VDD VSS inv01
+        X_ix4449 nx1039 nx5529 VDD VSS inv01
+        X_ix4425 nx4424 nx2695 VDD VSS inv01
+        X_ix4433 nx1037 nx5485 VDD VSS inv01
+        X_ix4409 nx4408 nx2703 VDD VSS inv01
+        X_ix4417 nx1035 nx5437 VDD VSS inv01
+        X_ix4393 nx4392 nx2711 VDD VSS inv01
+        X_ix4401 nx1033 nx5389 VDD VSS inv01
+        X_ix4377 nx4376 nx2719 VDD VSS inv01
+        X_ix4385 nx1031 nx5319 VDD VSS inv01
+        X_ix4361 nx4360 nx2727 VDD VSS inv01
+        X_ix4369 nx1029 nx5244 VDD VSS inv01
+        X_ix4345 nx4344 nx2735 VDD VSS inv01
+        X_ix4353 nx1027 nx5170 VDD VSS inv01
+        X_ix4329 nx4328 nx2743 VDD VSS inv01
+        X_ix4337 nx1025 nx5085 VDD VSS inv01
+        X_ix4313 nx4312 nx2751 VDD VSS inv01
+        X_ix4321 nx1023 nx4999 VDD VSS inv01
+        X_ix4297 nx4296 nx2759 VDD VSS inv01
+        X_ix4305 nx1021 nx4889 VDD VSS inv01
+        X_ix4281 nx4280 nx2767 VDD VSS inv01
+        X_ix4289 nx1019 nx4763 VDD VSS inv01
+        X_ix4265 nx4264 nx2775 VDD VSS inv01
+        X_ix4273 nx1017 nx4665 VDD VSS inv01
+        X_ix4249 nx4248 nx2783 VDD VSS inv01
+        X_ix4257 nx1015 nx4507 VDD VSS inv01
+        X_ix4233 nx4232 nx2791 VDD VSS inv01
+        X_ix4241 nx1013 nx4347 VDD VSS inv01
+        X_ix5596 nx5595 nx2671 nx4508 VDD VSS xnor2
+        X_ix5562 nx5561 nx2679 nx4462 VDD VSS xnor2
+        X_ix5530 nx5529 nx2687 nx4446 VDD VSS xnor2
+        X_ix5486 nx5485 nx2695 nx4430 VDD VSS xnor2
+        X_ix5438 nx5437 nx2703 nx4414 VDD VSS xnor2
+        X_ix5390 nx5389 nx2711 nx4398 VDD VSS xnor2
+        X_ix5320 nx5319 nx2719 nx4382 VDD VSS xnor2
+        X_ix5245 nx5244 nx2727 nx4366 VDD VSS xnor2
+        X_ix5171 nx5170 nx2735 nx4350 VDD VSS xnor2
+        X_ix5086 nx5085 nx2743 nx4334 VDD VSS xnor2
+        X_ix5000 nx4999 nx2751 nx4318 VDD VSS xnor2
+        X_ix4890 nx4889 nx2759 nx4302 VDD VSS xnor2
+        X_ix4764 nx4763 nx2767 nx4286 VDD VSS xnor2
+        X_ix4666 nx4665 nx2775 nx4270 VDD VSS xnor2
+        X_ix4508 nx4507 nx2783 nx4254 VDD VSS xnor2
+        X_ix4348 nx4347 nx2791 nx4238 VDD VSS xnor2
+        X_ix4785 nx4784 nx5778 MISR_out_31 nx5584 VDD VSS and03
+        X_ix4849 nx4848 nx5683 nx5678 MISR_out_8 MISR_out_7 VDD VSS and04
+        X_ix4861 nx4860 MISR_out_6 MISR_out_5 nx5653 nx5648 VDD VSS and04
+        X_ix4839 nx4838 nx5703 nx5698 nx5693 nx5688 VDD VSS and04
+        X_ix4801 nx4800 MISR_out_26 nx5992 nx5753 MISR_out_23 VDD VSS and04
+        X_ix2200 nx2199 nx4700 MISR_out_9 nx6012 VDD VSS mux21
+        X_ix2190 nx2189 nx4694 MISR_out_10 nx6012 VDD VSS mux21
+        X_ix2260 nx2259 nx4736 MISR_out_3 nx6010 VDD VSS mux21
+        X_ix2250 nx2249 nx4730 MISR_out_4 nx6010 VDD VSS mux21
+        X_ix2310 nx2309 nx4766 MISR_out_30 nx6010 VDD VSS mux21
+        X_ix2290 nx2289 nx4754 MISR_out_0 nx6010 VDD VSS mux21
+        X_ix2160 nx2159 nx4676 MISR_out_13 nx6012 VDD VSS mux21
+        X_ix2150 nx2149 nx4670 MISR_out_14 nx6012 VDD VSS mux21
+        X_ix2270 nx2269 nx4742 MISR_out_2 nx6010 VDD VSS mux21
+        X_ix2280 nx2279 nx4748 MISR_out_1 nx6010 VDD VSS mux21
+        X_ix2010 nx2009 nx4580 MISR_out_28 nx6014 VDD VSS mux21
+        X_ix2030 nx2029 nx4592 MISR_out_26 nx6014 VDD VSS mux21
+        X_ix2060 nx2059 nx4614 MISR_out_23 nx6014 VDD VSS mux21
+        X_MISR0_reg_internal_reg_11 MISR_out_11 nx5688 clk nx2179 nx5822
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_30 MISR_out_30 nx5584 clk nx2309 nx5820
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_0 MISR_out_0 nx5633 clk nx2289 nx5820 VDD
++ VSS dffr
+        X_MISR0_reg_internal_reg_13 MISR_out_13 nx5698 clk nx2159 nx5822
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_2 MISR_out_2 nx5643 clk nx2269 nx5822 VDD
++ VSS dffr
+        X_MISR0_reg_internal_reg_1 MISR_out_1 nx5638 clk nx2279 nx5822 VDD
++ VSS dffr
+        X_MISR0_reg_internal_reg_26 MISR_out_26 nx5780 clk nx2029 nx5824
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_24 MISR_out_24 nx5753 clk nx2049 nx5824
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_16 MISR_out_16 nx5713 clk nx2129 nx5824
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_17 MISR_out_17 nx5718 clk nx2119 nx5824
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_15 MISR_out_15 nx5708 clk nx2139 nx5822
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_22 MISR_out_22 nx5743 clk nx2069 nx5824
++ VDD VSS dffr
+        X_MISR0_reg_internal_reg_19 MISR_out_19 nx5728 clk nx2099 nx5824
++ VDD VSS dffr
+        X_ix5787 nx5786 nx5723 nx5718 nx5713 nx5708 VDD VSS or04
+        X_ix5823 nx5824 reset VDD VSS inv02
+        X_ix6011 nx6012 nx5996 VDD VSS inv02
+        X_ix6013 nx6014 nx5996 VDD VSS inv02
+        X_ix4523 nx4522 nx5592 VDD VSS inv01
+        X_ix4549 nx4548 nx5623 VDD VSS inv01
+        X_ix5991 nx5992 MISR_out_25 VDD VSS inv01
+        X_MISR0_reg_internal_reg_12 MISR_out_12 nx5693 clk nx2169 nx5822
++ VDD VSS dffs
+        X_MISR0_reg_internal_reg_10 MISR_out_10 nx5683 clk nx2189 nx5822
++ VDD VSS dffs
+        X_MISR0_reg_internal_reg_9 MISR_out_9 nx5678 clk nx2199 nx5822 VDD
++ VSS dffs
+        X_MISR0_reg_internal_reg_4 MISR_out_4 nx5653 clk nx2249 nx5822 VDD
++ VSS dffs
+        X_MISR0_reg_internal_reg_3 MISR_out_3 nx5648 clk nx2259 nx5822 VDD
++ VSS dffs
+        X_MISR0_reg_internal_reg_14 MISR_out_14 nx5703 clk nx2149 nx5822
++ VDD VSS dffs
+        X_MISR0_reg_internal_reg_28 MISR_out_28 nx5773 clk nx2009 nx5824
++ VDD VSS dffs
+        X_MISR0_reg_internal_reg_18 MISR_out_18 nx5723 clk nx2109 nx5824
++ VDD VSS dffs
+        X_MISR0_reg_internal_reg_21 MISR_out_21 nx5738 clk nx2079 nx5824
++ VDD VSS dffs
+        X_MISR0_reg_internal_reg_20 MISR_out_20 nx5782 clk nx2089 nx5824
++ VDD VSS dffs
+        X_ix2180 nx2179 nx4688 MISR_out_11 nx6012 VDD VSS mux21
+        X_ix2170 nx2169 nx4682 MISR_out_12 nx6012 VDD VSS mux21
+        X_ix2050 nx2049 nx4608 MISR_out_24 nx6014 VDD VSS mux21
+        X_ix2130 nx2129 nx4658 MISR_out_16 nx6012 VDD VSS mux21
+        X_ix2120 nx2119 nx4652 MISR_out_17 nx6012 VDD VSS mux21
+        X_ix2140 nx2139 nx4664 MISR_out_15 nx6012 VDD VSS mux21
+        X_ix2110 nx2109 nx4646 MISR_out_18 nx6012 VDD VSS mux21
+        X_ix2100 nx2099 nx4640 MISR_out_19 nx6012 VDD VSS mux21
+        X_ix2080 nx2079 nx4626 MISR_out_21 nx6014 VDD VSS mux21
+        X_ix2090 nx2089 nx4632 MISR_out_20 nx6014 VDD VSS mux21
+        X_ix2070 nx2069 nx4620 MISR_out_22 nx6014 VDD VSS mux21
+        X_ix4609 nx4608 nx5633 nx5758 VDD VSS xor2
+        X_ix4641 nx4640 nx5633 nx5733 VDD VSS xor2
+        X_ix5789 nx5788 nx4838 nx4848 nx4860 nx4870 VDD VSS nand04
+        X_ix2656 nx2655 nx4784 nx5773 MISR_out_27 nx4800 VDD VSS nand04
+        X_ix5785 nx5784 nx5743 nx5738 MISR_out_20 nx5728 VDD VSS nand04
+        X_ix4575 nx4574 nx5620 nx5626 VDD VSS xnor2
+        X_ix5624 nx5623 nx5592 nx4546 VDD VSS xnor2
+        X_ix4871 nx4870 nx5643 nx5638 MISR_out_0 nx5994 VDD VSS nor04
+        X_ix4877 nx4876 nx2655 nx5784 nx5786 nx5788 VDD VSS nor04
+        X_ix4879 nx4878 nx4876 Pass VDD VSS or02
+        X_ix3603 nx3602 nx6122 nx6102 nx5408 nx5451 nx5404 VDD VSS oai32
+        X_ix3667 nx3666 nx6122 nx6110 nx5457 nx5502 nx5453 VDD VSS oai32
+        X_ix3711 nx3710 nx6132 nx6110 nx5499 nx5492 nx5495 VDD VSS oai32
+        X_ix4479 nx4478 nx6132 nx6118 nx5541 nx5569 nx5537 VDD VSS oai32
+        X_ix4567 nx4566 nx6134 nx6138 nx5988 nx5602 nx5990 VDD VSS oai32
+        X_ix4487 nx4486 nx6122 nx6128 nx5549 nx5543 nx5545 VDD VSS oai32
+        X_ix4537 nx4536 nx6122 nx6136 nx5580 nx5608 nx5576 VDD VSS oai32
+        X_ix5949 nx5950 nx6118 VDD VSS inv01
+        X_ix5961 nx5962 nx6122 VDD VSS inv01
+        X_ix5452 nx5451 nx3526 VDD VSS inv01
+        X_ix5503 nx5502 nx3602 VDD VSS inv01
+        X_ix5969 nx5970 nx6132 VDD VSS inv01
+        X_ix5570 nx5569 nx3710 VDD VSS inv01
+        X_ix3651 nx3650 nx3602 nx5453 VDD VSS xnor2
+        X_ix4501 nx4500 nx5572 nx4498 VDD VSS xnor2
+        X_ix5496 nx5495 nx5497 nx5499 VDD VSS xnor2
+        X_ix5538 nx5537 nx5539 nx5541 VDD VSS xnor2
+        X_ix3747 nx3746 nx3710 nx5537 VDD VSS xnor2
+        X_ix4539 nx4538 nx5605 nx4536 VDD VSS xnor2
+        X_ix4541 nx4540 nx5602 nx4538 VDD VSS xnor2
+        X_ix5546 nx5545 nx5547 nx5549 VDD VSS xnor2
+        X_ix5542 nx5541 nx5543 nx5545 VDD VSS xnor2
+        X_ix5577 nx5576 nx5578 nx5580 VDD VSS xnor2
+        X_ix4499 nx4498 nx4486 nx5576 VDD VSS xnor2
+        X_ix5508 nx5507 nx6124 nx6120 VDD VSS or02
+        X_ix5407 nx5406 nx6124 nx6104 VDD VSS or02
+        X_ix5456 nx5455 nx6124 nx6112 VDD VSS or02
+        X_ix5573 nx5572 nx6134 nx6130 VDD VSS or02
+        X_ix5498 nx5497 nx6134 nx6112 VDD VSS or02
+        X_ix5540 nx5539 nx6134 nx6120 VDD VSS or02
+        X_ix5606 nx5605 nx6134 nx6138 VDD VSS or02
+        X_ix5548 nx5547 nx6126 nx6130 VDD VSS or02
+        X_ix5579 nx5578 nx6126 nx6138 VDD VSS or02
+        X_ix5989 nx5990 nx4538 VDD VSS inv01
+        X_ix5987 nx5988 nx4536 VDD VSS inv01
+        X_ix5609 nx5608 nx4486 VDD VSS inv01
+        X_ix5544 nx5543 nx5962 nx5950 nx3698 nx3666 nx3700 VDD VSS aoi32
+        X_ix5603 nx5602 nx5970 nx5958 nx4498 nx4478 nx4500 VDD VSS aoi32
+        X_ix4503 nx4502 nx4478 nx4500 VDD VSS xor2
+        X_ix3753 nx3752 nx5492 nx5495 VDD VSS xor2
+        X_ix3701 nx3700 nx5507 nx3698 VDD VSS xnor2
+        X_ix5500 nx5499 nx3666 nx3700 VDD VSS xnor2
+        X_ix5405 nx5404 nx5406 nx5408 VDD VSS xnor2
+        X_ix3587 nx3586 nx3526 nx5404 VDD VSS xnor2
+        X_ix5454 nx5453 nx5455 nx5457 VDD VSS xnor2
+        X_ix3535 nx3534 nx6114 nx6102 nx5348 nx5341 nx5344 VDD VSS oai32
+        X_ix3675 nx3674 nx6114 nx6118 nx5465 nx5459 nx5461 VDD VSS oai32
+        X_ix3551 nx3550 nx6098 nx6118 nx5366 nx5359 nx5362 VDD VSS oai32
+        X_ix3543 nx3542 nx6106 nx6110 nx5357 nx5350 nx5353 VDD VSS oai32
+        X_ix3619 nx3618 nx6106 nx6118 nx5420 nx5468 nx5416 VDD VSS oai32
+        X_ix3727 nx3726 nx6114 nx6128 nx5515 nx5552 nx5511 VDD VSS oai32
+        X_ix3479 nx3478 nx6082 nx6128 nx5305 nx5378 nx5301 VDD VSS oai32
+        X_ix3735 nx3734 nx6106 nx6136 nx5523 nx5517 nx5519 VDD VSS oai32
+        X_ix3559 nx3558 nx6090 nx6128 nx5375 nx5368 nx5371 VDD VSS oai32
+        X_ix3635 nx3634 nx6090 nx6136 nx5432 nx5480 nx5428 VDD VSS oai32
+        X_ix5340 nx5339 nx5341 nx5344 VDD VSS xnor2
+        X_ix5462 nx5461 nx5463 nx5465 VDD VSS xnor2
+        X_ix5458 nx5457 nx5459 nx5461 VDD VSS xnor2
+        X_ix5363 nx5362 nx5364 nx5366 VDD VSS xnor2
+        X_ix5358 nx5357 nx5359 nx5362 VDD VSS xnor2
+        X_ix5354 nx5353 nx5355 nx5357 VDD VSS xnor2
+        X_ix5349 nx5348 nx5350 nx5353 VDD VSS xnor2
+        X_ix5417 nx5416 nx5418 nx5420 VDD VSS xnor2
+        X_ix3579 nx3578 nx3542 nx5416 VDD VSS xnor2
+        X_ix5512 nx5511 nx5513 nx5515 VDD VSS xnor2
+        X_ix3699 nx3698 nx3674 nx5511 VDD VSS xnor2
+        X_ix3737 nx3736 nx5555 nx3734 VDD VSS xnor2
+        X_ix5550 nx5549 nx3726 nx3736 VDD VSS xnor2
+        X_ix5365 nx5364 nx6100 nx6120 VDD VSS or02
+        X_ix5356 nx5355 nx6108 nx6112 VDD VSS or02
+        X_ix5419 nx5418 nx6108 nx6120 VDD VSS or02
+        X_ix5514 nx5513 nx6116 nx6130 VDD VSS or02
+        X_ix5556 nx5555 nx6116 nx6138 VDD VSS or02
+        X_ix5304 nx5303 nx6084 nx6130 VDD VSS or02
+        X_ix5384 nx5383 nx6084 nx6138 VDD VSS or02
+        X_ix5522 nx5521 nx6108 nx6138 VDD VSS or02
+        X_ix5472 nx5471 nx6108 nx6130 VDD VSS or02
+        X_ix5374 nx5373 nx6092 nx6130 VDD VSS or02
+        X_ix5431 nx5430 nx6092 nx6138 VDD VSS or02
+        X_ix5425 nx5424 nx6100 nx6130 VDD VSS or02
+        X_ix5478 nx5477 nx6100 nx6138 VDD VSS or02
+        X_ix5941 nx5942 nx6110 VDD VSS inv01
+        X_ix5469 nx5468 nx3542 VDD VSS inv01
+        X_ix5553 nx5552 nx3674 VDD VSS inv01
+        X_ix5953 nx5954 nx6114 VDD VSS inv01
+        X_ix5379 nx5378 nx3378 VDD VSS inv01
+        X_ix5921 nx5922 nx6082 VDD VSS inv01
+        X_ix5945 nx5946 nx6106 VDD VSS inv01
+        X_ix5481 nx5480 nx3558 VDD VSS inv01
+        X_ix5957 nx5958 nx6128 VDD VSS inv01
+        X_ix3627 nx3626 nx5474 VDD VSS inv01
+        X_ix5460 nx5459 nx5954 nx5942 nx3578 nx3534 nx3580 VDD VSS aoi32
+        X_ix5581 nx5580 nx5954 nx5966 nx3734 nx3726 nx3736 VDD VSS aoi32
+        X_ix5433 nx5432 nx5922 nx5966 nx3486 nx3478 nx3488 VDD VSS aoi32
+        X_ix5518 nx5517 nx5946 nx5958 nx3638 nx3618 nx3640 VDD VSS aoi32
+        X_ix5475 nx5474 nx5938 nx5958 nx3570 nx3550 nx3572 VDD VSS aoi32
+        X_ix5524 nx5523 nx5938 nx5966 nx3634 nx3626 nx3636 VDD VSS aoi32
+        X_ix3581 nx3580 nx5412 nx3578 VDD VSS xnor2
+        X_ix5409 nx5408 nx3534 nx3580 VDD VSS xnor2
+        X_ix5345 nx5344 nx5346 nx5348 VDD VSS xnor2
+        X_ix5302 nx5301 nx5303 nx5305 VDD VSS xnor2
+        X_ix3403 nx3402 nx3378 nx5301 VDD VSS xnor2
+        X_ix3489 nx3488 nx5383 nx3486 VDD VSS xnor2
+        X_ix5376 nx5375 nx3478 nx3488 VDD VSS xnor2
+        X_ix5520 nx5519 nx5521 nx5523 VDD VSS xnor2
+        X_ix5516 nx5515 nx5517 nx5519 VDD VSS xnor2
+        X_ix3641 nx3640 nx5471 nx3638 VDD VSS xnor2
+        X_ix5466 nx5465 nx3618 nx3640 VDD VSS xnor2
+        X_ix5372 nx5371 nx5373 nx5375 VDD VSS xnor2
+        X_ix5367 nx5366 nx5368 nx5371 VDD VSS xnor2
+        X_ix5429 nx5428 nx5430 nx5432 VDD VSS xnor2
+        X_ix3571 nx3570 nx3558 nx5428 VDD VSS xnor2
+        X_ix3573 nx3572 nx5424 nx3570 VDD VSS xnor2
+        X_ix5421 nx5420 nx3550 nx3572 VDD VSS xnor2
+        X_ix3637 nx3636 nx5477 nx3634 VDD VSS xnor2
+        X_ix3639 nx3638 nx5474 nx3636 VDD VSS xnor2
+        X_ix5413 nx5412 nx6116 nx6112 VDD VSS or02
+        X_ix5347 nx5346 nx6116 nx6104 VDD VSS or02
+        X_ix5464 nx5463 nx6116 nx6120 VDD VSS or02
+        X_ix5925 nx5926 nx6094 VDD VSS inv01
+        X_ix3595 nx3594 nx5444 VDD VSS inv01
+        X_ix3347 nx3346 nx5269 VDD VSS inv01
+        X_ix3243 nx3242 nx5197 VDD VSS inv01
+        X_ix3355 nx3354 nx5275 VDD VSS inv01
+        X_ix5334 nx5333 nx5960 nx5918 nx3418 nx3338 nx3420 VDD VSS aoi32
+        X_ix5198 nx5197 nx5944 nx5918 nx3198 nx3118 nx3200 VDD VSS aoi32
+        X_ix5270 nx5269 nx5952 nx5918 nx3314 nx3234 nx3316 VDD VSS aoi32
+        X_ix5445 nx5444 nx5970 nx5926 nx3586 nx3518 nx3588 VDD VSS aoi32
+        X_ix5493 nx5492 nx5970 nx5934 nx3650 nx3594 nx3652 VDD VSS aoi32
+        X_ix5342 nx5341 nx5954 nx5926 nx3414 nx3346 nx3416 VDD VSS aoi32
+        X_ix5276 nx5275 nx5946 nx5926 nx3310 nx3242 nx3312 VDD VSS aoi32
+        X_ix5351 nx5350 nx5946 nx5934 nx3410 nx3354 nx3412 VDD VSS aoi32
+        X_ix3777 nx3776 nx5251 nx5254 VDD VSS xor2
+        X_ix3765 nx3764 nx3518 nx3588 VDD VSS xor2
+        X_ix5255 nx5254 nx5256 nx5258 VDD VSS xnor2
+        X_ix5328 nx5327 nx5329 nx5331 VDD VSS xnor2
+        X_ix3771 nx3770 nx3430 nx5327 VDD VSS xnor2
+        X_ix5187 nx5186 nx5188 nx5190 VDD VSS xnor2
+        X_ix3323 nx3322 nx3226 nx5186 VDD VSS xnor2
+        X_ix3759 nx3758 nx5444 nx3652 VDD VSS xnor2
+        X_ix3417 nx3416 nx5272 nx3414 VDD VSS xnor2
+        X_ix3419 nx3418 nx5269 nx3416 VDD VSS xnor2
+        X_ix3313 nx3312 nx5200 nx3310 VDD VSS xnor2
+        X_ix3315 nx3314 nx5197 nx3312 VDD VSS xnor2
+        X_ix3413 nx3412 nx5279 nx3410 VDD VSS xnor2
+        X_ix3415 nx3414 nx5275 nx3412 VDD VSS xnor2
+        X_ix5257 nx5256 nx6134 nx6080 VDD VSS or02
+        X_ix5330 nx5329 nx6134 nx6088 VDD VSS or02
+        X_ix5189 nx5188 nx6124 nx6080 VDD VSS or02
+        X_ix5267 nx5266 nx6124 nx6088 VDD VSS or02
+        X_ix5338 nx5337 nx6124 nx6096 VDD VSS or02
+        X_ix5119 nx5118 nx6108 nx6088 VDD VSS or02
+        X_ix5111 nx5110 nx6116 nx6080 VDD VSS or02
+        X_ix5195 nx5194 nx6116 nx6088 VDD VSS or02
+        X_ix5401 nx5400 nx6134 nx6096 VDD VSS or02
+        X_ix5448 nx5447 nx6134 nx6104 VDD VSS or02
+        X_ix5273 nx5272 nx6116 nx6096 VDD VSS or02
+        X_ix5201 nx5200 nx6108 nx6096 VDD VSS or02
+        X_ix5280 nx5279 nx6108 nx6104 VDD VSS or02
+        X_ix3431 nx3430 nx6132 nx6078 nx5258 nx5251 nx5254 VDD VSS oai32
+        X_ix3519 nx3518 nx6132 nx6086 nx5331 nx5397 nx5327 VDD VSS oai32
+        X_ix3339 nx3338 nx6122 nx6078 nx5190 nx5261 nx5186 VDD VSS oai32
+        X_ix3527 nx3526 nx6122 nx6094 nx5339 nx5333 nx5335 VDD VSS oai32
+        X_ix3235 nx3234 nx6114 nx6078 nx5112 nx5106 nx5108 VDD VSS oai32
+        X_ix5398 nx5397 nx3430 VDD VSS inv01
+        X_ix5262 nx5261 nx3226 VDD VSS inv01
+        X_ix5959 nx5960 nx4215 VDD VSS inv01
+        X_ix6121 nx6122 nx5960 VDD VSS inv01
+        X_ix6123 nx6124 nx5960 VDD VSS inv01
+        X_ix6125 nx6126 nx5960 VDD VSS inv01
+        X_ix3421 nx3420 nx5266 nx3418 VDD VSS xnor2
+        X_ix5259 nx5258 nx3338 nx3420 VDD VSS xnor2
+        X_ix5336 nx5335 nx5337 nx5339 VDD VSS xnor2
+        X_ix5332 nx5331 nx5333 nx5335 VDD VSS xnor2
+        X_ix3201 nx3200 nx5118 nx3198 VDD VSS xnor2
+        X_ix5113 nx5112 nx3118 nx3200 VDD VSS xnor2
+        X_ix5109 nx5108 nx5110 nx5112 VDD VSS xnor2
+        X_ix5105 nx5104 nx5106 nx5108 VDD VSS xnor2
+        X_ix3317 nx3316 nx5194 nx3314 VDD VSS xnor2
+        X_ix5191 nx5190 nx3234 nx3316 VDD VSS xnor2
+        X_ix3589 nx3588 nx5400 nx3586 VDD VSS xnor2
+        X_ix3653 nx3652 nx5447 nx3650 VDD VSS xnor2
+        X_ix3259 nx3258 nx5210 VDD VSS inv01
+        X_ix3371 nx3370 nx5289 VDD VSS inv01
+        X_ix6099 nx6100 nx5936 VDD VSS inv01
+        X_ix5937 nx5938 nx6098 VDD VSS inv01
+        X_ix6095 nx6096 nx5924 VDD VSS inv01
+        X_ix3127 nx3126 nx5121 VDD VSS inv01
+        X_ix6087 nx6088 nx5916 VDD VSS inv01
+        X_ix5917 nx5918 nx6086 VDD VSS inv01
+        X_ix2999 nx2998 nx5040 VDD VSS inv01
+        X_ix3135 nx3134 nx5127 VDD VSS inv01
+        X_ix5283 nx5282 nx5938 nx5934 nx3306 nx3250 nx3308 VDD VSS aoi32
+        X_ix5360 nx5359 nx5938 nx5942 nx3406 nx3362 nx3408 VDD VSS aoi32
+        X_ix5290 nx5289 nx5930 nx5942 nx3302 nx3258 nx3304 VDD VSS aoi32
+        X_ix5369 nx5368 nx5930 nx5948 nx3402 nx3370 nx3404 VDD VSS aoi32
+        X_ix4937 nx4936 nx2850 nx2932 VDD VSS xnor2
+        X_ix3069 nx3068 nx5043 nx3066 VDD VSS xnor2
+        X_ix3071 nx3070 nx5040 nx3068 VDD VSS xnor2
+        X_ix3193 nx3192 nx5131 nx3190 VDD VSS xnor2
+        X_ix3195 nx3194 nx5127 nx3192 VDD VSS xnor2
+        X_ix5208 nx5207 nx6100 nx6104 VDD VSS or02
+        X_ix5287 nx5286 nx6100 nx6112 VDD VSS or02
+        X_ix5215 nx5214 nx6092 nx6112 VDD VSS or02
+        X_ix5294 nx5293 nx6092 nx6120 VDD VSS or02
+        X_ix5038 nx5037 nx6100 nx6088 VDD VSS or02
+        X_ix5125 nx5124 nx6100 nx6096 VDD VSS or02
+        X_ix4945 nx4944 nx6092 nx6088 VDD VSS or02
+        X_ix5044 nx5043 nx6092 nx6094 VDD VSS or02
+        X_ix5132 nx5131 nx6092 nx6104 VDD VSS or02
+        X_ix3251 nx3250 nx5203 VDD VSS inv01
+        X_ix3363 nx3362 nx5282 VDD VSS inv01
+        X_ix5122 nx5121 nx5938 nx5918 nx3070 nx2990 nx3072 VDD VSS aoi32
+        X_ix5204 nx5203 nx5938 nx5926 nx3194 nx3126 nx3196 VDD VSS aoi32
+        X_ix5041 nx5040 nx5930 nx5918 nx2930 nx2850 nx2932 VDD VSS aoi32
+        X_ix5128 nx5127 nx5930 nx5926 nx3066 nx2998 nx3068 VDD VSS aoi32
+        X_ix5211 nx5210 nx5930 nx5934 nx3190 nx3134 nx3192 VDD VSS aoi32
+        X_ix3309 nx3308 nx5207 nx3306 VDD VSS xnor2
+        X_ix3311 nx3310 nx5203 nx3308 VDD VSS xnor2
+        X_ix3409 nx3408 nx5286 nx3406 VDD VSS xnor2
+        X_ix3411 nx3410 nx5282 nx3408 VDD VSS xnor2
+        X_ix3305 nx3304 nx5214 nx3302 VDD VSS xnor2
+        X_ix3307 nx3306 nx5210 nx3304 VDD VSS xnor2
+        X_ix3405 nx3404 nx5293 nx3402 VDD VSS xnor2
+        X_ix3407 nx3406 nx5289 nx3404 VDD VSS xnor2
+        X_ix3073 nx3072 nx5037 nx3070 VDD VSS xnor2
+        X_ix5034 nx5033 nx2990 nx3072 VDD VSS xnor2
+        X_ix3197 nx3196 nx5124 nx3194 VDD VSS xnor2
+        X_ix3199 nx3198 nx5121 nx3196 VDD VSS xnor2
+        X_ix2933 nx2932 nx4944 nx2930 VDD VSS xnor2
+        X_ix3039 nx3038 nx6050 nx6128 nx4985 nx5076 nx4981 VDD VSS oai32
+        X_ix2883 nx2882 nx6058 nx6110 nx4857 nx4972 nx4853 VDD VSS oai32
+        X_ix4852 nx4851 nx2556 VDD VSS inv01
+        X_ix6051 nx6052 nx5888 VDD VSS inv01
+        X_ix2181 nx2180 nx4447 VDD VSS inv01
+        X_ix5933 nx5934 nx6102 VDD VSS inv01
+        X_ix5889 nx5890 nx6050 VDD VSS inv01
+        X_ix6129 nx6130 nx5956 VDD VSS inv01
+        X_ix6137 nx6138 nx5964 VDD VSS inv01
+        X_ix5240 nx5239 nx3166 VDD VSS inv01
+        X_ix5077 nx5076 nx2890 VDD VSS inv01
+        X_ix5897 nx5898 nx6058 VDD VSS inv01
+        X_ix6111 nx6112 nx5940 VDD VSS inv01
+        X_ix4973 nx4972 nx2722 VDD VSS inv01
+        X_ix4612 nx4611 nx5890 nx5924 nx2244 nx2180 nx2246 VDD VSS aoi32
+        X_ix4860 nx4859 nx5890 nx5940 nx2602 nx2564 nx2604 VDD VSS aoi32
+        X_ix5166 nx5165 nx5890 nx5964 nx3046 nx3038 nx3048 VDD VSS aoi32
+        X_ix5068 nx5067 nx5898 nx5948 nx2914 nx2882 nx2916 VDD VSS aoi32
+        X_ix4605 nx4604 nx4607 nx4609 VDD VSS xnor2
+        X_ix4600 nx4599 nx4601 nx4604 VDD VSS xnor2
+        X_ix4730 nx4729 nx4731 nx4733 VDD VSS xnor2
+        X_ix2611 nx2610 nx2556 nx4729 VDD VSS xnor2
+        X_ix2247 nx2246 nx4453 nx2244 VDD VSS xnor2
+        X_ix2249 nx2248 nx4447 nx2246 VDD VSS xnor2
+        X_ix5066 nx5065 nx5067 nx5069 VDD VSS xnor2
+        X_ix3179 nx3178 nx3166 nx5161 VDD VSS xnor2
+        X_ix4862 nx4861 nx4863 nx4865 VDD VSS xnor2
+        X_ix4858 nx4857 nx4859 nx4861 VDD VSS xnor2
+        X_ix4982 nx4981 nx4983 nx4985 VDD VSS xnor2
+        X_ix2915 nx2914 nx2890 nx4981 VDD VSS xnor2
+        X_ix2917 nx2916 nx4977 nx2914 VDD VSS xnor2
+        X_ix4970 nx4969 nx2882 nx2916 VDD VSS xnor2
+        X_ix4854 nx4853 nx4855 nx4857 VDD VSS xnor2
+        X_ix2771 nx2770 nx2722 nx4853 VDD VSS xnor2
+        X_ix4336 nx4335 nx5854 nx5956 VDD VSS nand02
+        X_ix4498 nx4497 nx5854 nx5964 VDD VSS nand02
+        X_ix4608 nx4607 nx6060 nx6094 VDD VSS or02
+        X_ix4732 nx4731 nx6060 nx6102 VDD VSS or02
+        X_ix4454 nx4453 nx6052 nx6094 VDD VSS or02
+        X_ix4618 nx4617 nx6052 nx6102 VDD VSS or02
+        X_ix4738 nx4737 nx6052 nx6110 VDD VSS or02
+        X_ix5072 nx5071 nx6060 nx6130 VDD VSS or02
+        X_ix5080 nx5079 nx6052 nx6138 VDD VSS or02
+        X_ix5164 nx5163 nx6060 nx6138 VDD VSS or02
+        X_ix4864 nx4863 nx6052 nx6120 VDD VSS or02
+        X_ix4984 nx4983 nx6052 nx6128 VDD VSS or02
+        X_ix4978 nx4977 nx6060 nx6120 VDD VSS or02
+        X_ix4856 nx4855 nx6060 nx6112 VDD VSS or02
+        X_ix5853 nx5854 MAC0_MultA_0 VDD VSS buf02
+        X_ix2557 nx2556 nx6058 nx6094 nx4609 nx4601 nx4604 VDD VSS oai32
+        X_ix2723 nx2722 nx6058 nx6102 nx4733 nx4851 nx4729 VDD VSS oai32
+        X_ix2565 nx2564 nx6050 nx6102 nx4619 nx4611 nx4615 VDD VSS oai32
+        X_ix3167 nx3166 nx6058 nx6128 nx5073 nx5067 nx5069 VDD VSS oai32
+        X_ix3291 nx3290 nx6058 nx6136 nx5165 nx5239 nx5161 VDD VSS oai32
+        X_ix2891 nx2890 nx6050 nx6118 nx4865 nx4859 nx4861 VDD VSS oai32
+        X_ix4616 nx4615 nx4617 nx4619 VDD VSS xnor2
+        X_ix4610 nx4609 nx4611 nx4615 VDD VSS xnor2
+        X_ix2605 nx2604 nx4737 nx2602 VDD VSS xnor2
+        X_ix4734 nx4733 nx2564 nx2604 VDD VSS xnor2
+        X_ix5070 nx5069 nx5071 nx5073 VDD VSS xnor2
+        X_ix5074 nx5073 nx3038 nx3048 VDD VSS xnor2
+        X_ix3049 nx3048 nx5079 nx3046 VDD VSS xnor2
+        X_ix5162 nx5161 nx5163 nx5165 VDD VSS xnor2
+        X_ix3007 nx3006 nx6082 nx6094 nx4952 nx5047 nx4948 VDD VSS oai32
+        X_ix3143 nx3142 nx6082 nx6102 nx5053 nx5135 nx5049 VDD VSS oai32
+        X_ix3023 nx3022 nx6066 nx6110 nx4969 nx4962 nx4965 VDD VSS oai32
+        X_ix3159 nx3158 nx6066 nx6118 nx5065 nx5154 nx5061 VDD VSS oai32
+        X_ix3275 nx3274 nx6074 nx6118 nx5151 nx5145 nx5147 VDD VSS oai32
+        X_ix3015 nx3014 nx6074 nx6102 nx4960 nx4954 nx4956 VDD VSS oai32
+        X_ix3283 nx3282 nx5233 VDD VSS inv01
+        X_ix5219 nx5218 nx3142 VDD VSS inv01
+        X_ix5298 nx5297 nx3266 VDD VSS inv01
+        X_ix5048 nx5047 nx2858 VDD VSS inv01
+        X_ix5136 nx5135 nx3006 VDD VSS inv01
+        X_ix5155 nx5154 nx3022 VDD VSS inv01
+        X_ix5913 nx5914 nx6074 VDD VSS inv01
+        X_ix5308 nx5307 nx5914 nx5956 nx3294 nx3274 nx3296 VDD VSS aoi32
+        X_ix5234 nx5233 nx5906 nx5956 nx3178 nx3158 nx3180 VDD VSS aoi32
+        X_ix5314 nx5313 nx5906 nx5964 nx3290 nx3282 nx3292 VDD VSS aoi32
+        X_ix5146 nx5145 nx5914 nx5940 nx3058 nx3014 nx3060 VDD VSS aoi32
+        X_ix4955 nx4954 nx5914 nx5926 nx2774 nx2706 nx2776 VDD VSS aoi32
+        X_ix5310 nx5309 nx5311 nx5313 VDD VSS xnor2
+        X_ix5306 nx5305 nx5307 nx5309 VDD VSS xnor2
+        X_ix3297 nx3296 nx5230 nx3294 VDD VSS xnor2
+        X_ix5227 nx5226 nx3274 nx3296 VDD VSS xnor2
+        X_ix3181 nx3180 nx5157 nx3178 VDD VSS xnor2
+        X_ix5152 nx5151 nx3158 nx3180 VDD VSS xnor2
+        X_ix3293 nx3292 nx5236 nx3290 VDD VSS xnor2
+        X_ix3295 nx3294 nx5233 nx3292 VDD VSS xnor2
+        X_ix5140 nx5139 nx5141 nx5143 VDD VSS xnor2
+        X_ix3191 nx3190 nx3142 nx5139 VDD VSS xnor2
+        X_ix5050 nx5049 nx5051 nx5053 VDD VSS xnor2
+        X_ix3067 nx3066 nx3006 nx5049 VDD VSS xnor2
+        X_ix4966 nx4965 nx4967 nx4969 VDD VSS xnor2
+        X_ix4961 nx4960 nx4962 nx4965 VDD VSS xnor2
+        X_ix5062 nx5061 nx5063 nx5065 VDD VSS xnor2
+        X_ix3059 nx3058 nx3022 nx5061 VDD VSS xnor2
+        X_ix5148 nx5147 nx5149 nx5151 VDD VSS xnor2
+        X_ix5144 nx5143 nx5145 nx5147 VDD VSS xnor2
+        X_ix3061 nx3060 nx5057 nx3058 VDD VSS xnor2
+        X_ix5054 nx5053 nx3014 nx3060 VDD VSS xnor2
+        X_ix4957 nx4956 nx4958 nx4960 VDD VSS xnor2
+        X_ix4953 nx4952 nx4954 nx4956 VDD VSS xnor2
+        X_ix2777 nx2776 nx4837 nx2774 VDD VSS xnor2
+        X_ix4830 nx4829 nx2706 nx2776 VDD VSS xnor2
+        X_ix5312 nx5311 nx6076 nx6138 VDD VSS or02
+        X_ix5231 nx5230 nx6076 nx6130 VDD VSS or02
+        X_ix5158 nx5157 nx6068 nx6130 VDD VSS or02
+        X_ix5237 nx5236 nx6068 nx6138 VDD VSS or02
+        X_ix5142 nx5141 nx6084 nx6112 VDD VSS or02
+        X_ix5225 nx5224 nx6084 nx6120 VDD VSS or02
+        X_ix4951 nx4950 nx6084 nx6094 VDD VSS or02
+        X_ix5052 nx5051 nx6084 nx6104 VDD VSS or02
+        X_ix4968 nx4967 nx6068 nx6112 VDD VSS or02
+        X_ix5064 nx5063 nx6068 nx6120 VDD VSS or02
+        X_ix5150 nx5149 nx6076 nx6120 VDD VSS or02
+        X_ix5058 nx5057 nx6076 nx6112 VDD VSS or02
+        X_ix4959 nx4958 nx6076 nx6104 VDD VSS or02
+        X_ix4838 nx4837 nx6076 nx6094 VDD VSS or02
+        X_ix3487 nx3486 nx6074 nx6136 nx5313 nx5307 nx5309 VDD VSS oai32
+        X_ix3267 nx3266 nx6082 nx6110 nx5143 nx5218 nx5139 VDD VSS oai32
+        X_ix3379 nx3378 nx6082 nx6118 nx5226 nx5297 nx5222 VDD VSS oai32
+        X_ix5223 nx5222 nx5224 nx5226 VDD VSS xnor2
+        X_ix3303 nx3302 nx3266 nx5222 VDD VSS xnor2
+        X_ix4949 nx4948 nx4950 nx4952 VDD VSS xnor2
+        X_ix2931 nx2930 nx2858 nx4948 VDD VSS xnor2
+        X_ix4758 nx4757 nx5986 nx6024 nx6136 VDD VSS or03
+        X_ix5851 nx5852 MAC0_MultA_0 VDD VSS buf02
+        X_ix2025 nx2024 nx6020 nx6110 nx4189 nx4325 nx4185 VDD VSS oai32
+        X_ix1685 nx1684 nx6020 nx6094 nx3929 nx4043 nx3925 VDD VSS oai32
+        X_ix1849 nx1848 nx6020 nx6102 nx4051 nx4179 nx4047 VDD VSS oai32
+        X_ix2213 nx2212 nx6020 nx6118 nx4335 nx4487 nx4331 VDD VSS oai32
+        X_ix2413 nx2412 nx6020 nx6128 nx4497 nx4656 nx4493 VDD VSS oai32
+        X_ix2589 nx2588 nx6026 nx6128 nx4649 nx4641 nx4644 VDD VSS oai32
+        X_ix2755 nx2754 nx6026 nx6136 nx4757 nx4884 nx4753 VDD VSS oai32
+        X_ix6027 nx6028 nx5864 VDD VSS inv01
+        X_ix1841 nx1840 nx4169 VDD VSS inv01
+        X_ix5939 nx5940 nx4057 VDD VSS inv01
+        X_ix6109 nx6110 nx5940 VDD VSS inv01
+        X_ix2017 nx2016 nx4315 VDD VSS inv01
+        X_ix4326 nx4325 nx1848 VDD VSS inv01
+        X_ix4044 nx4043 nx1532 VDD VSS inv01
+        X_ix4180 nx4179 nx1684 VDD VSS inv01
+        X_ix4488 nx4487 nx2024 VDD VSS inv01
+        X_ix4657 nx4656 nx2212 VDD VSS inv01
+        X_ix6119 nx6120 nx5948 VDD VSS inv01
+        X_ix5947 nx5948 nx4195 VDD VSS inv01
+        X_ix6117 nx6118 nx5948 VDD VSS inv01
+        X_ix2205 nx2204 nx4475 VDD VSS inv01
+        X_ix5865 nx5866 nx6026 VDD VSS inv01
+        X_ix5985 nx5986 nx2412 VDD VSS inv01
+        X_ix4885 nx4884 nx2588 VDD VSS inv01
+        X_ix4316 nx4315 nx5866 nx5932 nx1868 nx1840 nx1870 VDD VSS aoi32
+        X_ix4476 nx4475 nx5866 nx5940 nx2044 nx2016 nx2046 VDD VSS aoi32
+        X_ix4642 nx4641 nx5866 nx5948 nx2232 nx2204 nx2234 VDD VSS aoi32
+        X_ix4650 nx4649 nx4651 nx2414 nx2412 VDD VSS mux21
+        X_ix1871 nx1870 nx4173 nx1868 VDD VSS xnor2
+        X_ix1873 nx1872 nx4169 nx1870 VDD VSS xnor2
+        X_ix4186 nx4185 nx4187 nx4189 VDD VSS xnor2
+        X_ix1869 nx1868 nx1848 nx4185 VDD VSS xnor2
+        X_ix3926 nx3925 nx3927 nx3929 VDD VSS xnor2
+        X_ix1553 nx1552 nx1532 nx3925 VDD VSS xnor2
+        X_ix4048 nx4047 nx4049 nx4051 VDD VSS xnor2
+        X_ix1705 nx1704 nx1684 nx4047 VDD VSS xnor2
+        X_ix4332 nx4331 nx4333 nx4335 VDD VSS xnor2
+        X_ix2045 nx2044 nx2024 nx4331 VDD VSS xnor2
+        X_ix4494 nx4493 nx4495 nx4497 VDD VSS xnor2
+        X_ix2233 nx2232 nx2212 nx4493 VDD VSS xnor2
+        X_ix2235 nx2234 nx4481 nx2232 VDD VSS xnor2
+        X_ix2237 nx2236 nx4475 nx2234 VDD VSS xnor2
+        X_ix4645 nx4644 nx4647 nx4649 VDD VSS xnor2
+        X_ix4640 nx4639 nx4641 nx4644 VDD VSS xnor2
+        X_ix4754 nx4753 nx4755 nx4757 VDD VSS xnor2
+        X_ix2595 nx2594 nx2588 nx4753 VDD VSS xnor2
+        X_ix3930 nx3929 nx5852 nx5932 VDD VSS nand02
+        X_ix4052 nx4051 nx5852 nx5940 VDD VSS nand02
+        X_ix4190 nx4189 nx5852 nx5948 VDD VSS nand02
+        X_ix4174 nx4173 nx6028 nx6102 VDD VSS or02
+        X_ix4320 nx4319 nx6028 nx6110 VDD VSS or02
+        X_ix4188 nx4187 nx6022 nx6110 VDD VSS or02
+        X_ix3928 nx3927 nx6022 nx6094 VDD VSS or02
+        X_ix4050 nx4049 nx6022 nx6102 VDD VSS or02
+        X_ix4334 nx4333 nx6022 nx6118 VDD VSS or02
+        X_ix4652 nx4651 nx6022 nx6136 VDD VSS or02
+        X_ix4496 nx4495 nx6022 nx6128 VDD VSS or02
+        X_ix4482 nx4481 nx6028 nx6120 VDD VSS or02
+        X_ix4648 nx4647 nx6028 nx6128 VDD VSS or02
+        X_ix4756 nx4755 nx6028 nx6136 VDD VSS or02
+        X_ix6023 nx6024 nx5844 VDD VSS inv02
+        X_ix2415 nx2414 nx6020 nx6136 VDD VSS nor02
+        X_ix2047 nx2046 nx4319 nx2044 VDD VSS xnor2
+        X_ix2049 nx2048 nx4315 nx2046 VDD VSS xnor2
+        X_ix3047 nx3046 nx6042 nx6136 nx4993 nx4987 nx4989 VDD VSS oai32
+        X_ix2573 nx2572 nx6042 nx6110 nx4629 nx4621 nx4624 VDD VSS oai32
+        X_ix2009 nx2008 nx4305 VDD VSS inv01
+        X_ix5963 nx5964 nx4503 VDD VSS inv01
+        X_ix6135 nx6136 nx5964 VDD VSS inv01
+        X_ix2747 nx2746 nx4877 VDD VSS inv01
+        X_ix5881 nx5882 nx6042 VDD VSS inv01
+        X_ix5965 nx5966 nx6136 VDD VSS inv01
+        X_ix4870 nx4869 nx2572 VDD VSS inv01
+        X_ix6035 nx6036 nx5872 VDD VSS inv01
+        X_ix2197 nx2196 nx4465 VDD VSS inv01
+        X_ix5955 nx5956 nx4341 VDD VSS inv01
+        X_ix6127 nx6128 nx5956 VDD VSS inv01
+        X_ix5873 nx5874 nx6034 VDD VSS inv01
+        X_ix4622 nx4621 nx5882 nx5932 nx2240 nx2188 nx2242 VDD VSS aoi32
+        X_ix4458 nx4457 nx5882 nx5924 nx2052 nx2000 nx2054 VDD VSS aoi32
+        X_ix4306 nx4305 nx5874 nx5924 nx1872 nx1832 nx1874 VDD VSS aoi32
+        X_ix4466 nx4465 nx5874 nx5932 nx2048 nx2008 nx2050 VDD VSS aoi32
+        X_ix4994 nx4993 nx5874 nx5964 nx2754 nx2746 nx2756 VDD VSS aoi32
+        X_ix4988 nx4987 nx5882 nx5956 nx2758 nx2738 nx2760 VDD VSS aoi32
+        X_ix4632 nx4631 nx5874 nx5940 nx2236 nx2196 nx2238 VDD VSS aoi32
+        X_ix4878 nx4877 nx5874 nx5956 nx2594 nx2580 nx2596 VDD VSS aoi32
+        X_ix2243 nx2242 nx4461 nx2240 VDD VSS xnor2
+        X_ix2245 nx2244 nx4457 nx2242 VDD VSS xnor2
+        X_ix2055 nx2054 nx4301 nx2052 VDD VSS xnor2
+        X_ix2057 nx2056 nx4297 nx2054 VDD VSS xnor2
+        X_ix4990 nx4989 nx4991 nx4993 VDD VSS xnor2
+        X_ix4986 nx4985 nx4987 nx4989 VDD VSS xnor2
+        X_ix4625 nx4624 nx4627 nx4629 VDD VSS xnor2
+        X_ix4620 nx4619 nx4621 nx4624 VDD VSS xnor2
+        X_ix4742 nx4741 nx4743 nx4745 VDD VSS xnor2
+        X_ix2603 nx2602 nx2572 nx4741 VDD VSS xnor2
+        X_ix2239 nx2238 nx4471 nx2236 VDD VSS xnor2
+        X_ix2241 nx2240 nx4465 nx2238 VDD VSS xnor2
+        X_ix4636 nx4635 nx4637 nx4639 VDD VSS xnor2
+        X_ix4630 nx4629 nx4631 nx4635 VDD VSS xnor2
+        X_ix2597 nx2596 nx4749 nx2594 VDD VSS xnor2
+        X_ix4746 nx4745 nx2580 nx2596 VDD VSS xnor2
+        X_ix4462 nx4461 nx6044 nx6102 VDD VSS or02
+        X_ix4302 nx4301 nx6044 nx6094 VDD VSS or02
+        X_ix4166 nx4165 nx6034 nx6094 VDD VSS or02
+        X_ix4312 nx4311 nx6034 nx6102 VDD VSS or02
+        X_ix4882 nx4881 nx6036 nx6136 VDD VSS or02
+        X_ix4874 nx4873 nx6044 nx6128 VDD VSS or02
+        X_ix4992 nx4991 nx6044 nx6136 VDD VSS or02
+        X_ix4628 nx4627 nx6044 nx6110 VDD VSS or02
+        X_ix4744 nx4743 nx6044 nx6120 VDD VSS or02
+        X_ix4472 nx4471 nx6036 nx6110 VDD VSS or02
+        X_ix4638 nx4637 nx6036 nx6120 VDD VSS or02
+        X_ix4750 nx4749 nx6036 nx6128 VDD VSS or02
+        X_ix2739 nx2738 nx6042 nx6118 nx4745 nx4869 nx4741 VDD VSS oai32
+        X_ix2581 nx2580 nx6034 nx6118 nx4639 nx4631 nx4635 VDD VSS oai32
+        X_ix2189 nx2188 nx4457 VDD VSS inv01
+        X_ix6043 nx6044 nx5880 VDD VSS inv01
+        X_ix2001 nx2000 nx4297 VDD VSS inv01
+        X_ix1833 nx1832 nx4159 VDD VSS inv01
+        X_ix5931 nx5932 nx3933 VDD VSS inv01
+        X_ix6101 nx6102 nx5932 VDD VSS inv01
+        X_ix1875 nx1874 nx4165 nx1872 VDD VSS xnor2
+        X_ix1877 nx1876 nx4159 nx1874 VDD VSS xnor2
+        X_ix2051 nx2050 nx4311 nx2048 VDD VSS xnor2
+        X_ix2053 nx2052 nx4305 nx2050 VDD VSS xnor2
+        X_ix2757 nx2756 nx4881 nx2754 VDD VSS xnor2
+        X_ix2759 nx2758 nx4877 nx2756 VDD VSS xnor2
+        X_ix2761 nx2760 nx4873 nx2758 VDD VSS xnor2
+        X_ix4866 nx4865 nx2738 nx2760 VDD VSS xnor2
+        X_ix2549 nx2548 nx6066 nx6086 nx4599 nx4591 nx4595 VDD VSS oai32
+        X_ix2533 nx2532 nx6082 nx6070 nx4579 nx4571 nx4575 VDD VSS oai32
+        X_ix2859 nx2858 nx6082 nx6086 nx4829 nx4823 nx4825 VDD VSS oai32
+        X_ix2541 nx2540 nx6074 nx6078 nx4589 nx4581 nx4584 VDD VSS oai32
+        X_ix2707 nx2706 nx6074 nx6086 nx4721 nx4833 nx4717 VDD VSS oai32
+        X_ix2173 nx2172 nx4437 VDD VSS inv01
+        X_ix6079 nx6080 nx5908 VDD VSS inv01
+        X_ix1985 nx1984 nx4277 VDD VSS inv01
+        X_ix1661 nx1660 nx4015 VDD VSS inv01
+        X_ix1825 nx1824 nx4149 VDD VSS inv01
+        X_ix1817 nx1816 nx4140 VDD VSS inv01
+        X_ix1993 nx1992 nx4287 VDD VSS inv01
+        X_ix6103 nx6104 nx5932 VDD VSS inv01
+        X_ix2715 nx2714 nx4841 VDD VSS inv01
+        X_ix5905 nx5906 nx6066 VDD VSS inv01
+        X_ix2165 nx2164 nx4428 VDD VSS inv01
+        X_ix4150 nx4149 nx5882 nx5908 nx1712 nx1660 nx1714 VDD VSS aoi32
+        X_ix4298 nx4297 nx5882 nx5916 nx1876 nx1824 nx1878 VDD VSS aoi32
+        X_ix4288 nx4287 nx5890 nx5908 nx1880 nx1816 nx1882 VDD VSS aoi32
+        X_ix4448 nx4447 nx5890 nx5916 nx2056 nx1992 nx2058 VDD VSS aoi32
+        X_ix4963 nx4962 nx5906 nx5932 nx2770 nx2714 nx2772 VDD VSS aoi32
+        X_ix4842 nx4841 nx5906 nx5924 nx2610 nx2548 nx2612 VDD VSS aoi32
+        X_ix4592 nx4591 nx5906 nx5908 nx2252 nx2164 nx2254 VDD VSS aoi32
+        X_ix4824 nx4823 nx5922 nx5910 nx2618 nx2532 nx2620 VDD VSS aoi32
+        X_ix4582 nx4581 nx5912 nx5902 nx2256 nx2156 nx2258 VDD VSS aoi32
+        X_ix2251 nx2250 nx4443 nx2248 VDD VSS xnor2
+        X_ix2253 nx2252 nx4437 nx2250 VDD VSS xnor2
+        X_ix2063 nx2062 nx4283 nx2060 VDD VSS xnor2
+        X_ix2065 nx2064 nx4277 nx2062 VDD VSS xnor2
+        X_ix1715 nx1714 nx4019 nx1712 VDD VSS xnor2
+        X_ix1717 nx1716 nx4015 nx1714 VDD VSS xnor2
+        X_ix1879 nx1878 nx4155 nx1876 VDD VSS xnor2
+        X_ix1881 nx1880 nx4149 nx1878 VDD VSS xnor2
+        X_ix1883 nx1882 nx4145 nx1880 VDD VSS xnor2
+        X_ix1885 nx1884 nx4140 nx1882 VDD VSS xnor2
+        X_ix2059 nx2058 nx4293 nx2056 VDD VSS xnor2
+        X_ix2061 nx2060 nx4287 nx2058 VDD VSS xnor2
+        X_ix2773 nx2772 nx4845 nx2770 VDD VSS xnor2
+        X_ix2775 nx2774 nx4841 nx2772 VDD VSS xnor2
+        X_ix2613 nx2612 nx4725 nx2610 VDD VSS xnor2
+        X_ix4722 nx4721 nx2548 nx2612 VDD VSS xnor2
+        X_ix4570 nx4569 nx4571 nx4575 VDD VSS xnor2
+        X_ix4826 nx4825 nx4827 nx4829 VDD VSS xnor2
+        X_ix4822 nx4821 nx4823 nx4825 VDD VSS xnor2
+        X_ix2259 nx2258 nx4425 nx2256 VDD VSS xnor2
+        X_ix2261 nx2260 nx4419 nx2258 VDD VSS xnor2
+        X_ix4585 nx4584 nx4587 nx4589 VDD VSS xnor2
+        X_ix4580 nx4579 nx4581 nx4584 VDD VSS xnor2
+        X_ix4718 nx4717 nx4719 nx4721 VDD VSS xnor2
+        X_ix2619 nx2618 nx2540 nx4717 VDD VSS xnor2
+        X_ix4444 nx4443 nx6060 nx6086 VDD VSS or02
+        X_ix4284 nx4283 nx6060 nx6080 VDD VSS or02
+        X_ix4020 nx4019 nx6042 nx6078 VDD VSS or02
+        X_ix4156 nx4155 nx6042 nx6086 VDD VSS or02
+        X_ix4146 nx4145 nx6050 nx6078 VDD VSS or02
+        X_ix4294 nx4293 nx6050 nx6086 VDD VSS or02
+        X_ix4846 nx4845 nx6068 nx6104 VDD VSS or02
+        X_ix4726 nx4725 nx6068 nx6094 VDD VSS or02
+        X_ix4434 nx4433 nx6066 nx6080 VDD VSS or02
+        X_ix4598 nx4597 nx6068 nx6086 VDD VSS or02
+        X_ix4714 nx4713 nx6084 nx6080 VDD VSS or02
+        X_ix4578 nx4577 nx6084 nx6070 VDD VSS or02
+        X_ix4828 nx4827 nx6084 nx6086 VDD VSS or02
+        X_ix4426 nx4425 nx6076 nx6070 VDD VSS or02
+        X_ix4588 nx4587 nx6076 nx6080 VDD VSS or02
+        X_ix4720 nx4719 nx6076 nx6086 VDD VSS or02
+        X_ix6067 nx6068 nx5904 VDD VSS inv01
+        X_ix5909 nx5910 nx6078 VDD VSS inv01
+        X_ix6075 nx6076 nx5912 VDD VSS inv01
+        X_ix2157 nx2156 nx4419 VDD VSS inv01
+        X_ix4834 nx4833 nx2540 VDD VSS inv01
+        X_ix4602 nx4601 nx5898 nx5916 nx2248 nx2172 nx2250 VDD VSS aoi32
+        X_ix4438 nx4437 nx5898 nx5908 nx2060 nx1984 nx2062 VDD VSS aoi32
+        X_ix2255 nx2254 nx4433 nx2252 VDD VSS xnor2
+        X_ix2257 nx2256 nx4428 nx2254 VDD VSS xnor2
+        X_ix4590 nx4589 nx4591 nx4595 VDD VSS xnor2
+        X_ix4596 nx4595 nx4597 nx4599 VDD VSS xnor2
+        X_ix2621 nx2620 nx4713 nx2618 VDD VSS xnor2
+        X_ix4710 nx4709 nx2532 nx2620 VDD VSS xnor2
+        X_ix4576 nx4575 nx4577 nx4579 VDD VSS xnor2
+        X_ix5901 nx5902 nx6070 VDD VSS inv01
+        X_ix5185 nx5184 nx3102 VDD VSS inv01
+        X_ix6133 nx6134 nx5968 VDD VSS inv01
+        X_ix5094 nx5093 nx2958 VDD VSS inv01
+        X_ix3219 nx3218 nx5177 VDD VSS inv01
+        X_ix5116 nx5115 nx2982 VDD VSS inv01
+        X_ix6091 nx6092 nx5928 VDD VSS inv01
+        X_ix4940 nx4939 nx2690 VDD VSS inv01
+        X_ix5929 nx5930 nx6090 VDD VSS inv01
+        X_ix6071 nx6072 nx5900 VDD VSS inv01
+        X_ix4816 nx4815 nx2524 VDD VSS inv01
+        X_ix5107 nx5106 nx5952 nx5902 nx3078 nx2974 nx3080 VDD VSS aoi32
+        X_ix5178 nx5177 nx5968 nx5894 nx3210 nx3094 nx3212 VDD VSS aoi32
+        X_ix5252 nx5251 nx5968 nx5902 nx3322 nx3218 nx3324 VDD VSS aoi32
+        X_ix3789 nx3788 nx3094 nx3212 VDD VSS xor2
+        X_ix3081 nx3080 nx5025 nx3078 VDD VSS xnor2
+        X_ix5020 nx5019 nx2974 nx3080 VDD VSS xnor2
+        X_ix5016 nx5015 nx5017 nx5019 VDD VSS xnor2
+        X_ix4818 nx4817 nx4819 nx4821 VDD VSS xnor2
+        X_ix2787 nx2786 nx2690 nx4817 VDD VSS xnor2
+        X_ix4566 nx4565 nx4567 nx4569 VDD VSS xnor2
+        X_ix4560 nx4559 nx4561 nx4565 VDD VSS xnor2
+        X_ix4706 nx4705 nx4707 nx4709 VDD VSS xnor2
+        X_ix2627 nx2626 nx2524 nx4705 VDD VSS xnor2
+        X_ix5026 nx5025 nx6116 nx6072 VDD VSS or02
+        X_ix5018 nx5017 nx6124 nx6064 VDD VSS or02
+        X_ix5103 nx5102 nx6124 nx6072 VDD VSS or02
+        X_ix5010 nx5009 nx6134 nx6056 VDD VSS or02
+        X_ix5097 nx5096 nx6134 nx6064 VDD VSS or02
+        X_ix5181 nx5180 nx6134 nx6072 VDD VSS or02
+        X_ix4935 nx4934 nx6098 nx6080 VDD VSS or02
+        X_ix4926 nx4925 nx6108 nx6072 VDD VSS or02
+        X_ix5032 nx5031 nx6108 nx6080 VDD VSS or02
+        X_ix4820 nx4819 nx6092 nx6080 VDD VSS or02
+        X_ix4568 nx4567 nx6090 nx6062 VDD VSS or02
+        X_ix4708 nx4707 nx6092 nx6072 VDD VSS or02
+        X_ix3103 nx3102 nx6122 nx6062 nx5019 nx5013 nx5015 VDD VSS oai32
+        X_ix3227 nx3226 nx6122 nx6070 nx5104 nx5184 nx5100 VDD VSS oai32
+        X_ix3095 nx3094 nx6132 nx6054 nx5011 nx5093 nx5007 VDD VSS oai32
+        X_ix2991 nx2990 nx6098 nx6078 nx4936 nx4929 nx4932 VDD VSS oai32
+        X_ix2983 nx2982 nx6106 nx6070 nx4927 nx4921 nx4923 VDD VSS oai32
+        X_ix3119 nx3118 nx6106 nx6078 nx5033 nx5115 nx5029 VDD VSS oai32
+        X_ix2851 nx2850 nx6090 nx6078 nx4821 nx4939 nx4817 VDD VSS oai32
+        X_ix2525 nx2524 nx6090 nx6062 nx4569 nx4561 nx4565 VDD VSS oai32
+        X_ix2691 nx2690 nx6090 nx6070 nx4709 nx4815 nx4705 VDD VSS oai32
+        X_ix5012 nx5011 nx5013 nx5015 VDD VSS xnor2
+        X_ix5101 nx5100 nx5102 nx5104 VDD VSS xnor2
+        X_ix3211 nx3210 nx3102 nx5100 VDD VSS xnor2
+        X_ix5008 nx5007 nx5009 nx5011 VDD VSS xnor2
+        X_ix3795 nx3794 nx2958 nx5007 VDD VSS xnor2
+        X_ix3213 nx3212 nx5096 nx3210 VDD VSS xnor2
+        X_ix3325 nx3324 nx5180 nx3322 VDD VSS xnor2
+        X_ix3783 nx3782 nx5177 nx3324 VDD VSS xnor2
+        X_ix4933 nx4932 nx4934 nx4936 VDD VSS xnor2
+        X_ix4928 nx4927 nx4929 nx4932 VDD VSS xnor2
+        X_ix4924 nx4923 nx4925 nx4927 VDD VSS xnor2
+        X_ix4920 nx4919 nx4921 nx4923 VDD VSS xnor2
+        X_ix5030 nx5029 nx5031 nx5033 VDD VSS xnor2
+        X_ix3079 nx3078 nx2982 nx5029 VDD VSS xnor2
+        X_ix2827 nx2826 nx6114 nx6054 nx4793 nx4787 nx4789 VDD VSS oai32
+        X_ix2975 nx2974 nx6114 nx6062 nx4919 nx5022 nx4915 VDD VSS oai32
+        X_ix2675 nx2674 nx6106 nx6054 nx4697 nx4797 nx4693 VDD VSS oai32
+        X_ix2517 nx2516 nx6098 nx6054 nx4559 nx4551 nx4554 VDD VSS oai32
+        X_ix2509 nx2508 nx6106 nx6046 nx4549 nx4541 nx4544 VDD VSS oai32
+        X_ix2959 nx2958 nx6132 nx6046 nx4903 nx4896 nx4899 VDD VSS oai32
+        X_ix5014 nx5013 nx5960 nx5886 nx2946 nx2818 nx2948 VDD VSS aoi32
+        X_ix4788 nx4787 nx5952 nx5878 nx2634 nx2500 nx2636 VDD VSS aoi32
+        X_ix3801 nx3800 nx4896 nx4899 VDD VSS xor2
+        X_ix2789 nx2788 nx4809 nx2786 VDD VSS xnor2
+        X_ix2791 nx2790 nx4805 nx2788 VDD VSS xnor2
+        X_ix2629 nx2628 nx4701 nx2626 VDD VSS xnor2
+        X_ix4698 nx4697 nx2516 nx2628 VDD VSS xnor2
+        X_ix4790 nx4789 nx4791 nx4793 VDD VSS xnor2
+        X_ix4916 nx4915 nx4917 nx4919 VDD VSS xnor2
+        X_ix4786 nx4785 nx4787 nx4789 VDD VSS xnor2
+        X_ix2947 nx2946 nx2826 nx4915 VDD VSS xnor2
+        X_ix2793 nx2792 nx4801 nx2790 VDD VSS xnor2
+        X_ix4792 nx4791 nx6116 nx6056 VDD VSS or02
+        X_ix4918 nx4917 nx6116 nx6064 VDD VSS or02
+        X_ix4802 nx4801 nx6108 nx6064 VDD VSS or02
+        X_ix4696 nx4695 nx6108 nx6056 VDD VSS or02
+        X_ix4558 nx4557 nx6098 nx6056 VDD VSS or02
+        X_ix4912 nx4911 nx6124 nx6056 VDD VSS or02
+        X_ix4548 nx4547 nx6106 nx6048 VDD VSS or02
+        X_ix4902 nx4901 nx6132 nx6048 VDD VSS or02
+        X_ix4690 nx4689 nx6114 nx6048 VDD VSS or02
+        X_ix4784 nx4783 nx6124 nx6048 VDD VSS or02
+        X_ix4538 nx4537 nx6114 nx6040 VDD VSS or02
+        X_ix4684 nx4683 nx6124 nx6040 VDD VSS or02
+        X_ix2819 nx2818 nx6122 nx6046 nx4785 nx4906 nx4781 VDD VSS oai32
+        X_ix2501 nx2500 nx6114 nx6038 nx4539 nx4531 nx4535 VDD VSS oai32
+        X_ix2659 nx2658 nx6122 nx6038 nx4685 nx4779 nx4681 VDD VSS oai32
+        X_ix2683 nx2682 nx4805 VDD VSS inv01
+        X_ix6063 nx6064 nx5892 VDD VSS inv01
+        X_ix5893 nx5894 nx6062 VDD VSS inv01
+        X_ix6115 nx6116 nx5952 VDD VSS inv01
+        X_ix5023 nx5022 nx2826 VDD VSS inv01
+        X_ix6107 nx6108 nx5944 VDD VSS inv01
+        X_ix4798 nx4797 nx2508 VDD VSS inv01
+        X_ix5885 nx5886 nx6054 VDD VSS inv01
+        X_ix5951 nx5952 nx4076 VDD VSS inv01
+        X_ix6113 nx6114 nx5952 VDD VSS inv01
+        X_ix5877 nx5878 nx6046 VDD VSS inv01
+        X_ix4907 nx4906 nx2658 VDD VSS inv01
+        X_ix5869 nx5870 nx6038 VDD VSS inv01
+        X_ix4780 nx4779 nx2492 VDD VSS inv01
+        X_ix4930 nx4929 nx5936 nx5902 nx2786 nx2682 nx2788 VDD VSS aoi32
+        X_ix4806 nx4805 nx5936 nx5894 nx2626 nx2516 nx2628 VDD VSS aoi32
+        X_ix4922 nx4921 nx5944 nx5894 nx2790 nx2674 nx2792 VDD VSS aoi32
+        X_ix4794 nx4793 nx2674 nx2792 VDD VSS xnor2
+        X_ix4694 nx4693 nx4695 nx4697 VDD VSS xnor2
+        X_ix2635 nx2634 nx2508 nx4693 VDD VSS xnor2
+        X_ix4556 nx4554 nx4557 nx4559 VDD VSS xnor2
+        X_ix4550 nx4549 nx4551 nx4554 VDD VSS xnor2
+        X_ix2949 nx2948 nx4911 nx2946 VDD VSS xnor2
+        X_ix4904 nx4903 nx2818 nx2948 VDD VSS xnor2
+        X_ix4545 nx4544 nx4547 nx4549 VDD VSS xnor2
+        X_ix4540 nx4539 nx4541 nx4544 VDD VSS xnor2
+        X_ix4900 nx4899 nx4901 nx4903 VDD VSS xnor2
+        X_ix2637 nx2636 nx4689 nx2634 VDD VSS xnor2
+        X_ix4686 nx4685 nx2500 nx2636 VDD VSS xnor2
+        X_ix4782 nx4781 nx4783 nx4785 VDD VSS xnor2
+        X_ix2803 nx2802 nx2658 nx4781 VDD VSS xnor2
+        X_ix4536 nx4535 nx4537 nx4539 VDD VSS xnor2
+        X_ix4530 nx4529 nx4531 nx4535 VDD VSS xnor2
+        X_ix4682 nx4681 nx4683 nx4685 VDD VSS xnor2
+        X_ix2643 nx2642 nx2492 nx4681 VDD VSS xnor2
+        X_ix4810 nx4809 nx6098 nx6072 VDD VSS or02
+        X_ix4702 nx4701 nx6098 nx6064 VDD VSS or02
+        X_ix6139 nx6140 MAC0_MultB_0 VDD VSS inv02
+        X_ix5973 nx5974 MAC0_MultB_0 VDD VSS inv02
+        X_ix2485 nx2484 nx6132 nx6016 nx4521 nx4674 nx4516 VDD VSS oai32
+        X_ix2493 nx2492 nx6122 nx6030 nx4529 nx4523 nx4525 VDD VSS oai32
+        X_ix1929 nx1928 nx4079 nx6114 nx6140 VDD VSS nor03
+        X_ix1605 nx1604 nx3839 nx6098 nx6140 VDD VSS nor03
+        X_ix2301 nx2300 nx4365 nx6132 nx6140 VDD VSS nor03
+        X_ix2109 nx2108 nx4217 nx6122 nx6140 VDD VSS nor03
+        X_ix4897 nx4896 nx5968 nx5870 nx2802 nx2650 nx2804 VDD VSS aoi32
+        X_ix4772 nx4771 nx5968 nx5862 nx2642 nx2484 nx2644 VDD VSS aoi32
+        X_ix4376 nx4375 nx5952 nx5850 nx2088 nx1928 nx2090 VDD VSS aoi32
+        X_ix4532 nx4531 nx5952 nx5862 nx2276 nx2116 nx2278 VDD VSS aoi32
+        X_ix4524 nx4523 nx5960 nx5850 nx2280 nx2108 nx2282 VDD VSS aoi32
+        X_ix3855 nx3854 nx4071 nx3848 nx4079 VDD VSS mux21
+        X_ix3879 nx3878 nx3833 nx3872 nx3839 VDD VSS mux21
+        X_ix3831 nx3830 nx4357 nx3824 nx4365 VDD VSS mux21
+        X_ix3843 nx3842 nx4209 nx3836 nx4217 VDD VSS mux21
+        X_ix3813 nx3812 nx2484 nx2644 VDD VSS xor2
+        X_ix1911 nx1910 nx4085 nx1908 VDD VSS xnor2
+        X_ix4776 nx4775 nx6132 nx6040 VDD VSS or02
+        X_ix4678 nx4677 nx6132 nx6032 VDD VSS or02
+        X_ix4380 nx4379 nx6114 nx6032 VDD VSS or02
+        X_ix4222 nx4221 nx6114 nx6018 VDD VSS or02
+        X_ix4072 nx4071 nx6114 nx5974 VDD VSS or02
+        X_ix3834 nx3833 nx6098 nx5974 VDD VSS or02
+        X_ix4358 nx4357 nx6132 nx5974 VDD VSS or02
+        X_ix4210 nx4209 nx6124 nx5974 VDD VSS or02
+        X_ix4520 nx4519 nx6132 nx6018 VDD VSS or02
+        X_ix4372 nx4371 nx6124 nx6018 VDD VSS or02
+        X_ix4528 nx4527 nx6124 nx6032 VDD VSS or02
+        X_ix3849 nx3848 nx6114 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3873 nx3872 nx6098 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3825 nx3824 nx6132 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3837 nx3836 nx6124 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix5943 nx5944 nx3953 VDD VSS inv01
+        X_ix6105 nx6106 nx5944 VDD VSS inv01
+        X_ix1937 nx1936 nx4225 VDD VSS inv01
+        X_ix6039 nx6040 nx5868 VDD VSS inv01
+        X_ix2125 nx2124 nx4383 VDD VSS inv01
+        X_ix2651 nx2650 nx4771 VDD VSS inv01
+        X_ix5967 nx5968 nx4363 VDD VSS inv01
+        X_ix6131 nx6132 nx5968 VDD VSS inv01
+        X_ix5861 nx5862 nx6030 VDD VSS inv01
+        X_ix6031 nx6032 nx5860 VDD VSS inv01
+        X_ix6017 nx6018 nx5848 VDD VSS inv01
+        X_ix2117 nx2116 nx4375 VDD VSS inv01
+        X_ix5855 nx5856 nx6140 VDD VSS inv01
+        X_ix4675 nx4674 nx2300 VDD VSS inv01
+        X_ix4226 nx4225 nx5944 nx5850 nx1908 nx1760 nx1910 VDD VSS aoi32
+        X_ix4384 nx4383 nx5944 nx5862 nx2084 nx1936 nx2086 VDD VSS aoi32
+        X_ix4542 nx4541 nx5944 nx5870 nx2272 nx2124 nx2274 VDD VSS aoi32
+        X_ix4080 nx4079 nx1760 nx1910 VDD VSS xnor2
+        X_ix2087 nx2086 nx4229 nx2084 VDD VSS xnor2
+        X_ix2089 nx2088 nx4225 nx2086 VDD VSS xnor2
+        X_ix2275 nx2274 nx4389 nx2272 VDD VSS xnor2
+        X_ix2277 nx2276 nx4383 nx2274 VDD VSS xnor2
+        X_ix2805 nx2804 nx4775 nx2802 VDD VSS xnor2
+        X_ix3807 nx3806 nx4771 nx2804 VDD VSS xnor2
+        X_ix2645 nx2644 nx4677 nx2642 VDD VSS xnor2
+        X_ix2279 nx2278 nx4379 nx2276 VDD VSS xnor2
+        X_ix2091 nx2090 nx4221 nx2088 VDD VSS xnor2
+        X_ix4218 nx4217 nx1928 nx2090 VDD VSS xnor2
+        X_ix2281 nx2280 nx4375 nx2278 VDD VSS xnor2
+        X_ix4518 nx4516 nx4519 nx4521 VDD VSS xnor2
+        X_ix3819 nx3818 nx2300 nx4516 VDD VSS xnor2
+        X_ix2283 nx2282 nx4371 nx2280 VDD VSS xnor2
+        X_ix4366 nx4365 nx2108 nx2282 VDD VSS xnor2
+        X_ix4526 nx4525 nx4527 nx4529 VDD VSS xnor2
+        X_ix4522 nx4521 nx4523 nx4525 VDD VSS xnor2
+        X_ix4086 nx4085 nx6106 nx6016 VDD VSS or02
+        X_ix4230 nx4229 nx6106 nx6030 VDD VSS or02
+        X_ix4390 nx4389 nx6106 nx6040 VDD VSS or02
+        X_ix5935 nx5936 nx3837 VDD VSS inv01
+        X_ix6097 nx6098 nx5936 VDD VSS inv01
+        X_ix1769 nx1768 nx4089 VDD VSS inv01
+        X_ix1945 nx1944 nx4233 VDD VSS inv01
+        X_ix5927 nx5928 nx3741 VDD VSS inv01
+        X_ix6089 nx6090 nx5928 VDD VSS inv01
+        X_ix1613 nx1612 nx3965 VDD VSS inv01
+        X_ix1777 nx1776 nx4095 VDD VSS inv01
+        X_ix5911 nx5912 nx3531 VDD VSS inv01
+        X_ix2273 nx2272 nx4393 nx2270 VDD VSS xnor2
+        X_ix1743 nx1742 nx3961 nx1740 VDD VSS xnor2
+        X_ix3956 nx3955 nx1604 nx1742 VDD VSS xnor2
+        X_ix1907 nx1906 nx4092 nx1904 VDD VSS xnor2
+        X_ix1909 nx1908 nx4089 nx1906 VDD VSS xnor2
+        X_ix2083 nx2082 nx4237 nx2080 VDD VSS xnor2
+        X_ix2085 nx2084 nx4233 nx2082 VDD VSS xnor2
+        X_ix1587 nx1586 nx3845 nx1584 VDD VSS xnor2
+        X_ix3840 nx3839 nx1460 nx1586 VDD VSS xnor2
+        X_ix6047 nx6048 nx5876 VDD VSS inv01
+        X_ix2133 nx2132 nx4393 VDD VSS inv01
+        X_ix3970 nx3969 nx6090 nx6030 VDD VSS or02
+        X_ix4102 nx4101 nx6090 nx6038 VDD VSS or02
+        X_ix3640 nx3639 nx6074 nx6016 VDD VSS or02
+        X_ix3757 nx3756 nx6074 nx6030 VDD VSS or02
+        X_ix3862 nx3861 nx6074 nx6038 VDD VSS or02
+        X_ix3750 nx3749 nx6082 nx6016 VDD VSS or02
+        X_ix4110 nx4109 nx6082 nx6046 VDD VSS or02
+        X_ix3854 nx3853 nx6082 nx6030 VDD VSS or02
+        X_ix3979 nx3978 nx6082 nx6038 VDD VSS or02
+        X_ix6073 nx6074 nx5912 VDD VSS inv01
+        X_ix1337 nx1336 nx3753 VDD VSS inv01
+        X_ix1477 nx1476 nx3857 VDD VSS inv01
+        X_ix5919 nx5920 nx3631 VDD VSS inv01
+        X_ix6081 nx6082 nx5920 VDD VSS inv01
+        X_ix1785 nx1784 nx4105 VDD VSS inv01
+        X_ix1469 nx1468 nx3849 VDD VSS inv01
+        X_ix1621 nx1620 nx3973 VDD VSS inv01
+        X_ix4552 nx4551 nx5936 nx5878 nx2268 nx2132 nx2270 VDD VSS aoi32
+        X_ix4090 nx4089 nx5936 nx5850 nx1740 nx1604 nx1742 VDD VSS aoi32
+        X_ix4234 nx4233 nx5936 nx5862 nx1904 nx1768 nx1906 VDD VSS aoi32
+        X_ix4394 nx4393 nx5936 nx5870 nx2080 nx1944 nx2082 VDD VSS aoi32
+        X_ix3966 nx3965 nx5928 nx5850 nx1584 nx1460 nx1586 VDD VSS aoi32
+        X_ix4096 nx4095 nx5928 nx5862 nx1736 nx1612 nx1738 VDD VSS aoi32
+        X_ix4242 nx4241 nx5928 nx5870 nx1900 nx1776 nx1902 VDD VSS aoi32
+        X_ix3754 nx3753 nx5912 nx5850 nx1308 nx1208 nx1310 VDD VSS aoi32
+        X_ix3858 nx3857 nx5912 nx5862 nx1436 nx1336 nx1438 VDD VSS aoi32
+        X_ix3982 nx3981 nx5912 nx5870 nx1576 nx1476 nx1578 VDD VSS aoi32
+        X_ix3850 nx3849 nx5920 nx5850 nx1440 nx1328 nx1442 VDD VSS aoi32
+        X_ix4252 nx4251 nx5920 nx5878 nx1896 nx1784 nx1898 VDD VSS aoi32
+        X_ix3974 nx3973 nx5920 nx5862 nx1580 nx1468 nx1582 VDD VSS aoi32
+        X_ix4106 nx4105 nx5920 nx5870 nx1732 nx1620 nx1734 VDD VSS aoi32
+        X_ix2271 nx2270 nx4397 nx2268 VDD VSS xnor2
+        X_ix1739 nx1738 nx3969 nx1736 VDD VSS xnor2
+        X_ix1741 nx1740 nx3965 nx1738 VDD VSS xnor2
+        X_ix1903 nx1902 nx4101 nx1900 VDD VSS xnor2
+        X_ix1905 nx1904 nx4095 nx1902 VDD VSS xnor2
+        X_ix1311 nx1310 nx3639 nx1308 VDD VSS xnor2
+        X_ix3634 nx3633 nx1208 nx1310 VDD VSS xnor2
+        X_ix1439 nx1438 nx3756 nx1436 VDD VSS xnor2
+        X_ix1441 nx1440 nx3753 nx1438 VDD VSS xnor2
+        X_ix1579 nx1578 nx3861 nx1576 VDD VSS xnor2
+        X_ix1581 nx1580 nx3857 nx1578 VDD VSS xnor2
+        X_ix1443 nx1442 nx3749 nx1440 VDD VSS xnor2
+        X_ix3744 nx3743 nx1328 nx1442 VDD VSS xnor2
+        X_ix1899 nx1898 nx4109 nx1896 VDD VSS xnor2
+        X_ix1901 nx1900 nx4105 nx1898 VDD VSS xnor2
+        X_ix1583 nx1582 nx3853 nx1580 VDD VSS xnor2
+        X_ix1585 nx1584 nx3849 nx1582 VDD VSS xnor2
+        X_ix1735 nx1734 nx3978 nx1732 VDD VSS xnor2
+        X_ix1737 nx1736 nx3973 nx1734 VDD VSS xnor2
+        X_ix4398 nx4397 nx6098 nx6048 VDD VSS or02
+        X_ix3962 nx3961 nx6098 nx6016 VDD VSS or02
+        X_ix4093 nx4092 nx6098 nx6030 VDD VSS or02
+        X_ix4238 nx4237 nx6098 nx6038 VDD VSS or02
+        X_ix3846 nx3845 nx6090 nx6016 VDD VSS or02
+        X_ix6061 nx6062 nx5892 VDD VSS inv01
+        X_ix1141 nx1140 nx3581 VDD VSS inv01
+        X_ix5899 nx5900 nx3509 VDD VSS inv01
+        X_ix6069 nx6070 nx5900 VDD VSS inv01
+        X_ix1257 nx1256 nx3691 VDD VSS inv01
+        X_ix1249 nx1248 nx3681 VDD VSS inv01
+        X_ix1377 nx1376 nx3791 VDD VSS inv01
+        X_ix1517 nx1516 nx3899 VDD VSS inv01
+        X_ix1669 nx1668 nx4023 VDD VSS inv01
+        X_ix5923 nx5924 nx3819 VDD VSS inv01
+        X_ix6093 nx6094 nx5924 VDD VSS inv01
+        X_ix1677 nx1676 nx4031 VDD VSS inv01
+        X_ix5907 nx5908 nx3609 VDD VSS inv01
+        X_ix6077 nx6078 nx5908 VDD VSS inv01
+        X_ix1385 nx1384 nx3798 VDD VSS inv01
+        X_ix5915 nx5916 nx3719 VDD VSS inv01
+        X_ix6085 nx6086 nx5916 VDD VSS inv01
+        X_ix1525 nx1524 nx3909 VDD VSS inv01
+        X_ix3582 nx3581 nx5864 nx5884 nx1064 nx1036 nx1066 VDD VSS aoi32
+        X_ix3692 nx3691 nx5864 nx5892 nx1168 nx1140 nx1170 VDD VSS aoi32
+        X_ix3799 nx3798 nx5864 nx5900 nx1284 nx1256 nx1286 VDD VSS aoi32
+        X_ix3792 nx3791 nx5872 nx5892 nx1288 nx1248 nx1290 VDD VSS aoi32
+        X_ix3900 nx3899 nx5872 nx5900 nx1416 nx1376 nx1418 VDD VSS aoi32
+        X_ix4024 nx4023 nx5874 nx5908 nx1556 nx1516 nx1558 VDD VSS aoi32
+        X_ix4160 nx4159 nx5874 nx5916 nx1708 nx1668 nx1710 VDD VSS aoi32
+        X_ix4170 nx4169 nx5866 nx5924 nx1704 nx1676 nx1706 VDD VSS aoi32
+        X_ix1287 nx1286 nx3697 nx1284 VDD VSS xnor2
+        X_ix1289 nx1288 nx3691 nx1286 VDD VSS xnor2
+        X_ix1291 nx1290 nx3687 nx1288 VDD VSS xnor2
+        X_ix1293 nx1292 nx3681 nx1290 VDD VSS xnor2
+        X_ix1419 nx1418 nx3795 nx1416 VDD VSS xnor2
+        X_ix1421 nx1420 nx3791 nx1418 VDD VSS xnor2
+        X_ix1559 nx1558 nx3905 nx1556 VDD VSS xnor2
+        X_ix1561 nx1560 nx3899 nx1558 VDD VSS xnor2
+        X_ix1711 nx1710 nx4027 nx1708 VDD VSS xnor2
+        X_ix1713 nx1712 nx4023 nx1710 VDD VSS xnor2
+        X_ix1707 nx1706 nx4037 nx1704 VDD VSS xnor2
+        X_ix1709 nx1708 nx4031 nx1706 VDD VSS xnor2
+        X_ix1415 nx1414 nx3803 nx1412 VDD VSS xnor2
+        X_ix1417 nx1416 nx3798 nx1414 VDD VSS xnor2
+        X_ix1555 nx1554 nx3915 nx1552 VDD VSS xnor2
+        X_ix1557 nx1556 nx3909 nx1554 VDD VSS xnor2
+        X_ix3488 nx3487 nx6026 nx6054 VDD VSS or02
+        X_ix3588 nx3587 nx6026 nx6062 VDD VSS or02
+        X_ix3698 nx3697 nx6026 nx6070 VDD VSS or02
+        X_ix3688 nx3687 nx6034 nx6062 VDD VSS or02
+        X_ix3796 nx3795 nx6034 nx6070 VDD VSS or02
+        X_ix3906 nx3905 nx6034 nx6078 VDD VSS or02
+        X_ix4028 nx4027 nx6034 nx6086 VDD VSS or02
+        X_ix4038 nx4037 nx6026 nx6094 VDD VSS or02
+        X_ix3804 nx3803 nx6026 nx6078 VDD VSS or02
+        X_ix3916 nx3915 nx6026 nx6086 VDD VSS or02
+        X_ix5883 nx5884 nx3341 VDD VSS inv01
+        X_ix6053 nx6054 nx5884 VDD VSS inv01
+        X_ix1037 nx1036 nx3481 VDD VSS inv01
+        X_ix5891 nx5892 nx3419 VDD VSS inv01
+        X_ix3910 nx3909 nx5866 nx5908 nx1412 nx1384 nx1414 VDD VSS aoi32
+        X_ix4032 nx4031 nx5866 nx5916 nx1552 nx1524 nx1554 VDD VSS aoi32
+        X_ix1067 nx1066 nx3487 nx1064 VDD VSS xnor2
+        X_ix1069 nx1068 nx3481 nx1066 VDD VSS xnor2
+        X_ix1171 nx1170 nx3587 nx1168 VDD VSS xnor2
+        X_ix1173 nx1172 nx3581 nx1170 VDD VSS xnor2
+        X_ix1149 nx1148 nx6020 nx6062 nx3503 nx3593 nx3499 VDD VSS oai32
+        X_ix1265 nx1264 nx6020 nx6070 nx3603 nx3703 nx3599 VDD VSS oai32
+        X_ix1393 nx1392 nx6020 nx6078 nx3713 nx3807 nx3709 VDD VSS oai32
+        X_ix1533 nx1532 nx6020 nx6086 nx3815 nx3919 nx3811 VDD VSS oai32
+        X_ix3594 nx3593 nx1044 VDD VSS inv01
+        X_ix4000 nx3999 nx5896 nx5884 nx1568 nx1492 nx1570 VDD VSS aoi32
+        X_ix3500 nx3499 nx3501 nx3503 VDD VSS xnor2
+        X_ix1065 nx1064 nx1044 nx3499 VDD VSS xnor2
+        X_ix3600 nx3599 nx3601 nx3603 VDD VSS xnor2
+        X_ix1169 nx1168 nx1148 nx3599 VDD VSS xnor2
+        X_ix3710 nx3709 nx3711 nx3713 VDD VSS xnor2
+        X_ix1285 nx1284 nx1264 nx3709 VDD VSS xnor2
+        X_ix3812 nx3811 nx3813 nx3815 VDD VSS xnor2
+        X_ix1413 nx1412 nx1392 nx3811 VDD VSS xnor2
+        X_ix1887 nx1886 nx4137 nx1884 VDD VSS xnor2
+        X_ix1889 nx1888 nx4131 nx1886 VDD VSS xnor2
+        X_ix1891 nx1890 nx4127 nx1888 VDD VSS xnor2
+        X_ix1893 nx1892 nx4123 nx1890 VDD VSS xnor2
+        X_ix3816 nx3815 nx5852 nx5924 VDD VSS nand02
+        X_ix3502 nx3501 nx6022 nx6062 VDD VSS or02
+        X_ix3602 nx3601 nx6022 nx6070 VDD VSS or02
+        X_ix3712 nx3711 nx6022 nx6078 VDD VSS or02
+        X_ix3814 nx3813 nx6022 nx6086 VDD VSS or02
+        X_ix4138 nx4137 nx6060 nx6070 VDD VSS or02
+        X_ix4128 nx4127 nx6066 nx6062 VDD VSS or02
+        X_ix4274 nx4273 nx6066 nx6070 VDD VSS or02
+        X_ix3871 nx3870 nx6066 nx6046 VDD VSS or02
+        X_ix3996 nx3995 nx6066 nx6054 VDD VSS or02
+        X_ix4005 nx4004 nx6058 nx6062 VDD VSS or02
+        X_ix3772 nx3771 nx6058 nx6046 VDD VSS or02
+        X_ix3880 nx3879 nx6058 nx6054 VDD VSS or02
+        X_ix3704 nx3703 nx1148 VDD VSS inv01
+        X_ix3808 nx3807 nx1264 VDD VSS inv01
+        X_ix3920 nx3919 nx1392 VDD VSS inv01
+        X_ix6059 nx6060 nx5896 VDD VSS inv01
+        X_ix1809 nx1808 nx4131 VDD VSS inv01
+        X_ix1801 nx1800 nx4123 VDD VSS inv01
+        X_ix1977 nx1976 nx4268 VDD VSS inv01
+        X_ix1485 nx1484 nx3865 VDD VSS inv01
+        X_ix1637 nx1636 nx3990 VDD VSS inv01
+        X_ix1645 nx1644 nx3999 VDD VSS inv01
+        X_ix1353 nx1352 nx3767 VDD VSS inv01
+        X_ix1493 nx1492 nx3873 VDD VSS inv01
+        X_ix4278 nx4277 nx5896 nx5900 nx1884 nx1808 nx1886 VDD VSS aoi32
+        X_ix4269 nx4268 nx5904 nx5892 nx1888 nx1800 nx1890 VDD VSS aoi32
+        X_ix4429 nx4428 nx5904 nx5900 nx2064 nx1976 nx2066 VDD VSS aoi32
+        X_ix3991 nx3990 nx5904 nx5876 nx1572 nx1484 nx1574 VDD VSS aoi32
+        X_ix4124 nx4123 nx5904 nx5884 nx1724 nx1636 nx1726 VDD VSS aoi32
+        X_ix4132 nx4131 nx5896 nx5892 nx1720 nx1644 nx1722 VDD VSS aoi32
+        X_ix3874 nx3873 nx5896 nx5876 nx1428 nx1352 nx1430 VDD VSS aoi32
+        X_ix2067 nx2066 nx4273 nx2064 VDD VSS xnor2
+        X_ix2069 nx2068 nx4268 nx2066 VDD VSS xnor2
+        X_ix1575 nx1574 nx3870 nx1572 VDD VSS xnor2
+        X_ix1577 nx1576 nx3865 nx1574 VDD VSS xnor2
+        X_ix1727 nx1726 nx3995 nx1724 VDD VSS xnor2
+        X_ix1729 nx1728 nx3990 nx1726 VDD VSS xnor2
+        X_ix1723 nx1722 nx4004 nx1720 VDD VSS xnor2
+        X_ix1725 nx1724 nx3999 nx1722 VDD VSS xnor2
+        X_ix1431 nx1430 nx3771 nx1428 VDD VSS xnor2
+        X_ix1433 nx1432 nx3767 nx1430 VDD VSS xnor2
+        X_ix1571 nx1570 nx3879 nx1568 VDD VSS xnor2
+        X_ix1573 nx1572 nx3873 nx1570 VDD VSS xnor2
+        X_ix3214 nx3213 nx5852 nx5868 VDD VSS nand02
+        X_ix3268 nx3267 nx5852 nx5876 VDD VSS nand02
+        X_ix3336 nx3335 nx5852 nx5884 VDD VSS nand02
+        X_ix3414 nx3413 nx5852 nx5892 VDD VSS nand02
+        X_ix3504 nx3503 nx5852 nx5900 VDD VSS nand02
+        X_ix3604 nx3603 nx5852 nx5908 VDD VSS nand02
+        X_ix3714 nx3713 nx5852 nx5916 VDD VSS nand02
+        X_ix1233 nx1232 nx3661 VDD VSS inv01
+        X_ix1361 nx1360 nx3774 VDD VSS inv01
+        X_ix1029 nx1028 nx3471 VDD VSS inv01
+        X_ix1133 nx1132 nx3571 VDD VSS inv01
+        X_ix1125 nx1124 nx3561 VDD VSS inv01
+        X_ix1241 nx1240 nx3671 VDD VSS inv01
+        X_ix3892 nx3891 nx5880 nx5892 nx1420 nx1368 nx1422 VDD VSS aoi32
+        X_ix4016 nx4015 nx5880 nx5900 nx1560 nx1508 nx1562 VDD VSS aoi32
+        X_ix4008 nx4007 nx5888 nx5892 nx1564 nx1500 nx1566 VDD VSS aoi32
+        X_ix4141 nx4140 nx5888 nx5900 nx1716 nx1652 nx1718 VDD VSS aoi32
+        X_ix3775 nx3774 nx5888 nx5876 nx1296 nx1232 nx1298 VDD VSS aoi32
+        X_ix3883 nx3882 nx5888 nx5884 nx1424 nx1360 nx1426 VDD VSS aoi32
+        X_ix3572 nx3571 nx5872 nx5876 nx1068 nx1028 nx1070 VDD VSS aoi32
+        X_ix3682 nx3681 nx5872 nx5884 nx1172 nx1132 nx1174 VDD VSS aoi32
+        X_ix1179 nx1178 nx3567 nx1176 VDD VSS xnor2
+        X_ix1181 nx1180 nx3561 nx1178 VDD VSS xnor2
+        X_ix1295 nx1294 nx3677 nx1292 VDD VSS xnor2
+        X_ix1297 nx1296 nx3671 nx1294 VDD VSS xnor2
+        X_ix3788 nx3787 nx6042 nx6062 VDD VSS or02
+        X_ix3896 nx3895 nx6042 nx6070 VDD VSS or02
+        X_ix3888 nx3887 nx6050 nx6062 VDD VSS or02
+        X_ix4012 nx4011 nx6050 nx6070 VDD VSS or02
+        X_ix3668 nx3667 nx6050 nx6046 VDD VSS or02
+        X_ix3780 nx3779 nx6050 nx6054 VDD VSS or02
+        X_ix3478 nx3477 nx6034 nx6046 VDD VSS or02
+        X_ix3578 nx3577 nx6034 nx6054 VDD VSS or02
+        X_ix3568 nx3567 nx6042 nx6046 VDD VSS or02
+        X_ix3678 nx3677 nx6042 nx6054 VDD VSS or02
+        X_ix1369 nx1368 nx3783 VDD VSS inv01
+        X_ix1509 nx1508 nx3891 VDD VSS inv01
+        X_ix1501 nx1500 nx3882 VDD VSS inv01
+        X_ix1653 nx1652 nx4007 VDD VSS inv01
+        X_ix3672 nx3671 nx5880 nx5876 nx1176 nx1124 nx1178 VDD VSS aoi32
+        X_ix3784 nx3783 nx5880 nx5884 nx1292 nx1240 nx1294 VDD VSS aoi32
+        X_ix1423 nx1422 nx3787 nx1420 VDD VSS xnor2
+        X_ix1425 nx1424 nx3783 nx1422 VDD VSS xnor2
+        X_ix1563 nx1562 nx3895 nx1560 VDD VSS xnor2
+        X_ix1565 nx1564 nx3891 nx1562 VDD VSS xnor2
+        X_ix1567 nx1566 nx3887 nx1564 VDD VSS xnor2
+        X_ix1569 nx1568 nx3882 nx1566 VDD VSS xnor2
+        X_ix1719 nx1718 nx4011 nx1716 VDD VSS xnor2
+        X_ix1721 nx1720 nx4007 nx1718 VDD VSS xnor2
+        X_ix1299 nx1298 nx3667 nx1296 VDD VSS xnor2
+        X_ix1301 nx1300 nx3661 nx1298 VDD VSS xnor2
+        X_ix1427 nx1426 nx3779 nx1424 VDD VSS xnor2
+        X_ix1429 nx1428 nx3774 nx1426 VDD VSS xnor2
+        X_ix1071 nx1070 nx3477 nx1068 VDD VSS xnor2
+        X_ix1073 nx1072 nx3471 nx1070 VDD VSS xnor2
+        X_ix1175 nx1174 nx3577 nx1172 VDD VSS xnor2
+        X_ix1177 nx1176 nx3571 nx1174 VDD VSS xnor2
+        X_ix5971 nx5972 MAC0_MultB_0 VDD VSS inv02
+        X_ix6021 nx6022 nx5844 VDD VSS inv02
+        X_ix1329 nx1328 nx3633 nx6082 nx5972 VDD VSS nor03
+        X_ix1005 nx1004 nx3365 nx6058 nx5972 VDD VSS nor03
+        X_ix1101 nx1100 nx3443 nx6066 nx5972 VDD VSS nor03
+        X_ix1209 nx1208 nx3533 nx6074 nx5972 VDD VSS nor03
+        X_ix3544 nx3543 nx5896 nx5848 nx1080 nx1004 nx1082 VDD VSS aoi32
+        X_ix3652 nx3651 nx5896 nx5860 nx1184 nx1108 nx1186 VDD VSS aoi32
+        X_ix3768 nx3767 nx5896 nx5868 nx1300 nx1224 nx1302 VDD VSS aoi32
+        X_ix3903 nx3902 nx3625 nx3896 nx3633 VDD VSS mux21
+        X_ix3939 nx3938 nx3357 nx3932 nx3365 VDD VSS mux21
+        X_ix3927 nx3926 nx3435 nx3920 nx3443 VDD VSS mux21
+        X_ix3915 nx3914 nx3525 nx3908 nx3533 VDD VSS mux21
+        X_ix3891 nx3890 nx3735 nx3884 nx3743 VDD VSS mux21
+        X_ix3540 nx3539 nx6066 nx6016 VDD VSS or02
+        X_ix3648 nx3647 nx6066 nx6030 VDD VSS or02
+        X_ix3764 nx3763 nx6066 nx6038 VDD VSS or02
+        X_ix3458 nx3457 nx6050 nx6030 VDD VSS or02
+        X_ix3558 nx3557 nx6050 nx6038 VDD VSS or02
+        X_ix3450 nx3449 nx6058 nx6016 VDD VSS or02
+        X_ix3548 nx3547 nx6058 nx6030 VDD VSS or02
+        X_ix3658 nx3657 nx6058 nx6038 VDD VSS or02
+        X_ix1461 nx1460 nx3743 nx6090 nx5972 VDD VSS nor03
+        X_ix1761 nx1760 nx3955 nx6106 nx6140 VDD VSS nor03
+        X_ix3897 nx3896 nx6082 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3933 nx3932 nx6058 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3921 nx3920 nx6066 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3909 nx3908 nx6074 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3885 nx3884 nx6090 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix3861 nx3860 nx6106 MAC0_MultB_0 VDD VSS nor02ii
+        X_ix5849 nx5850 nx6016 VDD VSS inv01
+        X_ix5903 nx5904 nx3441 VDD VSS inv01
+        X_ix6065 nx6066 nx5904 VDD VSS inv01
+        X_ix1217 nx1216 nx3643 VDD VSS inv01
+        X_ix1345 nx1344 nx3759 VDD VSS inv01
+        X_ix1013 nx1012 nx3453 VDD VSS inv01
+        X_ix1117 nx1116 nx3551 VDD VSS inv01
+        X_ix5895 nx5896 nx3363 VDD VSS inv01
+        X_ix6057 nx6058 nx5896 VDD VSS inv01
+        X_ix1109 nx1108 nx3543 VDD VSS inv01
+        X_ix1225 nx1224 nx3651 VDD VSS inv01
+        X_ix3644 nx3643 nx5904 nx5850 nx1188 nx1100 nx1190 VDD VSS aoi32
+        X_ix3760 nx3759 nx5904 nx5860 nx1304 nx1216 nx1306 VDD VSS aoi32
+        X_ix3866 nx3865 nx5904 nx5868 nx1432 nx1344 nx1434 VDD VSS aoi32
+        X_ix3552 nx3551 nx5888 nx5860 nx1076 nx1012 nx1078 VDD VSS aoi32
+        X_ix3662 nx3661 nx5888 nx5868 nx1180 nx1116 nx1182 VDD VSS aoi32
+        X_ix3867 nx3866 nx3947 nx3860 nx3955 VDD VSS mux21
+        X_ix1191 nx1190 nx3539 nx1188 VDD VSS xnor2
+        X_ix3534 nx3533 nx1100 nx1190 VDD VSS xnor2
+        X_ix1307 nx1306 nx3647 nx1304 VDD VSS xnor2
+        X_ix1309 nx1308 nx3643 nx1306 VDD VSS xnor2
+        X_ix1435 nx1434 nx3763 nx1432 VDD VSS xnor2
+        X_ix1437 nx1436 nx3759 nx1434 VDD VSS xnor2
+        X_ix1079 nx1078 nx3457 nx1076 VDD VSS xnor2
+        X_ix1081 nx1080 nx3453 nx1078 VDD VSS xnor2
+        X_ix1183 nx1182 nx3557 nx1180 VDD VSS xnor2
+        X_ix1185 nx1184 nx3551 nx1182 VDD VSS xnor2
+        X_ix1083 nx1082 nx3449 nx1080 VDD VSS xnor2
+        X_ix3444 nx3443 nx1004 nx1082 VDD VSS xnor2
+        X_ix1187 nx1186 nx3547 nx1184 VDD VSS xnor2
+        X_ix1189 nx1188 nx3543 nx1186 VDD VSS xnor2
+        X_ix1303 nx1302 nx3657 nx1300 VDD VSS xnor2
+        X_ix1305 nx1304 nx3651 nx1302 VDD VSS xnor2
+        X_ix3626 nx3625 nx6082 nx6140 VDD VSS or02
+        X_ix3358 nx3357 nx6058 nx6140 VDD VSS or02
+        X_ix3436 nx3435 nx6066 nx6140 VDD VSS or02
+        X_ix3526 nx3525 nx6074 nx6140 VDD VSS or02
+        X_ix3736 nx3735 nx6090 nx5974 VDD VSS or02
+        X_ix3948 nx3947 nx6106 nx5974 VDD VSS or02
+        X_ix3166 nx3165 nx6022 nx6016 VDD VSS or02
+        X_ix849 nx848 nx3243 nx6042 nx5972 VDD VSS nor03
+        X_ix921 nx920 nx3297 nx6050 nx5972 VDD VSS nor03
+        X_ix1953 nx1952 nx4241 VDD VSS inv01
+        X_ix6055 nx6056 nx5884 VDD VSS inv01
+        X_ix2141 nx2140 nx4401 VDD VSS inv01
+        X_ix2149 nx2148 nx4411 VDD VSS inv01
+        X_ix6083 nx6084 nx5920 VDD VSS inv01
+        X_ix1961 nx1960 nx4251 VDD VSS inv01
+        X_ix1969 nx1968 nx4259 VDD VSS inv01
+        X_ix1629 nx1628 nx3981 VDD VSS inv01
+        X_ix1793 nx1792 nx4113 VDD VSS inv01
+        X_ix6041 nx6042 nx5880 VDD VSS inv01
+        X_ix857 nx856 nx3305 VDD VSS inv01
+        X_ix937 nx936 nx3381 VDD VSS inv01
+        X_ix929 nx928 nx3373 VDD VSS inv01
+        X_ix1021 nx1020 nx3461 VDD VSS inv01
+        X_ix4402 nx4401 nx5928 nx5878 nx2076 nx1952 nx2078 VDD VSS aoi32
+        X_ix4562 nx4561 nx5928 nx5886 nx2264 nx2140 nx2266 VDD VSS aoi32
+        X_ix4572 nx4571 nx5920 nx5894 nx2260 nx2148 nx2262 VDD VSS aoi32
+        X_ix4412 nx4411 nx5920 nx5886 nx2072 nx1960 nx2074 VDD VSS aoi32
+        X_ix4420 nx4419 nx5912 nx5894 nx2068 nx1968 nx2070 VDD VSS aoi32
+        X_ix4114 nx4113 nx5912 nx5878 nx1728 nx1628 nx1730 VDD VSS aoi32
+        X_ix4260 nx4259 nx5912 nx5886 nx1892 nx1792 nx1894 VDD VSS aoi32
+        X_ix3454 nx3453 nx5888 nx5848 nx984 nx920 nx986 VDD VSS aoi32
+        X_ix3374 nx3373 nx5880 nx5848 nx900 nx848 nx902 VDD VSS aoi32
+        X_ix3382 nx3381 nx5872 nx5860 nx896 nx856 nx898 VDD VSS aoi32
+        X_ix3472 nx3471 nx5872 nx5868 nx976 nx936 nx978 VDD VSS aoi32
+        X_ix3462 nx3461 nx5880 nx5860 nx980 nx928 nx982 VDD VSS aoi32
+        X_ix3562 nx3561 nx5880 nx5868 nx1072 nx1020 nx1074 VDD VSS aoi32
+        X_ix3963 nx3962 nx3235 nx3243 nx848 VDD VSS aoi21
+        X_ix3951 nx3950 nx3289 nx3297 nx920 VDD VSS aoi21
+        X_ix2079 nx2078 nx4247 nx2076 VDD VSS xnor2
+        X_ix2081 nx2080 nx4241 nx2078 VDD VSS xnor2
+        X_ix2267 nx2266 nx4407 nx2264 VDD VSS xnor2
+        X_ix2269 nx2268 nx4401 nx2266 VDD VSS xnor2
+        X_ix2263 nx2262 nx4415 nx2260 VDD VSS xnor2
+        X_ix2265 nx2264 nx4411 nx2262 VDD VSS xnor2
+        X_ix2075 nx2074 nx4255 nx2072 VDD VSS xnor2
+        X_ix2077 nx2076 nx4251 nx2074 VDD VSS xnor2
+        X_ix2071 nx2070 nx4265 nx2068 VDD VSS xnor2
+        X_ix1895 nx1894 nx4119 nx1892 VDD VSS xnor2
+        X_ix1897 nx1896 nx4113 nx1894 VDD VSS xnor2
+        X_ix987 nx986 nx3369 nx984 VDD VSS xnor2
+        X_ix3366 nx3365 nx920 nx986 VDD VSS xnor2
+        X_ix903 nx902 nx3301 nx900 VDD VSS xnor2
+        X_ix3298 nx3297 nx848 nx902 VDD VSS xnor2
+        X_ix899 nx898 nx3309 nx896 VDD VSS xnor2
+        X_ix901 nx900 nx3305 nx898 VDD VSS xnor2
+        X_ix979 nx978 nx3387 nx976 VDD VSS xnor2
+        X_ix981 nx980 nx3381 nx978 VDD VSS xnor2
+        X_ix983 nx982 nx3377 nx980 VDD VSS xnor2
+        X_ix985 nx984 nx3373 nx982 VDD VSS xnor2
+        X_ix1075 nx1074 nx3467 nx1072 VDD VSS xnor2
+        X_ix1077 nx1076 nx3461 nx1074 VDD VSS xnor2
+        X_ix4248 nx4247 nx6090 nx6046 VDD VSS or02
+        X_ix4408 nx4407 nx6090 nx6056 VDD VSS or02
+        X_ix4416 nx4415 nx6084 nx6062 VDD VSS or02
+        X_ix4256 nx4255 nx6084 nx6054 VDD VSS or02
+        X_ix4266 nx4265 nx6074 nx6062 VDD VSS or02
+        X_ix3988 nx3987 nx6074 nx6046 VDD VSS or02
+        X_ix4120 nx4119 nx6074 nx6054 VDD VSS or02
+        X_ix3370 nx3369 nx6050 nx6016 VDD VSS or02
+        X_ix3236 nx3235 nx6042 nx6140 VDD VSS or02
+        X_ix3290 nx3289 nx6050 nx6140 VDD VSS or02
+        X_ix3302 nx3301 nx6042 nx6016 VDD VSS or02
+        X_ix3310 nx3309 nx6034 nx6030 VDD VSS or02
+        X_ix3388 nx3387 nx6034 nx6038 VDD VSS or02
+        X_ix3378 nx3377 nx6042 nx6030 VDD VSS or02
+        X_ix3468 nx3467 nx6042 nx6038 VDD VSS or02
+        X_ix5887 nx5888 nx3295 VDD VSS inv01
+        X_ix6049 nx6050 nx5888 VDD VSS inv01
+        X_ix5879 nx5880 nx3241 VDD VSS inv01
+        X_ix2073 nx2072 nx4259 nx2070 VDD VSS xnor2
+        X_ix1731 nx1730 nx3987 nx1728 VDD VSS xnor2
+        X_ix1733 nx1732 nx3981 nx1730 VDD VSS xnor2
+        X_ix3138 nx3137 nx6020 nx6016 nx5984 nx6140 VDD VSS or04
+        X_ix6019 nx6020 nx5844 VDD VSS inv02
+        X_ix805 nx804 nx6020 nx6030 nx3213 nx3261 nx3209 VDD VSS oai32
+        X_ix873 nx872 nx6020 nx6038 nx3267 nx3325 nx3263 VDD VSS oai32
+        X_ix953 nx952 nx6020 nx6046 nx3335 nx3403 nx3331 VDD VSS oai32
+        X_ix1045 nx1044 nx6020 nx6054 nx3413 nx3493 nx3409 VDD VSS oai32
+        X_ix741 nx740 nx3161 nx6026 nx5972 VDD VSS nor03
+        X_ix789 nx788 nx3197 nx6034 nx5972 VDD VSS nor03
+        X_ix4001 nx4000 nx3125 nx3137 VDD VSS nor02ii
+        X_ix5867 nx5868 nx3219 VDD VSS inv01
+        X_ix3392 nx3391 nx5864 nx5868 nx892 nx864 nx894 VDD VSS aoi32
+        X_ix3482 nx3481 nx5864 nx5876 nx972 nx944 nx974 VDD VSS aoi32
+        X_ix3314 nx3313 nx5864 nx5860 nx824 nx796 nx826 VDD VSS aoi32
+        X_ix3306 nx3305 nx5872 nx5848 nx828 nx788 nx830 VDD VSS aoi32
+        X_ix3252 nx3251 nx5864 nx5848 nx768 nx740 nx770 VDD VSS aoi32
+        X_ix3126 nx3125 nx5852 nx5848 nx5844 nx5856 VDD VSS aoi22
+        X_ix749 nx748 nx3167 nx3207 nx3165 VDD VSS aoi21
+        X_ix3987 nx3986 nx3153 nx3161 nx740 VDD VSS aoi21
+        X_ix3975 nx3974 nx3189 nx3197 nx788 VDD VSS aoi21
+        X_ix895 nx894 nx3319 nx892 VDD VSS xnor2
+        X_ix3398 nx3397 nx6026 nx6046 VDD VSS or02
+        X_ix3212 nx3211 nx6022 nx6030 VDD VSS or02
+        X_ix3266 nx3265 nx6022 nx6038 VDD VSS or02
+        X_ix3334 nx3333 nx6022 nx6046 VDD VSS or02
+        X_ix3412 nx3411 nx6022 nx6054 VDD VSS or02
+        X_ix3256 nx3255 nx6026 nx6030 VDD VSS or02
+        X_ix3248 nx3247 nx6034 nx6016 VDD VSS or02
+        X_ix3154 nx3153 nx6026 nx6140 VDD VSS or02
+        X_ix3190 nx3189 nx6034 nx6140 VDD VSS or02
+        X_ix3202 nx3201 nx6026 nx6016 VDD VSS or02
+        X_ix6037 nx6038 nx5868 VDD VSS inv01
+        X_ix865 nx864 nx3313 VDD VSS inv01
+        X_ix5875 nx5876 nx3273 VDD VSS inv01
+        X_ix6045 nx6046 nx5876 VDD VSS inv01
+        X_ix945 nx944 nx3391 VDD VSS inv01
+        X_ix3262 nx3261 nx748 VDD VSS inv01
+        X_ix3326 nx3325 nx804 VDD VSS inv01
+        X_ix3404 nx3403 nx872 VDD VSS inv01
+        X_ix3494 nx3493 nx952 VDD VSS inv01
+        X_ix4031 nx991 nx3143 VDD VSS inv01
+        X_ix705 nx704 nx3207 VDD VSS inv01
+        X_ix5843 nx5844 nx3135 VDD VSS inv01
+        X_ix5847 nx5848 nx3131 VDD VSS inv01
+        X_ix6015 nx6016 nx5848 VDD VSS inv01
+        X_ix5983 nx5984 nx5852 VDD VSS inv01
+        X_ix5859 nx5860 nx3173 VDD VSS inv01
+        X_ix6029 nx6030 nx5860 VDD VSS inv01
+        X_ix797 nx796 nx3251 VDD VSS inv01
+        X_ix5871 nx5872 nx3195 VDD VSS inv01
+        X_ix6033 nx6034 nx5872 VDD VSS inv01
+        X_ix5863 nx5864 nx3159 VDD VSS inv01
+        X_ix6025 nx6026 nx5864 VDD VSS inv01
+        X_ix897 nx896 nx3313 nx894 VDD VSS xnor2
+        X_ix975 nx974 nx3397 nx972 VDD VSS xnor2
+        X_ix977 nx976 nx3391 nx974 VDD VSS xnor2
+        X_ix3210 nx3209 nx3211 nx3213 VDD VSS xnor2
+        X_ix769 nx768 nx748 nx3209 VDD VSS xnor2
+        X_ix3264 nx3263 nx3265 nx3267 VDD VSS xnor2
+        X_ix825 nx824 nx804 nx3263 VDD VSS xnor2
+        X_ix3332 nx3331 nx3333 nx3335 VDD VSS xnor2
+        X_ix893 nx892 nx872 nx3331 VDD VSS xnor2
+        X_ix3410 nx3409 nx3411 nx3413 VDD VSS xnor2
+        X_ix973 nx972 nx952 nx3409 VDD VSS xnor2
+        X_ix3164 nx3163 nx3165 nx3167 VDD VSS xnor2
+        X_ix3162 nx3161 nx3137 nx3163 VDD VSS xnor2
+        X_ix827 nx826 nx3255 nx824 VDD VSS xnor2
+        X_ix829 nx828 nx3251 nx826 VDD VSS xnor2
+        X_ix831 nx830 nx3247 nx828 VDD VSS xnor2
+        X_ix3244 nx3243 nx788 nx830 VDD VSS xnor2
+        X_ix771 nx770 nx3201 nx768 VDD VSS xnor2
+        X_ix3198 nx3197 nx740 nx770 VDD VSS xnor2
+        X_ix3208 nx3207 nx5852 nx5856 VDD VSS nand02
+        X_ix3168 nx3167 nx5852 nx5860 VDD VSS nand02
+        X_ix3320 nx3319 nx6026 nx6038 VDD VSS or02
+        X_ix297 nx296 nx2551 CounterOut_21 VDD VSS xor2
+        X_ix325 nx324 nx2569 CounterOut_23 VDD VSS xor2
+        X_ix269 nx268 nx2531 CounterOut_19 VDD VSS xor2
+        X_ix255 nx254 nx959 nx2525 VDD VSS xor2
+        X_ix227 nx226 nx963 nx2507 VDD VSS xor2
+        X_ix241 nx240 nx2513 CounterOut_17 VDD VSS xor2
+        X_ix2536 nx2535 nx2545 nx2553 nx2563 nx2571 VDD VSS and04
+        X_ix2498 nx2497 nx2507 nx2515 nx2525 nx2533 VDD VSS and04
+        X_ix2612 nx2611 nx2621 nx2629 nx2639 nx5982 VDD VSS and04
+        X_ix2574 nx2573 nx2583 nx2591 nx2601 nx2609 VDD VSS and04
+        X_ix5997 nx5998 nx5996 VDD VSS inv02
+        X_ix5999 nx6000 nx5996 VDD VSS inv02
+        X_ix6001 nx6002 nx5996 VDD VSS inv02
+        X_ix2570 nx2569 nx951 CounterOut_22 VDD VSS nor02ii
+        X_ix2552 nx2551 nx955 CounterOut_20 VDD VSS nor02ii
+        X_ix2532 nx2531 nx959 CounterOut_18 VDD VSS nor02ii
+        X_COUNT0_REG0_reg_Y_29 CounterOut_29 nx2629 clk nx1339 nx5804 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_28 CounterOut_28 nx2621 clk nx1329 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_26 CounterOut_26 nx2601 clk nx1309 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_24 CounterOut_24 nx2583 clk nx1289 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_27 CounterOut_27 nx2609 clk nx1319 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_25 CounterOut_25 nx2591 clk nx1299 nx5802 VDD
++ VSS dffr
+        X_ix2514 nx2513 nx963 CounterOut_16 VDD VSS nor02ii
+        X_ix2646 nx2645 nx935 CounterOut_30 VDD VSS nor02ii
+        X_ix2628 nx2627 nx939 CounterOut_28 VDD VSS nor02ii
+        X_ix2608 nx2607 nx943 CounterOut_26 VDD VSS nor02ii
+        X_ix2590 nx2589 nx947 CounterOut_24 VDD VSS nor02ii
+        X_ix5995 nx5996 nx2347 VDD VSS inv01
+        X_ix5981 nx5982 CounterOut_31 VDD VSS inv01
+        X_ix1270 nx1269 nx310 CounterOut_22 nx6000 VDD VSS mux21
+        X_ix1250 nx1249 nx282 CounterOut_20 nx6000 VDD VSS mux21
+        X_ix1260 nx1259 nx296 CounterOut_21 nx6000 VDD VSS mux21
+        X_ix1280 nx1279 nx324 CounterOut_23 nx6000 VDD VSS mux21
+        X_ix1240 nx1239 nx268 CounterOut_19 nx6000 VDD VSS mux21
+        X_ix1230 nx1229 nx254 CounterOut_18 nx6000 VDD VSS mux21
+        X_ix1210 nx1209 nx226 CounterOut_16 nx6000 VDD VSS mux21
+        X_ix1220 nx1219 nx240 CounterOut_17 nx6000 VDD VSS mux21
+        X_ix1360 nx1359 nx432 CounterOut_31 nx6002 VDD VSS mux21
+        X_ix2320 nx2319 nx4772 MISR_out_29 nx6002 VDD VSS mux21
+        X_ix1350 nx1349 nx422 CounterOut_30 nx6002 VDD VSS mux21
+        X_ix1340 nx1339 nx408 CounterOut_29 nx6002 VDD VSS mux21
+        X_ix1330 nx1329 nx394 CounterOut_28 nx6000 VDD VSS mux21
+        X_ix1310 nx1309 nx366 CounterOut_26 nx6000 VDD VSS mux21
+        X_ix1290 nx1289 nx338 CounterOut_24 nx6000 VDD VSS mux21
+        X_ix1300 nx1299 nx352 CounterOut_25 nx6000 VDD VSS mux21
+        X_ix1320 nx1319 nx380 CounterOut_27 nx6000 VDD VSS mux21
+        X_ix311 nx310 nx951 nx2563 VDD VSS xor2
+        X_ix283 nx282 nx955 nx2545 VDD VSS xor2
+        X_ix433 nx432 CounterOut_31 nx2645 VDD VSS xor2
+        X_ix423 nx422 nx935 nx2639 VDD VSS xor2
+        X_ix409 nx408 nx2627 CounterOut_29 VDD VSS xor2
+        X_ix395 nx394 nx939 nx2621 VDD VSS xor2
+        X_ix367 nx366 nx943 nx2601 VDD VSS xor2
+        X_ix339 nx338 nx947 nx2583 VDD VSS xor2
+        X_ix353 nx352 nx2589 CounterOut_25 VDD VSS xor2
+        X_ix381 nx380 nx2607 CounterOut_27 VDD VSS xor2
+        X_ix467 nx466 nx2497 nx2535 nx2573 nx2611 VDD VSS nand04
+        X_ix305 nx951 nx2551 CounterOut_21 VDD VSS nand02
+        X_ix333 nx947 nx2569 CounterOut_23 VDD VSS nand02
+        X_ix277 nx955 nx2531 CounterOut_19 VDD VSS nand02
+        X_ix249 nx959 nx2513 CounterOut_17 VDD VSS nand02
+        X_ix417 nx935 nx2627 CounterOut_29 VDD VSS nand02
+        X_ix361 nx943 nx2589 CounterOut_25 VDD VSS nand02
+        X_ix389 nx939 nx2607 CounterOut_27 VDD VSS nand02
+        X_COUNT0_REG0_reg_Y_22 CounterOut_22 nx2563 clk nx1269 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_20 CounterOut_20 nx2545 clk nx1249 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_23 CounterOut_23 nx2571 clk nx1279 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_21 CounterOut_21 nx2553 clk nx1259 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_19 CounterOut_19 nx2533 clk nx1239 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_18 CounterOut_18 nx2525 clk nx1229 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_16 CounterOut_16 nx2507 clk nx1209 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_17 CounterOut_17 nx2515 clk nx1219 nx5802 VDD
++ VSS dffr
+        X_MISR0_reg_internal_reg_29 MISR_out_29 nx5778 clk nx2319 nx5824
++ VDD VSS dffr
+        X_COUNT0_REG0_reg_Y_30 CounterOut_30 nx2639 clk nx1349 nx5804 VDD
++ VSS dffr
+        X_ix2458 nx2457 nx2467 nx2475 nx2485 nx2493 VDD VSS and04
+        X_ix2438 nx2437 nx2447 nx2455 VDD VSS and02
+        X_ix39 nx985 nx2339 nx2349 nx2361 VDD VSS or03
+        X_ix53 nx983 nx2339 nx2349 nx2361 nx5980 VDD VSS or04
+        X_ix497 nx496 CounterOut_4 nx2397 nx2407 nx2415 VDD VSS or04
+        X_ix505 nx504 CounterOut_0 CounterOut_1 CounterOut_2 nx5980 VDD
++ VSS or04
+        X_ix5799 nx5800 reset VDD VSS inv02
+        X_ix5801 nx5802 reset VDD VSS inv02
+        X_ix2434 nx2433 nx975 CounterOut_8 VDD VSS nor02ii
+        X_ix2454 nx2453 nx971 CounterOut_10 VDD VSS nor02ii
+        X_ix2474 nx2473 nx967 CounterOut_12 VDD VSS nor02ii
+        X_ix2492 nx2491 nx965 CounterOut_14 VDD VSS nor02ii
+        X_ix2414 nx2413 nx979 CounterOut_6 VDD VSS nor02ii
+        X_ix2390 nx2389 nx983 CounterOut_4 VDD VSS nor02ii
+        X_ix1130 nx1129 nx114 CounterOut_8 nx5998 VDD VSS mux21
+        X_ix1150 nx1149 nx142 CounterOut_10 nx5998 VDD VSS mux21
+        X_ix1160 nx1159 nx156 CounterOut_11 nx5998 VDD VSS mux21
+        X_ix1180 nx1179 nx184 CounterOut_13 nx5998 VDD VSS mux21
+        X_ix1170 nx1169 nx170 CounterOut_12 nx5998 VDD VSS mux21
+        X_ix1190 nx1189 nx198 CounterOut_14 nx6000 VDD VSS mux21
+        X_ix1200 nx1199 nx212 CounterOut_15 nx6000 VDD VSS mux21
+        X_ix1080 nx1079 nx44 CounterOut_3 nx5998 VDD VSS mux21
+        X_ix1070 nx1069 nx30 CounterOut_2 nx5998 VDD VSS mux21
+        X_ix1110 nx1109 nx86 CounterOut_6 nx5998 VDD VSS mux21
+        X_ix1120 nx1119 nx100 CounterOut_7 nx5998 VDD VSS mux21
+        X_ix1100 nx1099 nx72 CounterOut_5 nx5998 VDD VSS mux21
+        X_ix1090 nx1089 nx58 CounterOut_4 nx5998 VDD VSS mux21
+        X_ix129 nx128 nx2433 CounterOut_9 VDD VSS xor2
+        X_ix115 nx114 nx975 nx2427 VDD VSS xor2
+        X_ix143 nx142 nx971 nx2447 VDD VSS xor2
+        X_ix157 nx156 nx2453 CounterOut_11 VDD VSS xor2
+        X_ix185 nx184 nx2473 CounterOut_13 VDD VSS xor2
+        X_ix171 nx170 nx967 nx2467 VDD VSS xor2
+        X_ix199 nx198 nx965 nx2485 VDD VSS xor2
+        X_ix213 nx212 nx2491 CounterOut_15 VDD VSS xor2
+        X_ix31 nx30 nx987 nx2361 VDD VSS xor2
+        X_ix1050 nx1049 nx2339 nx5998 VDD VSS xor2
+        X_ix87 nx86 nx979 nx2407 VDD VSS xor2
+        X_ix101 nx100 nx2413 CounterOut_7 VDD VSS xor2
+        X_ix165 nx967 nx2453 CounterOut_11 VDD VSS nand02
+        X_ix193 nx965 nx2473 CounterOut_13 VDD VSS nand02
+        X_ix221 nx963 nx2491 CounterOut_15 VDD VSS nand02
+        X_ix2360 nx2359 CounterOut_1 nx5998 VDD VSS nand02
+        X_ix109 nx975 nx2413 CounterOut_7 VDD VSS nand02
+        X_ix81 nx979 nx2389 CounterOut_5 VDD VSS nand02
+        X_ix2354 nx2353 CounterOut_0 CounterOut_1 nx987 VDD VSS oai21
+        X_ix1060 nx1059 nx2353 nx5998 nx2359 VDD VSS oai21
+        X_ix2336 nx2335 nx504 nx496 nx484 nx466 VDD VSS nor04
+        X_ix25 nx987 nx2339 nx2349 VDD VSS or02
+        X_ix515 nx514 nx2335 Complete VDD VSS or02
+        X_COUNT0_REG0_reg_Y_8 CounterOut_8 nx2427 clk nx1129 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_10 CounterOut_10 nx2447 clk nx1149 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_11 CounterOut_11 nx2455 clk nx1159 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_12 CounterOut_12 nx2467 clk nx1169 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_14 CounterOut_14 nx2485 clk nx1189 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_15 CounterOut_15 nx2493 clk nx1199 nx5802 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_13 CounterOut_13 nx2475 clk nx1179 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_2 CounterOut_2 nx2361 clk nx1069 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_0 CounterOut_0 nx2339 clk nx1049 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_1 CounterOut_1 nx2349 clk nx1059 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_6 CounterOut_6 nx2407 clk nx1109 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_7 CounterOut_7 nx2415 clk nx1119 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_5 CounterOut_5 nx2397 clk nx1099 nx5800 VDD
++ VSS dffr
+        X_COUNT0_REG0_reg_Y_4 CounterOut_4 nx2379 clk nx1089 nx5800 VDD
++ VSS dffr
+        X_ix4217 nx4216 nx2799 VDD VSS inv01
+        X_ix4225 nx1011 nx4201 VDD VSS inv01
+        X_ix4201 nx4200 nx2807 VDD VSS inv01
+        X_ix4209 nx1009 nx4061 VDD VSS inv01
+        X_ix5979 nx5980 CounterOut_3 VDD VSS inv01
+        X_ix5993 nx5994 nx2335 VDD VSS inv01
+        X_ix1140 nx1139 nx128 CounterOut_9 nx5998 VDD VSS mux21
+        X_ix73 nx72 nx2389 CounterOut_5 VDD VSS xor2
+        X_ix485 nx484 CounterOut_8 CounterOut_9 nx2437 nx2457 VDD VSS nand04
+        X_ix59 nx58 nx983 nx2379 nx2389 VDD VSS aoi21
+        X_ix4202 nx4201 nx2799 nx4222 VDD VSS xnor2
+        X_ix4062 nx4061 nx2807 nx4206 VDD VSS xnor2
+        X_ix45 nx44 nx985 CounterOut_3 VDD VSS xnor2
+        X_ix137 nx971 nx2433 CounterOut_9 VDD VSS nand02
+        X_ix6007 nx6008 nx5996 VDD VSS inv02
+        X_ix6009 nx6010 nx5996 VDD VSS inv02
+        X_ix6003 nx6004 nx5996 VDD VSS inv02
+        X_ix6005 nx6006 nx5996 VDD VSS inv02
+        X_ix1550 nx1549 LFSROUT_31 LFSROUT_30 nx6004 VDD VSS mux21
+        X_ix1540 nx1539 LFSROUT_0 LFSROUT_31 nx6004 VDD VSS mux21
+        X_ix1570 nx1569 LFSROUT_29 LFSROUT_28 nx6004 VDD VSS mux21
+        X_ix1370 nx1369 LFSROUT_17 LFSROUT_16 nx6002 VDD VSS mux21
+        X_ix687 nx686 LFSROUT_16 A[0] nx6002 VDD VSS mux21
+        X_ix661 nx660 LFSROUT_17 A[1] nx6006 VDD VSS mux21
+        X_ix733 nx732 LFSROUT_18 A[2] nx6006 VDD VSS mux21
+        X_ix781 nx780 LFSROUT_19 A[3] nx6006 VDD VSS mux21
+        X_ix841 nx840 LFSROUT_20 A[4] nx6006 VDD VSS mux21
+        X_ix913 nx912 LFSROUT_21 A[5] nx6008 VDD VSS mux21
+        X_ix997 nx996 LFSROUT_22 A[6] nx6008 VDD VSS mux21
+        X_ix1093 nx1092 LFSROUT_23 A[7] nx6008 VDD VSS mux21
+        X_ix1201 nx1200 LFSROUT_24 A[8] nx6008 VDD VSS mux21
+        X_ix1321 nx1320 LFSROUT_25 A[9] nx6008 VDD VSS mux21
+        X_ix1453 nx1452 LFSROUT_26 A[10] nx6008 VDD VSS mux21
+        X_ix1597 nx1596 LFSROUT_27 A[11] nx6008 VDD VSS mux21
+        X_ix1753 nx1752 LFSROUT_28 A[12] nx6010 VDD VSS mux21
+        X_ix1921 nx1920 LFSROUT_29 A[13] nx6010 VDD VSS mux21
+        X_ix2101 nx2100 LFSROUT_30 A[14] nx6010 VDD VSS mux21
+        X_ix2293 nx2292 LFSROUT_31 A[15] nx6010 VDD VSS mux21
+        X_ix1450 nx1449 LFSROUT_9 LFSROUT_8 nx6004 VDD VSS mux21
+        X_ix1470 nx1469 LFSROUT_7 LFSROUT_6 nx6004 VDD VSS mux21
+        X_ix1460 nx1459 LFSROUT_8 LFSROUT_7 nx6004 VDD VSS mux21
+        X_ix1440 nx1439 LFSROUT_10 LFSROUT_9 nx6006 VDD VSS mux21
+        X_ix699 nx698 LFSROUT_0 B[0] nx6006 VDD VSS mux21
+        X_ix673 nx672 LFSROUT_1 B[1] nx6006 VDD VSS mux21
+        X_ix715 nx714 LFSROUT_2 B[2] nx6006 VDD VSS mux21
+        X_ix759 nx758 LFSROUT_3 B[3] nx6006 VDD VSS mux21
+        X_ix815 nx814 LFSROUT_4 B[4] nx6008 VDD VSS mux21
+        X_ix883 nx882 LFSROUT_5 B[5] nx6008 VDD VSS mux21
+        X_ix963 nx962 LFSROUT_6 B[6] nx6008 VDD VSS mux21
+        X_ix1055 nx1054 LFSROUT_7 B[7] nx6008 VDD VSS mux21
+        X_ix1159 nx1158 LFSROUT_8 B[8] nx6008 VDD VSS mux21
+        X_ix1275 nx1274 LFSROUT_9 B[9] nx6008 VDD VSS mux21
+        X_ix1403 nx1402 LFSROUT_10 B[10] nx6008 VDD VSS mux21
+        X_ix1543 nx1542 LFSROUT_11 B[11] nx6008 VDD VSS mux21
+        X_ix1695 nx1694 LFSROUT_12 B[12] nx6010 VDD VSS mux21
+        X_ix1859 nx1858 LFSROUT_13 B[13] nx6010 VDD VSS mux21
+        X_ix2035 nx2034 LFSROUT_14 B[14] nx6010 VDD VSS mux21
+        X_ix2223 nx2222 LFSROUT_15 B[15] nx6010 VDD VSS mux21
+        X_ix617 nx616 LFSROUT_26 LFSROUT_0 VDD VSS xor2
+        X_ix623 nx622 LFSROUT_25 LFSROUT_0 VDD VSS xor2
+        X_ix645 nx644 LFSROUT_20 LFSROUT_0 VDD VSS xor2
+        X_ix1560 nx1559 LFSROUT_30 LFSROUT_29 nx6004 VDD VSS mux21
+        X_ix1590 nx1589 LFSROUT_27 LFSROUT_26 nx6004 VDD VSS mux21
+        X_ix1580 nx1579 LFSROUT_28 LFSROUT_27 nx6004 VDD VSS mux21
+        X_ix1600 nx1599 nx616 LFSROUT_25 nx6002 VDD VSS mux21
+        X_ix1610 nx1609 nx622 LFSROUT_24 nx6002 VDD VSS mux21
+        X_ix1660 nx1659 nx644 LFSROUT_19 nx6002 VDD VSS mux21
+        X_ix1620 nx1619 LFSROUT_24 LFSROUT_23 nx6002 VDD VSS mux21
+        X_ix1630 nx1629 LFSROUT_23 LFSROUT_22 nx6002 VDD VSS mux21
+        X_ix1640 nx1639 LFSROUT_22 LFSROUT_21 nx6002 VDD VSS mux21
+        X_ix1650 nx1649 LFSROUT_21 LFSROUT_20 nx6002 VDD VSS mux21
+        X_ix1670 nx1669 LFSROUT_19 LFSROUT_18 nx6002 VDD VSS mux21
+        X_ix1680 nx1679 LFSROUT_18 LFSROUT_17 nx6002 VDD VSS mux21
+        X_ix1490 nx1489 LFSROUT_5 LFSROUT_4 nx6004 VDD VSS mux21
+        X_ix1480 nx1479 LFSROUT_6 LFSROUT_5 nx6004 VDD VSS mux21
+        X_ix1510 nx1509 LFSROUT_3 LFSROUT_2 nx6004 VDD VSS mux21
+        X_ix1500 nx1499 LFSROUT_4 LFSROUT_3 nx6004 VDD VSS mux21
+        X_ix1530 nx1529 LFSROUT_1 LFSROUT_0 nx6004 VDD VSS mux21
+        X_ix1520 nx1519 LFSROUT_2 LFSROUT_1 nx6004 VDD VSS mux21
+        X_ix1380 nx1379 LFSROUT_16 LFSROUT_15 nx6006 VDD VSS mux21
+        X_ix1390 nx1389 LFSROUT_15 LFSROUT_14 nx6006 VDD VSS mux21
+        X_ix1400 nx1399 LFSROUT_14 LFSROUT_13 nx6006 VDD VSS mux21
+        X_ix1410 nx1409 LFSROUT_13 LFSROUT_12 nx6006 VDD VSS mux21
+        X_ix1420 nx1419 LFSROUT_12 LFSROUT_11 nx6006 VDD VSS mux21
+        X_ix1430 nx1429 LFSROUT_11 LFSROUT_10 nx6006 VDD VSS mux21
+        X_ix4089 nx4088 nx2863 VDD VSS inv01
+        X_ix4097 nx998 nx3347 VDD VSS inv01
+        X_ix4105 nx4104 nx2855 VDD VSS inv01
+        X_ix4113 nx999 nx3425 VDD VSS inv01
+        X_ix4121 nx4120 nx2847 VDD VSS inv01
+        X_ix4129 nx1000 nx3515 VDD VSS inv01
+        X_ix4137 nx4136 nx2839 VDD VSS inv01
+        X_ix4145 nx1001 nx3615 VDD VSS inv01
+        X_ix4153 nx4152 nx2831 VDD VSS inv01
+        X_ix4161 nx1003 nx3725 VDD VSS inv01
+        X_ix1770 nx1769 RegOut[8] nx1001 WE VDD VSS mux21
+        X_ix1780 nx1779 RegOut[9] nx1003 WE VDD VSS mux21
+        X_ix1790 nx1789 RegOut[10] nx1005 WE VDD VSS mux21
+        X_ix1800 nx1799 RegOut[11] nx1007 WE VDD VSS mux21
+        X_ix4755 nx4754 RegOut[0] MISR_out_1 VDD VSS xor2
+        X_ix4749 nx4748 RegOut[1] MISR_out_2 VDD VSS xor2
+        X_ix4743 nx4742 RegOut[2] MISR_out_3 VDD VSS xor2
+        X_ix4737 nx4736 RegOut[3] MISR_out_4 VDD VSS xor2
+        X_ix4731 nx4730 RegOut[4] MISR_out_5 VDD VSS xor2
+        X_ix4725 nx4724 RegOut[5] MISR_out_6 VDD VSS xor2
+        X_ix4041 nx4040 nx2887 VDD VSS inv01
+        X_ix4049 nx993 nx3179 VDD VSS inv01
+        X_ix4057 nx4056 nx2879 VDD VSS inv01
+        X_ix4065 nx995 nx3225 VDD VSS inv01
+        X_ix4073 nx4072 nx2871 VDD VSS inv01
+        X_ix4081 nx997 nx3279 VDD VSS inv01
+        X_ix4111 nx4110 MAC0_adderB_6 RegOut[6] VDD VSS xnor2
+        X_ix4127 nx4126 MAC0_adderB_7 RegOut[7] VDD VSS xnor2
+        X_ix4143 nx4142 MAC0_adderB_8 RegOut[8] VDD VSS xnor2
+        X_ix4159 nx4158 MAC0_adderB_9 RegOut[9] VDD VSS xnor2
+        X_ix4175 nx4174 MAC0_adderB_10 RegOut[10] VDD VSS xnor2
+        X_ix4191 nx4190 MAC0_adderB_11 RegOut[11] VDD VSS xnor2
+        X_ix3118 nx3117 RegOut[0] nx3115 VDD VSS nand02
+        X_ix4023 nx989 RegOut[0] MAC0_adderB_0 VDD VSS nand02
+        X_ix1690 nx1689 nx2901 nx3115 nx3117 VDD VSS oai21
+        X_ix2902 nx2901 RegOut[0] MAC0_adderB_0 nx989 VDD VSS oai21
+        X_ix4169 nx4168 nx2823 VDD VSS inv01
+        X_ix4177 nx1005 nx3823 VDD VSS inv01
+        X_ix4185 nx4184 nx2815 VDD VSS inv01
+        X_ix4193 nx1007 nx3939 VDD VSS inv01
+        X_ix3116 nx3115 WE VDD VSS inv01
+        X_ix2888 nx2887 RegOut[1] RegOut[0] MAC0_adderB_0 MAC0_adderB_1
++ nx3143 VDD VSS aoi32
+        X_ix2880 nx2879 RegOut[2] nx4040 MAC0_adderB_2 nx3179 VDD VSS aoi22
+        X_ix2872 nx2871 RegOut[3] nx4056 MAC0_adderB_3 nx3225 VDD VSS aoi22
+        X_ix2864 nx2863 RegOut[4] nx4072 MAC0_adderB_4 nx3279 VDD VSS aoi22
+        X_ix2856 nx2855 RegOut[5] nx4088 MAC0_adderB_5 nx3347 VDD VSS aoi22
+        X_ix2848 nx2847 RegOut[6] nx4104 MAC0_adderB_6 nx3425 VDD VSS aoi22
+        X_ix2840 nx2839 RegOut[7] nx4120 MAC0_adderB_7 nx3515 VDD VSS aoi22
+        X_ix2832 nx2831 RegOut[8] nx4136 MAC0_adderB_8 nx3615 VDD VSS aoi22
+        X_ix2824 nx2823 RegOut[9] nx4152 MAC0_adderB_9 nx3725 VDD VSS aoi22
+        X_ix2816 nx2815 RegOut[10] nx4168 MAC0_adderB_10 nx3823 VDD VSS aoi22
+        X_ix1700 nx1699 RegOut[1] nx991 WE VDD VSS mux21
+        X_ix1710 nx1709 RegOut[2] nx993 WE VDD VSS mux21
+        X_ix1720 nx1719 RegOut[3] nx995 WE VDD VSS mux21
+        X_ix1730 nx1729 RegOut[4] nx997 WE VDD VSS mux21
+        X_ix1740 nx1739 RegOut[5] nx998 WE VDD VSS mux21
+        X_ix1750 nx1749 RegOut[6] nx999 WE VDD VSS mux21
+        X_ix1760 nx1759 RegOut[7] nx1000 WE VDD VSS mux21
+        X_ix4719 nx4718 RegOut[6] MISR_out_7 VDD VSS xor2
+        X_ix4713 nx4712 RegOut[7] MISR_out_8 VDD VSS xor2
+        X_ix4707 nx4706 RegOut[8] MISR_out_9 VDD VSS xor2
+        X_ix4701 nx4700 RegOut[9] MISR_out_10 VDD VSS xor2
+        X_ix4695 nx4694 RegOut[10] MISR_out_11 VDD VSS xor2
+        X_ix4689 nx4688 RegOut[11] MISR_out_12 VDD VSS xor2
+        X_ix3940 nx3939 nx2815 nx4190 VDD VSS xnor2
+        X_ix3824 nx3823 nx2823 nx4174 VDD VSS xnor2
+        X_ix3726 nx3725 nx2831 nx4158 VDD VSS xnor2
+        X_ix3616 nx3615 nx2839 nx4142 VDD VSS xnor2
+        X_ix3516 nx3515 nx2847 nx4126 VDD VSS xnor2
+        X_ix3426 nx3425 nx2855 nx4110 VDD VSS xnor2
+        X_ix3348 nx3347 nx2863 nx4094 VDD VSS xnor2
+        X_ix3280 nx3279 nx2871 nx4078 VDD VSS xnor2
+        X_ix3226 nx3225 nx2879 nx4062 VDD VSS xnor2
+        X_ix3180 nx3179 nx2887 nx4046 VDD VSS xnor2
+        X_ix3144 nx3143 nx989 nx3145 VDD VSS xnor2
+        X_ix3146 nx3145 MAC0_adderB_1 RegOut[1] VDD VSS xnor2
+        X_ix4047 nx4046 MAC0_adderB_2 RegOut[2] VDD VSS xnor2
+        X_ix4063 nx4062 MAC0_adderB_3 RegOut[3] VDD VSS xnor2
+        X_ix4079 nx4078 MAC0_adderB_4 RegOut[4] VDD VSS xnor2
+        X_ix4095 nx4094 MAC0_adderB_5 RegOut[5] VDD VSS xnor2
+        X_ix2744 nx2743 RegOut[19] nx4312 MAC0_adderB_19 nx4999 VDD VSS aoi22
+        X_ix2736 nx2735 RegOut[20] nx4328 MAC0_adderB_20 nx5085 VDD VSS aoi22
+        X_ix2728 nx2727 RegOut[21] nx4344 MAC0_adderB_21 nx5170 VDD VSS aoi22
+        X_ix2720 nx2719 RegOut[22] nx4360 MAC0_adderB_22 nx5244 VDD VSS aoi22
+        X_ix2712 nx2711 RegOut[23] nx4376 MAC0_adderB_23 nx5319 VDD VSS aoi22
+        X_ix2704 nx2703 RegOut[24] nx4392 MAC0_adderB_24 nx5389 VDD VSS aoi22
+        X_ix2696 nx2695 RegOut[25] nx4408 MAC0_adderB_25 nx5437 VDD VSS aoi22
+        X_ix2688 nx2687 RegOut[26] nx4424 MAC0_adderB_26 nx5485 VDD VSS aoi22
+        X_ix4683 nx4682 RegOut[12] MISR_out_13 VDD VSS xor2
+        X_ix4677 nx4676 RegOut[13] MISR_out_14 VDD VSS xor2
+        X_ix4671 nx4670 RegOut[14] MISR_out_15 VDD VSS xor2
+        X_ix4665 nx4664 RegOut[15] MISR_out_16 VDD VSS xor2
+        X_ix4659 nx4658 RegOut[16] MISR_out_17 VDD VSS xor2
+        X_ix4653 nx4652 RegOut[17] MISR_out_18 VDD VSS xor2
+        X_ix4647 nx4646 RegOut[18] MISR_out_19 VDD VSS xor2
+        X_ix5734 nx5733 RegOut[19] nx5782 VDD VSS xor2
+        X_ix2808 nx2807 RegOut[11] nx4184 MAC0_adderB_11 nx3939 VDD VSS aoi22
+        X_ix2800 nx2799 RegOut[12] nx4200 MAC0_adderB_12 nx4061 VDD VSS aoi22
+        X_ix2792 nx2791 RegOut[13] nx4216 MAC0_adderB_13 nx4201 VDD VSS aoi22
+        X_ix2784 nx2783 RegOut[14] nx4232 MAC0_adderB_14 nx4347 VDD VSS aoi22
+        X_ix2776 nx2775 RegOut[15] nx4248 MAC0_adderB_15 nx4507 VDD VSS aoi22
+        X_ix2768 nx2767 RegOut[16] nx4264 MAC0_adderB_16 nx4665 VDD VSS aoi22
+        X_ix2760 nx2759 RegOut[17] nx4280 MAC0_adderB_17 nx4763 VDD VSS aoi22
+        X_ix2752 nx2751 RegOut[18] nx4296 MAC0_adderB_18 nx4889 VDD VSS aoi22
+        X_ix5759 nx5758 RegOut[24] MISR_out_25 VDD VSS xnor2
+        X_ix4399 nx4398 MAC0_adderB_24 RegOut[24] VDD VSS xnor2
+        X_ix4415 nx4414 MAC0_adderB_25 RegOut[25] VDD VSS xnor2
+        X_ix4431 nx4430 MAC0_adderB_26 RegOut[26] VDD VSS xnor2
+        X_ix4447 nx4446 MAC0_adderB_27 RegOut[27] VDD VSS xnor2
+        X_ix4463 nx4462 MAC0_adderB_28 RegOut[28] VDD VSS xnor2
+        X_ix4509 nx4508 MAC0_adderB_29 RegOut[29] VDD VSS xnor2
+        X_ix4547 nx4546 MAC0_adderB_30 RegOut[30] VDD VSS xnor2
+        X_ix2680 nx2679 RegOut[27] nx4440 MAC0_adderB_27 nx5529 VDD VSS aoi22
+        X_ix2672 nx2671 RegOut[28] nx4456 MAC0_adderB_28 nx5561 VDD VSS aoi22
+        X_ix5593 nx5592 RegOut[29] nx4472 MAC0_adderB_29 nx5595 VDD VSS aoi22
+        X_ix5621 nx5620 RegOut[30] nx4522 MAC0_adderB_30 nx5623 VDD VSS aoi22
+        X_ix1810 nx1809 RegOut[12] nx1009 WE VDD VSS mux21
+        X_ix1820 nx1819 RegOut[13] nx1011 WE VDD VSS mux21
+        X_ix1830 nx1829 RegOut[14] nx1013 WE VDD VSS mux21
+        X_ix1840 nx1839 RegOut[15] nx1015 WE VDD VSS mux21
+        X_ix1850 nx1849 RegOut[16] nx1017 WE VDD VSS mux21
+        X_ix1860 nx1859 RegOut[17] nx1019 WE VDD VSS mux21
+        X_ix1870 nx1869 RegOut[18] nx1021 WE VDD VSS mux21
+        X_ix1880 nx1879 RegOut[19] nx1023 WE VDD VSS mux21
+        X_ix1890 nx1889 RegOut[20] nx1025 WE VDD VSS mux21
+        X_ix1900 nx1899 RegOut[21] nx1027 WE VDD VSS mux21
+        X_ix1910 nx1909 RegOut[22] nx1029 WE VDD VSS mux21
+        X_ix1920 nx1919 RegOut[23] nx1031 WE VDD VSS mux21
+        X_ix1930 nx1929 RegOut[24] nx1033 WE VDD VSS mux21
+        X_ix1940 nx1939 RegOut[25] nx1035 WE VDD VSS mux21
+        X_ix1950 nx1949 RegOut[26] nx1037 WE VDD VSS mux21
+        X_ix1960 nx1959 RegOut[27] nx1039 WE VDD VSS mux21
+        X_ix1970 nx1969 RegOut[28] nx1041 WE VDD VSS mux21
+        X_ix1980 nx1979 RegOut[29] nx4510 WE VDD VSS mux21
+        X_ix1990 nx1989 RegOut[30] nx4548 WE VDD VSS mux21
+        X_ix2000 nx1999 RegOut[31] nx4574 WE VDD VSS mux21
+        X_ix4633 nx4632 RegOut[20] MISR_out_21 VDD VSS xor2
+        X_ix4627 nx4626 RegOut[21] MISR_out_22 VDD VSS xor2
+        X_ix4621 nx4620 RegOut[22] MISR_out_23 VDD VSS xor2
+        X_ix4615 nx4614 RegOut[23] MISR_out_24 VDD VSS xor2
+        X_ix5764 nx5763 RegOut[25] nx5780 VDD VSS xor2
+        X_ix4593 nx4592 RegOut[26] MISR_out_27 VDD VSS xor2
+        X_ix4587 nx4586 RegOut[27] MISR_out_28 VDD VSS xor2
+        X_ix4581 nx4580 RegOut[28] MISR_out_29 VDD VSS xor2
+        X_ix4773 nx4772 RegOut[29] MISR_out_30 VDD VSS xor2
+        X_ix4767 nx4766 RegOut[30] MISR_out_31 VDD VSS xor2
+        X_ix4761 nx4760 RegOut[31] MISR_out_0 VDD VSS xor2
+        X_ix5627 nx5626 MAC0_adderB_31 RegOut[31] VDD VSS xor2
+        X_ix4207 nx4206 MAC0_adderB_12 RegOut[12] VDD VSS xnor2
+        X_ix4223 nx4222 MAC0_adderB_13 RegOut[13] VDD VSS xnor2
+        X_ix4239 nx4238 MAC0_adderB_14 RegOut[14] VDD VSS xnor2
+        X_ix4255 nx4254 MAC0_adderB_15 RegOut[15] VDD VSS xnor2
+        X_ix4271 nx4270 MAC0_adderB_16 RegOut[16] VDD VSS xnor2
+        X_ix4287 nx4286 MAC0_adderB_17 RegOut[17] VDD VSS xnor2
+        X_ix4303 nx4302 MAC0_adderB_18 RegOut[18] VDD VSS xnor2
+        X_ix4319 nx4318 MAC0_adderB_19 RegOut[19] VDD VSS xnor2
+        X_ix4335 nx4334 MAC0_adderB_20 RegOut[20] VDD VSS xnor2
+        X_ix4351 nx4350 MAC0_adderB_21 RegOut[21] VDD VSS xnor2
+        X_ix4367 nx4366 MAC0_adderB_22 RegOut[22] VDD VSS xnor2
+        X_ix4383 nx4382 MAC0_adderB_23 RegOut[23] VDD VSS xnor2
+        X_ix2020 nx2019 nx4586 MISR_out_27 nx6014 VDD VSS mux21
+        X_ix2210 nx2209 nx4706 MISR_out_8 nx6012 VDD VSS mux21
+        X_MAC0_RegMultOut_reg_Y_15 MAC0_adderB_15 N$dummy_esc3[113] clk
++ nx3830 nx5816 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_14 N$dummy_esc3[112] nx4341 clk nx2034 nx5816
++ VDD VSS dffr
+        X_ix5803 nx5804 reset VDD VSS inv02
+        X_ix5805 nx5806 reset VDD VSS inv02
+        X_ix5807 nx5808 reset VDD VSS inv02
+        X_ix5809 nx5810 reset VDD VSS inv02
+        X_ix5819 nx5820 reset VDD VSS inv02
+        X_ix5821 nx5822 reset VDD VSS inv02
+        X_ix5815 nx5816 reset VDD VSS inv02
+        X_ix5817 nx5818 reset VDD VSS inv02
+        X_ix5811 nx5812 reset VDD VSS inv02
+        X_ix5813 nx5814 reset VDD VSS inv02
+        X_MISR0_reg_internal_reg_25 MISR_out_25 N$dummy_esc3[140] clk nx2039
++ nx5824 VDD VSS dffs
+        X_MISR0_reg_internal_reg_6 MISR_out_6 N$dummy_esc3[136] clk nx2229
++ nx5822 VDD VSS dffs
+        X_MISR0_reg_internal_reg_5 MISR_out_5 N$dummy_esc3[135] clk nx2239
++ nx5822 VDD VSS dffs
+        X_ix2040 nx2039 nx4600 MISR_out_25 nx6014 VDD VSS mux21
+        X_MAC0_RegMultInA_reg_Y_4 N$dummy_esc3[81] nx3241 clk nx840 nx5810
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_4 MAC0_adderB_4 N$dummy_esc3[80] clk nx3962
++ nx5810 VDD VSS dffr
+        X_ix2220 nx2219 nx4712 MISR_out_7 nx6012 VDD VSS mux21
+        X_ix2230 nx2229 nx4718 MISR_out_6 nx6012 VDD VSS mux21
+        X_ix2240 nx2239 nx4724 MISR_out_5 nx6012 VDD VSS mux21
+        X_ix2300 nx2299 nx4760 MISR_out_31 nx6010 VDD VSS mux21
+        X_ix4601 nx4600 nx5633 nx5763 VDD VSS xor2
+        X_MISR0_reg_internal_reg_27 MISR_out_27 N$dummy_esc3[141] clk nx2019
++ nx5824 VDD VSS dffr
+        X_MISR0_reg_internal_reg_23 MISR_out_23 N$dummy_esc3[139] clk nx2059
++ nx5824 VDD VSS dffr
+        X_MISR0_reg_internal_reg_8 MISR_out_8 N$dummy_esc3[138] clk nx2209
++ nx5822 VDD VSS dffr
+        X_MISR0_reg_internal_reg_7 MISR_out_7 N$dummy_esc3[137] clk nx2219
++ nx5822 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_31 MAC0_adderB_31 N$dummy_esc3[134] clk
++ nx4566 nx5820 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_31 RegOut[31] N$dummy_esc3[133] clk nx1999
++ nx5820 VDD VSS dffr
+        X_MISR0_reg_internal_reg_31 MISR_out_31 N$dummy_esc3[132] clk nx2299
++ nx5820 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_30 MAC0_adderB_30 N$dummy_esc3[131] clk
++ nx4540 nx5820 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_30 RegOut[30] N$dummy_esc3[130] clk nx1989
++ nx5820 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_29 MAC0_adderB_29 N$dummy_esc3[129] clk
++ nx4502 nx5820 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_28 MAC0_adderB_28 N$dummy_esc3[128] clk
++ nx3746 nx5820 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_27 MAC0_adderB_27 N$dummy_esc3[127] clk
++ nx3752 nx5820 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_26 MAC0_adderB_26 N$dummy_esc3[126] clk
++ nx3758 nx5820 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_25 MAC0_adderB_25 N$dummy_esc3[125] clk
++ nx3764 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_24 MAC0_adderB_24 N$dummy_esc3[124] clk
++ nx3770 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_23 MAC0_adderB_23 N$dummy_esc3[123] clk
++ nx3776 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_22 MAC0_adderB_22 N$dummy_esc3[122] clk
++ nx3782 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_21 MAC0_adderB_21 N$dummy_esc3[121] clk
++ nx3788 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_20 MAC0_adderB_20 N$dummy_esc3[120] clk
++ nx3794 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_19 MAC0_adderB_19 N$dummy_esc3[119] clk
++ nx3800 nx5818 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_18 MAC0_adderB_18 N$dummy_esc3[118] clk
++ nx3806 nx5816 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_17 MAC0_adderB_17 N$dummy_esc3[117] clk
++ nx3812 nx5816 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_16 MAC0_adderB_16 N$dummy_esc3[116] clk
++ nx3818 nx5816 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_15 N$dummy_esc3[115] nx4503 clk nx2222 nx5816
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_15 N$dummy_esc3[114] nx4363 clk nx2292 nx5816
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_14 N$dummy_esc3[111] nx4215 clk nx2100 nx5816
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_14 MAC0_adderB_14 N$dummy_esc3[110] clk
++ nx3842 nx5816 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_13 N$dummy_esc3[109] nx4195 clk nx1858 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_13 N$dummy_esc3[108] nx4076 clk nx1920 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_13 MAC0_adderB_13 N$dummy_esc3[107] clk
++ nx3854 nx5816 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_12 N$dummy_esc3[106] nx4057 clk nx1694 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_12 N$dummy_esc3[105] nx3953 clk nx1752 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_12 MAC0_adderB_12 N$dummy_esc3[104] clk
++ nx3866 nx5814 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_11 N$dummy_esc3[103] nx3933 clk nx1542 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_11 N$dummy_esc3[102] nx3837 clk nx1596 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_11 MAC0_adderB_11 N$dummy_esc3[101] clk
++ nx3878 nx5814 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_10 N$dummy_esc3[100] nx3819 clk nx1402 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_10 N$dummy_esc3[99] nx3741 clk nx1452 nx5814
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_10 MAC0_adderB_10 N$dummy_esc3[98] clk nx3890
++ nx5814 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_9 N$dummy_esc3[97] nx3719 clk nx1274 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_9 N$dummy_esc3[96] nx3631 clk nx1320 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_9 MAC0_adderB_9 N$dummy_esc3[95] clk nx3902
++ nx5812 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_8 N$dummy_esc3[94] nx3609 clk nx1158 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_8 N$dummy_esc3[93] nx3531 clk nx1200 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_8 MAC0_adderB_8 N$dummy_esc3[92] clk nx3914
++ nx5812 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_7 N$dummy_esc3[91] nx3509 clk nx1054 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_7 N$dummy_esc3[90] nx3441 clk nx1092 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_7 MAC0_adderB_7 N$dummy_esc3[89] clk nx3926
++ nx5812 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_6 N$dummy_esc3[88] nx3419 clk nx962 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_6 N$dummy_esc3[87] nx3363 clk nx996 nx5812
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_6 MAC0_adderB_6 N$dummy_esc3[86] clk nx3938
++ nx5812 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_5 N$dummy_esc3[85] nx3341 clk nx882 nx5810
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_5 N$dummy_esc3[84] nx3295 clk nx912 nx5810
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_5 MAC0_adderB_5 N$dummy_esc3[83] clk nx3950
++ nx5810 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_4 N$dummy_esc3[82] nx3273 clk nx814 nx5810
++ VDD VSS dffr
+        X_LFSR0_reg_internal_reg_10 LFSROUT_10 N$dummy_esc3[64] clk nx1429
++ nx5804 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_9 LFSROUT_9 N$dummy_esc3[63] clk nx1439
++ nx5804 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_6 LFSROUT_6 N$dummy_esc3[60] clk nx1469
++ nx5804 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_5 LFSROUT_5 N$dummy_esc3[59] clk nx1479
++ nx5804 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_4 LFSROUT_4 N$dummy_esc3[58] clk nx1489
++ nx5806 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_3 LFSROUT_3 N$dummy_esc3[57] clk nx1499
++ nx5806 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_28 LFSROUT_28 N$dummy_esc3[50] clk nx1569
++ nx5806 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_25 LFSROUT_25 N$dummy_esc3[47] clk nx1599
++ nx5806 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_21 LFSROUT_21 N$dummy_esc3[43] clk nx1639
++ nx5808 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_20 LFSROUT_20 N$dummy_esc3[42] clk nx1649
++ nx5808 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_18 LFSROUT_18 N$dummy_esc3[40] clk nx1669
++ nx5808 VDD VSS dffs
+        X_MAC0_RegMultInB_reg_Y_3 N$dummy_esc3[79] nx3219 clk nx758 nx5810
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_3 N$dummy_esc3[78] nx3195 clk nx780 nx5810
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_3 MAC0_adderB_3 N$dummy_esc3[77] clk nx3974
++ nx5810 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_27 LFSROUT_27 N$dummy_esc3[49] clk nx1579
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_26 LFSROUT_26 N$dummy_esc3[48] clk nx1589
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_24 LFSROUT_24 N$dummy_esc3[46] clk nx1609
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_23 LFSROUT_23 N$dummy_esc3[45] clk nx1619
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_22 LFSROUT_22 N$dummy_esc3[44] clk nx1629
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_19 LFSROUT_19 N$dummy_esc3[41] clk nx1659
++ nx5808 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_17 LFSROUT_17 N$dummy_esc3[39] clk nx1679
++ nx5808 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_16 LFSROUT_16 N$dummy_esc3[38] clk nx1369
++ nx5808 VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_0 MAC0_MultA_0 N$dummy_esc3[37] clk nx686
++ nx5808 VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_0 MAC0_adderB_0 N$dummy_esc3[36] clk nx704
++ nx5808 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_0 RegOut[0] N$dummy_esc3[35] clk nx1689 nx5808
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_1 RegOut[1] N$dummy_esc3[34] clk nx1699 nx5808
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_2 RegOut[2] N$dummy_esc3[33] clk nx1709 nx5810
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_3 RegOut[3] N$dummy_esc3[32] clk nx1719 nx5810
++ VDD VSS dffr
+        X_LFSR0_reg_internal_reg_14 LFSROUT_14 N$dummy_esc3[68] clk nx1389
++ nx5804 VDD VSS dffs
+        X_LFSR0_reg_internal_reg_12 LFSROUT_12 N$dummy_esc3[66] clk nx1409
++ nx5804 VDD VSS dffs
+        X_MAC0_BigBoyReg_reg_Y_22 RegOut[22] N$dummy_esc3[13] clk nx1909
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_23 RegOut[23] N$dummy_esc3[12] clk nx1919
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_24 RegOut[24] N$dummy_esc3[11] clk nx1929
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_25 RegOut[25] N$dummy_esc3[10] clk nx1939
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_26 RegOut[26] N$dummy_esc3[9] clk nx1949
++ nx5820 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_27 RegOut[27] N$dummy_esc3[8] clk nx1959
++ nx5820 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_28 RegOut[28] N$dummy_esc3[7] clk nx1969
++ nx5820 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_29 RegOut[29] N$dummy_esc3[6] clk nx1979
++ nx5820 VDD VSS dffr
+        X_TEST0_reg_pass_v Pass N$dummy_esc3[5] clk nx4878 nx5824 VDD VSS dffr
+        X_COUNT0_REG0_reg_Y_31 CounterOut_31 N$dummy_esc3[4] clk nx1359
++ nx5804 VDD VSS dffr
+        X_COUNT0_REG0_reg_Y_9 CounterOut_9 N$dummy_esc3[3] clk nx1139 nx5800
++ VDD VSS dffr
+        X_COUNT0_REG0_reg_Y_3 CounterOut_3 N$dummy_esc3[2] clk nx1079 nx5800
++ VDD VSS dffr
+        X_TEST0_reg_TestEN N$dummy_esc3[1] nx2347 clk StartTest nx5800 VDD
++ VSS dffr
+        X_TEST0_reg_complete_v Complete N$dummy_esc3[0] clk nx514 nx5804
++ VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_2 N$dummy_esc3[76] nx3173 clk nx714 nx5810
++ VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_2 N$dummy_esc3[75] nx3159 clk nx732 nx5808
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_2 MAC0_adderB_2 N$dummy_esc3[74] clk nx3986
++ nx5810 VDD VSS dffr
+        X_MAC0_RegMultInA_reg_Y_1 N$dummy_esc3[73] nx3135 clk nx660 nx5808
++ VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_1 N$dummy_esc3[72] nx3131 clk nx672 nx5808
++ VDD VSS dffr
+        X_MAC0_RegMultOut_reg_Y_1 MAC0_adderB_1 N$dummy_esc3[71] clk nx4000
++ nx5808 VDD VSS dffr
+        X_MAC0_RegMultInB_reg_Y_0 MAC0_MultB_0 N$dummy_esc3[70] clk nx698
++ nx5808 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_15 LFSROUT_15 N$dummy_esc3[69] clk nx1379
++ nx5804 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_13 LFSROUT_13 N$dummy_esc3[67] clk nx1399
++ nx5804 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_11 LFSROUT_11 N$dummy_esc3[65] clk nx1419
++ nx5804 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_8 LFSROUT_8 N$dummy_esc3[62] clk nx1449
++ nx5804 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_7 LFSROUT_7 N$dummy_esc3[61] clk nx1459
++ nx5804 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_2 LFSROUT_2 N$dummy_esc3[56] clk nx1509
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_1 LFSROUT_1 N$dummy_esc3[55] clk nx1519
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_0 LFSROUT_0 N$dummy_esc3[54] clk nx1529
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_31 LFSROUT_31 N$dummy_esc3[53] clk nx1539
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_30 LFSROUT_30 N$dummy_esc3[52] clk nx1549
++ nx5806 VDD VSS dffr
+        X_LFSR0_reg_internal_reg_29 LFSROUT_29 N$dummy_esc3[51] clk nx1559
++ nx5806 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_4 RegOut[4] N$dummy_esc3[31] clk nx1729 nx5810
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_5 RegOut[5] N$dummy_esc3[30] clk nx1739 nx5810
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_6 RegOut[6] N$dummy_esc3[29] clk nx1749 nx5812
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_7 RegOut[7] N$dummy_esc3[28] clk nx1759 nx5812
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_8 RegOut[8] N$dummy_esc3[27] clk nx1769 nx5812
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_9 RegOut[9] N$dummy_esc3[26] clk nx1779 nx5814
++ VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_10 RegOut[10] N$dummy_esc3[25] clk nx1789
++ nx5814 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_11 RegOut[11] N$dummy_esc3[24] clk nx1799
++ nx5814 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_12 RegOut[12] N$dummy_esc3[23] clk nx1809
++ nx5814 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_13 RegOut[13] N$dummy_esc3[22] clk nx1819
++ nx5816 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_14 RegOut[14] N$dummy_esc3[21] clk nx1829
++ nx5816 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_15 RegOut[15] N$dummy_esc3[20] clk nx1839
++ nx5816 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_16 RegOut[16] N$dummy_esc3[19] clk nx1849
++ nx5816 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_17 RegOut[17] N$dummy_esc3[18] clk nx1859
++ nx5816 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_18 RegOut[18] N$dummy_esc3[17] clk nx1869
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_19 RegOut[19] N$dummy_esc3[16] clk nx1879
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_20 RegOut[20] N$dummy_esc3[15] clk nx1889
++ nx5818 VDD VSS dffr
+        X_MAC0_BigBoyReg_reg_Y_21 RegOut[21] N$dummy_esc3[14] clk nx1899
++ nx5818 VDD VSS dffr
+.ends ProjectWrapper
+

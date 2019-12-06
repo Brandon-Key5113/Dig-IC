@@ -1,0 +1,65 @@
+* SPICE NETLIST
+***************************************
+
+.SUBCKT mimcap_g13 plus minus
+.ENDS
+***************************************
+.SUBCKT spiral_inductor_lvs pos neg
+.ENDS
+***************************************
+.SUBCKT inv01 VSS VDD Y A
+** N=4 EP=4 IP=0 FDC=2
+M0 Y A VSS VSS nmos L=1.4e-07 W=3.5e-07 $X=910 $Y=1820 $D=19
+M1 Y A VDD VDD pmos L=1.4e-07 W=7.7e-07 $X=910 $Y=5600 $D=25
+.ENDS
+***************************************
+.SUBCKT ALU_1Bit VSS VDD CB Y A Control[1] B Control[0]
+** N=38 EP=8 IP=8 FDC=48
+M0 3 2 1 VSS nmos L=1.4e-07 W=1.19e-06 $X=3180 $Y=1220 $D=19
+M1 VSS 7 2 VSS nmos L=1.4e-07 W=3.5e-07 $X=3205 $Y=9775 $D=19
+M2 5 Control[1] 3 VSS nmos L=1.4e-07 W=1.19e-06 $X=3600 $Y=1220 $D=19
+M3 VSS B 5 VSS nmos L=1.4e-07 W=1.19e-06 $X=4020 $Y=1220 $D=19
+M4 7 Control[0] 6 VSS nmos L=1.4e-07 W=7.7e-07 $X=4325 $Y=9775 $D=19
+M5 CB 1 VSS VSS nmos L=1.4e-07 W=3.5e-07 $X=4615 $Y=2060 $D=19
+M6 6 A 7 VSS nmos L=1.4e-07 W=7.7e-07 $X=4885 $Y=9775 $D=19
+M7 VSS 11 6 VSS nmos L=1.4e-07 W=7.7e-07 $X=5445 $Y=9775 $D=19
+M8 10 A VSS VSS nmos L=1.4e-07 W=7.7e-07 $X=6005 $Y=9775 $D=19
+M9 11 Control[0] 10 VSS nmos L=1.4e-07 W=7.7e-07 $X=6425 $Y=9775 $D=19
+M10 12 Control[0] VSS VSS nmos L=1.4e-07 W=3.5e-07 $X=6540 $Y=1220 $D=19
+M11 VSS Control[1] 12 VSS nmos L=1.4e-07 W=3.5e-07 $X=7100 $Y=1220 $D=19
+M12 14 26 Y VSS nmos L=1.4e-07 W=7.7e-07 $X=9900 $Y=1570 $D=19
+M13 Y 30 14 VSS nmos L=1.4e-07 W=7.7e-07 $X=10460 $Y=1570 $D=19
+M14 16 A 15 VSS nmos L=1.4e-07 W=7.7e-07 $X=10625 $Y=10055 $D=19
+M15 14 Control[1] Y VSS nmos L=1.4e-07 W=7.7e-07 $X=11020 $Y=1570 $D=19
+M16 VSS B 16 VSS nmos L=1.4e-07 W=7.7e-07 $X=11045 $Y=10055 $D=19
+M17 VSS 12 14 VSS nmos L=1.4e-07 W=7.7e-07 $X=11580 $Y=1570 $D=19
+M18 14 18 VSS VSS nmos L=1.4e-07 W=7.7e-07 $X=12140 $Y=1570 $D=19
+M19 18 B 17 VSS nmos L=1.4e-07 W=7.7e-07 $X=12165 $Y=10055 $D=19
+M20 17 A 18 VSS nmos L=1.4e-07 W=7.7e-07 $X=12725 $Y=10055 $D=19
+M21 VSS 15 17 VSS nmos L=1.4e-07 W=7.7e-07 $X=13285 $Y=10055 $D=19
+M22 VDD 2 1 VDD pmos L=1.4e-07 W=1.4e-06 $X=3040 $Y=5840 $D=25
+M23 1 Control[1] VDD VDD pmos L=1.4e-07 W=1.4e-06 $X=3600 $Y=5840 $D=25
+M24 VDD 7 2 VDD pmos L=1.4e-07 W=7.7e-07 $X=3625 $Y=13275 $D=25
+M25 VDD B 1 VDD pmos L=1.4e-07 W=1.4e-06 $X=4160 $Y=5840 $D=25
+M26 19 Control[0] VDD VDD pmos L=1.4e-07 W=2.24e-06 $X=4220 $Y=13275 $D=25
+M27 7 A 19 VDD pmos L=1.4e-07 W=2.24e-06 $X=4640 $Y=13275 $D=25
+M28 CB 1 VDD VDD pmos L=1.4e-07 W=7.7e-07 $X=4755 $Y=5840 $D=25
+M29 VDD 11 7 VDD pmos L=1.4e-07 W=1.19e-06 $X=5235 $Y=14325 $D=25
+M30 11 A VDD VDD pmos L=1.4e-07 W=1.19e-06 $X=5795 $Y=14325 $D=25
+M31 VDD Control[0] 11 VDD pmos L=1.4e-07 W=1.19e-06 $X=6355 $Y=14325 $D=25
+M32 20 Control[0] VDD VDD pmos L=1.4e-07 W=1.19e-06 $X=6680 $Y=6050 $D=25
+M33 12 Control[1] 20 VDD pmos L=1.4e-07 W=1.19e-06 $X=7100 $Y=6050 $D=25
+M34 21 26 VDD VDD pmos L=1.4e-07 W=2.73e-06 $X=10180 $Y=4510 $D=25
+M35 22 30 21 VDD pmos L=1.4e-07 W=2.73e-06 $X=10600 $Y=4510 $D=25
+M36 15 A VDD VDD pmos L=1.4e-07 W=1.19e-06 $X=10995 $Y=13030 $D=25
+M37 Y Control[1] 22 VDD pmos L=1.4e-07 W=2.73e-06 $X=11020 $Y=4510 $D=25
+M38 VDD B 15 VDD pmos L=1.4e-07 W=1.19e-06 $X=11555 $Y=13030 $D=25
+M39 23 12 Y VDD pmos L=1.4e-07 W=2.03e-06 $X=11615 $Y=4510 $D=25
+M40 VDD 18 23 VDD pmos L=1.4e-07 W=2.03e-06 $X=12035 $Y=4510 $D=25
+M41 24 A VDD VDD pmos L=1.4e-07 W=2.24e-06 $X=12185 $Y=13065 $D=25
+M42 18 B 24 VDD pmos L=1.4e-07 W=2.24e-06 $X=12675 $Y=13030 $D=25
+M43 VDD 15 18 VDD pmos L=1.4e-07 W=1.19e-06 $X=13270 $Y=13065 $D=25
+X44 VSS VDD 26 A inv01 $T=275 30 0 0 $X=275 $Y=30
+X45 VSS VDD 30 B inv01 $T=7370 8445 0 0 $X=7370 $Y=8445
+.ENDS
+***************************************

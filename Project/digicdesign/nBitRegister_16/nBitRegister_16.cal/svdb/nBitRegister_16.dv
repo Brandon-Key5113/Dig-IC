@@ -1,0 +1,6 @@
+# CALIBRE-LVS DISCREPANCY VIEWER TCL FILE 
+# FILE: svdb/nBitRegister_16.dv
+dv_start matched                                  
+dv_cell {nBitRegister_16} {nBitRegister_16} matched
+dv_obj_count -transformed_nets {214 214} -transformed_inst {337 337} -transformed_port {37 37}
+dv_end

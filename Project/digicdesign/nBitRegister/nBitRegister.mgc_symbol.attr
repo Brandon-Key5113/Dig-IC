@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dd199684374.03.81.15.9a.2a.00.76.94 1 2 1 0
+V v 1 2 5dd199684374.03.81.15.9a.2a.01.76.94
+F f 1 "nBitRegister.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/nBitRegister/part" 7 Eddm_part 5dd1996ad451.03.81.15.9a.2a.00.76.94 5dd1979b582b.03.81.15.9a.2a.00.5d.12

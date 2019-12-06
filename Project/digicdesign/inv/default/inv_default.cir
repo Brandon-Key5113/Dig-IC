@@ -1,0 +1,38 @@
+* Component: $PYXIS_SPT/digicdesign/inv Viewpoint: default
+
+.INCLUDE "$PYXIS_SPT/digicdesign/inv/default/netlist.spi"
+.INCLUDE "$GENERIC13/models/include_all"
+.OPTION AEX
+.OPTION ENGNOT
+.OPTION LIMPROBE=10000.0
+.OPTION NOASCII
+
+* - Analysis Setup - DCOP
+.OPTION PROBEOP2
+.OP
+
+* - Analysis Setup - Trans
+.TRAN 0.0 40n 0
+
+* --- Forces
+VFORCE__Vdd VDD GROUND DC 1.08
+VFORCE__Vin VIN GROUND PULSE (0 1.08 5n 0.1n 0.1n 5n 10n)
+
+* --- Global Outputs
+.PROBE V SG
+
+* --- Waveform Outputs
+.PLOT DC V(VOUT)
+.PLOT TRAN V(VOUT)
+
+* --- Params
+.TEMP 125.0
+
+* --- Libsetup
+.LIB KEY=MOS "$GENERIC13/models/lib.eldo" TT
+.LIB KEY=MOS_33 "$GENERIC13/models/lib.eldo" TT_33
+.LIB KEY=MOS_lvt "$GENERIC13/models/lib.eldo" TT_lvt
+.LIB KEY=MOS_hvt "$GENERIC13/models/lib.eldo" TT_hvt
+.LIB KEY=BIP "$GENERIC13/models/lib.eldo" TT_BIP
+.LIB KEY=BIP_NPN "$GENERIC13/models/lib.eldo" TT_BIP_NPN
+.LIB KEY=RES "$GENERIC13/models/lib.eldo" TT_RES

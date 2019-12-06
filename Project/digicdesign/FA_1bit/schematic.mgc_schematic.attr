@@ -1,0 +1,10 @@
+A 5 u mgc_schematic 5dd1bd109d5b.03.81.15.9a.2a.00.3b.f4 2 2 1 0
+V v 1 1 5dd1bd109d5c.03.81.15.9a.2a.00.3b.f4
+F o 0 ""
+V v 2 1 5dd1bd116ccf.03.81.15.9a.2a.00.3b.f4
+F o 0 ""
+O 2
+R cspuv 0 "$PYXIS_SPT/digicdesign/FA_1bit/schematic/sheet1" 1 mgc_sheet 5dd1bd10c3db.03.81.15.9a.2a.01.3b.f4 5dd1bd10c3db.03.81.15.9a.2a.00.3b.f4
+O 1
+R cspuv 0 "$PYXIS_SPT/digicdesign/FA_1bit/schematic/sheet1" 1 mgc_sheet 5dd1bd10c3db.03.81.15.9a.2a.01.3b.f4 5dd1bd10c3db.03.81.15.9a.2a.00.3b.f4
+P "eddm__refer_state" "eddm__refer_floating"

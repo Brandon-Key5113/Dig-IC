@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5dc2df980ad7.03.81.15.9a.12.00.13.e0 1 2 1 0
+V v 1 2 5dc2df980ad7.03.81.15.9a.12.01.13.e0
+F f 1 "Controller_4Bit.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/Controller_4Bit/part" 1 Eddm_part 5dc2df9a8aed.03.81.15.9a.12.01.13.e0 5dc2df9a8aed.03.81.15.9a.12.00.13.e0

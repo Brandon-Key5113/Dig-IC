@@ -1,0 +1,56 @@
+* Calibre pushdown separate-properties (back-annotation) data
+***************************************
+*
+* These lvs-actionable properties, indexed by DEVICE element(model) will be kept in the netlist:
+*
+* KEEP_PROP_BEGIN
+* KEEP_PROP C(nmosvar) LR WR
+* KEEP_PROP D(ndiode) A
+* KEEP_PROP D(ndiode_33) A
+* KEEP_PROP D(nwdiode) A
+* KEEP_PROP D(pdiode) A
+* KEEP_PROP D(pdiode_33) A
+* KEEP_PROP MN(nmos) L W
+* KEEP_PROP MN(nmos_33) L W
+* KEEP_PROP MN(nmos_hvt) L W
+* KEEP_PROP MN(nmos_lvt) L W
+* KEEP_PROP MN(nmos_na) L W
+* KEEP_PROP MN(nmos_na33) L W
+* KEEP_PROP MN(NMOS_RF) NR
+* KEEP_PROP MN(NMOS_RF25) NR
+* KEEP_PROP MP(pmos) L W
+* KEEP_PROP MP(pmos_33) L W
+* KEEP_PROP MP(pmos_hvt) L W
+* KEEP_PROP MP(pmos_lvt) L W
+* KEEP_PROP MP(PMOS_RF) rl NR
+* KEEP_PROP MP(PMOS_RF25) RL NR
+* KEEP_PROP R(rm1) R
+* KEEP_PROP R(rm2) R
+* KEEP_PROP R(rm3) R
+* KEEP_PROP R(rm4) R
+* KEEP_PROP R(rm5) R
+* KEEP_PROP R(rm6) R
+* KEEP_PROP R(rm7) R
+* KEEP_PROP R(rm8) R
+* KEEP_PROP R(rndiffs) W L
+* KEEP_PROP R(rndiffwo) W L
+* KEEP_PROP R(rnpolyhi) W L
+* KEEP_PROP R(rnpolylo) W L
+* KEEP_PROP R(rnwod) W L
+* KEEP_PROP R(rnwsti) W L
+* KEEP_PROP R(rpdiffs) W L
+* KEEP_PROP R(rpdiffwo) W L
+* KEEP_PROP R(rppolyhi) W L
+* KEEP_PROP R(rppolylo) W L
+* KEEP_PROP c(mimcap) lt
+* KEEP_PROP c(moscap_rf) nr
+* KEEP_PROP c(moscap_rf25) nr
+* KEEP_PROP c(xjvar) nr
+* KEEP_PROP mimcap_g13 A m
+* KEEP_PROP spiral_inductor_lvs nr
+* KEEP_PROP_END
+*
+.SUBCKT inv
+* nothing transcripted
+.ENDS
+***************************************

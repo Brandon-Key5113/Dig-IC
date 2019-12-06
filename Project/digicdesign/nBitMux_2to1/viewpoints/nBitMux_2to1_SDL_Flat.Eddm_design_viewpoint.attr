@@ -1,0 +1,15 @@
+A 5 u Eddm_design_viewpoint 5dd1ae4b8053.03.81.15.9a.2a.00.61.fc 1 2 6 0
+V v 1 4 5dd1ae4b8053.03.81.15.9a.2a.01.61.fc
+F f 1 "nBitMux_2to1_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/nBitMux_2to1/part" 2 Eddm_part 5dd1adc4d0a2.03.81.15.9a.2a.00.53.f8 5dd1adc45b23.03.81.15.9a.2a.00.53.f8
+R cspuv 1 "$PYXIS_SPT/digicdesign/nBitMux_2to1/nBitMux_2to1" 1 mgc_symbol 5dd1adc1bf93.03.81.15.9a.2a.01.53.f8 5dd1adc1bf93.03.81.15.9a.2a.00.53.f8
+R cspuv 2 "$PYXIS_SPT/digicdesign/nBitMux_2to1/schematic" 3 mgc_schematic 5dd1adf241de.03.81.15.9a.2a.00.61.11 5dd1adc46954.03.81.15.9a.2a.00.53.f8
+R cspuv 3 "$GDKGATES/mux21/part" 6 Eddm_part 503e417a4993.03.93.22.28.96.00.79.ff 503d3cc570ce.03.93.22.28.96.14.7e.63
+R cspuv 4 "$GDKGATES/mux21/schematic" 2 mgc_schematic 4e72c8a8766a.03.93.22.28.e1.00.60.94 503d3cc570ce.03.93.22.28.96.15.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 5 "$GDKGATES/mux21/mux21" 12 mgc_symbol 503d77f4dab5.03.93.22.28.96.00.4f.76 503d3cc570ce.03.93.22.28.96.12.7e.63

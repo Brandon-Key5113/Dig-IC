@@ -1,0 +1,16 @@
+A 5 u Eddm_part 5dd86735070a.03.81.15.9a.2a.00.49.22 5 2 4 0
+V v 3 1 5ddc70a85ab8.03.81.15.9a.1d.00.6a.1a
+F f 3 "part.part_3"
+V v 4 1 5ddc70aea3fc.03.81.15.9a.1d.00.6a.2a
+F f 4 "part.part_4"
+V v 5 1 5ddc70afc0a9.03.81.15.9a.1d.00.6a.2a
+F f 5 "part.part_5"
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/ProjectWrapper" 1 mgc_symbol 5ddc70abe221.03.81.15.9a.1d.01.6a.2a 5ddc70abe221.03.81.15.9a.1d.00.6a.2a
+R csduv 3 "$PYXIS_SPT/digicdesign/ProjectWrapper/schematic" 1 mgc_schematic 5ddc70aeb002.03.81.15.9a.1d.01.6a.2a 5ddc70aeb002.03.81.15.9a.1d.00.6a.2a
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R csduv 2 "$PYXIS_SPT/digicdesign/ProjectWrapper/ProjectWrapper" 1 mgc_symbol 5ddc70abe221.03.81.15.9a.1d.01.6a.2a 5ddc70abe221.03.81.15.9a.1d.00.6a.2a
+O 3
+P "eddm__stream_to_use" "eddm__propl_dstream"

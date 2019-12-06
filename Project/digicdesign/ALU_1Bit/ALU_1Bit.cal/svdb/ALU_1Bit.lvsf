@@ -1,0 +1,9 @@
+# Automagically generated file: Please do not edit!
+lvs_LvsOutFile RUNDIR /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_1Bit/ALU_1Bit.cal
+lvs_LvsfVersion 2
+lvs_LvsInputSummary {0 0 0}
+lvs_LvsComparisonSummary {3 0 0 0}
+lvs_LvsOutFile LVS_REPORT ALU_1Bit.lvs.report
+lvs_LvsOutFile SOURCE_NETLIST /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_1Bit/ALU_1Bit.cal/ALU_1Bit.src.net
+lvs_LvsOutFile RULES_FILE /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_1Bit/ALU_1Bit.cal/_PEX_
+lvs_LvsRunTimes 1573329874 1573329875

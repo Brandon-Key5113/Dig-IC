@@ -1,0 +1,17 @@
+*pexRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.cal
+*pexLayoutPaths: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/Full_Adder/Full_Adder.gdsii
+*pexLayoutPrimary: Full_Adder
+*pexSourcePath: Full_Adder.src.net
+*pexSourcePrimary: Full_Adder
+*pexSourceGetFromViewer: 1
+*pexPexNetlistType: RC
+*pexReportFile: Full_Adder.lvs.report
+*pexPexNetlistFile: Full_Adder.pex.netlist
+*pexPexReportFile: Full_Adder.pex.report
+*cmnUseCBforRVE: 0
+*cmnRunHier: 2
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDIDEFLayoutPath: Full_Adder.def

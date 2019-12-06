@@ -1,0 +1,17 @@
+A 5 u Eddm_ba_mgr 5d6fb1ca43d1.03.81.15.9a.12.00.08.54 6 2 9 0
+V v 4 1 5d6fb5d21765.03.81.15.9a.12.00.19.ba
+F f 4 "default.ba_4"
+V v 5 1 5d6fbc3a9e86.03.81.15.9a.12.00.19.ba
+F f 5 "default.ba_5"
+V v 6 1 5d6fbdf8dc0c.03.81.15.9a.12.00.19.ba
+F f 6 "default.ba_6"
+O 6
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 8 "$PYXIS_SPT/digicdesign/inv/default" 3 Eddm_design_viewpoint 5d6fb2255eac.03.81.15.9a.12.00.19.ba 5d6fb1ca28e9.03.81.15.9a.12.00.08.54
+O 5
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 6 "$PYXIS_SPT/digicdesign/inv/default" 3 Eddm_design_viewpoint 5d6fb2255eac.03.81.15.9a.12.00.19.ba 5d6fb1ca28e9.03.81.15.9a.12.00.08.54
+R cspuv 7 "$PYXIS_SPT/digicdesign/inv/schematic" 3 mgc_schematic 5d6fb178a3a5.03.81.15.9a.12.00.08.54 5d6faee5e109.03.81.15.9a.12.00.08.54
+O 4
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 5 "$PYXIS_SPT/digicdesign/inv/default" 3 Eddm_design_viewpoint 5d6fb2255eac.03.81.15.9a.12.00.19.ba 5d6fb1ca28e9.03.81.15.9a.12.00.08.54

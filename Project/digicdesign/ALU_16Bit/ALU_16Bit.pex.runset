@@ -1,0 +1,7 @@
+*pexRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_16Bit/ALU_16Bit.cal
+*pexLayoutPaths: ALU_16Bit.calibre.gds
+*pexLayoutPrimary: ALU_16Bit
+*pexLayoutGetFromViewer: 1
+*pexResultsFile: ALU_16Bit.pex.results
+*pexSummaryFile: ALU_16Bit.pex.summary

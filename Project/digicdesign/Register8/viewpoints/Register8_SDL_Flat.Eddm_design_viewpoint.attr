@@ -1,0 +1,19 @@
+A 5 u Eddm_design_viewpoint 5db051fe8324.03.81.15.9a.12.00.56.4a 1 2 9 0
+V v 1 4 5db051fe8324.03.81.15.9a.12.01.56.4a
+F f 1 "Register8_SDL_Flat.dvpt_1"
+F o 0 
+F o 0 
+F o 0 
+O 1
+P "eddm__stream_to_use" "eddm__propl_dstream"
+R cspuv 0 "$PYXIS_SPT/digicdesign/Register8/part" 2 Eddm_part 5db050e9879a.03.81.15.9a.12.00.3b.82 5db050e89e38.03.81.15.9a.12.00.3b.82
+R cspuv 1 "$PYXIS_SPT/digicdesign/Register8/Register8" 1 mgc_symbol 5db050e5eb83.03.81.15.9a.12.01.3b.82 5db050e5eb83.03.81.15.9a.12.00.3b.82
+R cspuv 2 "$PYXIS_SPT/digicdesign/Register8/schematic" 3 mgc_schematic 5db051980351.03.81.15.9a.12.00.4f.a5 5db050e8cd39.03.81.15.9a.12.00.3b.82
+R cspuv 3 "$GDKGATES/mux21/part" 6 Eddm_part 503e417a4993.03.93.22.28.96.00.79.ff 503d3cc570ce.03.93.22.28.96.14.7e.63
+R cspuv 4 "$GDKGATES/dffr/part" 4 Eddm_part 50c796be3b55.03.93.22.28.46.00.06.3f 503d3cc570cc.03.93.22.28.96.18.7e.63
+R cspuv 5 "$GDKGATES/mux21/schematic" 2 mgc_schematic 4e72c8a8766a.03.93.22.28.e1.00.60.94 503d3cc570ce.03.93.22.28.96.15.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 6 "$GDKGATES/mux21/mux21" 12 mgc_symbol 503d77f4dab5.03.93.22.28.96.00.4f.76 503d3cc570ce.03.93.22.28.96.12.7e.63
+R cspuv 7 "$GDKGATES/dffr/schematic" 2 mgc_schematic 4e72c849658f.03.93.22.28.e1.00.60.94 503d3cc570cc.03.93.22.28.96.19.7e.63
+P "eddm__refer_state" "eddm__refer_floating"
+R cspuv 8 "$GDKGATES/dffr/dffr" 10 mgc_symbol 503d524e6135.03.93.22.28.96.00.4f.76 503d3cc570cc.03.93.22.28.96.16.7e.63

@@ -1,0 +1,200 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS VSS
+   VDD VDD
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell nor02
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$1 N$1
+   Net Y Y
+   Net A1 A1
+   Net A0 A0
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MN2 MN2 nmos
+   Inst MN1 MN1 nmos
+   Inst MP2 MP2 pmos
+   Inst MP1 MP1 pmos
+End Cell
+
+Cell xnor2
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$9 N$9
+   Net N$8 N$8
+   Net N$3 N$3
+   Net N$1 N$1
+   Net A1 A1
+   Net A0 A0
+   Net Y Y
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MP5 MP5 pmos
+   Inst MP4 MP4 pmos
+   Inst MN4 MN4 nmos
+   Inst MN3 MN3 nmos
+   Inst MN2 MN2 nmos
+   Inst MN1 MN1 nmos
+   Inst MP3 MP3 pmos
+   Inst MP2 MP2 pmos
+   Inst MP1 MP1 pmos
+   Inst MN5 MN5 nmos
+End Cell
+
+Cell inv01
+   Pin Y Y
+   Pin A A
+   Pin VDD VDD
+   Pin VSS VSS
+   Net Y Y
+   Net A A
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MP1 MP1 pmos
+   Inst MN1 MN1 nmos
+End Cell
+
+Cell oai32
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin B0 B0
+   Pin B1 B1
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$4 N$4
+   Net N$12 N$12
+   Net N$6 N$6
+   Net N$5 N$5
+   Net Y Y
+   Net A0 A0
+   Net A2 A2
+   Net B1 B1
+   Net B0 B0
+   Net A1 A1
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MN5 MN5 nmos
+   Inst MN4 MN4 nmos
+   Inst MP5 MP5 pmos
+   Inst MN3 MN3 nmos
+   Inst MN2 MN2 nmos
+   Inst MN1 MN1 nmos
+   Inst MP3 MP3 pmos
+   Inst MP2 MP2 pmos
+   Inst MP1 MP1 pmos
+   Inst MP4 MP4 pmos
+End Cell
+
+Cell xor2
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$7 N$7
+   Net N$6 N$6
+   Net N$4 N$4
+   Net N$3 N$3
+   Net N$1 N$1
+   Net A1 A1
+   Net A0 A0
+   Net Y Y
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MN5 MN5 nmos
+   Inst MN4 MN4 nmos
+   Inst MP4 MP4 pmos
+   Inst MP3 MP3 pmos
+   Inst MP1 MP1 pmos
+   Inst MN3 MN3 nmos
+   Inst MN2 MN2 nmos
+   Inst MN1 MN1 nmos
+   Inst MP6 MP6 pmos
+   Inst MP2 MP2 pmos
+   Inst MP5 MP5 pmos
+   Inst MN6 MN6 nmos
+End Cell
+
+Cell and03
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin A2 A2
+   Pin VDD VDD
+   Pin VSS VSS
+   Net A A
+   Net N$215 N$215
+   Net N$214 N$214
+   Net A2 A2
+   Net A0 A0
+   Net Y Y
+   Net A1 A1
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MP3 MP3 pmos
+   Inst MN2 MN2 nmos
+   Inst MN1 MN1 nmos
+   Inst MN3 MN3 nmos
+   Inst MN4 MN4 nmos
+   Inst MP2 MP2 pmos
+   Inst MP1 MP1 pmos
+   Inst MP4 MP4 pmos
+End Cell
+
+Cell #top#
+   Pin CB CB
+   Pin Y Y
+   Pin A A
+   Pin B B
+   Pin Control[1] Control[1]
+   Pin Control[0] Control[0]
+   Net nx83 nx83
+   Net nx81 nx81
+   Net nx85 nx85
+   Net nx79 nx79
+   Net nx0 nx0
+   Net A A
+   Net B B
+   Net Y Y
+   Net CB CB
+   Net Control[1] Control[1]
+   Net Control[0] Control[0]
+   Global VSS VSS
+   Global VDD VDD
+   Inst ix86 X_ix86 nor02
+   Inst ix84 X_ix84 xnor2
+   Inst ix82 X_ix82 inv01
+   Inst ix80 X_ix80 inv01
+   Inst ix21 X_ix21 oai32
+   Inst ix1 X_ix1 xor2
+   Inst ix5 X_ix5 and03
+End Cell
+

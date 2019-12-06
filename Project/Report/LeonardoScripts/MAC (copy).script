@@ -1,0 +1,8 @@
+set exclude_gates {PadInC PadOut}
+load_library ~/Pyxis_SPT_HEP/ic_reflibs/external_libs/GDKgates/GDKgates_utilities/hdl_libs/gdk.syn
+read {./Output/nBitAdder.vhdl ./Output/Multiplier.vhdl ./Output/nBitRegister_16.vhdl ./Output/nBitRegister_32.vhdl ../SourceCode/MAC.vhd }
+set sdf_write_flat_netlist TRUE
+optimize
+write -format verilog ./Output/MAC.v
+write -format vhdl ./Output/MAC.vhdl
+write -format sdf ./Output/MAC.sdf

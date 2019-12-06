@@ -1,0 +1,18 @@
+*pexRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/PEX
+*pexRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.cal
+*pexLayoutPaths: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/mirroradder/mirroradder.gdsii
+*pexLayoutPrimary: mirroradder
+*pexSourcePath: mirroradder.src.net
+*pexSourcePrimary: mirroradder
+*pexPexNetlistType: RC
+*pexEnvVars: {PEX_FMT_SOURCE_BASED_FLOW {} Unset}
+*pexReportFile: mirroradder.lvs.report
+*pexPexNetlistFile: mirroradder.pex.netlist
+*pexPexNetlistNameSource: LAYOUTNAMES
+*pexPexReportFile: mirroradder.pex.report
+*cmnUseCBforRVE: 0
+*cmnRunHier: 2
+*cmnSlaveHosts: {use {}} {hostName {}} {cpuCount {}} {a32a64 {}} {rsh {}} {maxMem {}} {workingDir {}} {layerDir {}} {mgcLibPath {}} {launchName {}}
+*cmnLSFSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnGridSlaveTbl: {use 1} {totalCpus 1} {minCpus 1} {architecture {{}}} {minMemory {{}}} {resourceOptions {{}}} {submitOptions {{}}}
+*cmnFDIDEFLayoutPath: mirroradder.def

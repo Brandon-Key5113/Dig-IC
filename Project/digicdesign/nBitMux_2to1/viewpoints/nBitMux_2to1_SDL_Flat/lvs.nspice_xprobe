@@ -1,0 +1,176 @@
+# This file provides name mapping information for all objects
+# on the schematic design.  It provides a mapping for each
+# object between its name on the schematic and its name in the netlist.
+version 1.0
+
+Globals
+   VSS VSS
+   VDD VDD
+End Globals
+
+Cell nmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell pmos
+   Pin D D
+   Pin G G
+   Pin S S
+   Pin B B
+End Cell
+
+Cell mux21
+   Pin Y Y
+   Pin A0 A0
+   Pin A1 A1
+   Pin S0 S0
+   Pin VDD VDD
+   Pin VSS VSS
+   Net N$231 N$231
+   Net N$11 N$11
+   Net N$3 N$3
+   Net N$7 N$7
+   Net N$2 N$2
+   Net N$1 N$1
+   Net Y Y
+   Net A1 A1
+   Net A0 A0
+   Net S0 S0
+   Net VDD_esc1 VDD_esc1
+   Net VSS_esc2 VSS_esc2
+   Inst MN4 MN4 nmos
+   Inst M1 M1 pmos
+   Inst MN5 MN5 nmos
+   Inst M2 M2 nmos
+   Inst MP5 MP5 pmos
+   Inst MP4 MP4 pmos
+   Inst MN3 MN3 nmos
+   Inst MN2 MN2 nmos
+   Inst MP2 MP2 pmos
+   Inst MN1 MN1 nmos
+   Inst MP1 MP1 pmos
+   Inst MP3 MP3 pmos
+End Cell
+
+Cell #top#
+   Pin Y[15] Y[15]
+   Pin Y[14] Y[14]
+   Pin Y[13] Y[13]
+   Pin Y[12] Y[12]
+   Pin Y[11] Y[11]
+   Pin Y[10] Y[10]
+   Pin Y[9] Y[9]
+   Pin Y[8] Y[8]
+   Pin Y[7] Y[7]
+   Pin Y[6] Y[6]
+   Pin Y[5] Y[5]
+   Pin Y[4] Y[4]
+   Pin Y[3] Y[3]
+   Pin Y[2] Y[2]
+   Pin Y[1] Y[1]
+   Pin Y[0] Y[0]
+   Pin A[15] A[15]
+   Pin A[14] A[14]
+   Pin A[13] A[13]
+   Pin A[12] A[12]
+   Pin A[11] A[11]
+   Pin A[10] A[10]
+   Pin A[9] A[9]
+   Pin A[8] A[8]
+   Pin A[7] A[7]
+   Pin A[6] A[6]
+   Pin A[5] A[5]
+   Pin A[4] A[4]
+   Pin A[3] A[3]
+   Pin A[2] A[2]
+   Pin A[1] A[1]
+   Pin A[0] A[0]
+   Pin B[15] B[15]
+   Pin B[14] B[14]
+   Pin B[13] B[13]
+   Pin B[12] B[12]
+   Pin B[11] B[11]
+   Pin B[10] B[10]
+   Pin B[9] B[9]
+   Pin B[8] B[8]
+   Pin B[7] B[7]
+   Pin B[6] B[6]
+   Pin B[5] B[5]
+   Pin B[4] B[4]
+   Pin B[3] B[3]
+   Pin B[2] B[2]
+   Pin B[1] B[1]
+   Pin B[0] B[0]
+   Pin sel sel
+   Net sel sel
+   Net Y[15] Y[15]
+   Net Y[14] Y[14]
+   Net Y[13] Y[13]
+   Net Y[12] Y[12]
+   Net Y[11] Y[11]
+   Net Y[10] Y[10]
+   Net Y[9] Y[9]
+   Net Y[8] Y[8]
+   Net Y[7] Y[7]
+   Net Y[6] Y[6]
+   Net Y[5] Y[5]
+   Net Y[4] Y[4]
+   Net Y[3] Y[3]
+   Net Y[2] Y[2]
+   Net Y[1] Y[1]
+   Net Y[0] Y[0]
+   Net B[15] B[15]
+   Net B[14] B[14]
+   Net B[13] B[13]
+   Net B[12] B[12]
+   Net B[11] B[11]
+   Net B[10] B[10]
+   Net B[9] B[9]
+   Net B[8] B[8]
+   Net B[7] B[7]
+   Net B[6] B[6]
+   Net B[5] B[5]
+   Net B[4] B[4]
+   Net B[3] B[3]
+   Net B[2] B[2]
+   Net B[1] B[1]
+   Net B[0] B[0]
+   Net A[15] A[15]
+   Net A[14] A[14]
+   Net A[13] A[13]
+   Net A[12] A[12]
+   Net A[11] A[11]
+   Net A[10] A[10]
+   Net A[9] A[9]
+   Net A[8] A[8]
+   Net A[7] A[7]
+   Net A[6] A[6]
+   Net A[5] A[5]
+   Net A[4] A[4]
+   Net A[3] A[3]
+   Net A[2] A[2]
+   Net A[1] A[1]
+   Net A[0] A[0]
+   Global VSS VSS
+   Global VDD VDD
+   Inst ix127 X_ix127 mux21
+   Inst ix119 X_ix119 mux21
+   Inst ix111 X_ix111 mux21
+   Inst ix103 X_ix103 mux21
+   Inst ix95 X_ix95 mux21
+   Inst ix87 X_ix87 mux21
+   Inst ix79 X_ix79 mux21
+   Inst ix71 X_ix71 mux21
+   Inst ix63 X_ix63 mux21
+   Inst ix55 X_ix55 mux21
+   Inst ix47 X_ix47 mux21
+   Inst ix39 X_ix39 mux21
+   Inst ix31 X_ix31 mux21
+   Inst ix23 X_ix23 mux21
+   Inst ix15 X_ix15 mux21
+   Inst ix7 X_ix7 mux21
+End Cell
+

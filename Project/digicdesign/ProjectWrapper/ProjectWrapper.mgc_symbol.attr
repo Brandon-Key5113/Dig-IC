@@ -1,0 +1,6 @@
+A 5 u mgc_symbol 5ddc70abe221.03.81.15.9a.1d.00.6a.2a 1 2 1 0
+V v 1 2 5ddc70abe221.03.81.15.9a.1d.01.6a.2a
+F f 1 "ProjectWrapper.smbl_1"
+F o 0 
+O 1
+R csduv 0 "$PYXIS_SPT/digicdesign/ProjectWrapper/part" 4 Eddm_part 5ddc70aea3fc.03.81.15.9a.1d.00.6a.2a 5dd86735070a.03.81.15.9a.2a.00.49.22

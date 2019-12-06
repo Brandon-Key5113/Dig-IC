@@ -1,0 +1,54 @@
+* LVS netlist generated with ICnet by 'bxk5113' on Sat Oct 19 2019 at 17:11:52
+
+*
+* Globals.
+*
+.global ground
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/mirroradder
+*
+.subckt mirroradder  Cout NS S A B Cin Vdd
+
+        M18 N$72 B ground ground nmos l=0.13u w=0.52u m=1
+        M17 N$74 A N$72 ground nmos l=0.13u w=0.52u m=1
+        M8 N$92 Cin Vdd Vdd pmos l=0.13u w=1.04u m=1
+        M7 N$92 B Vdd Vdd pmos l=0.13u w=1.04u m=1
+        M6 N$92 A Vdd Vdd pmos l=0.13u w=1.04u m=1
+        M5 N$74 A N$126 Vdd pmos l=0.13u w=1.04u m=1
+        M4 N$126 B Vdd Vdd pmos l=0.13u w=1.04u m=1
+        M2 N$128 B Vdd Vdd pmos l=0.13u w=1.04u m=1
+        M1 N$128 A Vdd Vdd pmos l=0.13u w=1.04u m=1
+        M10 N$96 B N$100 Vdd pmos l=0.13u w=1.56u m=1
+        M13 S NS Vdd Vdd pmos l=0.13u w=0.52u m=1
+        M12 NS N$74 N$92 Vdd pmos l=0.13u w=1.04u m=1
+        M11 NS Cin N$96 Vdd pmos l=0.13u w=1.56u m=1
+        M9 N$100 A Vdd Vdd pmos l=0.13u w=1.56u m=1
+        M14 N$74 Cin N$139 ground nmos l=0.13u w=0.52u m=1
+        M15 N$139 A ground ground nmos l=0.13u w=0.52u m=1
+        M16 N$139 B ground ground nmos l=0.13u w=0.52u m=1
+        M3 N$74 Cin N$128 Vdd pmos l=0.13u w=1.04u m=1
+        M19 Cout N$74 Vdd Vdd pmos l=0.13u w=0.52u m=1
+        M27 NS Cin N$83 ground nmos l=0.13u w=0.78u m=1
+        M26 N$83 B N$81 ground nmos l=0.13u w=0.78u m=1
+        M25 N$81 A ground ground nmos l=0.13u w=0.78u m=1
+        M24 N$75 Cin ground ground nmos l=0.13u w=0.52u m=1
+        M23 N$75 B ground ground nmos l=0.13u w=0.52u m=1
+        M22 N$75 A ground ground nmos l=0.13u w=0.52u m=1
+        M21 NS N$74 N$75 ground nmos l=0.13u w=0.52u m=1
+        M20 Cout N$74 ground ground nmos l=0.13u w=0.26u m=1
+        M28 S NS ground ground nmos l=0.13u w=0.26u m=1
+.ends mirroradder
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/rippleadder
+*
+.subckt rippleadder  Cout NS0 NS1 NS2 NS3 S0 S1 S2 S3 A0 A1 A2 A3 B0 B1
++ B2 B3 Cin Vdd
+
+        X_MIRRORADDER4 Cout NS3 S3 A3 B3 N$335 Vdd mirroradder
+        X_MIRRORADDER3 N$335 NS2 S2 A2 B2 N$333 Vdd mirroradder
+        X_MIRRORADDER2 N$333 NS1 S1 A1 B1 N$331 Vdd mirroradder
+        X_MIRRORADDER1 N$331 NS0 S0 A0 B0 Cin Vdd mirroradder
+.ends rippleadder
+

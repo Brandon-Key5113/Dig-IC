@@ -1,0 +1,50 @@
+A 5 u Ic_cell_template 5dc2e20156bf.03.81.15.9a.12.00.2f.1c 2 4 40 0
+V v 1 2 5dc2ed4683ac.03.81.15.9a.12.00.2f.1c
+F f 1 "ALU_4Bit.iccel_1"
+F o 0 ""
+V v 2 2 5dc2f0a40646.03.81.15.9a.2a.00.4b.c0
+F f 2 "ALU_4Bit.iccel_2"
+F o 0 ""
+O 2
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/ALU_4Bit/viewpoints/ALU_4Bit_SDL_Flat" 1 Eddm_design_viewpoint 5dc2e2013ba5.03.81.15.9a.12.01.2f.1c 5dc2e2013ba5.03.81.15.9a.12.00.2f.1c
+R csduv 21 "$GDKGATES/inv01/inv01" 13 Ic_cell_template 50c6b6e6b7e1.03.93.22.28.46.00.42.de 503d3cc570cd.03.93.22.28.96.07.7e.63
+R csduv 22 "$GDKGATES/aoi32/aoi32" 19 Ic_cell_template 50c6b6e58130.03.93.22.28.46.00.42.de 503d3ceec93d.03.93.22.28.96.04.7e.63
+R csduv 23 "$GDKGATES/oai21/oai21" 20 Ic_cell_template 50c6b6e83fdd.03.93.22.28.46.00.42.de 503d3d431df0.03.93.22.28.96.08.7e.63
+R csduv 24 "$GDKGATES/nand02/nand02" 10 Ic_cell_template 50c6b6e73b9f.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.19.7e.63
+R csduv 25 "$GDKGATES/inv02/inv02" 9 Ic_cell_template 50c6b21dd7a9.03.93.22.28.46.00.42.de 503d3cc570cd.03.93.22.28.96.0d.7e.63
+R csduv 26 "$GDKGATES/nor02ii/nor02ii" 15 Ic_cell_template 50c6b6e79b3e.03.93.22.28.46.00.42.de 503d3cc570cf.03.93.22.28.96.1e.7e.63
+R csduv 27 "$GDKGATES/nand03/nand03" 14 Ic_cell_template 50c6b6e744f0.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.25.7e.63
+R csduv 28 "$GDKGATES/xnor2/xnor2" 7 Ic_cell_template 50c6b6e7d0e1.03.93.22.28.46.00.42.de 503d3d68681f.03.93.22.28.96.12.7e.63
+R csduv 29 "$GDKGATES/aoi22/aoi22" 23 Ic_cell_template 50c6b6e5986b.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.18.7e.63
+R csduv 30 "$GDKGATES/nor03/nor03" 15 Ic_cell_template 50c6b6e78b70.03.93.22.28.46.00.42.de 503d3cc570cf.03.93.22.28.96.24.7e.63
+R csduv 31 "$GDKGATES/or02/or02" 12 Ic_cell_template 50c6b6e8137b.03.93.22.28.46.00.42.de 503d3d68681e.03.93.22.28.96.00.7e.63
+R csduv 32 "$GDKGATES/ao22/ao22" 19 Ic_cell_template 50c6b6e5de3c.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.00.7e.63
+R csduv 33 "$GDKGATES/xor2/xor2" 13 Ic_cell_template 50c6b6e7e01b.03.93.22.28.46.00.42.de 503d3d68681f.03.93.22.28.96.1e.7e.63
+R csduv 34 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R csduv 35 "$GDKGATES/oai321/oai321" 7 Ic_cell_template 50c6b6e86975.03.93.22.28.46.00.42.de 503d3d431df1.03.93.22.28.96.04.7e.63
+R csduv 36 "$GDKGATES/oai222/oai222" 7 Ic_cell_template 50c6b6e87125.03.93.22.28.46.00.42.de 503d3d431df0.03.93.22.28.96.1a.7e.63
+R csduv 37 "$GDKGATES/aoi221/aoi221" 17 Ic_cell_template 50c6b6e55c5e.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.1e.7e.63
+R csdui 38 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa
+R cmduv 39 "49052f642000.0d.00.01.a5.b0.00.00.00" 1 Ic_device_template 49fba4394000.0d.00.01.a5.b0.00.00.00 49052f642000.0d.00.01.a5.b0.00.00.00
+O 1
+R csduv 1 "$GENERIC13/process/generic13" 75 Ic_persist_process 51bf7c9f2c7e.03.93.22.28.46.00.31.23 4aef38f1eeca.03.93.22.28.e1.00.3f.b3
+R csduv 2 "$PYXIS_SPT/digicdesign/ALU_4Bit/viewpoints/ALU_4Bit_SDL_Flat" 1 Eddm_design_viewpoint 5dc2e2013ba5.03.81.15.9a.12.01.2f.1c 5dc2e2013ba5.03.81.15.9a.12.00.2f.1c
+R csduv 21 "$GDKGATES/inv01/inv01" 13 Ic_cell_template 50c6b6e6b7e1.03.93.22.28.46.00.42.de 503d3cc570cd.03.93.22.28.96.07.7e.63
+R csduv 22 "$GDKGATES/aoi32/aoi32" 19 Ic_cell_template 50c6b6e58130.03.93.22.28.46.00.42.de 503d3ceec93d.03.93.22.28.96.04.7e.63
+R csduv 23 "$GDKGATES/oai21/oai21" 20 Ic_cell_template 50c6b6e83fdd.03.93.22.28.46.00.42.de 503d3d431df0.03.93.22.28.96.08.7e.63
+R csduv 24 "$GDKGATES/nand02/nand02" 10 Ic_cell_template 50c6b6e73b9f.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.19.7e.63
+R csduv 25 "$GDKGATES/inv02/inv02" 9 Ic_cell_template 50c6b21dd7a9.03.93.22.28.46.00.42.de 503d3cc570cd.03.93.22.28.96.0d.7e.63
+R csduv 26 "$GDKGATES/nor02ii/nor02ii" 15 Ic_cell_template 50c6b6e79b3e.03.93.22.28.46.00.42.de 503d3cc570cf.03.93.22.28.96.1e.7e.63
+R csduv 27 "$GDKGATES/nand03/nand03" 14 Ic_cell_template 50c6b6e744f0.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.25.7e.63
+R csduv 28 "$GDKGATES/xnor2/xnor2" 7 Ic_cell_template 50c6b6e7d0e1.03.93.22.28.46.00.42.de 503d3d68681f.03.93.22.28.96.12.7e.63
+R csduv 29 "$GDKGATES/aoi22/aoi22" 23 Ic_cell_template 50c6b6e5986b.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.18.7e.63
+R csduv 30 "$GDKGATES/nor03/nor03" 15 Ic_cell_template 50c6b6e78b70.03.93.22.28.46.00.42.de 503d3cc570cf.03.93.22.28.96.24.7e.63
+R csduv 31 "$GDKGATES/or02/or02" 12 Ic_cell_template 50c6b6e8137b.03.93.22.28.46.00.42.de 503d3d68681e.03.93.22.28.96.00.7e.63
+R csduv 32 "$GDKGATES/ao22/ao22" 19 Ic_cell_template 50c6b6e5de3c.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.00.7e.63
+R csduv 33 "$GDKGATES/xor2/xor2" 13 Ic_cell_template 50c6b6e7e01b.03.93.22.28.46.00.42.de 503d3d68681f.03.93.22.28.96.1e.7e.63
+R csduv 34 "$GDKGATES/mux21/mux21" 24 Ic_cell_template 50c6b6e733ed.03.93.22.28.46.00.42.de 503d3cc570ce.03.93.22.28.96.13.7e.63
+R csduv 35 "$GDKGATES/oai321/oai321" 7 Ic_cell_template 50c6b6e86975.03.93.22.28.46.00.42.de 503d3d431df1.03.93.22.28.96.04.7e.63
+R csduv 36 "$GDKGATES/oai222/oai222" 7 Ic_cell_template 50c6b6e87125.03.93.22.28.46.00.42.de 503d3d431df0.03.93.22.28.96.1a.7e.63
+R csduv 37 "$GDKGATES/aoi221/aoi221" 17 Ic_cell_template 50c6b6e55c5e.03.93.22.28.46.00.42.de 503d3ceec93c.03.93.22.28.96.1e.7e.63
+R csdui 38 "$GENERIC13/process/sdl_process_rules" 0 Mgc_file 43349f1b0e3a.03.93.22.46.d8.01.02.fa

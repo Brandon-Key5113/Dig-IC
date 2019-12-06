@@ -1,0 +1,11 @@
+*lvsRulesFile: /home/bxk5113/Pyxis_SPT_HEP/ic_reflibs/tech_libs/generic13/rule_deck/LVS
+*lvsRunDir: /home/bxk5113/Pyxis_SPT_HEP/ic_projects/Pyxis_SPT/digicdesign/ALU_1Bit/ALU_1Bit.cal
+*lvsLayoutPaths: ALU_1Bit.calibre.gds
+*lvsLayoutPrimary: ALU_1Bit
+*lvsLayoutGetFromViewer: 1
+*lvsResultsFile: ALU_1Bit.lvs.results
+*lvsSummaryFile: ALU_1Bit.lvs.summary
+*cmnApplyTemplates: 0
+*lvsSourceGetFromViewer: 1
+*lvsSourcePath: ALU_1Bit.calibre.src.net
+*lvsSourcePrimary: ALU_1Bit

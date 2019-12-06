@@ -1,0 +1,157 @@
+* LVS netlist generated with ICnet by 'bxk5113' on Sun Nov 17 2019 at 15:23:17
+
+*
+* Globals.
+*
+.global VSS VDD
+
+*
+* Component pathname : $GDKGATES/inv01
+*
+.subckt inv01  Y A VDD_esc1 VSS_esc2
+
+        MP1 Y A VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MN1 Y A VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends inv01
+
+*
+* Component pathname : $GDKGATES/mux21
+*
+.subckt mux21  Y A0 A1 S0 VDD_esc1 VSS_esc2
+
+        MN4 N$11 A1 N$3 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M1 Y N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN5 N$3 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        M2 Y N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP5 N$11 A1 N$2 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MP4 N$2 N$231 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN3 N$1 N$231 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 N$11 A0 N$1 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP2 N$7 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 N$231 S0 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP1 N$231 S0 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP3 N$11 A0 N$7 VDD_esc1 pmos l=0.14u w=1.54u m=1
+.ends mux21
+
+*
+* Component pathname : $GDKGATES/dffr
+*
+.subckt dffr  Q QB CLK D R VDD_esc1 VSS_esc2
+
+        MN17 N$25 bclk- N$27 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP9 N$29 N$28 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP17 N$27 R N$29 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP8 N$25 bclk N$27 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN16 N$27 N$28 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN12 N$14 bclk VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN11 N$12 bclk- VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN10 N$11 D N$12 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP12 N$11 D N$10 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP11 N$10 bclk VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP13 N$11 N$16 N$18 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MN13 N$11 N$16 N$14 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN6 N$21 bclk VSS_esc2 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MP4 Q QB VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN4 Q QB VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN2 bclk bclk- VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN7 N$28 N$25 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MN9 N$22 N$16 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+        MP10 N$22 N$16 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP15 N$18 bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=0.35u m=1
+        MP14 N$13 N$11 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP1 bclk- CLK VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN5 N$25 N$22 N$21 VSS_esc2 nmos l=0.14u w=1.19u m=1
+        MN15 N$16 R VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP16 N$16 R N$13 VDD_esc1 pmos l=0.14u w=1.05u m=1
+        MP2 bclk bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN1 bclk- CLK VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MN3 QB N$25 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP3 QB N$25 VDD_esc1 VDD_esc1 pmos l=0.14u w=1.54u m=1
+        MN14 N$16 N$11 VSS_esc2 VSS_esc2 nmos l=0.14u w=0.77u m=1
+        MP7 N$28 N$25 VDD_esc1 VDD_esc1 pmos l=0.14u w=0.77u m=1
+        MP6 N$25 N$22 N$23 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MP5 N$23 bclk- VDD_esc1 VDD_esc1 pmos l=0.14u w=2.24u m=1
+        MN8 N$27 R VSS_esc2 VSS_esc2 nmos l=0.14u w=0.35u m=1
+.ends dffr
+
+*
+* Component pathname : $PYXIS_SPT/digicdesign/nBitRegister_32
+*
+.subckt nBitRegister_32  Y[31] Y[30] Y[29] Y[28] Y[27] Y[26] Y[25] Y[24]
++ Y[23] Y[22] Y[21] Y[20] Y[19] Y[18] Y[17] Y[16] Y[15] Y[14] Y[13] Y[12]
++ Y[11] Y[10] Y[9] Y[8] Y[7] Y[6] Y[5] Y[4] Y[3] Y[2] Y[1] Y[0] clk nBitIn[31]
++ nBitIn[30] nBitIn[29] nBitIn[28] nBitIn[27] nBitIn[26] nBitIn[25] nBitIn[24]
++ nBitIn[23] nBitIn[22] nBitIn[21] nBitIn[20] nBitIn[19] nBitIn[18] nBitIn[17]
++ nBitIn[16] nBitIn[15] nBitIn[14] nBitIn[13] nBitIn[12] nBitIn[11] nBitIn[10]
++ nBitIn[9] nBitIn[8] nBitIn[7] nBitIn[6] nBitIn[5] nBitIn[4] nBitIn[3]
++ nBitIn[2] nBitIn[1] nBitIn[0] Reset WE
+
+        X_ix846 nx847 Reset VDD VSS inv01
+        X_ix844 nx845 Reset VDD VSS inv01
+        X_ix745 NOT_Reset Reset VDD VSS inv01
+        X_ix653 nx652 Y[23] nBitIn[23] WE VDD VSS mux21
+        X_ix643 nx642 Y[22] nBitIn[22] WE VDD VSS mux21
+        X_ix633 nx632 Y[21] nBitIn[21] WE VDD VSS mux21
+        X_ix623 nx622 Y[20] nBitIn[20] WE VDD VSS mux21
+        X_ix613 nx612 Y[19] nBitIn[19] WE VDD VSS mux21
+        X_ix603 nx602 Y[18] nBitIn[18] WE VDD VSS mux21
+        X_ix593 nx592 Y[17] nBitIn[17] WE VDD VSS mux21
+        X_ix583 nx582 Y[16] nBitIn[16] WE VDD VSS mux21
+        X_ix573 nx572 Y[15] nBitIn[15] WE VDD VSS mux21
+        X_ix563 nx562 Y[14] nBitIn[14] WE VDD VSS mux21
+        X_ix553 nx552 Y[13] nBitIn[13] WE VDD VSS mux21
+        X_ix543 nx542 Y[12] nBitIn[12] WE VDD VSS mux21
+        X_ix533 nx532 Y[11] nBitIn[11] WE VDD VSS mux21
+        X_ix523 nx522 Y[10] nBitIn[10] WE VDD VSS mux21
+        X_ix513 nx512 Y[9] nBitIn[9] WE VDD VSS mux21
+        X_ix503 nx502 Y[8] nBitIn[8] WE VDD VSS mux21
+        X_ix493 nx492 Y[7] nBitIn[7] WE VDD VSS mux21
+        X_ix483 nx482 Y[6] nBitIn[6] WE VDD VSS mux21
+        X_ix473 nx472 Y[5] nBitIn[5] WE VDD VSS mux21
+        X_ix463 nx462 Y[4] nBitIn[4] WE VDD VSS mux21
+        X_ix453 nx452 Y[3] nBitIn[3] WE VDD VSS mux21
+        X_ix443 nx442 Y[2] nBitIn[2] WE VDD VSS mux21
+        X_ix433 nx432 Y[1] nBitIn[1] WE VDD VSS mux21
+        X_ix423 nx422 Y[0] nBitIn[0] WE VDD VSS mux21
+        X_reg_Y_23 Y[23] N$dummy_esc3[23] clk nx652 nx847 VDD VSS dffr
+        X_reg_Y_22 Y[22] N$dummy_esc3[22] clk nx642 nx847 VDD VSS dffr
+        X_reg_Y_21 Y[21] N$dummy_esc3[21] clk nx632 nx847 VDD VSS dffr
+        X_reg_Y_20 Y[20] N$dummy_esc3[20] clk nx622 nx847 VDD VSS dffr
+        X_reg_Y_19 Y[19] N$dummy_esc3[19] clk nx612 nx847 VDD VSS dffr
+        X_reg_Y_18 Y[18] N$dummy_esc3[18] clk nx602 nx847 VDD VSS dffr
+        X_reg_Y_17 Y[17] N$dummy_esc3[17] clk nx592 nx847 VDD VSS dffr
+        X_reg_Y_16 Y[16] N$dummy_esc3[16] clk nx582 nx847 VDD VSS dffr
+        X_reg_Y_15 Y[15] N$dummy_esc3[15] clk nx572 nx847 VDD VSS dffr
+        X_reg_Y_14 Y[14] N$dummy_esc3[14] clk nx562 nx845 VDD VSS dffr
+        X_reg_Y_13 Y[13] N$dummy_esc3[13] clk nx552 nx845 VDD VSS dffr
+        X_reg_Y_12 Y[12] N$dummy_esc3[12] clk nx542 nx845 VDD VSS dffr
+        X_reg_Y_11 Y[11] N$dummy_esc3[11] clk nx532 nx845 VDD VSS dffr
+        X_reg_Y_10 Y[10] N$dummy_esc3[10] clk nx522 nx845 VDD VSS dffr
+        X_reg_Y_9 Y[9] N$dummy_esc3[9] clk nx512 nx845 VDD VSS dffr
+        X_reg_Y_8 Y[8] N$dummy_esc3[8] clk nx502 nx845 VDD VSS dffr
+        X_reg_Y_7 Y[7] N$dummy_esc3[7] clk nx492 nx845 VDD VSS dffr
+        X_reg_Y_6 Y[6] N$dummy_esc3[6] clk nx482 nx845 VDD VSS dffr
+        X_reg_Y_5 Y[5] N$dummy_esc3[5] clk nx472 nx845 VDD VSS dffr
+        X_reg_Y_4 Y[4] N$dummy_esc3[4] clk nx462 nx845 VDD VSS dffr
+        X_reg_Y_3 Y[3] N$dummy_esc3[3] clk nx452 nx845 VDD VSS dffr
+        X_reg_Y_2 Y[2] N$dummy_esc3[2] clk nx442 nx845 VDD VSS dffr
+        X_reg_Y_1 Y[1] N$dummy_esc3[1] clk nx432 nx845 VDD VSS dffr
+        X_reg_Y_0 Y[0] N$dummy_esc3[0] clk nx422 nx845 VDD VSS dffr
+        X_ix733 nx732 Y[31] nBitIn[31] WE VDD VSS mux21
+        X_ix723 nx722 Y[30] nBitIn[30] WE VDD VSS mux21
+        X_ix713 nx712 Y[29] nBitIn[29] WE VDD VSS mux21
+        X_ix703 nx702 Y[28] nBitIn[28] WE VDD VSS mux21
+        X_ix693 nx692 Y[27] nBitIn[27] WE VDD VSS mux21
+        X_ix683 nx682 Y[26] nBitIn[26] WE VDD VSS mux21
+        X_ix673 nx672 Y[25] nBitIn[25] WE VDD VSS mux21
+        X_ix663 nx662 Y[24] nBitIn[24] WE VDD VSS mux21
+        X_reg_Y_31 Y[31] N$dummy_esc3[31] clk nx732 NOT_Reset VDD VSS dffr
+        X_reg_Y_30 Y[30] N$dummy_esc3[30] clk nx722 NOT_Reset VDD VSS dffr
+        X_reg_Y_29 Y[29] N$dummy_esc3[29] clk nx712 nx847 VDD VSS dffr
+        X_reg_Y_28 Y[28] N$dummy_esc3[28] clk nx702 nx847 VDD VSS dffr
+        X_reg_Y_27 Y[27] N$dummy_esc3[27] clk nx692 nx847 VDD VSS dffr
+        X_reg_Y_26 Y[26] N$dummy_esc3[26] clk nx682 nx847 VDD VSS dffr
+        X_reg_Y_25 Y[25] N$dummy_esc3[25] clk nx672 nx847 VDD VSS dffr
+        X_reg_Y_24 Y[24] N$dummy_esc3[24] clk nx662 nx847 VDD VSS dffr
+.ends nBitRegister_32
+

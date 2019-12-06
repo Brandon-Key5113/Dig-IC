@@ -1,0 +1,86 @@
+* File: Full_Adder.pex.netlist
+* Created: Mon Nov  4 11:01:04 2019
+* Program "Calibre xRC"
+* Version "v2013.4_26.18"
+* 
+.global VDD VSS 
+.include "Full_Adder.pex.netlist.pex"
+.subckt Full_Adder  COUT SUM A B CIN
+* 
+* SUM	SUM
+* A	A
+* CIN	CIN
+* B	B
+* COUT	COUT
+* VDD	VDD
+* VSS	VSS
+mX_IX99.MP1 N_NX98_X_ix99.MP1_d N_SUM_X_ix99.MP1_g N_VDD_X_ix99.MP1_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX99.MN1 N_NX98_X_ix99.MN1_d N_SUM_X_ix99.MN1_g N_VSS_X_ix99.MN1_s
++ N_VSS_X_ix1.MN4_b NMOS L=1.4e-07 W=3.5e-07 M=1
+mX_IX1.MP5 N_X_IX1.N$9_X_ix1.MP4_d N_B_X_ix1.MP5_g N_VDD_X_ix1.MP5_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX1.MP4 N_X_IX1.N$9_X_ix1.MP4_d N_A_X_ix1.MP4_g N_VDD_X_ix1.MP4_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX1.MN4 N_X_IX1.N$9_X_ix1.MN4_d N_A_X_ix1.MN4_g X_IX1.N$8 N_VSS_X_ix1.MN4_b
++ NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX1.MN3 X_IX1.N$3 N_X_IX1.N$9_X_ix1.MN3_g N_VSS_X_ix1.MN3_s N_VSS_X_ix1.MN4_b
++ NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX1.MN2 N_NX0_X_ix1.MN2_d N_B_X_ix1.MN2_g X_IX1.N$3 N_VSS_X_ix1.MN4_b NMOS
++ L=1.4e-07 W=7.7e-07 M=1
+mX_IX1.MN1 N_NX0_X_ix1.MN2_d N_A_X_ix1.MN1_g X_IX1.N$3 N_VSS_X_ix1.MN4_b NMOS
++ L=1.4e-07 W=7.7e-07 M=1
+mX_IX1.MP3 N_NX0_X_ix1.MP3_d N_B_X_ix1.MP3_g X_IX1.N$1 N_VDD_X_ix1.MP4_b PMOS
++ L=1.4e-07 W=2.24e-06 M=1
+mX_IX1.MP2 N_NX0_X_ix1.MP3_d N_X_IX1.N$9_X_ix1.MP2_g N_VDD_X_ix1.MP2_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX1.MP1 X_IX1.N$1 N_A_X_ix1.MP1_g N_VDD_X_ix1.MP5_s N_VDD_X_ix1.MP4_b PMOS
++ L=1.4e-07 W=2.24e-06 M=1
+mX_IX1.MN5 X_IX1.N$8 N_B_X_ix1.MN5_g N_VSS_X_ix1.MN5_s N_VSS_X_ix1.MN4_b NMOS
++ L=1.4e-07 W=7.7e-07 M=1
+mX_IX3.MP5 N_X_IX3.N$9_X_ix3.MP4_d N_NX0_X_ix3.MP5_g N_VDD_X_ix3.MP5_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX3.MP4 N_X_IX3.N$9_X_ix3.MP4_d N_CIN_X_ix3.MP4_g N_VDD_X_ix3.MP4_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX3.MN4 N_X_IX3.N$9_X_ix3.MN4_d N_CIN_X_ix3.MN4_g X_IX3.N$8 N_VSS_X_ix1.MN4_b
++ NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX3.MN3 X_IX3.N$3 N_X_IX3.N$9_X_ix3.MN3_g N_VSS_X_ix3.MN3_s N_VSS_X_ix1.MN4_b
++ NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX3.MN2 N_SUM_X_ix3.MN2_d N_NX0_X_ix3.MN2_g X_IX3.N$3 N_VSS_X_ix1.MN4_b NMOS
++ L=1.4e-07 W=7.7e-07 M=1
+mX_IX3.MN1 N_SUM_X_ix3.MN2_d N_CIN_X_ix3.MN1_g X_IX3.N$3 N_VSS_X_ix1.MN4_b NMOS
++ L=1.4e-07 W=7.7e-07 M=1
+mX_IX3.MP3 N_SUM_X_ix3.MP3_d N_NX0_X_ix3.MP3_g X_IX3.N$1 N_VDD_X_ix1.MP4_b PMOS
++ L=1.4e-07 W=2.24e-06 M=1
+mX_IX3.MP2 N_SUM_X_ix3.MP3_d N_X_IX3.N$9_X_ix3.MP2_g N_VDD_X_ix3.MP2_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX3.MP1 X_IX3.N$1 N_CIN_X_ix3.MP1_g N_VDD_X_ix3.MP5_s N_VDD_X_ix1.MP4_b PMOS
++ L=1.4e-07 W=2.24e-06 M=1
+mX_IX3.MN5 X_IX3.N$8 N_NX0_X_ix3.MN5_g N_VSS_X_ix3.MN5_s N_VSS_X_ix1.MN4_b NMOS
++ L=1.4e-07 W=7.7e-07 M=1
+mX_IX11.MN4 N_X_IX11.N$13_X_ix11.MN1_d N_CIN_X_ix11.MN4_g X_IX11.N$2
++ N_VSS_X_ix1.MN4_b NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX11.MP4 N_X_IX11.N$13_X_ix11.MP3_d N_NX98_X_ix11.MP4_g X_IX11.N$6
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX11.MN2 X_IX11.N$1 N_B_X_ix11.MN2_g N_VSS_X_ix11.MN2_s N_VSS_X_ix1.MN4_b
++ NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX11.MN1 N_X_IX11.N$13_X_ix11.MN1_d N_A_X_ix11.MN1_g X_IX11.N$1
++ N_VSS_X_ix1.MN4_b NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX11.MP5 N_COUT_X_ix11.MP5_d N_X_IX11.N$13_X_ix11.MP5_g N_VDD_X_ix11.MP1_s
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX11.MP3 N_X_IX11.N$13_X_ix11.MP3_d N_CIN_X_ix11.MP3_g X_IX11.N$6
++ N_VDD_X_ix1.MP4_b PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX11.MP2 X_IX11.N$6 N_B_X_ix11.MP2_g N_VDD_X_ix11.MP2_s N_VDD_X_ix1.MP4_b
++ PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX11.MP1 X_IX11.N$6 N_A_X_ix11.MP1_g N_VDD_X_ix11.MP1_s N_VDD_X_ix1.MP4_b
++ PMOS L=1.4e-07 W=1.19e-06 M=1
+mX_IX11.MN3 X_IX11.N$2 N_NX98_X_ix11.MN3_g N_VSS_X_ix11.MN3_s N_VSS_X_ix1.MN4_b
++ NMOS L=1.4e-07 W=7.7e-07 M=1
+mX_IX11.MN5 N_COUT_X_ix11.MN5_d N_X_IX11.N$13_X_ix11.MN5_g N_VSS_X_ix11.MN3_s
++ N_VSS_X_ix1.MN4_b NMOS L=1.4e-07 W=3.5e-07 M=1
+*
+.include "Full_Adder.pex.netlist.FULL_ADDER.pxi"
+*
+.ends
+*
+*
