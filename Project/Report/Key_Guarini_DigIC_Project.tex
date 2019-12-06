@@ -234,7 +234,7 @@ Your Signature:   \rule{13cm}{.1pt}
 	\subsection{LFSR}
 	
 	\subsection{MISR}
-	//TODO Get MISR and LFSR layoyt and schematic
+	
 	
 	
 	\subsection{BIST}
@@ -482,10 +482,21 @@ Your Signature:   \rule{13cm}{.1pt}
 	The MAC was initially laid out structurally; components were laid out and turned into cells that would then be connected together. This was done to limit the complexity of the final design. 
 	
 	\subsection{Full Adder}
-	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Adder Layout"}
+			\caption{Full Adder Layout} 
+			\label{fig:Full-Adder-Layout} 
+		\end{figure}
 	
 	\subsection{Multiplier}
 	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Multiplier Layout"}
+			\caption{Multiplier Layout} 
+			\label{fig:Multiplier-Layout} 
+		\end{figure}
 	
 	\subsection{16-Bit Register}
 		\begin{figure}[H] 
@@ -513,16 +524,33 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:nBitMux-2to1-Layout} 
 		\end{figure}
 	
-	\subsection{LFSR}
-	
-	\subsection{MISR}
 	
 	
 	
 	
 		
 	\subsection{MAC with BIST Layout}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Pre-Layout"}
+			\caption{Pre-Layout} 
+			\label{fig:Pre-Layout} 
+		\end{figure}
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Std Cells"}
+			\caption{Standard Cells Placement} 
+			\label{fig:Std-Cells} 
+		\end{figure}
 		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Power Route"}
+			\caption{Power Route} 
+			\label{fig:Power-Route} 
+		\end{figure}
 		
 		\begin{figure}[H] 
 			\centering 
@@ -537,14 +565,6 @@ Your Signature:   \rule{13cm}{.1pt}
 			\caption{Full Layout Close Up View} 
 			\label{fig:Full-Layout-Close-Up-View} 
 		\end{figure}
-	
-	\subsection{Timing}
-	
-		\subsubsection{Setup}
-	
-		\subsubsection{Hold}
-		
-		\subsubsection{Maximum Frequency}
 	
 	\subsection{Power}
 		Power was measured with an Eldo simulation based on the layout. To measure static power, the average power was measured while the circuit was not active but powered. The static power was measured to be 1.87nW and was recorded in Table \ref{tab:power}. 
@@ -668,11 +688,17 @@ Your Signature:   \rule{13cm}{.1pt}
 		\lstinputlisting[caption={MAC (copy) Spectrum Script }\label{lst:MAC-(copy)-script}]{"LeonardoScripts/MAC (copy).script"}
 		
 		
+		
+	\subsection{Layout Versus Schematic Results}
+	
+		\lstinputlisting[caption={MAC with BIST LVS Results}\label{lst:lvs}]{"LVS/lvs.report"}
+		
 	\subsection{SPICE}
 	
 		\lstinputlisting[caption={layout test SPICE }\label{lst:layout-test-spice}]{"Spice/layout_test.cir"}
 		
 		\lstinputlisting[caption={power test SPICE }\label{lst:power-test-spice}]{"Spice/power_test.cir"}
+		
 		
 
 		
