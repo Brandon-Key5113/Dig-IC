@@ -322,6 +322,7 @@ Your Signature:   \rule{13cm}{.1pt}
 		\end{figure}
 	
 	\subsection{MAC}
+	The MAC component takes two N/2 bit inputs, A and B. These inputs are multiplied together using a carry-save multiplier and added together with the value in the register using a ripple carry adder. This value is then stored back into the register where it becomes the N bit output RegOut. The block diagram for this logic is in Figure \ref{fig:MAC-block}.
 	
 		\begin{figure}[H] 
 			\centering 
@@ -330,24 +331,117 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:MAC-block} 
 		\end{figure}
 		
+		A snippet of the VHDL used to structurally create the MAC is shown in Figure \ref{code:MAC}, while the full code is available in Listing \ref{lst:MAC-vhd} of the appendix. The code is a fairly straight forward structural representation of the MAC, using 7 internal signals to map the components together and to the inputs and outputs. The code creates a 32-bit MAC with two 16-bit inputs
+		
+		
+	\begin{figure}[H]
+		\centering
+		\begin{verbatim}
+        signal MultA,MultB : STD_LOGIC_VECTOR((N/2)-1 downto 0);
+        signal Product : STD_LOGIC_VECTOR(N-1 downto 0);
+        signal adderA, adderB, adderOut : STD_LOGIC_VECTOR(N-1 downto 0);
+        signal cout : STD_LOGIC;
+    
+        begin
+        
+            RegMultInA : nBitRegister_16
+                generic map( N => 16)
+                port map(nBitIn => A,
+                    WE => '1', clk => clk, Reset => reset, 
+                    Y => MultA
+                );
+        		  
+        	 RegMultInB : nBitRegister_16
+        	  generic map( N => 16)
+        	  port map(nBitIn => B,
+        			WE => '1', clk => clk, Reset => reset, 
+        			Y=> MultB
+        	  );
+        	
+            MULT1 : Multiplier
+                generic map( N => 32)
+                port map(A => MultA, B => MultB, Product => Product);
+        
+            RegMultOut : nBitRegister_32
+                generic map( N => 32)
+                port map(nBitIn => Product, WE => '1', Reset => reset, clk => clk, Y => adderB);
+        
+            BigBoyReg : nBitRegister_32
+                generic map( N => 32)
+                port map(nBitIn => adderOut, WE => WE, Reset => reset, clk => clk, Y => adderA);
+        
+            ADD1 : nBitAdder
+                generic map ( N => 32)
+                port map( A => adderA, B => adderB, Y => adderOut, CB => cout);
+        		  
+        	RegOut <= adderA;
+        end Behavioral;
+
+        \end{verbatim}
+        \caption{MAC Code Snippet} 
+    	\label{code:MAC} 
+    \end{figure}
+    
+    A VHDL test bench verifying the functionality of the MAC is shown in Figure \ref{fig:MAC-16bit-Test-Bench}. ModelSim was used to simulate this waveform using the stimulus code shown in Figure \ref{code:MAC-tb}. This code starts with an input of 2 and 2, which are multiplied and accumulated. The code then changes to inputs of 2 and 4 after 300 ns.
+		
 		\begin{figure}[H] 
 			\centering 
-			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/MAC-16bit-Test-Bench"}
-			\caption{MAC 16bit Test Bench} 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/MAC-Test-Bench-Cropped"}
+			\caption{MAC Functional Test Bench} 
 			\label{fig:MAC-16bit-Test-Bench} 
 		\end{figure}
 		
-		
-		\begin{figure}[H] 
-			\centering 
-			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/MAC-Test-Bench"}
-			\caption{MAC Test Bench} 
-			\label{fig:MAC-Test-Bench} 
-		\end{figure}
+		\begin{figure}[H]
+		\centering
+		\begin{verbatim}
+        stimulus: process
+        begin
+
+            WE <= '1';
+            reset <= '1';
+            A <= "0000000000000010";
+            B <= "0000000000000010";
+            wait for 300 ns;
+            
+            A <= "0000000000000010";
+            B <= "0000000000000100";
+            wait;
+            
+        end process;
+
+        \end{verbatim}
+        \caption{MAC Test Bench Stimulus Code Snippet} 
+    	\label{code:MAC-tb} 
+    \end{figure}
+
 	
 	
 	\subsection{Mux}
-		The multiplexer was used to change the input from the user input to the 
+		In order to implement the BIST functionality of the IC, two 16-bit multiplexers are required on each input into the multiplier's input registers. the multiplexers select whether the input should be from the LFSR or the MAC's input. Figure \ref{code:MUX} shows the code used to create the MUX, which uses a dataflow architecture and a process to select the correct input.
+		
+		\begin{figure}[H]
+		\centering
+		\begin{verbatim}
+        architecture  Dataflow  of  nBitMux_2to1  is
+            begin
+                --Mux process
+                the_proc : process (sel, A, B) begin
+                    case sel is 
+                        when '0' =>
+                            Y <= A;
+                        when others =>
+                            Y <= B;
+                    end case;
+                end process the_proc;
+        
+        end  Dataflow;
+
+        \end{verbatim}
+        \caption{MAC Test Bench Stimulus Code Snippet} 
+    	\label{code:MUX} 
+    \end{figure}
+    
+    Figure \ref{fig:nBitMux-2to1-Schematic} shows the schematic of the 16-bit MUX. The schematic is 16 gdk MUX 2 to 1 gates in parallel.
 	
 		\begin{figure}[H] 
 			\centering 
@@ -358,10 +452,8 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{LFSR}
 	
-		Pseudo random number generator with known pattern.
-		
-		taps at 32,20,26,25
-		//TODO
+		An LFSR is a predictably random number generator with known pattern depending on what the seed is. For the BIST functionality of the IC, a 32-bit LFSR is used to generate the two inputs, with the top 16 bits going to input A and the bottom 16 bits going to input B. The 32-bit LFSR has taps at bit 19, 24 and 25 along with an input seed of 0x00BC614E, or 12345678 in decimal. The inner workings of an 8-bit LFSR can be seen in Figure \ref{fig:lfsr-block}. The register takes the seed and continuously shifts it through the different flip-flops, with a tap on certain bits using XOR gates which randomizes the output.
+
 		
 		\begin{figure}[H]
 			\centering
@@ -371,6 +463,8 @@ Your Signature:   \rule{13cm}{.1pt}
 		\end{figure}
 	
 	\subsection{MISR}
+	
+	The MISR is used by the BIST to take the output of the MAC and turns it into a 32-bit signature. The signature is then compared to the one in the test controller to see if the BIST has passed. The purpose of this rather than just comparing the actual output is that the signature takes into account when the output occurred and the previous inputs. This means that no two signatures will be the same, but they are predictably random. Figure \ref{fig:misr-block} is a diagram of an 8-bit MISR as an example. The MISR used in the final design has taps on 19, 24 and 25.  
 	
 	
 		\begin{figure}[H]
@@ -382,7 +476,7 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{BIST}
 	
-		//TODO Talk about funcitonality
+		The test controller used to implement BIST compares the signature of the MISR to an expected signature that would occur after 1000 clock cycles. This is to make sure that the MAC is thoroughly tested with as many inputs as possible. The signature that the controller is looking for is 0x8C9781E6. The waveform in Figure \ref{fig:BIST-Test-Bench} shows how that signature is seen on the 1000 clock cycle, which causes the Complete and Pass outputs to go high, as the BIST completed successfully.
 	
 		\begin{figure}[H] 
 			\centering 
@@ -393,7 +487,7 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{Schematic}
 	
-	
+	The schematics for the MAC with BIST are shown in Figures \ref{fig:Full-Schematic-Page-1} through \ref{fig:Full-Schematic-Page-28}, which is twenty-eight sheets. These sheets were generated using the VHDL code in Listing \ref{lst:ProjectWrapper-vhd} of the appendix, which defines the project structurally. Verilog code was generated from the VHDL using the Leonardo script in Listing \ref{lst:ProjectWrapper-script}, which was then import into Pyxis to generate the below schematics.
 		
 		
 		\begin{figure}[H] 
