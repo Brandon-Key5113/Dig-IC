@@ -109,11 +109,15 @@ Piers Kwan\\
 \vspace{0.5 cm}
 \end{flushright}
 
-\vspace{3 cm}
+\vspace{2 cm}
 \indent By submitting this report, you attest that you neither have given nor have received any assistance (including writing, collecting data, plotting figures, tables or graphs, or using previous student reports as a reference), and you further acknowledge that giving or receiving such assistance will result in a failing grade for this course.
 
 \vspace{1 cm}
-Your Signature:   \rule{13cm}{.1pt}
+
+Brandon Key:   \rule{13cm}{.1pt}\\
+\vspace{1 cm}
+
+Chris Guarini:   \rule{13cm}{.1pt}
 
 \newpage
 \tableofcontents
@@ -128,12 +132,12 @@ Your Signature:   \rule{13cm}{.1pt}
 
 	A cornerstone of IC design is the ability to create large, complex designs from smaller more manageable parts. The project outlined in this exercise calls for the design, testing and layout of a multiply and accumulate (MAC) unit, which takes two 16-bit inputs, multiplies them together, adds them to the value stored in a register, and then stores that output back into the register. The final component should contain a built in self test (BIST) that verifies the functionality of the MAC.
 	
-	The MAC is composed of a carry-save multiplier, ripple carry full-adder, and parallel register. The BIST is implemented through the use of an LFSR for the inputs, an MISR for the output, and a test controller which controls the timing and sets the test passed and test complete outputs. A full diagram of the MAC with BIST can be seen below in Figure \ref{fig:full-project-block}.
+	The MAC is composed of a carry-save multiplier, ripple carry full-adder, and parallel register. The BIST is implemented through the use of an LFSR for the inputs, an MISR for the output, and a test controller which controls the timing and sets the test passed and test complete outputs. A full diagram of the MAC with BIST can be seen in Figure \ref{fig:full-project-block}.
 	
 	\begin{figure}[H]
 		\centering
 		\includegraphics[width=0.7\linewidth]{Pictures/Full-Project-Block}
-		\caption{High Level Block Diagram of the MAC with BIST.}
+		\caption{High Level Block Diagram of the MAC with BIST}
 		\label{fig:full-project-block}
 	\end{figure}
 
@@ -322,7 +326,7 @@ Your Signature:   \rule{13cm}{.1pt}
 		\end{figure}
 	
 	\subsection{MAC}
-	The MAC component takes two N/2 bit inputs, A and B. These inputs are multiplied together using a carry-save multiplier and added together with the value in the register using a ripple carry adder. This value is then stored back into the register where it becomes the N bit output RegOut. The block diagram for this logic is in Figure \ref{fig:MAC-block}.
+		The MAC component takes two N/2 bit inputs, A and B. These inputs are multiplied together using a carry-save multiplier and added together with the value in the register using a ripple carry adder. This value is then stored back into the register where it becomes the N bit output RegOut. The block diagram for this logic is in Figure \ref{fig:MAC-block}.
 	
 		\begin{figure}[H] 
 			\centering 
@@ -334,55 +338,55 @@ Your Signature:   \rule{13cm}{.1pt}
 		A snippet of the VHDL used to structurally create the MAC is shown in Figure \ref{code:MAC}, while the full code is available in Listing \ref{lst:MAC-vhd} of the appendix. The code is a fairly straight forward structural representation of the MAC, using 7 internal signals to map the components together and to the inputs and outputs. The code creates a 32-bit MAC with two 16-bit inputs
 		
 		
-	\begin{figure}[H]
-		\centering
-		\begin{verbatim}
-        signal MultA,MultB : STD_LOGIC_VECTOR((N/2)-1 downto 0);
-        signal Product : STD_LOGIC_VECTOR(N-1 downto 0);
-        signal adderA, adderB, adderOut : STD_LOGIC_VECTOR(N-1 downto 0);
-        signal cout : STD_LOGIC;
+		\begin{figure}[H]
+			\centering
+			\begin{verbatim}
+	        signal MultA,MultB : STD_LOGIC_VECTOR((N/2)-1 downto 0);
+	        signal Product : STD_LOGIC_VECTOR(N-1 downto 0);
+	        signal adderA, adderB, adderOut : STD_LOGIC_VECTOR(N-1 downto 0);
+	        signal cout : STD_LOGIC;
+	    
+	        begin
+	        
+	            RegMultInA : nBitRegister_16
+	                generic map( N => 16)
+	                port map(nBitIn => A,
+	                    WE => '1', clk => clk, Reset => reset, 
+	                    Y => MultA
+	                );
+	        		  
+	        	 RegMultInB : nBitRegister_16
+	        	  generic map( N => 16)
+	        	  port map(nBitIn => B,
+	        			WE => '1', clk => clk, Reset => reset, 
+	        			Y=> MultB
+	        	  );
+	        	
+	            MULT1 : Multiplier
+	                generic map( N => 32)
+	                port map(A => MultA, B => MultB, Product => Product);
+	        
+	            RegMultOut : nBitRegister_32
+	                generic map( N => 32)
+	                port map(nBitIn => Product, WE => '1', Reset => reset, clk => clk, Y => adderB);
+	        
+	            BigBoyReg : nBitRegister_32
+	                generic map( N => 32)
+	                port map(nBitIn => adderOut, WE => WE, Reset => reset, clk => clk, Y => adderA);
+	        
+	            ADD1 : nBitAdder
+	                generic map ( N => 32)
+	                port map( A => adderA, B => adderB, Y => adderOut, CB => cout);
+	        		  
+	        	RegOut <= adderA;
+	        end Behavioral;
+	
+	        \end{verbatim}
+	        \caption{MAC Code Snippet} 
+	    	\label{code:MAC} 
+	    \end{figure}
     
-        begin
-        
-            RegMultInA : nBitRegister_16
-                generic map( N => 16)
-                port map(nBitIn => A,
-                    WE => '1', clk => clk, Reset => reset, 
-                    Y => MultA
-                );
-        		  
-        	 RegMultInB : nBitRegister_16
-        	  generic map( N => 16)
-        	  port map(nBitIn => B,
-        			WE => '1', clk => clk, Reset => reset, 
-        			Y=> MultB
-        	  );
-        	
-            MULT1 : Multiplier
-                generic map( N => 32)
-                port map(A => MultA, B => MultB, Product => Product);
-        
-            RegMultOut : nBitRegister_32
-                generic map( N => 32)
-                port map(nBitIn => Product, WE => '1', Reset => reset, clk => clk, Y => adderB);
-        
-            BigBoyReg : nBitRegister_32
-                generic map( N => 32)
-                port map(nBitIn => adderOut, WE => WE, Reset => reset, clk => clk, Y => adderA);
-        
-            ADD1 : nBitAdder
-                generic map ( N => 32)
-                port map( A => adderA, B => adderB, Y => adderOut, CB => cout);
-        		  
-        	RegOut <= adderA;
-        end Behavioral;
-
-        \end{verbatim}
-        \caption{MAC Code Snippet} 
-    	\label{code:MAC} 
-    \end{figure}
-    
-    A VHDL test bench verifying the functionality of the MAC is shown in Figure \ref{fig:MAC-16bit-Test-Bench}. ModelSim was used to simulate this waveform using the stimulus code shown in Figure \ref{code:MAC-tb}. This code starts with an input of 2 and 2, which are multiplied and accumulated. The code then changes to inputs of 2 and 4 after 300 ns.
+	    A VHDL test bench verifying the functionality of the MAC is shown in Figure \ref{fig:MAC-16bit-Test-Bench}. ModelSim was used to simulate this waveform using the stimulus code shown in Figure \ref{code:MAC-tb}. This code starts with an input of 2 and 2, which are multiplied and accumulated. The code then changes to inputs of 2 and 4 after 300 ns.
 		
 		\begin{figure}[H] 
 			\centering 
@@ -394,54 +398,54 @@ Your Signature:   \rule{13cm}{.1pt}
 		\begin{figure}[H]
 		\centering
 		\begin{verbatim}
-        stimulus: process
-        begin
-
-            WE <= '1';
-            reset <= '1';
-            A <= "0000000000000010";
-            B <= "0000000000000010";
-            wait for 300 ns;
-            
-            A <= "0000000000000010";
-            B <= "0000000000000100";
-            wait;
-            
-        end process;
-
-        \end{verbatim}
-        \caption{MAC Test Bench Stimulus Code Snippet} 
-    	\label{code:MAC-tb} 
-    \end{figure}
+	        stimulus: process
+	        begin
+	
+	            WE <= '1';
+	            reset <= '1';
+	            A <= "0000000000000010";
+	            B <= "0000000000000010";
+	            wait for 300 ns;
+	            
+	            A <= "0000000000000010";
+	            B <= "0000000000000100";
+	            wait;
+	            
+	        end process;
+	
+	        \end{verbatim}
+	        \caption{MAC Test Bench Stimulus Code Snippet} 
+	    	\label{code:MAC-tb} 
+	    \end{figure}
 
 	
 	
 	\subsection{Mux}
-		In order to implement the BIST functionality of the IC, two 16-bit multiplexers are required on each input into the multiplier's input registers. the multiplexers select whether the input should be from the LFSR or the MAC's input. Figure \ref{code:MUX} shows the code used to create the MUX, which uses a dataflow architecture and a process to select the correct input.
+		In order to implement the BIST functionality of the IC, two 16-bit multiplexers are required on each input into the multiplier's input registers. the multiplexers select whether the input should be from the LFSR or the MAC's input. Figure \ref{code:MUX} shows the code used to create the MUX, which uses a data-flow architecture and a process to select the correct input.
 		
 		\begin{figure}[H]
 		\centering
 		\begin{verbatim}
-        architecture  Dataflow  of  nBitMux_2to1  is
-            begin
-                --Mux process
-                the_proc : process (sel, A, B) begin
-                    case sel is 
-                        when '0' =>
-                            Y <= A;
-                        when others =>
-                            Y <= B;
-                    end case;
-                end process the_proc;
-        
-        end  Dataflow;
-
-        \end{verbatim}
-        \caption{MAC Test Bench Stimulus Code Snippet} 
-    	\label{code:MUX} 
-    \end{figure}
-    
-    Figure \ref{fig:nBitMux-2to1-Schematic} shows the schematic of the 16-bit MUX. The schematic is 16 gdk MUX 2 to 1 gates in parallel.
+	        architecture  Dataflow  of  nBitMux_2to1  is
+	            begin
+	                --Mux process
+	                the_proc : process (sel, A, B) begin
+	                    case sel is 
+	                        when '0' =>
+	                            Y <= A;
+	                        when others =>
+	                            Y <= B;
+	                    end case;
+	                end process the_proc;
+	        
+	        end  Dataflow;
+	
+     	\end{verbatim}
+     	\caption{MAC Test Bench Stimulus Code Snippet} 
+   		\label{code:MUX} 
+	    \end{figure}
+	    
+	    Figure \ref{fig:nBitMux-2to1-Schematic} shows the schematic of the 16-bit MUX. The schematic is 16 gdk MUX 2 to 1 gates in parallel.
 	
 		\begin{figure}[H] 
 			\centering 
@@ -453,7 +457,6 @@ Your Signature:   \rule{13cm}{.1pt}
 	\subsection{LFSR}
 	
 		An LFSR is a predictably random number generator with known pattern depending on what the seed is. For the BIST functionality of the IC, a 32-bit LFSR is used to generate the two inputs, with the top 16 bits going to input A and the bottom 16 bits going to input B. The 32-bit LFSR has taps at bit 19, 24 and 25 along with an input seed of 0x00BC614E, or 12345678 in decimal. The inner workings of an 8-bit LFSR can be seen in Figure \ref{fig:lfsr-block}. The register takes the seed and continuously shifts it through the different flip-flops, with a tap on certain bits using XOR gates which randomizes the output.
-
 		
 		\begin{figure}[H]
 			\centering
@@ -464,7 +467,7 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{MISR}
 	
-	The MISR is used by the BIST to take the output of the MAC and turns it into a 32-bit signature. The signature is then compared to the one in the test controller to see if the BIST has passed. The purpose of this rather than just comparing the actual output is that the signature takes into account when the output occurred and the previous inputs. This means that no two signatures will be the same, but they are predictably random. Figure \ref{fig:misr-block} is a diagram of an 8-bit MISR as an example. The MISR used in the final design has taps on 19, 24 and 25.  
+		The MISR is used by the BIST to take the output of the MAC and turns it into a 32-bit signature. The signature is then compared to the one in the test controller to see if the BIST has passed. The purpose of this rather than just comparing the actual output is that the signature takes into account when the output occurred and the previous inputs. This means that no two signatures will be the same, but they are predictably random. Figure \ref{fig:misr-block} is a diagram of an 8-bit MISR as an example. The MISR used in the final design has taps that match the LFSR (19, 24 and 25).  
 	
 	
 		\begin{figure}[H]
@@ -487,7 +490,7 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{Schematic}
 	
-	The schematics for the MAC with BIST are shown in Figures \ref{fig:Full-Schematic-Page-1} through \ref{fig:Full-Schematic-Page-28}, which is twenty-eight sheets. These sheets were generated using the VHDL code in Listing \ref{lst:ProjectWrapper-vhd} of the appendix, which defines the project structurally. Verilog code was generated from the VHDL using the Leonardo script in Listing \ref{lst:ProjectWrapper-script}, which was then import into Pyxis to generate the below schematics.
+		The schematics for the MAC with BIST are shown in Figures \ref{fig:Full-Schematic-Page-1} through \ref{fig:Full-Schematic-Page-28}, which is twenty-eight sheets. These sheets were generated using the VHDL code in Listing \ref{lst:ProjectWrapper-vhd} of the appendix, which defines the project structurally. Verilog code was generated from the VHDL using the Leonardo script in Listing \ref{lst:ProjectWrapper-script}, which was then import into Pyxis to generate the schematics.
 		
 		
 		\begin{figure}[H] 
@@ -709,12 +712,7 @@ Your Signature:   \rule{13cm}{.1pt}
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 28"}
 			\caption{Full Schematic Page 28} 
 			\label{fig:Full-Schematic-Page-28} 
-		\end{figure}
-		
-		
-
-		
-		
+		\end{figure}		
 		
 
 \section{Results and Analysis}
@@ -742,7 +740,7 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:Multiplier-Layout} 
 		\end{figure}
 	
-		The inputs of the multiplier needed to be controlled so the 16-bit register was laid out and captured in Figure \ref{fig:nBitRegister-16-Bit-Layout}.
+		The inputs of the multiplier needed to be controlled, so the 16-bit register was laid out and captured in Figure \ref{fig:nBitRegister-16-Bit-Layout}.
 		
 		\begin{figure}[H] 
 			\centering 
@@ -760,7 +758,7 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:nBitRegister-32-Bit-Layout} 
 		\end{figure}
 	
-		A multiplexer was needed to swtich between test input and user input, so it was laid out after the rest of the components. The result can be seen in Figure \ref{fig:nBitMux-2to1-Layout}.
+		A multiplexer was needed to switch between test input and user input, so it was laid out after the rest of the components. The result can be seen in Figure \ref{fig:nBitMux-2to1-Layout}.
 
 		\begin{figure}[H] 
 			\centering 
@@ -772,7 +770,7 @@ Your Signature:   \rule{13cm}{.1pt}
 		
 	\subsection{MAC with BIST Layout}
 	
-		It was found that the circuit could not be constructed structurally with the provided tools. Instead, the circuit was laid out in one block. In order to make the layout possible, many settings were adjusted. The circuit was first auto-instantiated(Figure \ref{fig:Pre-Layout}). 
+		It was found that the circuit could not be constructed structurally with the provided tools. Instead, the circuit was laid out in one go. In order to make the layout possible, many settings were adjusted. The circuit was first auto-instantiated(Figure \ref{fig:Pre-Layout}). 
 	
 		\begin{figure}[H] 
 			\centering 
