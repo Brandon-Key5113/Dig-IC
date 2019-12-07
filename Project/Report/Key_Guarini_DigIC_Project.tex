@@ -145,6 +145,13 @@ Your Signature:   \rule{13cm}{.1pt}
 	\subsection{Adder}
 	
 		The adder used in this design was 32 bits wide to accept input form the multiplier and the accumulation register. 
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=0.6\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Ripple Carry Adder"}
+			\caption{Ripple Carry Adder}
+			\label{fig:ripple-carry-adder}
+		\end{figure}
 	
 		\begin{figure}[H] 
 			\centering 
@@ -162,6 +169,15 @@ Your Signature:   \rule{13cm}{.1pt}
 		\end{figure}
 	
 	\subsection{Multiplier}
+	
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{Pictures/Multiplier}
+			\caption{Carry-Save Multiplier Block Diagram}
+			\label{fig:multiplier-block-dia}
+		\end{figure}
+	
 	
 		\begin{figure}[H] 
 			\centering 
@@ -235,17 +251,38 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{LFSR}
 	
+		Pseudo random number generator with known pattern.
+		
+		taps at 32,20,26,25
+		//TODO
+		
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{Pictures/LFSR}
+			\caption{8-Bit Linear Feedback Shift Register}
+			\label{fig:lfsr-block}
+		\end{figure}
+	
 	\subsection{MISR}
 	
 	
+		\begin{figure}[H]
+			\centering
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{Pictures/MISR}
+			\caption{Multiple Input Shift Register}
+			\label{fig:misr-block}
+		\end{figure}
 	
 	\subsection{BIST}
-	\begin{figure}[H] 
-		\centering 
-		\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/BIST-Test-Bench"}
-		\caption{BIST Test Bench} 
-		\label{fig:BIST-Test-Bench} 
-	\end{figure}
+	
+		//TODO Talk about funcitonality
+	
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/BIST-Test-Bench"}
+			\caption{BIST Test Bench} 
+			\label{fig:BIST-Test-Bench} 
+		\end{figure}
 	
 	\subsection{Schematic}
 	
@@ -742,9 +779,14 @@ Your Signature:   \rule{13cm}{.1pt}
 		
 \section{References}
 
+	Key, Brandon A. \textit{CMPE-630 Digital IC Design Laboratory Exercise 5 Full-Custom Layout Techniques}. Full-Custom Layout Techniques.
+	
+	Key, Brandon A. \textit{CMPE-630 Digital IC Design Laboratory Exercise 7 Autolayout Design Techniques (HDL-Layout)}. Autolayout Design Techniques (HDL-Layout).
+	
 	Key, Brandon A. \textit{CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit}. CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit.
 	
-	//TODO add BIST from DSD II
+	Key, Brandon A. \textit{CMPE 260 Laboratory Exercise 5 Binary Multiplier with Built in Self Test}. CMPE 260 Laboratory Exercise 5 Binary Multiplier with Built in Self Test.
+	
 	//TODO Added Chris's DSD II lab
 
 \end{document}
