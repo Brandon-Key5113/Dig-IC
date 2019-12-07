@@ -551,7 +551,7 @@ Chris Guarini:   \rule{13cm}{.1pt}
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Schematic Page 8"}
 			\caption{Full Schematic Page 8} 
-			\label{fig:Full-Schematic-Page-8} 
+		-	\label{fig:Full-Schematic-Page-8} 
 		\end{figure}
 		
 		
@@ -811,9 +811,18 @@ Chris Guarini:   \rule{13cm}{.1pt}
 			\subitem Via Options $>$ Use via generator
 		\end{itemize}
 	
-		Many attempts to route were performed. The working formula consisted of 1 pass of routing with the number of routes turned to the max, and then a second pass consisted of the routes turned to a minimum and a preference for vias instead of jogs. The resulting layout can be seen in Figure \ref{fig:Full-Layout}.
+		Many attempts to route were performed. One of the many failures can be seen inf Figure \ref{fig:Failed-Route}. 
 		
-		//TODO add pic of failed attempt
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Failed Routing"}
+			\caption{Failed Route} 
+			\label{fig:Failed-Route} 
+		\end{figure}
+	
+		It was often the case that just a few routes caused the design to not route. After many attempts of ripping and rerouting, the routing needed to be removed and standard cells placement was run again.
+	
+		The working formula consisted of 1 pass of routing with the number of routes turned to the max, and then a second pass consisted of the routes turned to a minimum and a preference for vias instead of jogs. The resulting layout can be seen in Figure \ref{fig:Full-Layout}.
 		
 		\begin{figure}[H] 
 			\centering 
