@@ -188,6 +188,8 @@ Your Signature:   \rule{13cm}{.1pt}
 		\end{figure}
 
 	\subsection{32-Bit Register}
+		
+		// TODO accumulator. Parallel
 	
 		\begin{figure}[H] 
 			\centering 
@@ -481,7 +483,11 @@ Your Signature:   \rule{13cm}{.1pt}
 		
 	The MAC was initially laid out structurally; components were laid out and turned into cells that would then be connected together. This was done to limit the complexity of the final design. 
 	
-	\subsection{Full Adder}
+	
+	\subsection{Components}
+	
+		The full adder was laid out first. The resulting layout can be seen in Figure \ref{fig:Full-Adder-Layout}.
+		
 		\begin{figure}[H] 
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Adder Layout"}
@@ -489,7 +495,7 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:Full-Adder-Layout} 
 		\end{figure}
 	
-	\subsection{Multiplier}
+		The multiplier was a complex component so the feasibility of layout was questioned early. It turns out that giving appropriate area to run wires make routing the multiplier easy. The results can be seen in Figure \ref{fig:Multiplier-Layout}.
 	
 		\begin{figure}[H] 
 			\centering 
@@ -498,38 +504,37 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:Multiplier-Layout} 
 		\end{figure}
 	
-	\subsection{16-Bit Register}
+		The inputs of the multiplier needed to be controlled so the 16-bit register was laid out and captured in Figure \ref{fig:nBitRegister-16-Bit-Layout}.
+		
 		\begin{figure}[H] 
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitRegister 16-Bit Layout"}
-			\caption{nBitRegister 16 Bit Layout} 
+			\caption{16 Bit Register Layout} 
 			\label{fig:nBitRegister-16-Bit-Layout} 
 		\end{figure}
 	
-	
-	\subsection{32-Bit Register}
+		The accumulator register had layout performed next. The circuit is illustrated in Figure \ref{fig:nBitRegister-32-Bit-Layout}. 
 	
 		\begin{figure}[H] 
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitRegister 32-Bit Layout"}
-			\caption{nBitRegister 32 Bit Layout} 
+			\caption{Accumulator Layout} 
 			\label{fig:nBitRegister-32-Bit-Layout} 
 		\end{figure}
 	
-	\subsection{Mux}
+		A multiplexer was needed to swtich between test input and user input, so it was laid out after the rest of the components. The result can be seen in Figure \ref{fig:nBitMux-2to1-Layout}.
+
 		\begin{figure}[H] 
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/nBitMux_2to1 Layout"}
-			\caption{nBitMux 2to1 Layout} 
+			\caption{32 Bit Mux 2to1 Layout} 
 			\label{fig:nBitMux-2to1-Layout} 
 		\end{figure}
 	
-	
-	
-	
-	
 		
 	\subsection{MAC with BIST Layout}
+	
+		It was found that the circuit could not be constructed structurally with the provided tools. Instead, the circuit was laid out in one block. In order to make the layout possible, many settings were adjusted. The circuit was first auto-instantiated(Figure \ref{fig:Pre-Layout}). 
 	
 		\begin{figure}[H] 
 			\centering 
@@ -538,12 +543,16 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:Pre-Layout} 
 		\end{figure}
 	
+		The instantiation could be best described as spaghetti. To organize this pasta, floor-planning was performed. To ensure enough area for routing wires, the area was defined to be 2 when performing the floor plan. Next, standard cells were placed. The cells were initially placed with "random+improve" and optimize. A second cell placement was performed with "initial+improve" and optimize. The second cell placement greatly clean up the circuit as seen in Figure \ref{fig:Std-Cells}.
+	
 		\begin{figure}[H] 
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Std Cells"}
 			\caption{Standard Cells Placement} 
 			\label{fig:Std-Cells} 
 		\end{figure}
+	
+		After cells placement, ports were placed as close as possible to their sources. Power routing was performed next and the result was recorded in Figure \ref{fig:Power-Route}.
 		
 		\begin{figure}[H] 
 			\centering 
@@ -551,6 +560,24 @@ Your Signature:   \rule{13cm}{.1pt}
 			\caption{Power Route} 
 			\label{fig:Power-Route} 
 		\end{figure}
+	
+		Once power routing was finished, signal routing was performed. Auto-route settings were adjusted to not route with poly silicon as this tends to cause stray gates. Additionally, the following settings were applied to aid in auto routing:
+		\begin{itemize}
+			\item Varying levels of routing completion time
+			\item Slight preference for jogs over via to fill the area.
+			\item Rip
+			\item Under rip options: 
+			\subitem Rips Most Aggressive
+			\subitem Automatic Rip Passes
+			\subitem Reroute
+			\item Under Advanced:
+			\subitem Allow all directions for stubs
+			\subitem Via Options $>$ Use via generator
+		\end{itemize}
+	
+		Many attempts to route were performed. The working formula consisted of 1 pass of routing with the number of routes turned to the max, and then a second pass consisted of the routes turned to a minimum and a preference for vias instead of jogs. The resulting layout can be seen in Figure \ref{fig:Full-Layout}.
+		
+		//TODO add pic of failed attempt
 		
 		\begin{figure}[H] 
 			\centering 
@@ -559,6 +586,8 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:Full-Layout} 
 		\end{figure}
 	
+		A close up view of the layout can be seen in Figure \ref{fig:Full-Layout-Close-Up-View}.
+	
 		\begin{figure}[H] 
 			\centering 
 			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/Full Layout Close Up View"}
@@ -566,8 +595,17 @@ Your Signature:   \rule{13cm}{.1pt}
 			\label{fig:Full-Layout-Close-Up-View} 
 		\end{figure}
 	
+		To confirm that routing matched the schematic, an Layout Versus Schematic (LVS) test was performed. The passing test can be seen in Figure \ref{fig:LVS-Pass}. The full report can be seen in Listing \ref{lst:lvs}.
+		
+		\begin{figure}[H] 
+			\centering 
+			\includegraphics[width=\textwidth,height=\dimexpr\textheight-4\baselineskip-\abovecaptionskip-\belowcaptionskip\relax,keepaspectratio]{"Pictures/LVS Pass"}
+			\caption{Layout Versus Schematics Results} 
+			\label{fig:LVS-Pass} 
+		\end{figure}
+	
 	\subsection{Power}
-		Power was measured with an Eldo simulation based on the layout. To measure static power, the average power was measured while the circuit was not active but powered. The static power was measured to be 1.87nW and was recorded in Table \ref{tab:power}. 
+		Power was measured with an Eldo simulation based on the layout. To perform the simulation, a SPICE file was created which can be seen in Listing \ref{lst:power-test-spice}. To measure static power, the average power was measured while the circuit was not active but powered. The static power was measured to be 1.87nW and was recorded in Table \ref{tab:power}. 
 		
 		Dynamic power was measured by recording the maximum power measured while the circuit was changing as many transistors as possible. To activate as many transistor as possible, multiple, random inputs were supplied to the circuit for a long period of time (2000us). The maximum power was found to be 16.03mW, which was recorded in Table \ref{tab:power}.
 		
