@@ -139,12 +139,49 @@ Your Signature:   \rule{13cm}{.1pt}
 
 
 	\subsection{User Operation}
-		//TODO Chris, talk about how to use this and go into test mode
+		The full MAC and BIST design has a total of six inputs and three outputs, which are shown in Table \ref{tab:Inputs} and Table \ref{tab:Outputs} respectively. All inputs and outputs of the MAC are clocked, so a clk signal is required for operation. To enable the writing to register, WE must be high for both MAC and BIST functionality. This allows for initialization of input values without it writing to the registers, and for the ability to hold what value the registers contain without changing the inputs. 
+		
+		In order to run the MAC in its functional mode, WE must be high, reset and StartTest must be low. Once these requirements are met, the values of inputs A and B will be multiplied together and accumulated into the registers. The output RegOut will contain the current value in the register.
+		
+		To run the BIST, the component must first be reset for a total of three clock cycles during initializing. This can be achieved by holding reset low during initialization. Afterwords, reset, WE and StartTest should be high. The BIST runs for a total of 1000 clock cycles, during which the outputs Pass and Complete will be low. When Complete goes high the BIST is over and Pass will contain whether the test passed or not.
+		
+		\begin{table}[H]
+			\centering
+			\caption{Inputs of the MAC}
+			\label{tab:Inputs}
+			\begin{tabular}{|ccc|}
+				\hline
+				\textbf{}   \textbf{Input}      & \textbf{Function} &  \textbf{Size (Bits)} \\
+				\hline
+				\textbf{A}  & Input 1 & N/2          \\
+				\textbf{B}  & Input 2 & N/2            \\ 
+				\textbf{clk}  & Clock Signal & 1        \\ 
+				\textbf{WE}  & Write Enable & 1           \\ 
+				\textbf{reset}  & Active Low Reset & 1           \\ 
+				\textbf{StartTest}  & Enable BIST & 1           \\ 
+				\hline                     
+			\end{tabular}
+		\end{table}
+		
+		\begin{table}[H]
+			\centering
+			\caption{Outputs of the MAC}
+			\label{tab:Outputs}
+			\begin{tabular}{|ccc|}
+				\hline
+				\textbf{}   \textbf{Output}      & \textbf{Function} &  \textbf{Size (Bits)} \\
+				\hline
+				\textbf{RegOut}  & Output of the MAC & N          \\
+				\textbf{Pass}  & BIST Pass Flag & 1            \\ 
+				\textbf{Complete}  & BIST Complete Flag & 1        \\ 
+				\hline                     
+			\end{tabular}
+		\end{table}
 	
 
 	\subsection{Adder}
 	
-		The adder used in this design was 32 bits wide to accept input form the multiplier and the accumulation register. 
+		The adder used in this design is an N-bit ripple carry adder which accepts input from the outputs of the multiplier and accumulation register. A ripple carry adder is composed of a series of N full adders, where the carry-out of the previous full adder is fed into the carry-in of the next full adder, as shown in Figure \ref{fig:ripple-carry-adder}.
 		
 		\begin{figure}[H]
 			\centering
@@ -152,6 +189,25 @@ Your Signature:   \rule{13cm}{.1pt}
 			\caption{Ripple Carry Adder}
 			\label{fig:ripple-carry-adder}
 		\end{figure}
+		
+		The code in Figure \ref{code:nBitAdder} shows one of the generate statements used to create the nBitAdder from full adder components. The uses VHDL generate statements to generate N-2 full adders that take their carry-in bit from the previous full adder and send their carry out to the next full adder through the internal signal carray. The first and last full adder in the series are generated differently, as the first full adder's carry-in is hard coded to 0 and the last full adder's carry-out is an output. The full code of the nBitAdder is available in Listing \ref{lst:nBitAdder-vhd} of the appendix.
+		
+		\begin{figure}[H]
+		\centering
+		\begin{verbatim}
+            i_mid : if (i /= 0) and (i /= (n-1)) generate
+                adder : full_adder port map(
+                    A => A(i),
+                    B => B(i),
+                    Cin => c_array(i-1),
+                    Sum => Y(i),
+                    Cout => c_array(i)
+                );
+            end generate i_mid;
+        \end{verbatim}
+        \caption{nBitAdder Code Snippet} 
+    	\label{code:nBitAdder} 
+    	\end{figure}
 	
 		\begin{figure}[H] 
 			\centering 
@@ -170,6 +226,7 @@ Your Signature:   \rule{13cm}{.1pt}
 	
 	\subsection{Multiplier}
 	
+	The MAC includes a carry-save multiplier component in order to multiply the two inputs together. A carry-save multiplier works as shown in Figure \ref{fig:multiplier-block-dia}, where full adders are arranged in a 2d array where each row is N/2 adders long and offset by 1.
 		
 		\begin{figure}[H]
 			\centering
@@ -177,6 +234,10 @@ Your Signature:   \rule{13cm}{.1pt}
 			\caption{Carry-Save Multiplier Block Diagram}
 			\label{fig:multiplier-block-dia}
 		\end{figure}
+		
+	The full VHDL code for the multiplier is found in Listing \ref{lst:Multiplier-vhd}. The code takes advantage of VHDL generate statements to generate the four different connections a full adder could have in a carry-save multiplier. The first fill adder of each row, the last full adder of the first row, the last full adder of every other row, and all other full adders.
+	
+	Figures \ref{fig:Multiplier-Schematic-Page-1} and \ref{fig:Multiplier-Schematic-Page-2} show both pages of the multiplier schematic. These schematics were generated from the VHDL code in \ref{lst:Multiplier-vhd} using Spectrum scripts to create a Verilog file that was then imported into Pyxis.
 	
 	
 		\begin{figure}[H] 
@@ -195,6 +256,30 @@ Your Signature:   \rule{13cm}{.1pt}
 		\end{figure}
 	
 	\subsection{16-Bit Register}
+	
+	Two 16-bit parallel registers are used to clock the two inputs to the multiplier. The VHDL architecture for the register can be seen in Figure \ref{code:nBitRegister_16}, which shows that the register has an active low reset, and when WE is high will take new input. Otherwise the register holds its previous value.
+	
+	\begin{figure}[H]
+		\centering
+		\begin{verbatim}
+            architecture behav of nBitRegister_16 is
+            begin
+                output_proc : process (clk, Reset) begin
+                    if Reset = '0' then
+                        Y <= (others => '0');
+                    elsif clk'event and clk = '1' then
+                        if WE = '1' then
+                            Y <= nBitIn;
+                        end if;
+                    end if;
+                end process output_proc;
+            end behav;
+        \end{verbatim}
+        \caption{16-Bit Register Code Snippet} 
+    	\label{code:nBitRegister_16} 
+    \end{figure}
+    
+    Figure \ref{fig:nBitRegister-16-Bit-Schematic} shows the schematic for the 16-bit register, which provides some insight into how a parallel register is made. There are 16 flip-flops which are connected to their respective input bits, the inverse of the reset signal, a write enable signal, and the clock. Their outputs are connected to the respective output bit.
 
 		\begin{figure}[H] 
 			\centering 
@@ -205,7 +290,29 @@ Your Signature:   \rule{13cm}{.1pt}
 
 	\subsection{32-Bit Register}
 		
-		// TODO accumulator. Parallel
+		A 32-bit parallel register is used as the accumulator in the MAC component. The accumulator register if functionally the same as the 16-bit register above, as they are generated from the same generic VHDL code, just with different values for N.
+		
+		The code in Figure \ref{code:nBitRegister_32} shows the code used to generate the 32-bit register, which is identical to the 16-bit register in all but name. The schematic below in Figure \ref{fig:nBitRegister-32-Bit-Schematic} shows how the 32-bit register is functionally identical to the 16-bit register, just with double the amount of flip-flops and logic.
+		
+		\begin{figure}[H]
+		\centering
+		\begin{verbatim}
+        architecture behav of nBitRegister_32 is
+        begin
+            output_proc : process (clk, Reset) begin
+                if Reset = '0' then
+                    Y <= (others => '0');
+                elsif clk'event and clk = '1' then
+                    if WE = '1' then
+                        Y <= nBitIn;
+                    end if;
+                end if;
+            end process output_proc;
+        end behav;
+        \end{verbatim}
+        \caption{32-Bit Register Code Snippet} 
+    	\label{code:nBitRegister_32} 
+    \end{figure}
 	
 		\begin{figure}[H] 
 			\centering 
