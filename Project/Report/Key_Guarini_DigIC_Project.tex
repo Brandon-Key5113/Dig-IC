@@ -125,7 +125,11 @@ Chris Guarini:   \rule{13cm}{.1pt}
 
 \section{Abstract}
 
-	
+The exercise defined by this procedure explores the creation of complex logical circuits using techniques that have been introduced in the previous exercises. The defines a Multiply-Add-Accumulate (MAC) unit with Built In Self Test (BIST) functionality. The MAC takes two inputs, multiplies them together, adds them to the previous value in a register, and then stores the new value back into the register. 
+
+The BIST functionality uses a Linear Feedback Shift Register (LFSR) to create pseudo random inputs for the MAC component. These inputs are predictably random and only depend on the LFSR's seed. The output of the MAC is then fed into a Multiple Input Shift Register (MISR) which creates a distinct signature for each output that can be easily compared to by the test controller. The purpose of BIST is validate functionality of the chip after it has been manufactured.
+
+The exercise was successfully completed, as a MAC component containing BIST functionality was modeled in VHDL, synthesized by Spectrum and laid out by Pyxis. The final layout passes LVS and is 459.8nm by 413.8nm. The maximum power of the circuit was found to be 16.03mW, which was the dynamic power, which is to be expected for a logic heavy circuit such as this.
 	
 
 \section{Design Methodology and Theory}
@@ -876,7 +880,11 @@ Chris Guarini:   \rule{13cm}{.1pt}
 
 \section{Conclusion}
 
+Overall this exercise was completed successfully, as a MAC component with BIST was fully modeled in VHDL, synthesized by Spectrum and a layout was created using Pyxis. Fifteen separate VHDL components were used to model the circuit, which were verified to be functionally correct by three VHDL test benches. 
 
+The component was translated into a schematic with twenty-eight sheets created by Spectrum. These schematics were then routed automatically using Pyxis, resulting in a layout that is 459.8nm by 413.8nm which successfully passes LVS. The simulated maximum power consumption for the MAC was found to be 16.03mW, which is expected as the arithmetic portions of this circuit have a high activity factor.
+
+The BIST of the circuit can be used should the IC ever be manufactured. The BIST runs a pseudo random numbers through the MAC unit using an LFSR and converts the output into a signature using a MISR. After 1000 clock cycles, the circuit will output that the test is completed and whether it passed or not. 
 
 
 \section{Appendix}
@@ -995,6 +1003,6 @@ Chris Guarini:   \rule{13cm}{.1pt}
 	
 	Key, Brandon A. \textit{CMPE 260 Laboratory Exercise 5 Binary Multiplier with Built in Self Test}. CMPE 260 Laboratory Exercise 5 Binary Multiplier with Built in Self Test.
 	
-	//TODO Added Chris's DSD II lab
+	Guarini, Christopher D. \textit{CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit}. CMPE 260 Laboratory Exercise 3 Arithmetic Logic Unit.
 
 \end{document}
